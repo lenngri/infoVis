@@ -1,7 +1,7 @@
 # Information Visualization Project
 
 ## Table of contents
-* [General info](#general-info)
+* [General Info](#general-info)
 * [Project Description](#project-description)
 * [Technologies](#technologies)
 * [Setup](#setup)
@@ -9,7 +9,7 @@
 * [Sources](#sources)
 * [Project Status](#project-status)
 
-## General info
+## General Info
 LMU Munich Project Course, Information Visualization, Lecturer: Prof. Dr. Andreas Butz
 
 Team Members: Lennart Grigoleit, Hendrik Geiger, Manuel Riegel, Mirjam Feigl, Anna Hartmeyer
