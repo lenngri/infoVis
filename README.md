@@ -1,3 +1,5 @@
+Information Visualization Project
+
 ## Table of contents
 * [General info](#general-info)
 * [Project Description](#project-description)
