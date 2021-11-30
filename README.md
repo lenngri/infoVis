@@ -1,4 +1,4 @@
-Information Visualization Project
+# Information Visualization Project
 
 ## Table of contents
 * [General info](#general-info)
