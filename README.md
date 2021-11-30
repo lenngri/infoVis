@@ -34,12 +34,14 @@ To run this project,...
 to be implemented
 
 ### To Do
-*a colorpleth of europe with visual encoding for both patent registrations as well as R&D expenditure
-→ overview of european situation
-*a bubble chart of patent registrations, R&D expenditure and GDP by country 
-→ comparison and pattern recognition
-*detail on demand: patent categories are shown as pie chart / stacked bar chart
-*time travel: slider which lets someone control the displayed year + possibility to autoplay
+
+- a colorpleth of europe with visual encoding for both patent registrations as well as R&D expenditure
+    → overview of european situation
+- a bubble chart of patent registrations, R&D expenditure and GDP by country 
+    → comparison and pattern recognition
+- detail on demand: patent categories are shown as pie chart / stacked bar chart
+- time travel: slider which lets someone control the displayed year + possibility to autoplay
+
 
 ## Project Status
 in development
