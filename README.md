@@ -16,7 +16,7 @@ Team Members: Lennart Grigoleit, Hendrik Geiger, Manuel Riegel, Mirjam Feigl, An
 The aim of the project is to visualize research & development expenditures in dependency with patent registrations in Europe. The Web Application will include interactive features.
 
 ## Technologies
-The Web Application was build with d3.js and React
+The Web Application will be build with d3.js and React
 
 ## Datasets
 ### Primary Data Set
