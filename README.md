@@ -15,7 +15,7 @@ LMU Munich Project Course, Information Visualization, Lecturer: Prof. Dr. Andrea
 Team Members: Lennart Grigoleit, Hendrik Geiger, Manuel Riegel, Mirjam Feigl, Anna Hartmeyer
 
 ## Project Description
-The aim of the project is to visualize research & development expenditures in dependency with patent registrations in Europe. The Web Application will display a map of Europe and include interactive features.
+The aim of the project is to visualize research & development expenditures in dependency with patent registrations in Europe. The Web Application will display a map of Europe and include interactive features. 
 
 ## Technologies
 The Web Application will be build with d3.js and React
