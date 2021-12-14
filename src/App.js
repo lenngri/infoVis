@@ -14,7 +14,7 @@ class App extends Component {
     // conn.addEventListener('load', () => {
     //   console.log(conn.responseText)
     // })
-    conn.open("GET", url + "/rpc/proximity_search_inv?latitude=45.436699&longitude=12.320233&dist =3000")
+    conn.open("GET", url + "/rpc/proximity_search_inv?latitude=45.436699&longitude=12.320233&dist=3000")
     conn.send()
     conn.onreadystatechange = (e) => {
       console.log(conn.responseText)
