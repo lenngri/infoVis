@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif, serif
+            }
+            h1, h2, h4, h5, h6 {
+                color: #ffffff;
+                font-weight: 100;
+            }
+            h3 {
+                color: #57abff
+            }
+            body {
+                background-color: #71808F;
+                margin: 0px;
+            }
+            path {
+                stroke: white;
+                stroke-width: 0.25px;
+                fill: #808080;
+            }
+            .details {
+                top: 0px;
+                visibility: hidden;
+                width: 300px;
+                padding: 30px;
+                height: 100%;
+                opacity: 0.8;
+                position: absolute;
+                background-color: aliceblue;
+                font-size: 25px;
+            }
+            .center {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1 class="center">Patent Power Review</h1>
+
+        <div class="details">
+            <h3 class="country"></h3>
+            <p class="females"></p>
+            <p class="males"></p>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/d3-dsv@3"></script>
+        <script src="src/js/main.js"></script>
+    </body>
+</html>
