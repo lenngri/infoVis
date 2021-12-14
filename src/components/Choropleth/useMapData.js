@@ -11,7 +11,7 @@ export const useMapData = () => {
   useEffect(() => {
     json(jsonUrl).then(topology => {
       const europe_countries = topology.objects.continent_Europe_subunits
-      const featureCollection = feature(topology, europe_countries).features;
+      const featureCollection = feature(topology, europe_countries);
       setData(featureCollection);
     });
   }, []);

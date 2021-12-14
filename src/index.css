@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: lightgray;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  color: black;
+  font-weight: 100;
+}
+
+.marks .land {
+  fill: #137B80;
+  stroke: white;
+  stroke-width: 0.25px;
+}
+
+.center {
+  text-align: center;
 }
