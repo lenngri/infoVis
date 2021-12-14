@@ -49,7 +49,7 @@ https://ec.europa.eu/eurostat/databrowser/view/tsc00001/default/table?lang=en
 in development
 
 
-## Getting Started with Create React App
+## Setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
