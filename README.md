@@ -4,10 +4,10 @@
 * [General Info](#general-info)
 * [Project Description](#project-description)
 * [Technologies](#technologies)
-* [Setup](#setup)
 * [Features](#features)
 * [Sources](#sources)
 * [Project Status](#project-status)
+* [Setup](#setup)
 
 ## General Info
 LMU Munich Project Course, Information Visualization, Lecturer: Prof. Dr. Andreas Butz
