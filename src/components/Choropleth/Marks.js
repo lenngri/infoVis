@@ -1,6 +1,6 @@
 import { geoPath, geoMercator } from 'd3';
 
-const missingDataColor = 'white';
+const missingDataColor = 'darkgray';
 
 export const Marks = ({
   mapData,
@@ -23,7 +23,8 @@ export const Marks = ({
         }
 
         return <path
-          fill={d ? colorScale(colorValue(d)) : missingDataColor} 
+          fill={d ? colorScale(colorValue(d)) : missingDataColor}
+          className='land'
           d={path(feature)}
         />
       })}

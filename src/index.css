@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: lightgray;
+  background-color: #71808F;
   overflow: hidden;
 }
 
@@ -17,7 +17,7 @@ h1 {
 
 .marks .land {
   stroke: white;
-  stroke-width: 0.25px;
+  stroke-width: 0.5px;
 }
 
 .center {
