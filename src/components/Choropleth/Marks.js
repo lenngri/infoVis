@@ -8,7 +8,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
   // generate map progjection and paths
   const projection = geoMercator()
     .scale(500)
-    .translate([width / 2, height]);
+    .translate([width / 3, height * 1.5]);
   const path = geoPath(projection);
 
   // generate map legend and append to svg
@@ -40,7 +40,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
           );
         })}
       </g>
-      <g transform={`translate(${width * 0.6},${height * 0.725})`} ref={legendRef}></g>
+      <g transform={`translate(${width * 0.65},${height * 0.9})`} ref={legendRef}></g>
     </>
   );
 };
