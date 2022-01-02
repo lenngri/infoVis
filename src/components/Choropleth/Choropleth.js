@@ -8,7 +8,7 @@ import { schemeBlues } from 'd3-scale-chromatic';
 const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 const selectedYear = 2008;
-const legendTitle = 'Number of Patents registered per Year';
+const legendTitle = 'Number of Patents Registered per Year';
 
 const Colorpleth = () => {
   const mapData = useMapData();
@@ -32,6 +32,7 @@ const Colorpleth = () => {
 
   return (
     <>
+      <p className="center">Number of patents registered in {selectedYear}</p>
       <svg width={width} height={height} ref={svg}>
         <Marks
           mapData={mapData}
