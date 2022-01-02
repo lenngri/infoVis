@@ -3,14 +3,13 @@ import { Component } from 'react';
 import Colorpleth from './components/Choropleth/Choropleth';
 
 class App extends Component {
-  render(){
+  render() {
     return (
       <div className="App">
-        <h1 className='center'>Patent Power Visualized</h1>
+        <h1 className="center">Patent Power Visualized</h1>
         <Colorpleth />
       </div>
     );
-
   }
 }
 
