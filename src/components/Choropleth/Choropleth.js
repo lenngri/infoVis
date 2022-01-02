@@ -28,7 +28,7 @@ const Colorpleth = () => {
 
   const colorScale = scaleThreshold()
     .domain([100, 1000, 5000, 10000, 50000, 100000])
-    .range(schemeBlues[6]);
+    .range(schemeBlues[7]);
 
   return (
     <>

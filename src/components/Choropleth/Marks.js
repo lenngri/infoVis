@@ -14,6 +14,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
   // generate map legend and append to svg
   const legendRef = useRef(null);
   const legend = Legend(colorScale, { title: legendTitle });
+
   useEffect(() => {
     if (legendRef.current) {
       legendRef.current.appendChild(legend);
@@ -39,7 +40,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
           );
         })}
       </g>
-      <g ref={legendRef}></g>
+      <g transform={`translate(${width * 0.6},${height * 0.725})`} ref={legendRef}></g>
     </>
   );
 };
