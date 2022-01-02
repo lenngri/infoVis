@@ -12,13 +12,13 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
   const path = geoPath(projection);
 
   // generate map legend and append to svg
-  const group = useRef(null);
+  const legendRef = useRef(null);
   const legend = Legend(colorScale, { title: legendTitle });
   useEffect(() => {
-    if (group.current) {
-      group.current.appendChild(legend);
+    if (legendRef.current) {
+      legendRef.current.appendChild(legend);
     }
-  }, [legend, group]);
+  }, [legend, legendRef]);
 
   return (
     <>
@@ -39,7 +39,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
           );
         })}
       </g>
-      <g ref={group}></g>
+      <g ref={legendRef}></g>
     </>
   );
 };
