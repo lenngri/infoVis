@@ -11,7 +11,8 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
     .translate([width / 3, height * 1.5]);
   const path = geoPath(projection);
 
-  // generate map legend and append to svg
+  // generate map legend and append to svg,
+  // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
   const legendRef = useRef(null);
   const legend = Legend(colorScale, { title: legendTitle });
 
@@ -21,12 +22,13 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
     }
   }, [legend, legendRef]);
 
+  console.log(rowByCountry);
+
   return (
     <>
       <g className="marks">
         {mapData.features.map((feature) => {
           const d = rowByCountry.get(feature.properties.geounit);
-
           if (!d) {
             console.log("Name doesn't match: " + feature.properties.geounit);
           }
