@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { useMapData } from './useMapData';
 import { usePatentData } from '../../datatools/usePatentData';
+import { usePopulationData } from '../../datatools/usePopulationData';
 import Marks from './Marks';
 import { scaleThreshold } from 'd3'; // scaleSequential
 import { schemeBlues } from 'd3-scale-chromatic';
@@ -13,11 +14,11 @@ const legendTitle = 'Number of Patents Registered per Year';
 const Colorpleth = () => {
   const mapData = useMapData();
   const patentData = usePatentData();
-  const svg = useRef(null);
+  const populationData = usePopulationData();
 
   const [selectedYear, setSelectedYear] = useState(2010);
 
-  if (!mapData || !patentData) {
+  if (!mapData || !patentData || !populationData) {
     return <p>Loading...</p>;
   }
 
@@ -50,7 +51,7 @@ const Colorpleth = () => {
         }}
       >
         <p className="center">Number of patents registered in {selectedYear}</p>
-        <svg width={width} height={height} ref={svg}>
+        <svg width={width} height={height}>
           <Marks
             mapData={mapData}
             width={width}
