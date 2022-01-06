@@ -1,14 +1,13 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useMapData } from './useMapData';
 import { usePatentData } from '../../datatools/usePatentData';
 import Marks from './Marks';
 import { scaleThreshold } from 'd3'; // scaleSequential
 import { schemeBlues } from 'd3-scale-chromatic';
-import { Container, Box } from '@mui/material';
+import { Container, Box, Slider } from '@mui/material';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-const selectedYear = 2008;
 const legendTitle = 'Number of Patents Registered per Year';
 
 const Colorpleth = () => {
@@ -16,9 +15,12 @@ const Colorpleth = () => {
   const patentData = usePatentData();
   const svg = useRef(null);
 
+  const [selectedYear, setSelectedYear] = useState(2010);
+
   if (!mapData || !patentData) {
     return <p>Loading...</p>;
   }
+
   const filteredData = patentData.filter((d) => d.c0 === selectedYear);
   const colorValue = (d) => d.c2;
 
@@ -30,6 +32,11 @@ const Colorpleth = () => {
   const colorScale = scaleThreshold()
     .domain([100, 1000, 5000, 10000, 50000, 100000])
     .range(schemeBlues[7]);
+
+  const handleSliderChange = (e, value) => {
+    console.log(`Slider value change to ${value}.`);
+    setSelectedYear(value);
+  };
 
   return (
     <Container>
@@ -55,6 +62,16 @@ const Colorpleth = () => {
           />
         </svg>
       </Box>
+      <Slider
+        aria-label="Year"
+        defaultValue={2010}
+        getAriaValueText={() => 30}
+        valueLabelDisplay="auto"
+        marks
+        min={2008}
+        max={2014}
+        onChangeCommitted={handleSliderChange}
+      />
     </Container>
   );
 };
