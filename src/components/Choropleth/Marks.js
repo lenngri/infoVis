@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import { geoPath, geoMercator } from 'd3';
 import Legend from '../../charttools/useLegend';
 
@@ -13,16 +12,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
 
   // generate map legend and append to svg,
   // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
-  const legendRef = useRef(null);
   const legend = Legend(colorScale, { title: legendTitle });
-
-  useEffect(() => {
-    if (legendRef.current) {
-      legendRef.current.appendChild(legend);
-    }
-  }, [legend, legendRef]);
-
-  console.log(rowByCountry);
 
   return (
     <>
@@ -42,7 +32,12 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
           );
         })}
       </g>
-      <g transform={`translate(${width * 0.65},${height * 0.9})`} ref={legendRef}></g>
+      <g
+        transform={`translate(${width * 0.65},${height * 0.9})`}
+        // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
+        // and https://stackoverflow.com/questions/26815738/svg-use-tag-and-reactjs
+        dangerouslySetInnerHTML={{ __html: legend.innerHTML }}
+      ></g>
     </>
   );
 };

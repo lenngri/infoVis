@@ -1,15 +1,13 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { useMapData } from './useMapData';
 import { usePatentData } from '../../datatools/usePatentData';
 import Marks from './Marks';
 import { scaleThreshold } from 'd3'; // scaleSequential
 import { schemeBlues } from 'd3-scale-chromatic';
 import { Container, Box, Slider } from '@mui/material';
-import { filter } from 'd3';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-const selectedYear = 2008;
 const legendTitle = 'Number of Patents Registered per Year';
 
 const Colorpleth = () => {
