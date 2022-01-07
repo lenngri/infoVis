@@ -12,7 +12,7 @@ import { Container, Box, Slider } from '@mui/material';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-const legendTitle = 'Number of Patents Registered per Year';
+const legendTitle = 'Patents Registered per Year per Million Inhabitants';
 
 const Colorpleth = () => {
   const mapData = useMapData();
@@ -30,32 +30,33 @@ const Colorpleth = () => {
   const filteredPopulationData = populationData.filter((d) => d.year === selectedYear);
 
   // create mapping between country name and population size
-  let populationById = {};
+  let populationByCountry = {};
   filteredPopulationData.forEach((d) => {
-    populationById[d.country] = {
+    populationByCountry[d.country] = {
       year: +d.year,
       population: +d.population,
     };
   });
   // append population size to patent data set
   filteredPatentData.forEach((d) => {
-    d.populationSize = populationById[d.country] ? populationById[d.country].population : {}; // geounit
+    d.population = populationByCountry[d.country] ? populationByCountry[d.country].population : {};
   });
-
   console.log(filteredPatentData);
 
   // create mapping table between country name and normed patent data
   const rowByCountry = new Map();
   filteredPatentData.forEach((d) => {
     rowByCountry.set(d.country, d);
+    console.log(
+      `Patent registrations in ${d.country} per Million Inhabitants: ${
+        d.patents / (d.population / 1000000)
+      }`
+    );
   });
-  console.log(rowByCountry);
 
   // set colorValue function and colorScale object
-  const colorValue = (d) => d.patents;
-  const colorScale = scaleThreshold()
-    .domain([100, 1000, 5000, 10000, 50000, 100000])
-    .range(schemeBlues[7]);
+  const colorValue = (d) => d.patents / (d.population / 1000000);
+  const colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
 
   const handleSliderChange = (e, value) => {
     console.log(`Slider value change to ${value}.`);
