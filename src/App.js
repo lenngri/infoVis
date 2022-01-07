@@ -1,16 +1,19 @@
 import './components/App.css';
+import { useState } from 'react';
 import { Divider, Container, Typography } from '@material-ui/core';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
 import Containera from './components/Containera';
 import Tabsa from './components/Tabsa';
-// import Slider from './components/Slider';
+import TimeSlider from './components/TimeSlider';
 import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 
 function App() {
+  const [selectedYear, setSelectedYear] = useState(2011);
+
   return (
     <div className="App">
       <Appbar />
@@ -23,7 +26,8 @@ function App() {
         <Boxspacer />
         <Container>
           <Tabsa />
-          <Choropleth />
+          <Choropleth selectedYear={selectedYear} />
+          <TimeSlider setSelectedYear={setSelectedYear} />
           <Boxspacer />
           <Containera />
         </Container>
