@@ -40,6 +40,7 @@ const Choropleth = ({ selectedYear }) => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+          overflow: 'hidden',
         }}
       >
         <p className="center">Number of patents registered in {selectedYear}</p>
