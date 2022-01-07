@@ -4,17 +4,17 @@ import { usePatentData } from './usePatentData';
 import { usePopulationData } from './usePopulationData';
 
 export const useData = () => {
-  const data = null;
-  const patentData = usePatentData();
+  // load data sets, patent data is the base data set
+  const data = usePatentData();
   const populationData = usePopulationData();
   const investmentData = useInvestmentData();
 
-  if (!patentData || !populationData || !investmentData) {
-    return data;
+  if (!data || !populationData || !investmentData) {
+    return null;
   }
 
-  // append population to patent entries
-  patentData.forEach((patentEntry) => {
+  // append population to general data object
+  data.forEach((patentEntry) => {
     populationData.forEach((populationEntry) => {
       if (
         patentEntry.country === populationEntry.country &&
@@ -25,8 +25,8 @@ export const useData = () => {
     });
   });
 
-  // append investmentData to patent entries
-  patentData.forEach((patentEntry) => {
+  // append investmentData to general data object
+  data.forEach((patentEntry) => {
     investmentData.forEach((investmentEntry) => {
       if (
         patentEntry.country === investmentEntry.country &&
@@ -37,7 +37,5 @@ export const useData = () => {
     });
   });
 
-  console.log('useData joined data!');
-
-  return patentData;
+  return data;
 };
