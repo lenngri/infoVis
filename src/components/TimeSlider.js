@@ -36,10 +36,10 @@ const marks = [
 
 const valuetext = (value) => `${value}year`;
 
-export default function TimeSlider({ setSelectedYear }) {
+export default function TimeSlider({ setYear }) {
   const handleSliderChange = (e, value) => {
     console.log(`Slider value change to ${value}.`);
-    setSelectedYear(value);
+    setYear(value);
   };
 
   return (

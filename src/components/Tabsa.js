@@ -38,17 +38,15 @@ function a11yProps(index) {
   };
 }
 
-export default function Tabsa() {
-  const [value, setValue] = React.useState(0);
-
+export default function Tabsa({ view, setView }) {
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    setView(newValue);
   };
 
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs value={view} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Number of Patents" {...a11yProps(0)} />
           <Tab label="Research spending of GDP" {...a11yProps(1)} />
         </Tabs>
