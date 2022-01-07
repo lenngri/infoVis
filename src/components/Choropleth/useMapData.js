@@ -6,7 +6,6 @@ const jsonUrl = 'data/europe.json';
 
 export const useMapData = () => {
   const [data, setData] = useState(null);
-  console.log('Hello from useData');
 
   useEffect(() => {
     json(jsonUrl).then((topology) => {
