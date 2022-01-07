@@ -31,7 +31,7 @@ export const useData = () => {
         patentEntry.country === investmentEntry.country &&
         patentEntry.year === investmentEntry.year
       ) {
-        patentEntry.investment = investmentEntry.value;
+        patentEntry.investment = Number(investmentEntry.value.replace(',', '.'));
       }
     });
   });
