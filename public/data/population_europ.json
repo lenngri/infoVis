@@ -1,0 +1,5427 @@
+[
+  {
+    "year": 1990,
+    "country": "Austria",
+    "population": 7677850
+  },
+  {
+    "year": 1990,
+    "country": "Belgium",
+    "population": 9967379
+  },
+  {
+    "year": 1990,
+    "country": "Bosnia and Herzegovina",
+    "population": 4463422
+  },
+  {
+    "year": 1990,
+    "country": "Croatia",
+    "population": 4777368
+  },
+  {
+    "year": 1990,
+    "country": "Cyprus",
+    "population": 766616
+  },
+  {
+    "year": 1990,
+    "country": "Czech Republic",
+    "population": 10333355
+  },
+  {
+    "year": 1990,
+    "country": "Denmark",
+    "population": 5140939
+  },
+  {
+    "year": 1990,
+    "country": "Estonia",
+    "population": 1569174
+  },
+  {
+    "year": 1990,
+    "country": "Finland",
+    "population": 4986431
+  },
+  {
+    "year": 1990,
+    "country": "France",
+    "population": 58235716
+  },
+  {
+    "year": 1990,
+    "country": "Germany",
+    "population": 79433029
+  },
+  {
+    "year": 1990,
+    "country": "Greece",
+    "population": 10196792
+  },
+  {
+    "year": 1990,
+    "country": "Hungary",
+    "population": 10373988
+  },
+  {
+    "year": 1990,
+    "country": "Iceland",
+    "population": 254826
+  },
+  {
+    "year": 1990,
+    "country": "Ireland",
+    "population": 3513974
+  },
+  {
+    "year": 1990,
+    "country": "Italy",
+    "population": 56719240
+  },
+  {
+    "year": 1990,
+    "country": "Liechtenstein",
+    "population": 28790
+  },
+  {
+    "year": 1990,
+    "country": "Luxembourg",
+    "population": 381850
+  },
+  {
+    "year": 1990,
+    "country": "Norway",
+    "population": 4241473
+  },
+  {
+    "year": 1990,
+    "country": "Poland",
+    "population": 38110782
+  },
+  {
+    "year": 1990,
+    "country": "Portugal",
+    "population": 9983218
+  },
+  {
+    "year": 1990,
+    "country": "Romania",
+    "population": 23201835
+  },
+  {
+    "year": 1990,
+    "country": "Russian Federation",
+    "population": 147969407
+  },
+  {
+    "year": 1990,
+    "country": "Serbia",
+    "population": 7586000
+  },
+  {
+    "year": 1990,
+    "country": "Slovak Republic",
+    "population": 5299187
+  },
+  {
+    "year": 1990,
+    "country": "Slovenia",
+    "population": 1998161
+  },
+  {
+    "year": 1990,
+    "country": "Spain",
+    "population": 38867322
+  },
+  {
+    "year": 1990,
+    "country": "Sweden",
+    "population": 8558835
+  },
+  {
+    "year": 1990,
+    "country": "Switzerland",
+    "population": 6715519
+  },
+  {
+    "year": 1990,
+    "country": "Turkey",
+    "population": 53921758
+  },
+  {
+    "year": 1990,
+    "country": "Ukraine",
+    "population": 51891400
+  },
+  {
+    "year": 1990,
+    "country": "United Kingdom",
+    "population": 57247586
+  },
+  {
+    "year": 1990,
+    "country": "Monaco",
+    "population": 29433
+  },
+  {
+    "year": 1990,
+    "country": "Lithuania",
+    "population": 3697838
+  },
+  {
+    "year": 1990,
+    "country": "Netherlands",
+    "population": 14951510
+  },
+  {
+    "year": 1991,
+    "country": "Austria",
+    "population": 7754891
+  },
+  {
+    "year": 1991,
+    "country": "Belgium",
+    "population": 10004486
+  },
+  {
+    "year": 1991,
+    "country": "Bosnia and Herzegovina",
+    "population": 4369320
+  },
+  {
+    "year": 1991,
+    "country": "Croatia",
+    "population": 4689022
+  },
+  {
+    "year": 1991,
+    "country": "Cyprus",
+    "population": 783121
+  },
+  {
+    "year": 1991,
+    "country": "Czech Republic",
+    "population": 10308578
+  },
+  {
+    "year": 1991,
+    "country": "Denmark",
+    "population": 5154298
+  },
+  {
+    "year": 1991,
+    "country": "Estonia",
+    "population": 1561314
+  },
+  {
+    "year": 1991,
+    "country": "Finland",
+    "population": 5013740
+  },
+  {
+    "year": 1991,
+    "country": "France",
+    "population": 58559309
+  },
+  {
+    "year": 1991,
+    "country": "Germany",
+    "population": 80013896
+  },
+  {
+    "year": 1991,
+    "country": "Greece",
+    "population": 10319927
+  },
+  {
+    "year": 1991,
+    "country": "Hungary",
+    "population": 10373400
+  },
+  {
+    "year": 1991,
+    "country": "Iceland",
+    "population": 257797
+  },
+  {
+    "year": 1991,
+    "country": "Ireland",
+    "population": 3534235
+  },
+  {
+    "year": 1991,
+    "country": "Italy",
+    "population": 56758521
+  },
+  {
+    "year": 1991,
+    "country": "Liechtenstein",
+    "population": 29166
+  },
+  {
+    "year": 1991,
+    "country": "Luxembourg",
+    "population": 387000
+  },
+  {
+    "year": 1991,
+    "country": "Norway",
+    "population": 4261732
+  },
+  {
+    "year": 1991,
+    "country": "Poland",
+    "population": 38246193
+  },
+  {
+    "year": 1991,
+    "country": "Portugal",
+    "population": 9960235
+  },
+  {
+    "year": 1991,
+    "country": "Romania",
+    "population": 23001155
+  },
+  {
+    "year": 1991,
+    "country": "Russian Federation",
+    "population": 148394216
+  },
+  {
+    "year": 1991,
+    "country": "Serbia",
+    "population": 7595636
+  },
+  {
+    "year": 1991,
+    "country": "Slovak Republic",
+    "population": 5303294
+  },
+  {
+    "year": 1991,
+    "country": "Slovenia",
+    "population": 1999429
+  },
+  {
+    "year": 1991,
+    "country": "Spain",
+    "population": 38966376
+  },
+  {
+    "year": 1991,
+    "country": "Sweden",
+    "population": 8617375
+  },
+  {
+    "year": 1991,
+    "country": "Switzerland",
+    "population": 6799978
+  },
+  {
+    "year": 1991,
+    "country": "Turkey",
+    "population": 54840595
+  },
+  {
+    "year": 1991,
+    "country": "Ukraine",
+    "population": 52000500
+  },
+  {
+    "year": 1991,
+    "country": "United Kingdom",
+    "population": 57424897
+  },
+  {
+    "year": 1991,
+    "country": "Monaco",
+    "population": 29629
+  },
+  {
+    "year": 1991,
+    "country": "Lithuania",
+    "population": 3704134
+  },
+  {
+    "year": 1991,
+    "country": "Netherlands",
+    "population": 15069798
+  },
+  {
+    "year": 1992,
+    "country": "Austria",
+    "population": 7840709
+  },
+  {
+    "year": 1992,
+    "country": "Belgium",
+    "population": 10045158
+  },
+  {
+    "year": 1992,
+    "country": "Bosnia and Herzegovina",
+    "population": 4233673
+  },
+  {
+    "year": 1992,
+    "country": "Croatia",
+    "population": 4575818
+  },
+  {
+    "year": 1992,
+    "country": "Cyprus",
+    "population": 800610
+  },
+  {
+    "year": 1992,
+    "country": "Czech Republic",
+    "population": 10319123
+  },
+  {
+    "year": 1992,
+    "country": "Denmark",
+    "population": 5171370
+  },
+  {
+    "year": 1992,
+    "country": "Estonia",
+    "population": 1533091
+  },
+  {
+    "year": 1992,
+    "country": "Finland",
+    "population": 5041992
+  },
+  {
+    "year": 1992,
+    "country": "France",
+    "population": 58851216
+  },
+  {
+    "year": 1992,
+    "country": "Germany",
+    "population": 80624598
+  },
+  {
+    "year": 1992,
+    "country": "Greece",
+    "population": 10399061
+  },
+  {
+    "year": 1992,
+    "country": "Hungary",
+    "population": 10369341
+  },
+  {
+    "year": 1992,
+    "country": "Iceland",
+    "population": 261057
+  },
+  {
+    "year": 1992,
+    "country": "Ireland",
+    "population": 3558430
+  },
+  {
+    "year": 1992,
+    "country": "Italy",
+    "population": 56797087
+  },
+  {
+    "year": 1992,
+    "country": "Liechtenstein",
+    "population": 29552
+  },
+  {
+    "year": 1992,
+    "country": "Luxembourg",
+    "population": 392175
+  },
+  {
+    "year": 1992,
+    "country": "Norway",
+    "population": 4286401
+  },
+  {
+    "year": 1992,
+    "country": "Poland",
+    "population": 38363667
+  },
+  {
+    "year": 1992,
+    "country": "Portugal",
+    "population": 9952494
+  },
+  {
+    "year": 1992,
+    "country": "Romania",
+    "population": 22794284
+  },
+  {
+    "year": 1992,
+    "country": "Russian Federation",
+    "population": 148538197
+  },
+  {
+    "year": 1992,
+    "country": "Serbia",
+    "population": 7646424
+  },
+  {
+    "year": 1992,
+    "country": "Slovak Republic",
+    "population": 5305016
+  },
+  {
+    "year": 1992,
+    "country": "Slovenia",
+    "population": 1996498
+  },
+  {
+    "year": 1992,
+    "country": "Spain",
+    "population": 39157685
+  },
+  {
+    "year": 1992,
+    "country": "Sweden",
+    "population": 8668067
+  },
+  {
+    "year": 1992,
+    "country": "Switzerland",
+    "population": 6875364
+  },
+  {
+    "year": 1992,
+    "country": "Turkey",
+    "population": 55748946
+  },
+  {
+    "year": 1992,
+    "country": "Ukraine",
+    "population": 52150400
+  },
+  {
+    "year": 1992,
+    "country": "United Kingdom",
+    "population": 57580402
+  },
+  {
+    "year": 1992,
+    "country": "Monaco",
+    "population": 29859
+  },
+  {
+    "year": 1992,
+    "country": "Lithuania",
+    "population": 3700114
+  },
+  {
+    "year": 1992,
+    "country": "Netherlands",
+    "population": 15184166
+  },
+  {
+    "year": 1993,
+    "country": "Austria",
+    "population": 7905633
+  },
+  {
+    "year": 1993,
+    "country": "Belgium",
+    "population": 10084475
+  },
+  {
+    "year": 1993,
+    "country": "Bosnia and Herzegovina",
+    "population": 4078940
+  },
+  {
+    "year": 1993,
+    "country": "Croatia",
+    "population": 4600463
+  },
+  {
+    "year": 1993,
+    "country": "Cyprus",
+    "population": 818750
+  },
+  {
+    "year": 1993,
+    "country": "Czech Republic",
+    "population": 10329855
+  },
+  {
+    "year": 1993,
+    "country": "Denmark",
+    "population": 5188628
+  },
+  {
+    "year": 1993,
+    "country": "Estonia",
+    "population": 1494128
+  },
+  {
+    "year": 1993,
+    "country": "Finland",
+    "population": 5066447
+  },
+  {
+    "year": 1993,
+    "country": "France",
+    "population": 59106758
+  },
+  {
+    "year": 1993,
+    "country": "Germany",
+    "population": 81156363
+  },
+  {
+    "year": 1993,
+    "country": "Greece",
+    "population": 10460415
+  },
+  {
+    "year": 1993,
+    "country": "Hungary",
+    "population": 10357523
+  },
+  {
+    "year": 1993,
+    "country": "Iceland",
+    "population": 263725
+  },
+  {
+    "year": 1993,
+    "country": "Ireland",
+    "population": 3576261
+  },
+  {
+    "year": 1993,
+    "country": "Italy",
+    "population": 56831821
+  },
+  {
+    "year": 1993,
+    "country": "Liechtenstein",
+    "population": 29987
+  },
+  {
+    "year": 1993,
+    "country": "Luxembourg",
+    "population": 397475
+  },
+  {
+    "year": 1993,
+    "country": "Norway",
+    "population": 4311991
+  },
+  {
+    "year": 1993,
+    "country": "Poland",
+    "population": 38461408
+  },
+  {
+    "year": 1993,
+    "country": "Portugal",
+    "population": 9964675
+  },
+  {
+    "year": 1993,
+    "country": "Romania",
+    "population": 22763280
+  },
+  {
+    "year": 1993,
+    "country": "Russian Federation",
+    "population": 148458777
+  },
+  {
+    "year": 1993,
+    "country": "Serbia",
+    "population": 7699307
+  },
+  {
+    "year": 1993,
+    "country": "Slovak Republic",
+    "population": 5325305
+  },
+  {
+    "year": 1993,
+    "country": "Slovenia",
+    "population": 1991746
+  },
+  {
+    "year": 1993,
+    "country": "Spain",
+    "population": 39361262
+  },
+  {
+    "year": 1993,
+    "country": "Sweden",
+    "population": 8718561
+  },
+  {
+    "year": 1993,
+    "country": "Switzerland",
+    "population": 6938265
+  },
+  {
+    "year": 1993,
+    "country": "Turkey",
+    "population": 56653808
+  },
+  {
+    "year": 1993,
+    "country": "Ukraine",
+    "population": 52179200
+  },
+  {
+    "year": 1993,
+    "country": "United Kingdom",
+    "population": 57718614
+  },
+  {
+    "year": 1993,
+    "country": "Monaco",
+    "population": 30145
+  },
+  {
+    "year": 1993,
+    "country": "Lithuania",
+    "population": 3682613
+  },
+  {
+    "year": 1993,
+    "country": "Netherlands",
+    "population": 15290368
+  },
+  {
+    "year": 1994,
+    "country": "Austria",
+    "population": 7936118
+  },
+  {
+    "year": 1994,
+    "country": "Belgium",
+    "population": 10115603
+  },
+  {
+    "year": 1994,
+    "country": "Bosnia and Herzegovina",
+    "population": 3936527
+  },
+  {
+    "year": 1994,
+    "country": "Croatia",
+    "population": 4652024
+  },
+  {
+    "year": 1994,
+    "country": "Cyprus",
+    "population": 837104
+  },
+  {
+    "year": 1994,
+    "country": "Czech Republic",
+    "population": 10333587
+  },
+  {
+    "year": 1994,
+    "country": "Denmark",
+    "population": 5206180
+  },
+  {
+    "year": 1994,
+    "country": "Estonia",
+    "population": 1462514
+  },
+  {
+    "year": 1994,
+    "country": "Finland",
+    "population": 5088333
+  },
+  {
+    "year": 1994,
+    "country": "France",
+    "population": 59327200
+  },
+  {
+    "year": 1994,
+    "country": "Germany",
+    "population": 81438348
+  },
+  {
+    "year": 1994,
+    "country": "Greece",
+    "population": 10512922
+  },
+  {
+    "year": 1994,
+    "country": "Hungary",
+    "population": 10343355
+  },
+  {
+    "year": 1994,
+    "country": "Iceland",
+    "population": 266021
+  },
+  {
+    "year": 1994,
+    "country": "Ireland",
+    "population": 3590386
+  },
+  {
+    "year": 1994,
+    "country": "Italy",
+    "population": 56843400
+  },
+  {
+    "year": 1994,
+    "country": "Liechtenstein",
+    "population": 30415
+  },
+  {
+    "year": 1994,
+    "country": "Luxembourg",
+    "population": 402925
+  },
+  {
+    "year": 1994,
+    "country": "Norway",
+    "population": 4336613
+  },
+  {
+    "year": 1994,
+    "country": "Poland",
+    "population": 38542652
+  },
+  {
+    "year": 1994,
+    "country": "Portugal",
+    "population": 9991525
+  },
+  {
+    "year": 1994,
+    "country": "Romania",
+    "population": 22730211
+  },
+  {
+    "year": 1994,
+    "country": "Russian Federation",
+    "population": 148407912
+  },
+  {
+    "year": 1994,
+    "country": "Serbia",
+    "population": 7734639
+  },
+  {
+    "year": 1994,
+    "country": "Slovak Republic",
+    "population": 5346331
+  },
+  {
+    "year": 1994,
+    "country": "Slovenia",
+    "population": 1989443
+  },
+  {
+    "year": 1994,
+    "country": "Spain",
+    "population": 39549108
+  },
+  {
+    "year": 1994,
+    "country": "Sweden",
+    "population": 8780745
+  },
+  {
+    "year": 1994,
+    "country": "Switzerland",
+    "population": 6993795
+  },
+  {
+    "year": 1994,
+    "country": "Turkey",
+    "population": 57564209
+  },
+  {
+    "year": 1994,
+    "country": "Ukraine",
+    "population": 51921400
+  },
+  {
+    "year": 1994,
+    "country": "United Kingdom",
+    "population": 57865745
+  },
+  {
+    "year": 1994,
+    "country": "Monaco",
+    "population": 30436
+  },
+  {
+    "year": 1994,
+    "country": "Lithuania",
+    "population": 3657144
+  },
+  {
+    "year": 1994,
+    "country": "Netherlands",
+    "population": 15382838
+  },
+  {
+    "year": 1995,
+    "country": "Austria",
+    "population": 7948278
+  },
+  {
+    "year": 1995,
+    "country": "Belgium",
+    "population": 10136811
+  },
+  {
+    "year": 1995,
+    "country": "Bosnia and Herzegovina",
+    "population": 3829049
+  },
+  {
+    "year": 1995,
+    "country": "Croatia",
+    "population": 4620030
+  },
+  {
+    "year": 1995,
+    "country": "Cyprus",
+    "population": 855391
+  },
+  {
+    "year": 1995,
+    "country": "Czech Republic",
+    "population": 10327253
+  },
+  {
+    "year": 1995,
+    "country": "Denmark",
+    "population": 5233373
+  },
+  {
+    "year": 1995,
+    "country": "Estonia",
+    "population": 1436634
+  },
+  {
+    "year": 1995,
+    "country": "Finland",
+    "population": 5107790
+  },
+  {
+    "year": 1995,
+    "country": "France",
+    "population": 59541904
+  },
+  {
+    "year": 1995,
+    "country": "Germany",
+    "population": 81678051
+  },
+  {
+    "year": 1995,
+    "country": "Greece",
+    "population": 10562153
+  },
+  {
+    "year": 1995,
+    "country": "Hungary",
+    "population": 10328965
+  },
+  {
+    "year": 1995,
+    "country": "Iceland",
+    "population": 267468
+  },
+  {
+    "year": 1995,
+    "country": "Ireland",
+    "population": 3608841
+  },
+  {
+    "year": 1995,
+    "country": "Italy",
+    "population": 56844303
+  },
+  {
+    "year": 1995,
+    "country": "Liechtenstein",
+    "population": 30884
+  },
+  {
+    "year": 1995,
+    "country": "Luxembourg",
+    "population": 408625
+  },
+  {
+    "year": 1995,
+    "country": "Norway",
+    "population": 4359184
+  },
+  {
+    "year": 1995,
+    "country": "Poland",
+    "population": 38594998
+  },
+  {
+    "year": 1995,
+    "country": "Portugal",
+    "population": 10026176
+  },
+  {
+    "year": 1995,
+    "country": "Romania",
+    "population": 22684270
+  },
+  {
+    "year": 1995,
+    "country": "Russian Federation",
+    "population": 148375787
+  },
+  {
+    "year": 1995,
+    "country": "Serbia",
+    "population": 7625357
+  },
+  {
+    "year": 1995,
+    "country": "Slovak Republic",
+    "population": 5361999
+  },
+  {
+    "year": 1995,
+    "country": "Slovenia",
+    "population": 1989872
+  },
+  {
+    "year": 1995,
+    "country": "Spain",
+    "population": 39724050
+  },
+  {
+    "year": 1995,
+    "country": "Sweden",
+    "population": 8826939
+  },
+  {
+    "year": 1995,
+    "country": "Switzerland",
+    "population": 7040687
+  },
+  {
+    "year": 1995,
+    "country": "Turkey",
+    "population": 58486453
+  },
+  {
+    "year": 1995,
+    "country": "Ukraine",
+    "population": 51512800
+  },
+  {
+    "year": 1995,
+    "country": "United Kingdom",
+    "population": 58019030
+  },
+  {
+    "year": 1995,
+    "country": "Monaco",
+    "population": 30731
+  },
+  {
+    "year": 1995,
+    "country": "Lithuania",
+    "population": 3629102
+  },
+  {
+    "year": 1995,
+    "country": "Netherlands",
+    "population": 15459006
+  },
+  {
+    "year": 1996,
+    "country": "Austria",
+    "population": 7959017
+  },
+  {
+    "year": 1996,
+    "country": "Belgium",
+    "population": 10156637
+  },
+  {
+    "year": 1996,
+    "country": "Bosnia and Herzegovina",
+    "population": 3764419
+  },
+  {
+    "year": 1996,
+    "country": "Croatia",
+    "population": 4557097
+  },
+  {
+    "year": 1996,
+    "country": "Cyprus",
+    "population": 873426
+  },
+  {
+    "year": 1996,
+    "country": "Czech Republic",
+    "population": 10315241
+  },
+  {
+    "year": 1996,
+    "country": "Denmark",
+    "population": 5263074
+  },
+  {
+    "year": 1996,
+    "country": "Estonia",
+    "population": 1415594
+  },
+  {
+    "year": 1996,
+    "country": "Finland",
+    "population": 5124573
+  },
+  {
+    "year": 1996,
+    "country": "France",
+    "population": 59753095
+  },
+  {
+    "year": 1996,
+    "country": "Germany",
+    "population": 81914831
+  },
+  {
+    "year": 1996,
+    "country": "Greece",
+    "population": 10608800
+  },
+  {
+    "year": 1996,
+    "country": "Hungary",
+    "population": 10311238
+  },
+  {
+    "year": 1996,
+    "country": "Iceland",
+    "population": 268916
+  },
+  {
+    "year": 1996,
+    "country": "Ireland",
+    "population": 3637510
+  },
+  {
+    "year": 1996,
+    "country": "Italy",
+    "population": 56860281
+  },
+  {
+    "year": 1996,
+    "country": "Liechtenstein",
+    "population": 31354
+  },
+  {
+    "year": 1996,
+    "country": "Luxembourg",
+    "population": 414225
+  },
+  {
+    "year": 1996,
+    "country": "Norway",
+    "population": 4381336
+  },
+  {
+    "year": 1996,
+    "country": "Poland",
+    "population": 38624370
+  },
+  {
+    "year": 1996,
+    "country": "Portugal",
+    "population": 10063945
+  },
+  {
+    "year": 1996,
+    "country": "Romania",
+    "population": 22619004
+  },
+  {
+    "year": 1996,
+    "country": "Russian Federation",
+    "population": 148160129
+  },
+  {
+    "year": 1996,
+    "country": "Serbia",
+    "population": 7617794
+  },
+  {
+    "year": 1996,
+    "country": "Slovak Republic",
+    "population": 5373361
+  },
+  {
+    "year": 1996,
+    "country": "Slovenia",
+    "population": 1988628
+  },
+  {
+    "year": 1996,
+    "country": "Spain",
+    "population": 39889852
+  },
+  {
+    "year": 1996,
+    "country": "Sweden",
+    "population": 8840998
+  },
+  {
+    "year": 1996,
+    "country": "Switzerland",
+    "population": 7071850
+  },
+  {
+    "year": 1996,
+    "country": "Turkey",
+    "population": 59423278
+  },
+  {
+    "year": 1996,
+    "country": "Ukraine",
+    "population": 51057800
+  },
+  {
+    "year": 1996,
+    "country": "United Kingdom",
+    "population": 58166950
+  },
+  {
+    "year": 1996,
+    "country": "Monaco",
+    "population": 31001
+  },
+  {
+    "year": 1996,
+    "country": "Lithuania",
+    "population": 3601613
+  },
+  {
+    "year": 1996,
+    "country": "Netherlands",
+    "population": 15530498
+  },
+  {
+    "year": 1997,
+    "country": "Austria",
+    "population": 7968041
+  },
+  {
+    "year": 1997,
+    "country": "Belgium",
+    "population": 10181245
+  },
+  {
+    "year": 1997,
+    "country": "Bosnia and Herzegovina",
+    "population": 3736070
+  },
+  {
+    "year": 1997,
+    "country": "Croatia",
+    "population": 4534920
+  },
+  {
+    "year": 1997,
+    "country": "Cyprus",
+    "population": 891190
+  },
+  {
+    "year": 1997,
+    "country": "Czech Republic",
+    "population": 10304131
+  },
+  {
+    "year": 1997,
+    "country": "Denmark",
+    "population": 5284991
+  },
+  {
+    "year": 1997,
+    "country": "Estonia",
+    "population": 1399535
+  },
+  {
+    "year": 1997,
+    "country": "Finland",
+    "population": 5139835
+  },
+  {
+    "year": 1997,
+    "country": "France",
+    "population": 59964841
+  },
+  {
+    "year": 1997,
+    "country": "Germany",
+    "population": 82034771
+  },
+  {
+    "year": 1997,
+    "country": "Greece",
+    "population": 10661259
+  },
+  {
+    "year": 1997,
+    "country": "Hungary",
+    "population": 10290486
+  },
+  {
+    "year": 1997,
+    "country": "Iceland",
+    "population": 271128
+  },
+  {
+    "year": 1997,
+    "country": "Ireland",
+    "population": 3674171
+  },
+  {
+    "year": 1997,
+    "country": "Italy",
+    "population": 56890372
+  },
+  {
+    "year": 1997,
+    "country": "Liechtenstein",
+    "population": 31830
+  },
+  {
+    "year": 1997,
+    "country": "Luxembourg",
+    "population": 419450
+  },
+  {
+    "year": 1997,
+    "country": "Norway",
+    "population": 4405157
+  },
+  {
+    "year": 1997,
+    "country": "Poland",
+    "population": 38649660
+  },
+  {
+    "year": 1997,
+    "country": "Portugal",
+    "population": 10108977
+  },
+  {
+    "year": 1997,
+    "country": "Romania",
+    "population": 22553978
+  },
+  {
+    "year": 1997,
+    "country": "Russian Federation",
+    "population": 147915361
+  },
+  {
+    "year": 1997,
+    "country": "Serbia",
+    "population": 7596501
+  },
+  {
+    "year": 1997,
+    "country": "Slovak Republic",
+    "population": 5383291
+  },
+  {
+    "year": 1997,
+    "country": "Slovenia",
+    "population": 1985956
+  },
+  {
+    "year": 1997,
+    "country": "Spain",
+    "population": 40057389
+  },
+  {
+    "year": 1997,
+    "country": "Sweden",
+    "population": 8846062
+  },
+  {
+    "year": 1997,
+    "country": "Switzerland",
+    "population": 7088906
+  },
+  {
+    "year": 1997,
+    "country": "Turkey",
+    "population": 60372571
+  },
+  {
+    "year": 1997,
+    "country": "Ukraine",
+    "population": 50594600
+  },
+  {
+    "year": 1997,
+    "country": "United Kingdom",
+    "population": 58316954
+  },
+  {
+    "year": 1997,
+    "country": "Monaco",
+    "population": 31268
+  },
+  {
+    "year": 1997,
+    "country": "Lithuania",
+    "population": 3575137
+  },
+  {
+    "year": 1997,
+    "country": "Netherlands",
+    "population": 15610650
+  },
+  {
+    "year": 1998,
+    "country": "Austria",
+    "population": 7976789
+  },
+  {
+    "year": 1998,
+    "country": "Belgium",
+    "population": 10203008
+  },
+  {
+    "year": 1998,
+    "country": "Bosnia and Herzegovina",
+    "population": 3734338
+  },
+  {
+    "year": 1998,
+    "country": "Croatia",
+    "population": 4532135
+  },
+  {
+    "year": 1998,
+    "country": "Cyprus",
+    "population": 908710
+  },
+  {
+    "year": 1998,
+    "country": "Czech Republic",
+    "population": 10294373
+  },
+  {
+    "year": 1998,
+    "country": "Denmark",
+    "population": 5304219
+  },
+  {
+    "year": 1998,
+    "country": "Estonia",
+    "population": 1386156
+  },
+  {
+    "year": 1998,
+    "country": "Finland",
+    "population": 5153498
+  },
+  {
+    "year": 1998,
+    "country": "France",
+    "population": 60186284
+  },
+  {
+    "year": 1998,
+    "country": "Germany",
+    "population": 82047195
+  },
+  {
+    "year": 1998,
+    "country": "Greece",
+    "population": 10720509
+  },
+  {
+    "year": 1998,
+    "country": "Hungary",
+    "population": 10266570
+  },
+  {
+    "year": 1998,
+    "country": "Iceland",
+    "population": 274047
+  },
+  {
+    "year": 1998,
+    "country": "Ireland",
+    "population": 3712696
+  },
+  {
+    "year": 1998,
+    "country": "Italy",
+    "population": 56906744
+  },
+  {
+    "year": 1998,
+    "country": "Liechtenstein",
+    "population": 32306
+  },
+  {
+    "year": 1998,
+    "country": "Luxembourg",
+    "population": 424700
+  },
+  {
+    "year": 1998,
+    "country": "Norway",
+    "population": 4431464
+  },
+  {
+    "year": 1998,
+    "country": "Poland",
+    "population": 38663481
+  },
+  {
+    "year": 1998,
+    "country": "Portugal",
+    "population": 10160196
+  },
+  {
+    "year": 1998,
+    "country": "Romania",
+    "population": 22507344
+  },
+  {
+    "year": 1998,
+    "country": "Russian Federation",
+    "population": 147670784
+  },
+  {
+    "year": 1998,
+    "country": "Serbia",
+    "population": 7567745
+  },
+  {
+    "year": 1998,
+    "country": "Slovak Republic",
+    "population": 5390516
+  },
+  {
+    "year": 1998,
+    "country": "Slovenia",
+    "population": 1981629
+  },
+  {
+    "year": 1998,
+    "country": "Spain",
+    "population": 40223509
+  },
+  {
+    "year": 1998,
+    "country": "Sweden",
+    "population": 8850974
+  },
+  {
+    "year": 1998,
+    "country": "Switzerland",
+    "population": 7110001
+  },
+  {
+    "year": 1998,
+    "country": "Turkey",
+    "population": 61329665
+  },
+  {
+    "year": 1998,
+    "country": "Ukraine",
+    "population": 50144500
+  },
+  {
+    "year": 1998,
+    "country": "United Kingdom",
+    "population": 58487141
+  },
+  {
+    "year": 1998,
+    "country": "Monaco",
+    "population": 31554
+  },
+  {
+    "year": 1998,
+    "country": "Lithuania",
+    "population": 3549331
+  },
+  {
+    "year": 1998,
+    "country": "Netherlands",
+    "population": 15707209
+  },
+  {
+    "year": 1999,
+    "country": "Austria",
+    "population": 7992324
+  },
+  {
+    "year": 1999,
+    "country": "Belgium",
+    "population": 10226419
+  },
+  {
+    "year": 1999,
+    "country": "Bosnia and Herzegovina",
+    "population": 3743353
+  },
+  {
+    "year": 1999,
+    "country": "Croatia",
+    "population": 4512597
+  },
+  {
+    "year": 1999,
+    "country": "Cyprus",
+    "population": 926049
+  },
+  {
+    "year": 1999,
+    "country": "Czech Republic",
+    "population": 10283860
+  },
+  {
+    "year": 1999,
+    "country": "Denmark",
+    "population": 5321799
+  },
+  {
+    "year": 1999,
+    "country": "Estonia",
+    "population": 1390244
+  },
+  {
+    "year": 1999,
+    "country": "Finland",
+    "population": 5165474
+  },
+  {
+    "year": 1999,
+    "country": "France",
+    "population": 60496708
+  },
+  {
+    "year": 1999,
+    "country": "Germany",
+    "population": 82100243
+  },
+  {
+    "year": 1999,
+    "country": "Greece",
+    "population": 10761698
+  },
+  {
+    "year": 1999,
+    "country": "Hungary",
+    "population": 10237530
+  },
+  {
+    "year": 1999,
+    "country": "Iceland",
+    "population": 277381
+  },
+  {
+    "year": 1999,
+    "country": "Ireland",
+    "population": 3754786
+  },
+  {
+    "year": 1999,
+    "country": "Italy",
+    "population": 56916317
+  },
+  {
+    "year": 1999,
+    "country": "Liechtenstein",
+    "population": 32765
+  },
+  {
+    "year": 1999,
+    "country": "Luxembourg",
+    "population": 430475
+  },
+  {
+    "year": 1999,
+    "country": "Norway",
+    "population": 4461913
+  },
+  {
+    "year": 1999,
+    "country": "Poland",
+    "population": 38660271
+  },
+  {
+    "year": 1999,
+    "country": "Portugal",
+    "population": 10217828
+  },
+  {
+    "year": 1999,
+    "country": "Romania",
+    "population": 22472040
+  },
+  {
+    "year": 1999,
+    "country": "Russian Federation",
+    "population": 147214776
+  },
+  {
+    "year": 1999,
+    "country": "Serbia",
+    "population": 7540401
+  },
+  {
+    "year": 1999,
+    "country": "Slovak Republic",
+    "population": 5396020
+  },
+  {
+    "year": 1999,
+    "country": "Slovenia",
+    "population": 1983045
+  },
+  {
+    "year": 1999,
+    "country": "Spain",
+    "population": 40386875
+  },
+  {
+    "year": 1999,
+    "country": "Sweden",
+    "population": 8857874
+  },
+  {
+    "year": 1999,
+    "country": "Switzerland",
+    "population": 7143991
+  },
+  {
+    "year": 1999,
+    "country": "Turkey",
+    "population": 62287391
+  },
+  {
+    "year": 1999,
+    "country": "Ukraine",
+    "population": 49674000
+  },
+  {
+    "year": 1999,
+    "country": "United Kingdom",
+    "population": 58682466
+  },
+  {
+    "year": 1999,
+    "country": "Monaco",
+    "population": 31836
+  },
+  {
+    "year": 1999,
+    "country": "Lithuania",
+    "population": 3524238
+  },
+  {
+    "year": 1999,
+    "country": "Netherlands",
+    "population": 15812088
+  },
+  {
+    "year": 2000,
+    "country": "Austria",
+    "population": 8011566
+  },
+  {
+    "year": 2000,
+    "country": "Belgium",
+    "population": 10251250
+  },
+  {
+    "year": 2000,
+    "country": "Bosnia and Herzegovina",
+    "population": 3751176
+  },
+  {
+    "year": 2000,
+    "country": "Croatia",
+    "population": 4468302
+  },
+  {
+    "year": 2000,
+    "country": "Cyprus",
+    "population": 943288
+  },
+  {
+    "year": 2000,
+    "country": "Czech Republic",
+    "population": 10255063
+  },
+  {
+    "year": 2000,
+    "country": "Denmark",
+    "population": 5339616
+  },
+  {
+    "year": 2000,
+    "country": "Estonia",
+    "population": 1396985
+  },
+  {
+    "year": 2000,
+    "country": "Finland",
+    "population": 5176209
+  },
+  {
+    "year": 2000,
+    "country": "France",
+    "population": 60912500
+  },
+  {
+    "year": 2000,
+    "country": "Germany",
+    "population": 82211508
+  },
+  {
+    "year": 2000,
+    "country": "Greece",
+    "population": 10805808
+  },
+  {
+    "year": 2000,
+    "country": "Hungary",
+    "population": 10210971
+  },
+  {
+    "year": 2000,
+    "country": "Iceland",
+    "population": 281205
+  },
+  {
+    "year": 2000,
+    "country": "Ireland",
+    "population": 3805174
+  },
+  {
+    "year": 2000,
+    "country": "Italy",
+    "population": 56942108
+  },
+  {
+    "year": 2000,
+    "country": "Liechtenstein",
+    "population": 33184
+  },
+  {
+    "year": 2000,
+    "country": "Luxembourg",
+    "population": 436300
+  },
+  {
+    "year": 2000,
+    "country": "Norway",
+    "population": 4490967
+  },
+  {
+    "year": 2000,
+    "country": "Poland",
+    "population": 38258629
+  },
+  {
+    "year": 2000,
+    "country": "Portugal",
+    "population": 10289898
+  },
+  {
+    "year": 2000,
+    "country": "Romania",
+    "population": 22442971
+  },
+  {
+    "year": 2000,
+    "country": "Russian Federation",
+    "population": 146596869
+  },
+  {
+    "year": 2000,
+    "country": "Serbia",
+    "population": 7516346
+  },
+  {
+    "year": 2000,
+    "country": "Slovak Republic",
+    "population": 5388720
+  },
+  {
+    "year": 2000,
+    "country": "Slovenia",
+    "population": 1988925
+  },
+  {
+    "year": 2000,
+    "country": "Spain",
+    "population": 40567864
+  },
+  {
+    "year": 2000,
+    "country": "Sweden",
+    "population": 8872109
+  },
+  {
+    "year": 2000,
+    "country": "Switzerland",
+    "population": 7184250
+  },
+  {
+    "year": 2000,
+    "country": "Turkey",
+    "population": 63240196
+  },
+  {
+    "year": 2000,
+    "country": "Ukraine",
+    "population": 49176500
+  },
+  {
+    "year": 2000,
+    "country": "United Kingdom",
+    "population": 58892514
+  },
+  {
+    "year": 2000,
+    "country": "Monaco",
+    "population": 32148
+  },
+  {
+    "year": 2000,
+    "country": "Lithuania",
+    "population": 3499536
+  },
+  {
+    "year": 2000,
+    "country": "Netherlands",
+    "population": 15925513
+  },
+  {
+    "year": 2001,
+    "country": "Austria",
+    "population": 8042293
+  },
+  {
+    "year": 2001,
+    "country": "Belgium",
+    "population": 10286570
+  },
+  {
+    "year": 2001,
+    "country": "Bosnia and Herzegovina",
+    "population": 3755514
+  },
+  {
+    "year": 2001,
+    "country": "Croatia",
+    "population": 4299642
+  },
+  {
+    "year": 2001,
+    "country": "Cyprus",
+    "population": 960274
+  },
+  {
+    "year": 2001,
+    "country": "Czech Republic",
+    "population": 10216605
+  },
+  {
+    "year": 2001,
+    "country": "Denmark",
+    "population": 5358783
+  },
+  {
+    "year": 2001,
+    "country": "Estonia",
+    "population": 1388115
+  },
+  {
+    "year": 2001,
+    "country": "Finland",
+    "population": 5188008
+  },
+  {
+    "year": 2001,
+    "country": "France",
+    "population": 61357432
+  },
+  {
+    "year": 2001,
+    "country": "Germany",
+    "population": 82349925
+  },
+  {
+    "year": 2001,
+    "country": "Greece",
+    "population": 10862132
+  },
+  {
+    "year": 2001,
+    "country": "Hungary",
+    "population": 10187576
+  },
+  {
+    "year": 2001,
+    "country": "Iceland",
+    "population": 284968
+  },
+  {
+    "year": 2001,
+    "country": "Ireland",
+    "population": 3866243
+  },
+  {
+    "year": 2001,
+    "country": "Italy",
+    "population": 56974100
+  },
+  {
+    "year": 2001,
+    "country": "Liechtenstein",
+    "population": 33543
+  },
+  {
+    "year": 2001,
+    "country": "Luxembourg",
+    "population": 441525
+  },
+  {
+    "year": 2001,
+    "country": "Norway",
+    "population": 4513751
+  },
+  {
+    "year": 2001,
+    "country": "Poland",
+    "population": 38248076
+  },
+  {
+    "year": 2001,
+    "country": "Portugal",
+    "population": 10362722
+  },
+  {
+    "year": 2001,
+    "country": "Romania",
+    "population": 22131970
+  },
+  {
+    "year": 2001,
+    "country": "Russian Federation",
+    "population": 145976482
+  },
+  {
+    "year": 2001,
+    "country": "Serbia",
+    "population": 7503433
+  },
+  {
+    "year": 2001,
+    "country": "Slovak Republic",
+    "population": 5378867
+  },
+  {
+    "year": 2001,
+    "country": "Slovenia",
+    "population": 1992060
+  },
+  {
+    "year": 2001,
+    "country": "Spain",
+    "population": 40850412
+  },
+  {
+    "year": 2001,
+    "country": "Sweden",
+    "population": 8895960
+  },
+  {
+    "year": 2001,
+    "country": "Switzerland",
+    "population": 7229854
+  },
+  {
+    "year": 2001,
+    "country": "Turkey",
+    "population": 64192243
+  },
+  {
+    "year": 2001,
+    "country": "Ukraine",
+    "population": 48662400
+  },
+  {
+    "year": 2001,
+    "country": "United Kingdom",
+    "population": 59119673
+  },
+  {
+    "year": 2001,
+    "country": "Monaco",
+    "population": 32474
+  },
+  {
+    "year": 2001,
+    "country": "Lithuania",
+    "population": 3470818
+  },
+  {
+    "year": 2001,
+    "country": "Netherlands",
+    "population": 16046180
+  },
+  {
+    "year": 2002,
+    "country": "Austria",
+    "population": 8081957
+  },
+  {
+    "year": 2002,
+    "country": "Belgium",
+    "population": 10332785
+  },
+  {
+    "year": 2002,
+    "country": "Bosnia and Herzegovina",
+    "population": 3759389
+  },
+  {
+    "year": 2002,
+    "country": "Croatia",
+    "population": 4302174
+  },
+  {
+    "year": 2002,
+    "country": "Cyprus",
+    "population": 976968
+  },
+  {
+    "year": 2002,
+    "country": "Czech Republic",
+    "population": 10196916
+  },
+  {
+    "year": 2002,
+    "country": "Denmark",
+    "population": 5375931
+  },
+  {
+    "year": 2002,
+    "country": "Estonia",
+    "population": 1379350
+  },
+  {
+    "year": 2002,
+    "country": "Finland",
+    "population": 5200598
+  },
+  {
+    "year": 2002,
+    "country": "France",
+    "population": 61805266
+  },
+  {
+    "year": 2002,
+    "country": "Germany",
+    "population": 82488495
+  },
+  {
+    "year": 2002,
+    "country": "Greece",
+    "population": 10902022
+  },
+  {
+    "year": 2002,
+    "country": "Hungary",
+    "population": 10158608
+  },
+  {
+    "year": 2002,
+    "country": "Iceland",
+    "population": 287523
+  },
+  {
+    "year": 2002,
+    "country": "Ireland",
+    "population": 3931947
+  },
+  {
+    "year": 2002,
+    "country": "Italy",
+    "population": 57059007
+  },
+  {
+    "year": 2002,
+    "country": "Liechtenstein",
+    "population": 33885
+  },
+  {
+    "year": 2002,
+    "country": "Luxembourg",
+    "population": 446175
+  },
+  {
+    "year": 2002,
+    "country": "Norway",
+    "population": 4538159
+  },
+  {
+    "year": 2002,
+    "country": "Poland",
+    "population": 38230364
+  },
+  {
+    "year": 2002,
+    "country": "Portugal",
+    "population": 10419631
+  },
+  {
+    "year": 2002,
+    "country": "Romania",
+    "population": 21730496
+  },
+  {
+    "year": 2002,
+    "country": "Russian Federation",
+    "population": 145306497
+  },
+  {
+    "year": 2002,
+    "country": "Serbia",
+    "population": 7496522
+  },
+  {
+    "year": 2002,
+    "country": "Slovak Republic",
+    "population": 5376912
+  },
+  {
+    "year": 2002,
+    "country": "Slovenia",
+    "population": 1994530
+  },
+  {
+    "year": 2002,
+    "country": "Spain",
+    "population": 41431558
+  },
+  {
+    "year": 2002,
+    "country": "Sweden",
+    "population": 8924958
+  },
+  {
+    "year": 2002,
+    "country": "Switzerland",
+    "population": 7284753
+  },
+  {
+    "year": 2002,
+    "country": "Turkey",
+    "population": 65145357
+  },
+  {
+    "year": 2002,
+    "country": "Ukraine",
+    "population": 48202470
+  },
+  {
+    "year": 2002,
+    "country": "United Kingdom",
+    "population": 59370479
+  },
+  {
+    "year": 2002,
+    "country": "Monaco",
+    "population": 32804
+  },
+  {
+    "year": 2002,
+    "country": "Lithuania",
+    "population": 3443067
+  },
+  {
+    "year": 2002,
+    "country": "Netherlands",
+    "population": 16148929
+  },
+  {
+    "year": 2003,
+    "country": "Austria",
+    "population": 8121423
+  },
+  {
+    "year": 2003,
+    "country": "Belgium",
+    "population": 10376133
+  },
+  {
+    "year": 2003,
+    "country": "Bosnia and Herzegovina",
+    "population": 3762179
+  },
+  {
+    "year": 2003,
+    "country": "Croatia",
+    "population": 4303399
+  },
+  {
+    "year": 2003,
+    "country": "Cyprus",
+    "population": 993562
+  },
+  {
+    "year": 2003,
+    "country": "Czech Republic",
+    "population": 10193998
+  },
+  {
+    "year": 2003,
+    "country": "Denmark",
+    "population": 5390574
+  },
+  {
+    "year": 2003,
+    "country": "Estonia",
+    "population": 1370720
+  },
+  {
+    "year": 2003,
+    "country": "Finland",
+    "population": 5213014
+  },
+  {
+    "year": 2003,
+    "country": "France",
+    "population": 62244880
+  },
+  {
+    "year": 2003,
+    "country": "Germany",
+    "population": 82534176
+  },
+  {
+    "year": 2003,
+    "country": "Greece",
+    "population": 10928070
+  },
+  {
+    "year": 2003,
+    "country": "Hungary",
+    "population": 10129552
+  },
+  {
+    "year": 2003,
+    "country": "Iceland",
+    "population": 289521
+  },
+  {
+    "year": 2003,
+    "country": "Ireland",
+    "population": 3996521
+  },
+  {
+    "year": 2003,
+    "country": "Italy",
+    "population": 57313203
+  },
+  {
+    "year": 2003,
+    "country": "Liechtenstein",
+    "population": 34172
+  },
+  {
+    "year": 2003,
+    "country": "Luxembourg",
+    "population": 451630
+  },
+  {
+    "year": 2003,
+    "country": "Norway",
+    "population": 4564855
+  },
+  {
+    "year": 2003,
+    "country": "Poland",
+    "population": 38204570
+  },
+  {
+    "year": 2003,
+    "country": "Portugal",
+    "population": 10458821
+  },
+  {
+    "year": 2003,
+    "country": "Romania",
+    "population": 21574326
+  },
+  {
+    "year": 2003,
+    "country": "Russian Federation",
+    "population": 144648618
+  },
+  {
+    "year": 2003,
+    "country": "Serbia",
+    "population": 7480591
+  },
+  {
+    "year": 2003,
+    "country": "Slovak Republic",
+    "population": 5373374
+  },
+  {
+    "year": 2003,
+    "country": "Slovenia",
+    "population": 1995733
+  },
+  {
+    "year": 2003,
+    "country": "Spain",
+    "population": 42187645
+  },
+  {
+    "year": 2003,
+    "country": "Sweden",
+    "population": 8958229
+  },
+  {
+    "year": 2003,
+    "country": "Switzerland",
+    "population": 7339001
+  },
+  {
+    "year": 2003,
+    "country": "Turkey",
+    "population": 66089402
+  },
+  {
+    "year": 2003,
+    "country": "Ukraine",
+    "population": 47812949
+  },
+  {
+    "year": 2003,
+    "country": "United Kingdom",
+    "population": 59647577
+  },
+  {
+    "year": 2003,
+    "country": "Monaco",
+    "population": 33144
+  },
+  {
+    "year": 2003,
+    "country": "Lithuania",
+    "population": 3415213
+  },
+  {
+    "year": 2003,
+    "country": "Netherlands",
+    "population": 16225302
+  },
+  {
+    "year": 2004,
+    "country": "Austria",
+    "population": 8171966
+  },
+  {
+    "year": 2004,
+    "country": "Belgium",
+    "population": 10421137
+  },
+  {
+    "year": 2004,
+    "country": "Bosnia and Herzegovina",
+    "population": 3764194
+  },
+  {
+    "year": 2004,
+    "country": "Croatia",
+    "population": 4304600
+  },
+  {
+    "year": 2004,
+    "country": "Cyprus",
+    "population": 1010410
+  },
+  {
+    "year": 2004,
+    "country": "Czech Republic",
+    "population": 10197101
+  },
+  {
+    "year": 2004,
+    "country": "Denmark",
+    "population": 5404523
+  },
+  {
+    "year": 2004,
+    "country": "Estonia",
+    "population": 1362550
+  },
+  {
+    "year": 2004,
+    "country": "Finland",
+    "population": 5228172
+  },
+  {
+    "year": 2004,
+    "country": "France",
+    "population": 62704901
+  },
+  {
+    "year": 2004,
+    "country": "Germany",
+    "population": 82516260
+  },
+  {
+    "year": 2004,
+    "country": "Greece",
+    "population": 10955141
+  },
+  {
+    "year": 2004,
+    "country": "Hungary",
+    "population": 10107146
+  },
+  {
+    "year": 2004,
+    "country": "Iceland",
+    "population": 292074
+  },
+  {
+    "year": 2004,
+    "country": "Ireland",
+    "population": 4070262
+  },
+  {
+    "year": 2004,
+    "country": "Italy",
+    "population": 57685327
+  },
+  {
+    "year": 2004,
+    "country": "Liechtenstein",
+    "population": 34444
+  },
+  {
+    "year": 2004,
+    "country": "Luxembourg",
+    "population": 458095
+  },
+  {
+    "year": 2004,
+    "country": "Norway",
+    "population": 4591910
+  },
+  {
+    "year": 2004,
+    "country": "Poland",
+    "population": 38182222
+  },
+  {
+    "year": 2004,
+    "country": "Portugal",
+    "population": 10483861
+  },
+  {
+    "year": 2004,
+    "country": "Romania",
+    "population": 21451748
+  },
+  {
+    "year": 2004,
+    "country": "Russian Federation",
+    "population": 144067316
+  },
+  {
+    "year": 2004,
+    "country": "Serbia",
+    "population": 7463157
+  },
+  {
+    "year": 2004,
+    "country": "Slovak Republic",
+    "population": 5372280
+  },
+  {
+    "year": 2004,
+    "country": "Slovenia",
+    "population": 1997012
+  },
+  {
+    "year": 2004,
+    "country": "Spain",
+    "population": 42921895
+  },
+  {
+    "year": 2004,
+    "country": "Sweden",
+    "population": 8993531
+  },
+  {
+    "year": 2004,
+    "country": "Switzerland",
+    "population": 7389625
+  },
+  {
+    "year": 2004,
+    "country": "Turkey",
+    "population": 67010930
+  },
+  {
+    "year": 2004,
+    "country": "Ukraine",
+    "population": 47451626
+  },
+  {
+    "year": 2004,
+    "country": "United Kingdom",
+    "population": 59987905
+  },
+  {
+    "year": 2004,
+    "country": "Monaco",
+    "population": 33499
+  },
+  {
+    "year": 2004,
+    "country": "Lithuania",
+    "population": 3377075
+  },
+  {
+    "year": 2004,
+    "country": "Netherlands",
+    "population": 16281779
+  },
+  {
+    "year": 2005,
+    "country": "Austria",
+    "population": 8227829
+  },
+  {
+    "year": 2005,
+    "country": "Belgium",
+    "population": 10478617
+  },
+  {
+    "year": 2005,
+    "country": "Bosnia and Herzegovina",
+    "population": 3765332
+  },
+  {
+    "year": 2005,
+    "country": "Croatia",
+    "population": 4310145
+  },
+  {
+    "year": 2005,
+    "country": "Cyprus",
+    "population": 1027657
+  },
+  {
+    "year": 2005,
+    "country": "Czech Republic",
+    "population": 10211216
+  },
+  {
+    "year": 2005,
+    "country": "Denmark",
+    "population": 5419432
+  },
+  {
+    "year": 2005,
+    "country": "Estonia",
+    "population": 1354775
+  },
+  {
+    "year": 2005,
+    "country": "Finland",
+    "population": 5246096
+  },
+  {
+    "year": 2005,
+    "country": "France",
+    "population": 63179356
+  },
+  {
+    "year": 2005,
+    "country": "Germany",
+    "population": 82469422
+  },
+  {
+    "year": 2005,
+    "country": "Greece",
+    "population": 10987314
+  },
+  {
+    "year": 2005,
+    "country": "Hungary",
+    "population": 10087065
+  },
+  {
+    "year": 2005,
+    "country": "Iceland",
+    "population": 296734
+  },
+  {
+    "year": 2005,
+    "country": "Ireland",
+    "population": 4159914
+  },
+  {
+    "year": 2005,
+    "country": "Italy",
+    "population": 57969484
+  },
+  {
+    "year": 2005,
+    "country": "Liechtenstein",
+    "population": 34718
+  },
+  {
+    "year": 2005,
+    "country": "Luxembourg",
+    "population": 465158
+  },
+  {
+    "year": 2005,
+    "country": "Norway",
+    "population": 4623291
+  },
+  {
+    "year": 2005,
+    "country": "Poland",
+    "population": 38165445
+  },
+  {
+    "year": 2005,
+    "country": "Portugal",
+    "population": 10503330
+  },
+  {
+    "year": 2005,
+    "country": "Romania",
+    "population": 21319685
+  },
+  {
+    "year": 2005,
+    "country": "Russian Federation",
+    "population": 143518814
+  },
+  {
+    "year": 2005,
+    "country": "Serbia",
+    "population": 7440769
+  },
+  {
+    "year": 2005,
+    "country": "Slovak Republic",
+    "population": 5372807
+  },
+  {
+    "year": 2005,
+    "country": "Slovenia",
+    "population": 2000474
+  },
+  {
+    "year": 2005,
+    "country": "Spain",
+    "population": 43653155
+  },
+  {
+    "year": 2005,
+    "country": "Sweden",
+    "population": 9029572
+  },
+  {
+    "year": 2005,
+    "country": "Switzerland",
+    "population": 7437115
+  },
+  {
+    "year": 2005,
+    "country": "Turkey",
+    "population": 67903461
+  },
+  {
+    "year": 2005,
+    "country": "Ukraine",
+    "population": 47105171
+  },
+  {
+    "year": 2005,
+    "country": "United Kingdom",
+    "population": 60401206
+  },
+  {
+    "year": 2005,
+    "country": "Monaco",
+    "population": 33842
+  },
+  {
+    "year": 2005,
+    "country": "Lithuania",
+    "population": 3322528
+  },
+  {
+    "year": 2005,
+    "country": "Netherlands",
+    "population": 16319868
+  },
+  {
+    "year": 2006,
+    "country": "Austria",
+    "population": 8268641
+  },
+  {
+    "year": 2006,
+    "country": "Belgium",
+    "population": 10547958
+  },
+  {
+    "year": 2006,
+    "country": "Bosnia and Herzegovina",
+    "population": 3765422
+  },
+  {
+    "year": 2006,
+    "country": "Croatia",
+    "population": 4311159
+  },
+  {
+    "year": 2006,
+    "country": "Cyprus",
+    "population": 1045508
+  },
+  {
+    "year": 2006,
+    "country": "Czech Republic",
+    "population": 10238905
+  },
+  {
+    "year": 2006,
+    "country": "Denmark",
+    "population": 5437272
+  },
+  {
+    "year": 2006,
+    "country": "Estonia",
+    "population": 1346810
+  },
+  {
+    "year": 2006,
+    "country": "Finland",
+    "population": 5266268
+  },
+  {
+    "year": 2006,
+    "country": "France",
+    "population": 63621376
+  },
+  {
+    "year": 2006,
+    "country": "Germany",
+    "population": 82376451
+  },
+  {
+    "year": 2006,
+    "country": "Greece",
+    "population": 11020362
+  },
+  {
+    "year": 2006,
+    "country": "Hungary",
+    "population": 10071370
+  },
+  {
+    "year": 2006,
+    "country": "Iceland",
+    "population": 303782
+  },
+  {
+    "year": 2006,
+    "country": "Ireland",
+    "population": 4273591
+  },
+  {
+    "year": 2006,
+    "country": "Italy",
+    "population": 58143979
+  },
+  {
+    "year": 2006,
+    "country": "Liechtenstein",
+    "population": 34975
+  },
+  {
+    "year": 2006,
+    "country": "Luxembourg",
+    "population": 472637
+  },
+  {
+    "year": 2006,
+    "country": "Norway",
+    "population": 4660677
+  },
+  {
+    "year": 2006,
+    "country": "Poland",
+    "population": 38141267
+  },
+  {
+    "year": 2006,
+    "country": "Portugal",
+    "population": 10522288
+  },
+  {
+    "year": 2006,
+    "country": "Romania",
+    "population": 21193760
+  },
+  {
+    "year": 2006,
+    "country": "Russian Federation",
+    "population": 143049637
+  },
+  {
+    "year": 2006,
+    "country": "Serbia",
+    "population": 7411569
+  },
+  {
+    "year": 2006,
+    "country": "Slovak Republic",
+    "population": 5373054
+  },
+  {
+    "year": 2006,
+    "country": "Slovenia",
+    "population": 2006868
+  },
+  {
+    "year": 2006,
+    "country": "Spain",
+    "population": 44397319
+  },
+  {
+    "year": 2006,
+    "country": "Sweden",
+    "population": 9080505
+  },
+  {
+    "year": 2006,
+    "country": "Switzerland",
+    "population": 7483934
+  },
+  {
+    "year": 2006,
+    "country": "Turkey",
+    "population": 68756809
+  },
+  {
+    "year": 2006,
+    "country": "Ukraine",
+    "population": 46787786
+  },
+  {
+    "year": 2006,
+    "country": "United Kingdom",
+    "population": 60846820
+  },
+  {
+    "year": 2006,
+    "country": "Monaco",
+    "population": 34189
+  },
+  {
+    "year": 2006,
+    "country": "Lithuania",
+    "population": 3269909
+  },
+  {
+    "year": 2006,
+    "country": "Netherlands",
+    "population": 16346101
+  },
+  {
+    "year": 2007,
+    "country": "Austria",
+    "population": 8295487
+  },
+  {
+    "year": 2007,
+    "country": "Belgium",
+    "population": 10625700
+  },
+  {
+    "year": 2007,
+    "country": "Bosnia and Herzegovina",
+    "population": 3762791
+  },
+  {
+    "year": 2007,
+    "country": "Croatia",
+    "population": 4310217
+  },
+  {
+    "year": 2007,
+    "country": "Cyprus",
+    "population": 1063708
+  },
+  {
+    "year": 2007,
+    "country": "Czech Republic",
+    "population": 10298828
+  },
+  {
+    "year": 2007,
+    "country": "Denmark",
+    "population": 5461438
+  },
+  {
+    "year": 2007,
+    "country": "Estonia",
+    "population": 1340680
+  },
+  {
+    "year": 2007,
+    "country": "Finland",
+    "population": 5288720
+  },
+  {
+    "year": 2007,
+    "country": "France",
+    "population": 64016227
+  },
+  {
+    "year": 2007,
+    "country": "Germany",
+    "population": 82266372
+  },
+  {
+    "year": 2007,
+    "country": "Greece",
+    "population": 11048473
+  },
+  {
+    "year": 2007,
+    "country": "Hungary",
+    "population": 10055780
+  },
+  {
+    "year": 2007,
+    "country": "Iceland",
+    "population": 311566
+  },
+  {
+    "year": 2007,
+    "country": "Ireland",
+    "population": 4398942
+  },
+  {
+    "year": 2007,
+    "country": "Italy",
+    "population": 58438310
+  },
+  {
+    "year": 2007,
+    "country": "Liechtenstein",
+    "population": 35217
+  },
+  {
+    "year": 2007,
+    "country": "Luxembourg",
+    "population": 479993
+  },
+  {
+    "year": 2007,
+    "country": "Norway",
+    "population": 4709153
+  },
+  {
+    "year": 2007,
+    "country": "Poland",
+    "population": 38120560
+  },
+  {
+    "year": 2007,
+    "country": "Portugal",
+    "population": 10542964
+  },
+  {
+    "year": 2007,
+    "country": "Romania",
+    "population": 20882982
+  },
+  {
+    "year": 2007,
+    "country": "Russian Federation",
+    "population": 142805114
+  },
+  {
+    "year": 2007,
+    "country": "Serbia",
+    "population": 7381579
+  },
+  {
+    "year": 2007,
+    "country": "Slovak Republic",
+    "population": 5374622
+  },
+  {
+    "year": 2007,
+    "country": "Slovenia",
+    "population": 2018122
+  },
+  {
+    "year": 2007,
+    "country": "Spain",
+    "population": 45226803
+  },
+  {
+    "year": 2007,
+    "country": "Sweden",
+    "population": 9148092
+  },
+  {
+    "year": 2007,
+    "country": "Switzerland",
+    "population": 7551117
+  },
+  {
+    "year": 2007,
+    "country": "Turkey",
+    "population": 69581854
+  },
+  {
+    "year": 2007,
+    "country": "Ukraine",
+    "population": 46509355
+  },
+  {
+    "year": 2007,
+    "country": "United Kingdom",
+    "population": 61322463
+  },
+  {
+    "year": 2007,
+    "country": "Monaco",
+    "population": 34524
+  },
+  {
+    "year": 2007,
+    "country": "Lithuania",
+    "population": 3231294
+  },
+  {
+    "year": 2007,
+    "country": "Netherlands",
+    "population": 16381696
+  },
+  {
+    "year": 2008,
+    "country": "Austria",
+    "population": 8321496
+  },
+  {
+    "year": 2008,
+    "country": "Belgium",
+    "population": 10709973
+  },
+  {
+    "year": 2008,
+    "country": "Bosnia and Herzegovina",
+    "population": 3754261
+  },
+  {
+    "year": 2008,
+    "country": "Croatia",
+    "population": 4309705
+  },
+  {
+    "year": 2008,
+    "country": "Cyprus",
+    "population": 1081568
+  },
+  {
+    "year": 2008,
+    "country": "Czech Republic",
+    "population": 10384603
+  },
+  {
+    "year": 2008,
+    "country": "Denmark",
+    "population": 5493621
+  },
+  {
+    "year": 2008,
+    "country": "Estonia",
+    "population": 1337090
+  },
+  {
+    "year": 2008,
+    "country": "Finland",
+    "population": 5313399
+  },
+  {
+    "year": 2008,
+    "country": "France",
+    "population": 64374979
+  },
+  {
+    "year": 2008,
+    "country": "Germany",
+    "population": 82110097
+  },
+  {
+    "year": 2008,
+    "country": "Greece",
+    "population": 11077841
+  },
+  {
+    "year": 2008,
+    "country": "Hungary",
+    "population": 10038188
+  },
+  {
+    "year": 2008,
+    "country": "Iceland",
+    "population": 317414
+  },
+  {
+    "year": 2008,
+    "country": "Ireland",
+    "population": 4489544
+  },
+  {
+    "year": 2008,
+    "country": "Italy",
+    "population": 58826731
+  },
+  {
+    "year": 2008,
+    "country": "Liechtenstein",
+    "population": 35469
+  },
+  {
+    "year": 2008,
+    "country": "Luxembourg",
+    "population": 488650
+  },
+  {
+    "year": 2008,
+    "country": "Norway",
+    "population": 4768212
+  },
+  {
+    "year": 2008,
+    "country": "Poland",
+    "population": 38125759
+  },
+  {
+    "year": 2008,
+    "country": "Portugal",
+    "population": 10558177
+  },
+  {
+    "year": 2008,
+    "country": "Romania",
+    "population": 20537875
+  },
+  {
+    "year": 2008,
+    "country": "Russian Federation",
+    "population": 142742366
+  },
+  {
+    "year": 2008,
+    "country": "Serbia",
+    "population": 7350222
+  },
+  {
+    "year": 2008,
+    "country": "Slovak Republic",
+    "population": 5379233
+  },
+  {
+    "year": 2008,
+    "country": "Slovenia",
+    "population": 2021316
+  },
+  {
+    "year": 2008,
+    "country": "Spain",
+    "population": 45954106
+  },
+  {
+    "year": 2008,
+    "country": "Sweden",
+    "population": 9219637
+  },
+  {
+    "year": 2008,
+    "country": "Switzerland",
+    "population": 7647675
+  },
+  {
+    "year": 2008,
+    "country": "Turkey",
+    "population": 70418612
+  },
+  {
+    "year": 2008,
+    "country": "Ukraine",
+    "population": 46258189
+  },
+  {
+    "year": 2008,
+    "country": "United Kingdom",
+    "population": 61806995
+  },
+  {
+    "year": 2008,
+    "country": "Monaco",
+    "population": 34860
+  },
+  {
+    "year": 2008,
+    "country": "Lithuania",
+    "population": 3198231
+  },
+  {
+    "year": 2008,
+    "country": "Netherlands",
+    "population": 16445593
+  },
+  {
+    "year": 2009,
+    "country": "Austria",
+    "population": 8343323
+  },
+  {
+    "year": 2009,
+    "country": "Belgium",
+    "population": 10796493
+  },
+  {
+    "year": 2009,
+    "country": "Bosnia and Herzegovina",
+    "population": 3735945
+  },
+  {
+    "year": 2009,
+    "country": "Croatia",
+    "population": 4305181
+  },
+  {
+    "year": 2009,
+    "country": "Cyprus",
+    "population": 1098089
+  },
+  {
+    "year": 2009,
+    "country": "Czech Republic",
+    "population": 10443936
+  },
+  {
+    "year": 2009,
+    "country": "Denmark",
+    "population": 5523095
+  },
+  {
+    "year": 2009,
+    "country": "Estonia",
+    "population": 1334515
+  },
+  {
+    "year": 2009,
+    "country": "Finland",
+    "population": 5338871
+  },
+  {
+    "year": 2009,
+    "country": "France",
+    "population": 64707035
+  },
+  {
+    "year": 2009,
+    "country": "Germany",
+    "population": 81902307
+  },
+  {
+    "year": 2009,
+    "country": "Greece",
+    "population": 11107017
+  },
+  {
+    "year": 2009,
+    "country": "Hungary",
+    "population": 10022650
+  },
+  {
+    "year": 2009,
+    "country": "Iceland",
+    "population": 318499
+  },
+  {
+    "year": 2009,
+    "country": "Ireland",
+    "population": 4535375
+  },
+  {
+    "year": 2009,
+    "country": "Italy",
+    "population": 59095365
+  },
+  {
+    "year": 2009,
+    "country": "Liechtenstein",
+    "population": 35723
+  },
+  {
+    "year": 2009,
+    "country": "Luxembourg",
+    "population": 497783
+  },
+  {
+    "year": 2009,
+    "country": "Norway",
+    "population": 4828726
+  },
+  {
+    "year": 2009,
+    "country": "Poland",
+    "population": 38151603
+  },
+  {
+    "year": 2009,
+    "country": "Portugal",
+    "population": 10568247
+  },
+  {
+    "year": 2009,
+    "country": "Romania",
+    "population": 20367487
+  },
+  {
+    "year": 2009,
+    "country": "Russian Federation",
+    "population": 142785349
+  },
+  {
+    "year": 2009,
+    "country": "Serbia",
+    "population": 7320807
+  },
+  {
+    "year": 2009,
+    "country": "Slovak Republic",
+    "population": 5386406
+  },
+  {
+    "year": 2009,
+    "country": "Slovenia",
+    "population": 2039669
+  },
+  {
+    "year": 2009,
+    "country": "Spain",
+    "population": 46362946
+  },
+  {
+    "year": 2009,
+    "country": "Sweden",
+    "population": 9298515
+  },
+  {
+    "year": 2009,
+    "country": "Switzerland",
+    "population": 7743831
+  },
+  {
+    "year": 2009,
+    "country": "Turkey",
+    "population": 71321406
+  },
+  {
+    "year": 2009,
+    "country": "Ukraine",
+    "population": 46053331
+  },
+  {
+    "year": 2009,
+    "country": "United Kingdom",
+    "population": 62276270
+  },
+  {
+    "year": 2009,
+    "country": "Monaco",
+    "population": 35223
+  },
+  {
+    "year": 2009,
+    "country": "Lithuania",
+    "population": 3162916
+  },
+  {
+    "year": 2009,
+    "country": "Netherlands",
+    "population": 16530388
+  },
+  {
+    "year": 2010,
+    "country": "Austria",
+    "population": 8363404
+  },
+  {
+    "year": 2010,
+    "country": "Belgium",
+    "population": 10895586
+  },
+  {
+    "year": 2010,
+    "country": "Bosnia and Herzegovina",
+    "population": 3705478
+  },
+  {
+    "year": 2010,
+    "country": "Croatia",
+    "population": 4295427
+  },
+  {
+    "year": 2010,
+    "country": "Cyprus",
+    "population": 1112617
+  },
+  {
+    "year": 2010,
+    "country": "Czech Republic",
+    "population": 10474410
+  },
+  {
+    "year": 2010,
+    "country": "Denmark",
+    "population": 5547683
+  },
+  {
+    "year": 2010,
+    "country": "Estonia",
+    "population": 1331475
+  },
+  {
+    "year": 2010,
+    "country": "Finland",
+    "population": 5363352
+  },
+  {
+    "year": 2010,
+    "country": "France",
+    "population": 65027505
+  },
+  {
+    "year": 2010,
+    "country": "Germany",
+    "population": 81776930
+  },
+  {
+    "year": 2010,
+    "country": "Greece",
+    "population": 11121341
+  },
+  {
+    "year": 2010,
+    "country": "Hungary",
+    "population": 10000023
+  },
+  {
+    "year": 2010,
+    "country": "Iceland",
+    "population": 318041
+  },
+  {
+    "year": 2010,
+    "country": "Ireland",
+    "population": 4560155
+  },
+  {
+    "year": 2010,
+    "country": "Italy",
+    "population": 59277417
+  },
+  {
+    "year": 2010,
+    "country": "Liechtenstein",
+    "population": 35996
+  },
+  {
+    "year": 2010,
+    "country": "Luxembourg",
+    "population": 506953
+  },
+  {
+    "year": 2010,
+    "country": "Norway",
+    "population": 4889252
+  },
+  {
+    "year": 2010,
+    "country": "Poland",
+    "population": 38042794
+  },
+  {
+    "year": 2010,
+    "country": "Portugal",
+    "population": 10573100
+  },
+  {
+    "year": 2010,
+    "country": "Romania",
+    "population": 20246871
+  },
+  {
+    "year": 2010,
+    "country": "Russian Federation",
+    "population": 142849468
+  },
+  {
+    "year": 2010,
+    "country": "Serbia",
+    "population": 7291436
+  },
+  {
+    "year": 2010,
+    "country": "Slovak Republic",
+    "population": 5391428
+  },
+  {
+    "year": 2010,
+    "country": "Slovenia",
+    "population": 2048583
+  },
+  {
+    "year": 2010,
+    "country": "Spain",
+    "population": 46576897
+  },
+  {
+    "year": 2010,
+    "country": "Sweden",
+    "population": 9378126
+  },
+  {
+    "year": 2010,
+    "country": "Switzerland",
+    "population": 7824909
+  },
+  {
+    "year": 2010,
+    "country": "Turkey",
+    "population": 72326992
+  },
+  {
+    "year": 2010,
+    "country": "Ukraine",
+    "population": 45870741
+  },
+  {
+    "year": 2010,
+    "country": "United Kingdom",
+    "population": 62766365
+  },
+  {
+    "year": 2010,
+    "country": "Monaco",
+    "population": 35609
+  },
+  {
+    "year": 2010,
+    "country": "Lithuania",
+    "population": 3097282
+  },
+  {
+    "year": 2010,
+    "country": "Netherlands",
+    "population": 16615394
+  },
+  {
+    "year": 2011,
+    "country": "Austria",
+    "population": 8391643
+  },
+  {
+    "year": 2011,
+    "country": "Belgium",
+    "population": 11038264
+  },
+  {
+    "year": 2011,
+    "country": "Bosnia and Herzegovina",
+    "population": 3661173
+  },
+  {
+    "year": 2011,
+    "country": "Croatia",
+    "population": 4280622
+  },
+  {
+    "year": 2011,
+    "country": "Cyprus",
+    "population": 1124837
+  },
+  {
+    "year": 2011,
+    "country": "Czech Republic",
+    "population": 10496088
+  },
+  {
+    "year": 2011,
+    "country": "Denmark",
+    "population": 5570572
+  },
+  {
+    "year": 2011,
+    "country": "Estonia",
+    "population": 1327439
+  },
+  {
+    "year": 2011,
+    "country": "Finland",
+    "population": 5388272
+  },
+  {
+    "year": 2011,
+    "country": "France",
+    "population": 65342789
+  },
+  {
+    "year": 2011,
+    "country": "Germany",
+    "population": 80274983
+  },
+  {
+    "year": 2011,
+    "country": "Greece",
+    "population": 11104899
+  },
+  {
+    "year": 2011,
+    "country": "Hungary",
+    "population": 9971727
+  },
+  {
+    "year": 2011,
+    "country": "Iceland",
+    "population": 319014
+  },
+  {
+    "year": 2011,
+    "country": "Ireland",
+    "population": 4580084
+  },
+  {
+    "year": 2011,
+    "country": "Italy",
+    "population": 59379449
+  },
+  {
+    "year": 2011,
+    "country": "Liechtenstein",
+    "population": 36299
+  },
+  {
+    "year": 2011,
+    "country": "Luxembourg",
+    "population": 518347
+  },
+  {
+    "year": 2011,
+    "country": "Norway",
+    "population": 4953088
+  },
+  {
+    "year": 2011,
+    "country": "Poland",
+    "population": 38063255
+  },
+  {
+    "year": 2011,
+    "country": "Portugal",
+    "population": 10557560
+  },
+  {
+    "year": 2011,
+    "country": "Romania",
+    "population": 20147528
+  },
+  {
+    "year": 2011,
+    "country": "Russian Federation",
+    "population": 142960908
+  },
+  {
+    "year": 2011,
+    "country": "Serbia",
+    "population": 7234099
+  },
+  {
+    "year": 2011,
+    "country": "Slovak Republic",
+    "population": 5398384
+  },
+  {
+    "year": 2011,
+    "country": "Slovenia",
+    "population": 2052843
+  },
+  {
+    "year": 2011,
+    "country": "Spain",
+    "population": 46742697
+  },
+  {
+    "year": 2011,
+    "country": "Sweden",
+    "population": 9449213
+  },
+  {
+    "year": 2011,
+    "country": "Switzerland",
+    "population": 7912398
+  },
+  {
+    "year": 2011,
+    "country": "Turkey",
+    "population": 73443254
+  },
+  {
+    "year": 2011,
+    "country": "Ukraine",
+    "population": 45706086
+  },
+  {
+    "year": 2011,
+    "country": "United Kingdom",
+    "population": 63258810
+  },
+  {
+    "year": 2011,
+    "country": "Monaco",
+    "population": 36025
+  },
+  {
+    "year": 2011,
+    "country": "Lithuania",
+    "population": 3028115
+  },
+  {
+    "year": 2011,
+    "country": "Netherlands",
+    "population": 16693074
+  },
+  {
+    "year": 2012,
+    "country": "Austria",
+    "population": 8429991
+  },
+  {
+    "year": 2012,
+    "country": "Belgium",
+    "population": 11106932
+  },
+  {
+    "year": 2012,
+    "country": "Bosnia and Herzegovina",
+    "population": 3604972
+  },
+  {
+    "year": 2012,
+    "country": "Croatia",
+    "population": 4267558
+  },
+  {
+    "year": 2012,
+    "country": "Cyprus",
+    "population": 1135046
+  },
+  {
+    "year": 2012,
+    "country": "Czech Republic",
+    "population": 10510785
+  },
+  {
+    "year": 2012,
+    "country": "Denmark",
+    "population": 5591572
+  },
+  {
+    "year": 2012,
+    "country": "Estonia",
+    "population": 1322696
+  },
+  {
+    "year": 2012,
+    "country": "Finland",
+    "population": 5413971
+  },
+  {
+    "year": 2012,
+    "country": "France",
+    "population": 65659814
+  },
+  {
+    "year": 2012,
+    "country": "Germany",
+    "population": 80425823
+  },
+  {
+    "year": 2012,
+    "country": "Greece",
+    "population": 11045011
+  },
+  {
+    "year": 2012,
+    "country": "Hungary",
+    "population": 9920362
+  },
+  {
+    "year": 2012,
+    "country": "Iceland",
+    "population": 320716
+  },
+  {
+    "year": 2012,
+    "country": "Ireland",
+    "population": 4599533
+  },
+  {
+    "year": 2012,
+    "country": "Italy",
+    "population": 59539717
+  },
+  {
+    "year": 2012,
+    "country": "Liechtenstein",
+    "population": 36615
+  },
+  {
+    "year": 2012,
+    "country": "Luxembourg",
+    "population": 530946
+  },
+  {
+    "year": 2012,
+    "country": "Norway",
+    "population": 5018573
+  },
+  {
+    "year": 2012,
+    "country": "Poland",
+    "population": 38063164
+  },
+  {
+    "year": 2012,
+    "country": "Portugal",
+    "population": 10514844
+  },
+  {
+    "year": 2012,
+    "country": "Romania",
+    "population": 20058035
+  },
+  {
+    "year": 2012,
+    "country": "Russian Federation",
+    "population": 143201721
+  },
+  {
+    "year": 2012,
+    "country": "Serbia",
+    "population": 7199077
+  },
+  {
+    "year": 2012,
+    "country": "Slovak Republic",
+    "population": 5407579
+  },
+  {
+    "year": 2012,
+    "country": "Slovenia",
+    "population": 2057159
+  },
+  {
+    "year": 2012,
+    "country": "Spain",
+    "population": 46773055
+  },
+  {
+    "year": 2012,
+    "country": "Sweden",
+    "population": 9519374
+  },
+  {
+    "year": 2012,
+    "country": "Switzerland",
+    "population": 7996861
+  },
+  {
+    "year": 2012,
+    "country": "Turkey",
+    "population": 74651046
+  },
+  {
+    "year": 2012,
+    "country": "Ukraine",
+    "population": 45593342
+  },
+  {
+    "year": 2012,
+    "country": "United Kingdom",
+    "population": 63700215
+  },
+  {
+    "year": 2012,
+    "country": "Monaco",
+    "population": 36459
+  },
+  {
+    "year": 2012,
+    "country": "Lithuania",
+    "population": 2987773
+  },
+  {
+    "year": 2012,
+    "country": "Netherlands",
+    "population": 16754962
+  },
+  {
+    "year": 2013,
+    "country": "Austria",
+    "population": 8479823
+  },
+  {
+    "year": 2013,
+    "country": "Belgium",
+    "population": 11159407
+  },
+  {
+    "year": 2013,
+    "country": "Bosnia and Herzegovina",
+    "population": 3542598
+  },
+  {
+    "year": 2013,
+    "country": "Croatia",
+    "population": 4255689
+  },
+  {
+    "year": 2013,
+    "country": "Cyprus",
+    "population": 1143866
+  },
+  {
+    "year": 2013,
+    "country": "Czech Republic",
+    "population": 10514272
+  },
+  {
+    "year": 2013,
+    "country": "Denmark",
+    "population": 5614932
+  },
+  {
+    "year": 2013,
+    "country": "Estonia",
+    "population": 1317997
+  },
+  {
+    "year": 2013,
+    "country": "Finland",
+    "population": 5438972
+  },
+  {
+    "year": 2013,
+    "country": "France",
+    "population": 65998685
+  },
+  {
+    "year": 2013,
+    "country": "Germany",
+    "population": 80645605
+  },
+  {
+    "year": 2013,
+    "country": "Greece",
+    "population": 10965211
+  },
+  {
+    "year": 2013,
+    "country": "Hungary",
+    "population": 9893082
+  },
+  {
+    "year": 2013,
+    "country": "Iceland",
+    "population": 323764
+  },
+  {
+    "year": 2013,
+    "country": "Ireland",
+    "population": 4623816
+  },
+  {
+    "year": 2013,
+    "country": "Italy",
+    "population": 60233948
+  },
+  {
+    "year": 2013,
+    "country": "Liechtenstein",
+    "population": 36940
+  },
+  {
+    "year": 2013,
+    "country": "Luxembourg",
+    "population": 543360
+  },
+  {
+    "year": 2013,
+    "country": "Norway",
+    "population": 5079623
+  },
+  {
+    "year": 2013,
+    "country": "Poland",
+    "population": 38040196
+  },
+  {
+    "year": 2013,
+    "country": "Portugal",
+    "population": 10457295
+  },
+  {
+    "year": 2013,
+    "country": "Romania",
+    "population": 19983693
+  },
+  {
+    "year": 2013,
+    "country": "Russian Federation",
+    "population": 143506995
+  },
+  {
+    "year": 2013,
+    "country": "Serbia",
+    "population": 7164132
+  },
+  {
+    "year": 2013,
+    "country": "Slovak Republic",
+    "population": 5413393
+  },
+  {
+    "year": 2013,
+    "country": "Slovenia",
+    "population": 2059953
+  },
+  {
+    "year": 2013,
+    "country": "Spain",
+    "population": 46620045
+  },
+  {
+    "year": 2013,
+    "country": "Sweden",
+    "population": 9600379
+  },
+  {
+    "year": 2013,
+    "country": "Switzerland",
+    "population": 8089346
+  },
+  {
+    "year": 2013,
+    "country": "Turkey",
+    "population": 75925454
+  },
+  {
+    "year": 2013,
+    "country": "Ukraine",
+    "population": 45489648
+  },
+  {
+    "year": 2013,
+    "country": "United Kingdom",
+    "population": 64128273
+  },
+  {
+    "year": 2013,
+    "country": "Monaco",
+    "population": 36899
+  },
+  {
+    "year": 2013,
+    "country": "Lithuania",
+    "population": 2957689
+  },
+  {
+    "year": 2013,
+    "country": "Netherlands",
+    "population": 16804432
+  },
+  {
+    "year": 2014,
+    "country": "Austria",
+    "population": 8546356
+  },
+  {
+    "year": 2014,
+    "country": "Belgium",
+    "population": 11209057
+  },
+  {
+    "year": 2014,
+    "country": "Bosnia and Herzegovina",
+    "population": 3482106
+  },
+  {
+    "year": 2014,
+    "country": "Croatia",
+    "population": 4238389
+  },
+  {
+    "year": 2014,
+    "country": "Cyprus",
+    "population": 1152297
+  },
+  {
+    "year": 2014,
+    "country": "Czech Republic",
+    "population": 10525347
+  },
+  {
+    "year": 2014,
+    "country": "Denmark",
+    "population": 5643475
+  },
+  {
+    "year": 2014,
+    "country": "Estonia",
+    "population": 1314545
+  },
+  {
+    "year": 2014,
+    "country": "Finland",
+    "population": 5461512
+  },
+  {
+    "year": 2014,
+    "country": "France",
+    "population": 66312067
+  },
+  {
+    "year": 2014,
+    "country": "Germany",
+    "population": 80982500
+  },
+  {
+    "year": 2014,
+    "country": "Greece",
+    "population": 10892413
+  },
+  {
+    "year": 2014,
+    "country": "Hungary",
+    "population": 9866468
+  },
+  {
+    "year": 2014,
+    "country": "Iceland",
+    "population": 327386
+  },
+  {
+    "year": 2014,
+    "country": "Ireland",
+    "population": 4657740
+  },
+  {
+    "year": 2014,
+    "country": "Italy",
+    "population": 60789140
+  },
+  {
+    "year": 2014,
+    "country": "Liechtenstein",
+    "population": 37219
+  },
+  {
+    "year": 2014,
+    "country": "Luxembourg",
+    "population": 556319
+  },
+  {
+    "year": 2014,
+    "country": "Norway",
+    "population": 5137232
+  },
+  {
+    "year": 2014,
+    "country": "Poland",
+    "population": 38011735
+  },
+  {
+    "year": 2014,
+    "country": "Portugal",
+    "population": 10401062
+  },
+  {
+    "year": 2014,
+    "country": "Romania",
+    "population": 19908979
+  },
+  {
+    "year": 2014,
+    "country": "Russian Federation",
+    "population": 143819667
+  },
+  {
+    "year": 2014,
+    "country": "Serbia",
+    "population": 7130576
+  },
+  {
+    "year": 2014,
+    "country": "Slovak Republic",
+    "population": 5418649
+  },
+  {
+    "year": 2014,
+    "country": "Slovenia",
+    "population": 2061980
+  },
+  {
+    "year": 2014,
+    "country": "Spain",
+    "population": 46480882
+  },
+  {
+    "year": 2014,
+    "country": "Sweden",
+    "population": 9696110
+  },
+  {
+    "year": 2014,
+    "country": "Switzerland",
+    "population": 8188649
+  },
+  {
+    "year": 2014,
+    "country": "Turkey",
+    "population": 77229262
+  },
+  {
+    "year": 2014,
+    "country": "Ukraine",
+    "population": 45272155
+  },
+  {
+    "year": 2014,
+    "country": "United Kingdom",
+    "population": 64602298
+  },
+  {
+    "year": 2014,
+    "country": "Monaco",
+    "population": 37320
+  },
+  {
+    "year": 2014,
+    "country": "Lithuania",
+    "population": 2932367
+  },
+  {
+    "year": 2014,
+    "country": "Netherlands",
+    "population": 16865008
+  },
+  {
+    "year": 2015,
+    "country": "Austria",
+    "population": 8642699
+  },
+  {
+    "year": 2015,
+    "country": "Belgium",
+    "population": 11274196
+  },
+  {
+    "year": 2015,
+    "country": "Bosnia and Herzegovina",
+    "population": 3429362
+  },
+  {
+    "year": 2015,
+    "country": "Croatia",
+    "population": 4203604
+  },
+  {
+    "year": 2015,
+    "country": "Cyprus",
+    "population": 1160987
+  },
+  {
+    "year": 2015,
+    "country": "Czech Republic",
+    "population": 10546059
+  },
+  {
+    "year": 2015,
+    "country": "Denmark",
+    "population": 5683483
+  },
+  {
+    "year": 2015,
+    "country": "Estonia",
+    "population": 1315407
+  },
+  {
+    "year": 2015,
+    "country": "Finland",
+    "population": 5479531
+  },
+  {
+    "year": 2015,
+    "country": "France",
+    "population": 66548272
+  },
+  {
+    "year": 2015,
+    "country": "Germany",
+    "population": 81686611
+  },
+  {
+    "year": 2015,
+    "country": "Greece",
+    "population": 10820883
+  },
+  {
+    "year": 2015,
+    "country": "Hungary",
+    "population": 9843028
+  },
+  {
+    "year": 2015,
+    "country": "Iceland",
+    "population": 330815
+  },
+  {
+    "year": 2015,
+    "country": "Ireland",
+    "population": 4701957
+  },
+  {
+    "year": 2015,
+    "country": "Italy",
+    "population": 60730582
+  },
+  {
+    "year": 2015,
+    "country": "Liechtenstein",
+    "population": 37465
+  },
+  {
+    "year": 2015,
+    "country": "Luxembourg",
+    "population": 569604
+  },
+  {
+    "year": 2015,
+    "country": "Norway",
+    "population": 5188607
+  },
+  {
+    "year": 2015,
+    "country": "Poland",
+    "population": 37986412
+  },
+  {
+    "year": 2015,
+    "country": "Portugal",
+    "population": 10358076
+  },
+  {
+    "year": 2015,
+    "country": "Romania",
+    "population": 19815616
+  },
+  {
+    "year": 2015,
+    "country": "Russian Federation",
+    "population": 144096870
+  },
+  {
+    "year": 2015,
+    "country": "Serbia",
+    "population": 7095383
+  },
+  {
+    "year": 2015,
+    "country": "Slovak Republic",
+    "population": 5423801
+  },
+  {
+    "year": 2015,
+    "country": "Slovenia",
+    "population": 2063531
+  },
+  {
+    "year": 2015,
+    "country": "Spain",
+    "population": 46444832
+  },
+  {
+    "year": 2015,
+    "country": "Sweden",
+    "population": 9799186
+  },
+  {
+    "year": 2015,
+    "country": "Switzerland",
+    "population": 8282396
+  },
+  {
+    "year": 2015,
+    "country": "Turkey",
+    "population": 78529413
+  },
+  {
+    "year": 2015,
+    "country": "Ukraine",
+    "population": 45154036
+  },
+  {
+    "year": 2015,
+    "country": "United Kingdom",
+    "population": 65116219
+  },
+  {
+    "year": 2015,
+    "country": "Monaco",
+    "population": 37723
+  },
+  {
+    "year": 2015,
+    "country": "Lithuania",
+    "population": 2904910
+  },
+  {
+    "year": 2015,
+    "country": "Netherlands",
+    "population": 16939923
+  },
+  {
+    "year": 2016,
+    "country": "Austria",
+    "population": 8736668
+  },
+  {
+    "year": 2016,
+    "country": "Belgium",
+    "population": 11331422
+  },
+  {
+    "year": 2016,
+    "country": "Bosnia and Herzegovina",
+    "population": 3386263
+  },
+  {
+    "year": 2016,
+    "country": "Croatia",
+    "population": 4174349
+  },
+  {
+    "year": 2016,
+    "country": "Cyprus",
+    "population": 1170189
+  },
+  {
+    "year": 2016,
+    "country": "Czech Republic",
+    "population": 10566332
+  },
+  {
+    "year": 2016,
+    "country": "Denmark",
+    "population": 5728010
+  },
+  {
+    "year": 2016,
+    "country": "Estonia",
+    "population": 1315790
+  },
+  {
+    "year": 2016,
+    "country": "Finland",
+    "population": 5495303
+  },
+  {
+    "year": 2016,
+    "country": "France",
+    "population": 66724104
+  },
+  {
+    "year": 2016,
+    "country": "Germany",
+    "population": 82348669
+  },
+  {
+    "year": 2016,
+    "country": "Greece",
+    "population": 10775971
+  },
+  {
+    "year": 2016,
+    "country": "Hungary",
+    "population": 9814023
+  },
+  {
+    "year": 2016,
+    "country": "Iceland",
+    "population": 335439
+  },
+  {
+    "year": 2016,
+    "country": "Ireland",
+    "population": 4755335
+  },
+  {
+    "year": 2016,
+    "country": "Italy",
+    "population": 60627498
+  },
+  {
+    "year": 2016,
+    "country": "Liechtenstein",
+    "population": 37655
+  },
+  {
+    "year": 2016,
+    "country": "Luxembourg",
+    "population": 582014
+  },
+  {
+    "year": 2016,
+    "country": "Norway",
+    "population": 5234519
+  },
+  {
+    "year": 2016,
+    "country": "Poland",
+    "population": 37970087
+  },
+  {
+    "year": 2016,
+    "country": "Portugal",
+    "population": 10325452
+  },
+  {
+    "year": 2016,
+    "country": "Romania",
+    "population": 19702267
+  },
+  {
+    "year": 2016,
+    "country": "Russian Federation",
+    "population": 144342397
+  },
+  {
+    "year": 2016,
+    "country": "Serbia",
+    "population": 7058322
+  },
+  {
+    "year": 2016,
+    "country": "Slovak Republic",
+    "population": 5430798
+  },
+  {
+    "year": 2016,
+    "country": "Slovenia",
+    "population": 2065042
+  },
+  {
+    "year": 2016,
+    "country": "Spain",
+    "population": 46484062
+  },
+  {
+    "year": 2016,
+    "country": "Sweden",
+    "population": 9923085
+  },
+  {
+    "year": 2016,
+    "country": "Switzerland",
+    "population": 8373338
+  },
+  {
+    "year": 2016,
+    "country": "Turkey",
+    "population": 79827868
+  },
+  {
+    "year": 2016,
+    "country": "Ukraine",
+    "population": 45004673
+  },
+  {
+    "year": 2016,
+    "country": "United Kingdom",
+    "population": 65611593
+  },
+  {
+    "year": 2016,
+    "country": "Monaco",
+    "population": 38070
+  },
+  {
+    "year": 2016,
+    "country": "Lithuania",
+    "population": 2868231
+  },
+  {
+    "year": 2016,
+    "country": "Netherlands",
+    "population": 17030314
+  },
+  {
+    "year": 2017,
+    "country": "Austria",
+    "population": 8797566
+  },
+  {
+    "year": 2017,
+    "country": "Belgium",
+    "population": 11375158
+  },
+  {
+    "year": 2017,
+    "country": "Bosnia and Herzegovina",
+    "population": 3351534
+  },
+  {
+    "year": 2017,
+    "country": "Croatia",
+    "population": 4124531
+  },
+  {
+    "year": 2017,
+    "country": "Cyprus",
+    "population": 1179685
+  },
+  {
+    "year": 2017,
+    "country": "Czech Republic",
+    "population": 10594438
+  },
+  {
+    "year": 2017,
+    "country": "Denmark",
+    "population": 5764980
+  },
+  {
+    "year": 2017,
+    "country": "Estonia",
+    "population": 1317384
+  },
+  {
+    "year": 2017,
+    "country": "Finland",
+    "population": 5508214
+  },
+  {
+    "year": 2017,
+    "country": "France",
+    "population": 66918020
+  },
+  {
+    "year": 2017,
+    "country": "Germany",
+    "population": 82657002
+  },
+  {
+    "year": 2017,
+    "country": "Greece",
+    "population": 10754679
+  },
+  {
+    "year": 2017,
+    "country": "Hungary",
+    "population": 9787966
+  },
+  {
+    "year": 2017,
+    "country": "Iceland",
+    "population": 343400
+  },
+  {
+    "year": 2017,
+    "country": "Ireland",
+    "population": 4807388
+  },
+  {
+    "year": 2017,
+    "country": "Italy",
+    "population": 60536709
+  },
+  {
+    "year": 2017,
+    "country": "Liechtenstein",
+    "population": 37805
+  },
+  {
+    "year": 2017,
+    "country": "Luxembourg",
+    "population": 596336
+  },
+  {
+    "year": 2017,
+    "country": "Norway",
+    "population": 5276968
+  },
+  {
+    "year": 2017,
+    "country": "Poland",
+    "population": 37974826
+  },
+  {
+    "year": 2017,
+    "country": "Portugal",
+    "population": 10300300
+  },
+  {
+    "year": 2017,
+    "country": "Romania",
+    "population": 19588715
+  },
+  {
+    "year": 2017,
+    "country": "Russian Federation",
+    "population": 144496739
+  },
+  {
+    "year": 2017,
+    "country": "Serbia",
+    "population": 7020858
+  },
+  {
+    "year": 2017,
+    "country": "Slovak Republic",
+    "population": 5439232
+  },
+  {
+    "year": 2017,
+    "country": "Slovenia",
+    "population": 2066388
+  },
+  {
+    "year": 2017,
+    "country": "Spain",
+    "population": 46593236
+  },
+  {
+    "year": 2017,
+    "country": "Sweden",
+    "population": 10057698
+  },
+  {
+    "year": 2017,
+    "country": "Switzerland",
+    "population": 8451840
+  },
+  {
+    "year": 2017,
+    "country": "Turkey",
+    "population": 81116451
+  },
+  {
+    "year": 2017,
+    "country": "Ukraine",
+    "population": 44831135
+  },
+  {
+    "year": 2017,
+    "country": "United Kingdom",
+    "population": 66058859
+  },
+  {
+    "year": 2017,
+    "country": "Monaco",
+    "population": 38392
+  },
+  {
+    "year": 2017,
+    "country": "Lithuania",
+    "population": 2828403
+  },
+  {
+    "year": 2017,
+    "country": "Netherlands",
+    "population": 17131296
+  },
+  {
+    "year": 2018,
+    "country": "Austria",
+    "population": 8840521
+  },
+  {
+    "year": 2018,
+    "country": "Belgium",
+    "population": 11427054
+  },
+  {
+    "year": 2018,
+    "country": "Bosnia and Herzegovina",
+    "population": 3323929
+  },
+  {
+    "year": 2018,
+    "country": "Croatia",
+    "population": 4087843
+  },
+  {
+    "year": 2018,
+    "country": "Cyprus",
+    "population": 1189262
+  },
+  {
+    "year": 2018,
+    "country": "Czech Republic",
+    "population": 10629928
+  },
+  {
+    "year": 2018,
+    "country": "Denmark",
+    "population": 5793636
+  },
+  {
+    "year": 2018,
+    "country": "Estonia",
+    "population": 1321977
+  },
+  {
+    "year": 2018,
+    "country": "Finland",
+    "population": 5515525
+  },
+  {
+    "year": 2018,
+    "country": "France",
+    "population": 67101930
+  },
+  {
+    "year": 2018,
+    "country": "Germany",
+    "population": 82905782
+  },
+  {
+    "year": 2018,
+    "country": "Greece",
+    "population": 10732882
+  },
+  {
+    "year": 2018,
+    "country": "Hungary",
+    "population": 9775564
+  },
+  {
+    "year": 2018,
+    "country": "Iceland",
+    "population": 352721
+  },
+  {
+    "year": 2018,
+    "country": "Ireland",
+    "population": 4867316
+  },
+  {
+    "year": 2018,
+    "country": "Italy",
+    "population": 60421760
+  },
+  {
+    "year": 2018,
+    "country": "Liechtenstein",
+    "population": 37918
+  },
+  {
+    "year": 2018,
+    "country": "Luxembourg",
+    "population": 607950
+  },
+  {
+    "year": 2018,
+    "country": "Norway",
+    "population": 5311916
+  },
+  {
+    "year": 2018,
+    "country": "Poland",
+    "population": 37974750
+  },
+  {
+    "year": 2018,
+    "country": "Portugal",
+    "population": 10283822
+  },
+  {
+    "year": 2018,
+    "country": "Romania",
+    "population": 19473970
+  },
+  {
+    "year": 2018,
+    "country": "Russian Federation",
+    "population": 144477859
+  },
+  {
+    "year": 2018,
+    "country": "Serbia",
+    "population": 6982604
+  },
+  {
+    "year": 2018,
+    "country": "Slovak Republic",
+    "population": 5446771
+  },
+  {
+    "year": 2018,
+    "country": "Slovenia",
+    "population": 2073894
+  },
+  {
+    "year": 2018,
+    "country": "Spain",
+    "population": 46797754
+  },
+  {
+    "year": 2018,
+    "country": "Sweden",
+    "population": 10175214
+  },
+  {
+    "year": 2018,
+    "country": "Switzerland",
+    "population": 8514329
+  },
+  {
+    "year": 2018,
+    "country": "Turkey",
+    "population": 82340090
+  },
+  {
+    "year": 2018,
+    "country": "Ukraine",
+    "population": 44622518
+  },
+  {
+    "year": 2018,
+    "country": "United Kingdom",
+    "population": 66460344
+  },
+  {
+    "year": 2018,
+    "country": "Monaco",
+    "population": 38682
+  },
+  {
+    "year": 2018,
+    "country": "Lithuania",
+    "population": 2801543
+  },
+  {
+    "year": 2018,
+    "country": "Netherlands",
+    "population": 17231624
+  },
+  {
+    "year": 2019,
+    "country": "Austria",
+    "population": 8879920
+  },
+  {
+    "year": 2019,
+    "country": "Belgium",
+    "population": 11488980
+  },
+  {
+    "year": 2019,
+    "country": "Bosnia and Herzegovina",
+    "population": 3300998
+  },
+  {
+    "year": 2019,
+    "country": "Croatia",
+    "population": 4065253
+  },
+  {
+    "year": 2019,
+    "country": "Cyprus",
+    "population": 1198574
+  },
+  {
+    "year": 2019,
+    "country": "Czech Republic",
+    "population": 10671870
+  },
+  {
+    "year": 2019,
+    "country": "Denmark",
+    "population": 5814422
+  },
+  {
+    "year": 2019,
+    "country": "Estonia",
+    "population": 1326898
+  },
+  {
+    "year": 2019,
+    "country": "Finland",
+    "population": 5521606
+  },
+  {
+    "year": 2019,
+    "country": "France",
+    "population": 67248926
+  },
+  {
+    "year": 2019,
+    "country": "Germany",
+    "population": 83092962
+  },
+  {
+    "year": 2019,
+    "country": "Greece",
+    "population": 10721582
+  },
+  {
+    "year": 2019,
+    "country": "Hungary",
+    "population": 9771141
+  },
+  {
+    "year": 2019,
+    "country": "Iceland",
+    "population": 360563
+  },
+  {
+    "year": 2019,
+    "country": "Ireland",
+    "population": 4934340
+  },
+  {
+    "year": 2019,
+    "country": "Italy",
+    "population": 59729081
+  },
+  {
+    "year": 2019,
+    "country": "Liechtenstein",
+    "population": 38020
+  },
+  {
+    "year": 2019,
+    "country": "Luxembourg",
+    "population": 620001
+  },
+  {
+    "year": 2019,
+    "country": "Norway",
+    "population": 5347896
+  },
+  {
+    "year": 2019,
+    "country": "Poland",
+    "population": 37965475
+  },
+  {
+    "year": 2019,
+    "country": "Portugal",
+    "population": 10286263
+  },
+  {
+    "year": 2019,
+    "country": "Romania",
+    "population": 19371648
+  },
+  {
+    "year": 2019,
+    "country": "Russian Federation",
+    "population": 144406261
+  },
+  {
+    "year": 2019,
+    "country": "Serbia",
+    "population": 6945235
+  },
+  {
+    "year": 2019,
+    "country": "Slovak Republic",
+    "population": 5454147
+  },
+  {
+    "year": 2019,
+    "country": "Slovenia",
+    "population": 2088385
+  },
+  {
+    "year": 2019,
+    "country": "Spain",
+    "population": 47133521
+  },
+  {
+    "year": 2019,
+    "country": "Sweden",
+    "population": 10278887
+  },
+  {
+    "year": 2019,
+    "country": "Switzerland",
+    "population": 8575280
+  },
+  {
+    "year": 2019,
+    "country": "Turkey",
+    "population": 83429607
+  },
+  {
+    "year": 2019,
+    "country": "Ukraine",
+    "population": 44386203
+  },
+  {
+    "year": 2019,
+    "country": "United Kingdom",
+    "population": 66836327
+  },
+  {
+    "year": 2019,
+    "country": "Monaco",
+    "population": 38967
+  },
+  {
+    "year": 2019,
+    "country": "Lithuania",
+    "population": 2794137
+  },
+  {
+    "year": 2019,
+    "country": "Netherlands",
+    "population": 17344874
+  },
+  {
+    "year": 2020,
+    "country": "Austria",
+    "population": 8917205
+  },
+  {
+    "year": 2020,
+    "country": "Belgium",
+    "population": 11555997
+  },
+  {
+    "year": 2020,
+    "country": "Bosnia and Herzegovina",
+    "population": 3280815
+  },
+  {
+    "year": 2020,
+    "country": "Croatia",
+    "population": 4047200
+  },
+  {
+    "year": 2020,
+    "country": "Cyprus",
+    "population": 1207361
+  },
+  {
+    "year": 2020,
+    "country": "Czech Republic",
+    "population": 10698896
+  },
+  {
+    "year": 2020,
+    "country": "Denmark",
+    "population": 5831404
+  },
+  {
+    "year": 2020,
+    "country": "Estonia",
+    "population": 1331057
+  },
+  {
+    "year": 2020,
+    "country": "Finland",
+    "population": 5530719
+  },
+  {
+    "year": 2020,
+    "country": "France",
+    "population": 67391582
+  },
+  {
+    "year": 2020,
+    "country": "Germany",
+    "population": 83240525
+  },
+  {
+    "year": 2020,
+    "country": "Greece",
+    "population": 10715549
+  },
+  {
+    "year": 2020,
+    "country": "Hungary",
+    "population": 9749763
+  },
+  {
+    "year": 2020,
+    "country": "Iceland",
+    "population": 366425
+  },
+  {
+    "year": 2020,
+    "country": "Ireland",
+    "population": 4994724
+  },
+  {
+    "year": 2020,
+    "country": "Italy",
+    "population": 59554023
+  },
+  {
+    "year": 2020,
+    "country": "Liechtenstein",
+    "population": 38137
+  },
+  {
+    "year": 2020,
+    "country": "Luxembourg",
+    "population": 632275
+  },
+  {
+    "year": 2020,
+    "country": "Norway",
+    "population": 5379475
+  },
+  {
+    "year": 2020,
+    "country": "Poland",
+    "population": 37950802
+  },
+  {
+    "year": 2020,
+    "country": "Portugal",
+    "population": 10305564
+  },
+  {
+    "year": 2020,
+    "country": "Romania",
+    "population": 19286123
+  },
+  {
+    "year": 2020,
+    "country": "Russian Federation",
+    "population": 144104080
+  },
+  {
+    "year": 2020,
+    "country": "Serbia",
+    "population": 6908224
+  },
+  {
+    "year": 2020,
+    "country": "Slovak Republic",
+    "population": 5458827
+  },
+  {
+    "year": 2020,
+    "country": "Slovenia",
+    "population": 2100126
+  },
+  {
+    "year": 2020,
+    "country": "Spain",
+    "population": 47351567
+  },
+  {
+    "year": 2020,
+    "country": "Sweden",
+    "population": 10353442
+  },
+  {
+    "year": 2020,
+    "country": "Switzerland",
+    "population": 8636896
+  },
+  {
+    "year": 2020,
+    "country": "Turkey",
+    "population": 84339067
+  },
+  {
+    "year": 2020,
+    "country": "Ukraine",
+    "population": 44134693
+  },
+  {
+    "year": 2020,
+    "country": "United Kingdom",
+    "population": 67215293
+  },
+  {
+    "year": 2020,
+    "country": "Monaco",
+    "population": 39244
+  },
+  {
+    "year": 2020,
+    "country": "Lithuania",
+    "population": 2794700
+  },
+  {
+    "year": 2020,
+    "country": "Netherlands",
+    "population": 17441139
+  }
+]
