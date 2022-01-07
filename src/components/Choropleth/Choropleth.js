@@ -10,12 +10,12 @@ const width = 900; // Math.max(document.documentElement.clientWidth, window.inne
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 const legendTitle = 'Number of Patents Registered per Year';
 
-const Colorpleth = () => {
+const Choropleth = () => {
   const mapData = useMapData();
   const patentData = usePatentData();
   const svg = useRef(null);
 
-  const [selectedYear, setSelectedYear] = useState(2010);
+  const [selectedYear, setSelectedYear] = useState(2011);
 
   if (!mapData || !patentData) {
     return <p>Loading...</p>;
@@ -37,6 +37,37 @@ const Colorpleth = () => {
     console.log(`Slider value change to ${value}.`);
     setSelectedYear(value);
   };
+
+  const marks = [
+    {
+      value: 2008,
+      label: '2008',
+    },
+    {
+      value: 2009,
+      label: '2009',
+    },
+    {
+      value: 2010,
+      label: '2010',
+    },
+    {
+      value: 2011,
+      label: '2011',
+    },
+    {
+      value: 2012,
+      label: '2012',
+    },
+    {
+      value: 2013,
+      label: '2013',
+    },
+    {
+      value: 2014,
+      label: '2014',
+    },
+  ];
 
   return (
     <Container>
@@ -62,18 +93,23 @@ const Colorpleth = () => {
           />
         </svg>
       </Box>
-      <Slider
-        aria-label="Year"
-        defaultValue={2010}
-        getAriaValueText={() => 30}
-        valueLabelDisplay="auto"
-        marks
-        min={2008}
-        max={2014}
-        onChangeCommitted={handleSliderChange}
-      />
+      <Container maxWidth="sm">
+        <Box sm={{ width: 100 }}>
+          <Slider
+            aria-label="Year"
+            defaultValue={2011}
+            getAriaValueText={() => 30}
+            valueLabelDisplay="auto"
+            step={1}
+            marks={marks}
+            min={2008}
+            max={2014}
+            onChangeCommitted={handleSliderChange}
+          />
+        </Box>
+      </Container>
     </Container>
   );
 };
 
-export default Colorpleth;
+export default Choropleth;
