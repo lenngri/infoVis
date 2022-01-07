@@ -1,7 +1,6 @@
 // Based on
 // Source: Curran Kelleher, 2018 https://www.youtube.com/watch?v=OoZ0LWD9KUs
 // Source: https://github.com/viswesh/Maps/tree/master/chapter1
-import React, { useState } from 'react';
 import { useMapData } from './useMapData';
 import { useData } from '../../datatools/useData';
 import Marks from './Marks';
@@ -16,8 +15,6 @@ const legendTitle = 'Patents Registered per Year per Million Inhabitants';
 const Choropleth = ({ selectedYear }) => {
   const mapData = useMapData();
   const data = useData();
-
-  const [selectedYear, setSelectedYear] = useState(2010);
 
   if (!mapData || !data) {
     return <p>Loading...</p>;
