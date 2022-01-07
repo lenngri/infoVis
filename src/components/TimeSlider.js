@@ -44,7 +44,7 @@ export default function TimeSlider({ setSelectedYear }) {
 
   return (
     <Container maxWidth="sm">
-      <Box sm={{ width: 100 }}>
+      <Box sm={{ width: 100 }} mt={2}>
         <Slider
           aria-label="Year"
           defaultValue={2011}
