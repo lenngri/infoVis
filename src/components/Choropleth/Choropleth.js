@@ -7,13 +7,13 @@ import { useData } from '../../datatools/useData';
 import Marks from './Marks';
 import { scaleThreshold } from 'd3'; // scaleSequential
 import { schemeBlues } from 'd3-scale-chromatic';
-import { Container, Box, Slider } from '@mui/material';
+import { Container, Box } from '@mui/material';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 const legendTitle = 'Patents Registered per Year per Million Inhabitants';
 
-const Colorpleth = () => {
+const Choropleth = ({ selectedYear }) => {
   const mapData = useMapData();
   const data = useData();
 
@@ -43,11 +43,6 @@ const Colorpleth = () => {
   const colorValue = (d) => d.patents / (d.population / 1000000);
   const colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
 
-  const handleSliderChange = (e, value) => {
-    console.log(`Slider value change to ${value}.`);
-    setSelectedYear(value);
-  };
-
   return (
     <Container>
       <Box
@@ -57,6 +52,7 @@ const Colorpleth = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+          overflow: 'hidden',
         }}
       >
         <p className="center">Number of patents registered in {selectedYear}</p>
@@ -72,18 +68,8 @@ const Colorpleth = () => {
           />
         </svg>
       </Box>
-      <Slider
-        aria-label="Year"
-        defaultValue={2010}
-        getAriaValueText={() => 30}
-        valueLabelDisplay="auto"
-        marks
-        min={2008}
-        max={2014}
-        onChangeCommitted={handleSliderChange}
-      />
     </Container>
   );
 };
 
-export default Colorpleth;
+export default Choropleth;
