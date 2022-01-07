@@ -3,8 +3,7 @@
 // Source: https://github.com/viswesh/Maps/tree/master/chapter1
 import React, { useState } from 'react';
 import { useMapData } from './useMapData';
-import { usePatentData } from '../../datatools/usePatentData';
-import { usePopulationData } from '../../datatools/usePopulationData';
+import { useData } from '../../datatools/useData';
 import Marks from './Marks';
 import { scaleThreshold } from 'd3'; // scaleSequential
 import { schemeBlues } from 'd3-scale-chromatic';
@@ -16,36 +15,22 @@ const legendTitle = 'Patents Registered per Year per Million Inhabitants';
 
 const Colorpleth = () => {
   const mapData = useMapData();
-  const patentData = usePatentData();
-  const populationData = usePopulationData();
+  const data = useData();
 
   const [selectedYear, setSelectedYear] = useState(2010);
 
-  if (!mapData || !patentData || !populationData) {
+  if (!mapData || !data) {
     return <p>Loading...</p>;
   }
 
-  // filter Data Sets for selected year
-  const filteredPatentData = patentData.filter((d) => d.year === selectedYear);
-  const filteredPopulationData = populationData.filter((d) => d.year === selectedYear);
+  console.log('Data was successfully loaded:', data);
 
-  // create mapping between country name and population size
-  let populationByCountry = {};
-  filteredPopulationData.forEach((d) => {
-    populationByCountry[d.country] = {
-      year: +d.year,
-      population: +d.population,
-    };
-  });
-  // append population size to patent data set
-  filteredPatentData.forEach((d) => {
-    d.population = populationByCountry[d.country] ? populationByCountry[d.country].population : {};
-  });
-  console.log(filteredPatentData);
+  // filter data for selected year
+  const filteredData = data.filter((d) => d.year === selectedYear);
 
-  // create mapping table between country name and normed patent data
+  // create mapping table for map data joining
   const rowByCountry = new Map();
-  filteredPatentData.forEach((d) => {
+  filteredData.forEach((d) => {
     rowByCountry.set(d.country, d);
     console.log(
       `Patent registrations in ${d.country} per Million Inhabitants: ${
