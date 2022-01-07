@@ -12,7 +12,8 @@ import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 
 function App() {
-  const [selectedYear, setSelectedYear] = useState(2011);
+  const [year, setYear] = useState(2011);
+  const [view, setView] = useState(0);
 
   return (
     <div className="App">
@@ -25,9 +26,9 @@ function App() {
         </Container>
         <Boxspacer />
         <Container>
-          <Tabsa />
-          <Choropleth selectedYear={selectedYear} />
-          <TimeSlider setSelectedYear={setSelectedYear} />
+          <Tabsa view={view} setView={setView} />
+          <Choropleth view={view} selectedYear={year} />
+          <TimeSlider setYear={setYear} />
           <Boxspacer />
           <Containera />
         </Container>

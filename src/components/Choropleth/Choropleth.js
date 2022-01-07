@@ -10,9 +10,8 @@ import { Container, Box } from '@mui/material';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-const legendTitle = 'Patents Registered per Year per Million Inhabitants';
 
-const Choropleth = ({ selectedYear }) => {
+const Choropleth = ({ view, selectedYear }) => {
   const mapData = useMapData();
   const data = useData();
 
@@ -29,16 +28,30 @@ const Choropleth = ({ selectedYear }) => {
   const rowByCountry = new Map();
   filteredData.forEach((d) => {
     rowByCountry.set(d.country, d);
-    console.log(
-      `Patent registrations in ${d.country} per Million Inhabitants: ${
-        d.patents / (d.population / 1000000)
-      }`
-    );
+    // console.log(
+    //   `Patent registrations in ${d.country} per Million Inhabitants: ${
+    //     d.patents / (d.population / 1000000)
+    //   }`
+    // );
+    // console.log(`R&D investments in % of GDP: ${Number(d.investment.replace(',', '.'))}`);
   });
 
-  // set colorValue function and colorScale object
-  const colorValue = (d) => d.patents / (d.population / 1000000);
-  const colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
+  // set colorValue function, colorScale object and legendTitle
+  let colorValue;
+  let colorScale;
+  let legendTitle;
+  let mapTitle;
+  if (view === 1) {
+    colorValue = (d) => d.investment;
+    colorScale = scaleThreshold().domain([0.5, 0.75, 1.0, 1.5, 2.0, 2.5]).range(schemeBlues[7]);
+    legendTitle = 'R&D Investments in %';
+    mapTitle = `R&D Investments in ${selectedYear}`;
+  } else {
+    colorValue = (d) => d.patents / (d.population / 1000000);
+    colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
+    legendTitle = 'Patents Registered per Year per Million Inhabitants';
+    mapTitle = `Number of patents registered in ${selectedYear}`;
+  }
 
   return (
     <Container>
@@ -52,7 +65,7 @@ const Choropleth = ({ selectedYear }) => {
           overflow: 'hidden',
         }}
       >
-        <p className="center">Number of patents registered in {selectedYear}</p>
+        <p className="center">{mapTitle}</p>
         <svg width={width} height={height}>
           <Marks
             mapData={mapData}
