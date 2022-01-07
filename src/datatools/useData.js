@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { useInvestmentData } from './useInvestmentData';
 import { usePatentData } from './usePatentData';
 import { usePopulationData } from './usePopulationData';
