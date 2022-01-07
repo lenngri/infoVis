@@ -1,6 +1,9 @@
-import React, { useRef } from 'react';
+// Based on
+// Source: Curran Kelleher, 2018 https://www.youtube.com/watch?v=OoZ0LWD9KUs
+// Source: https://github.com/viswesh/Maps/tree/master/chapter1
+import React, { useState } from 'react';
 import { useMapData } from './useMapData';
-import { usePatentData } from '../../datatools/usePatentData';
+import { useData } from '../../datatools/useData';
 import Marks from './Marks';
 import { scaleThreshold } from 'd3'; // scaleSequential
 import { schemeBlues } from 'd3-scale-chromatic';
@@ -8,28 +11,37 @@ import { Container, Box } from '@mui/material';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-const legendTitle = 'Number of Patents Registered per Year';
+const legendTitle = 'Patents Registered per Year per Million Inhabitants';
 
 const Choropleth = ({ selectedYear }) => {
   const mapData = useMapData();
-  const patentData = usePatentData();
-  const svg = useRef(null);
+  const data = useData();
 
-  if (!mapData || !patentData) {
+  const [selectedYear, setSelectedYear] = useState(2010);
+
+  if (!mapData || !data) {
     return <p>Loading...</p>;
   }
 
-  const filteredData = patentData.filter((d) => d.c0 === selectedYear);
-  const colorValue = (d) => d.c2;
+  console.log('Data was successfully loaded:', data);
 
+  // filter data for selected year
+  const filteredData = data.filter((d) => d.year === selectedYear);
+
+  // create mapping table for map data joining
   const rowByCountry = new Map();
   filteredData.forEach((d) => {
-    rowByCountry.set(d.c1, d);
+    rowByCountry.set(d.country, d);
+    console.log(
+      `Patent registrations in ${d.country} per Million Inhabitants: ${
+        d.patents / (d.population / 1000000)
+      }`
+    );
   });
 
-  const colorScale = scaleThreshold()
-    .domain([100, 1000, 5000, 10000, 50000, 100000])
-    .range(schemeBlues[7]);
+  // set colorValue function and colorScale object
+  const colorValue = (d) => d.patents / (d.population / 1000000);
+  const colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
 
   return (
     <Container>
@@ -44,7 +56,7 @@ const Choropleth = ({ selectedYear }) => {
         }}
       >
         <p className="center">Number of patents registered in {selectedYear}</p>
-        <svg width={width} height={height} ref={svg}>
+        <svg width={width} height={height}>
           <Marks
             mapData={mapData}
             width={width}

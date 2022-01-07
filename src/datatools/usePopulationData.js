@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { json } from 'd3';
 
-const dataUrl = 'data/patents_by_year_and_country_name.json';
+const dataUrl = 'data/population_europ.json';
 
-export const usePatentData = () => {
+export const usePopulationData = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
