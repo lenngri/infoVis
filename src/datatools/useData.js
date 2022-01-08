@@ -1,19 +1,23 @@
 import { useInvestmentData } from './useInvestmentData';
 import { usePatentData } from './usePatentData';
 import { usePopulationData } from './usePopulationData';
+import { useCountryData } from './useCountryData';
 
 export const useData = () => {
   // load data sets, patent data is the base data set
   const data = usePatentData();
   const populationData = usePopulationData();
   const investmentData = useInvestmentData();
+  const countryData = useCountryData();
 
-  if (!data || !populationData || !investmentData) {
+  if (!data || !populationData || !investmentData || !countryData) {
     return null;
   }
 
+  const filteredData = data.filter((o1) => countryData.some((o2) => o1.country === o2.name));
+
   // append population to general data object
-  data.forEach((patentEntry) => {
+  filteredData.forEach((patentEntry) => {
     populationData.forEach((populationEntry) => {
       if (
         patentEntry.country === populationEntry.country &&
@@ -25,7 +29,7 @@ export const useData = () => {
   });
 
   // append investmentData to general data object
-  data.forEach((patentEntry) => {
+  filteredData.forEach((patentEntry) => {
     investmentData.forEach((investmentEntry) => {
       if (
         patentEntry.country === investmentEntry.country &&
@@ -36,5 +40,5 @@ export const useData = () => {
     });
   });
 
-  return data;
+  return filteredData;
 };
