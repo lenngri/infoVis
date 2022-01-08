@@ -63,7 +63,7 @@ function Bubblechart({ view, selectedYear }) {
           {xAxisLabel}
         </text>
         <Marks
-          data={data}
+          data={filteredData}
           xScale={xScale}
           yScale={yScale}
           xValue={xValue}
