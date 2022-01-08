@@ -11,21 +11,24 @@ const margin = { top: 20, right: 30, bottom: 65, left: 220 };
 const xAxisLabelOffset = 50;
 const yAxisLabelOffset = 45;
 
-function Bubblechart() {
+function Bubblechart({ view, selectedYear }) {
   const data = useData();
 
   if (!data) {
     return <pre>Loading...</pre>;
   }
 
+  // filter data for selected year
+  const filteredData = data.filter((d) => d.year === selectedYear);
+
   const innerHeight = height - margin.top - margin.bottom;
   const innerWidth = width - margin.left - margin.right;
 
-  const xValue = (d) => d.petal_length;
-  const xAxisLabel = 'Petal Length';
+  const xValue = (d) => d.investment;
+  const xAxisLabel = 'Investment in Research & Development (as % of GDP)';
 
-  const yValue = (d) => d.sepal_width;
-  const yAxisLabel = 'Sepal Width';
+  const yValue = (d) => d.patents / (d.population / 1000000);
+  const yAxisLabel = 'Number of Patents per million inhabitants';
 
   const siFormat = format('.2s');
   const xAxisTickFormat = (tickValue) => siFormat(tickValue).replace('G', 'B');
