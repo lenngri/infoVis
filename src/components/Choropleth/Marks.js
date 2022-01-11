@@ -7,13 +7,20 @@ const missingDataColor = 'darkgray';
 const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, legendTitle }) => {
   const [mouseHover, setMouseHover] = useState(false);
 
-  const handleMouseEnter = (e, d) => {
+  // Append CSS class to HTMLelement based on mouse event
+  // Source: https://stackoverflow.com/questions/927312/how-to-append-a-css-class-to-an-element-by-javascript (11.01.2021)
+  const handleMouseEnter = (e) => {
     setMouseHover(!mouseHover);
-    console.log(d);
+    const pathElement = e.target;
+    pathElement.classList.remove('land');
+    pathElement.classList.add('highlightCountry');
   };
 
-  const handleMouseLeave = (d) => {
+  const handleMouseLeave = (e) => {
     setMouseHover(!mouseHover);
+    const pathElement = e.target;
+    pathElement.classList.remove('highlightCountry');
+    pathElement.classList.add('land');
   };
 
   // generate map progjection and paths
@@ -31,18 +38,22 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
       <g className="marks">
         {mapData.features.map((feature) => {
           const d = rowByCountry.get(feature.properties.geounit);
+          const value = d ? colorValue(d) : 'no data';
+          const title = `${feature.properties.geounit}: ${value}`;
           // if (!d) {
           //   console.log("Name doesn't match: " + feature.properties.geounit);
           // }
 
           return (
             <path
+              className="land"
               fill={d ? colorScale(colorValue(d)) : missingDataColor}
-              className={mouseHover ? 'highlighted' : 'land'}
               d={path(feature)}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-            />
+            >
+              <title>{title}</title>
+            </path>
           );
         })}
       </g>
