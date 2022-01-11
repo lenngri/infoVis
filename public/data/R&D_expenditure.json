@@ -1,8 +1,18 @@
 [
   {
     "year": 1996,
-    "country": "Austria",
-    "value": "1,58077"
+    "country": "Armenia",
+    "value": ""
+  },
+  {
+    "year": 1996,
+    "country": "Azerbaijan",
+    "value": "0,23533"
+  },
+  {
+    "year": 1996,
+    "country": "Belarus",
+    "value": "0,99852"
   },
   {
     "year": 1996,
@@ -56,6 +66,11 @@
   },
   {
     "year": 1996,
+    "country": "Georgia",
+    "value": "0,33088"
+  },
+  {
+    "year": 1996,
     "country": "Germany",
     "value": "2,14461"
   },
@@ -86,13 +101,53 @@
   },
   {
     "year": 1996,
+    "country": "Kazakhstan",
+    "value": ""
+  },
+  {
+    "year": 1996,
+    "country": "Latvia",
+    "value": "0,39844"
+  },
+  {
+    "year": 1996,
+    "country": "Lithuania",
+    "value": "0,49155"
+  },
+  {
+    "year": 1996,
     "country": "Luxembourg",
+    "value": ""
+  },
+  {
+    "year": 1996,
+    "country": "Malta",
+    "value": ""
+  },
+  {
+    "year": 1996,
+    "country": "Moldova",
+    "value": "0,87296"
+  },
+  {
+    "year": 1996,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 1996,
+    "country": "Montenegro",
     "value": ""
   },
   {
     "year": 1996,
     "country": "Netherlands",
     "value": "1,84093"
+  },
+  {
+    "year": 1996,
+    "country": "North Macedonia",
+    "value": ""
   },
   {
     "year": 1996,
@@ -116,12 +171,17 @@
   },
   {
     "year": 1996,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "0,96592"
   },
   {
     "year": 1996,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": ""
+  },
+  {
+    "year": 1996,
+    "country": "Slovak Republic",
     "value": "0,88963"
   },
   {
@@ -161,8 +221,18 @@
   },
   {
     "year": 1997,
-    "country": "Austria",
-    "value": "1,65491"
+    "country": "Armenia",
+    "value": "0,18692"
+  },
+  {
+    "year": 1997,
+    "country": "Azerbaijan",
+    "value": "0,3695"
+  },
+  {
+    "year": 1997,
+    "country": "Belarus",
+    "value": "0,73"
   },
   {
     "year": 1997,
@@ -216,6 +286,11 @@
   },
   {
     "year": 1997,
+    "country": "Georgia",
+    "value": "0,3424"
+  },
+  {
+    "year": 1997,
     "country": "Germany",
     "value": "2,18832"
   },
@@ -246,13 +321,53 @@
   },
   {
     "year": 1997,
+    "country": "Kazakhstan",
+    "value": "0,29337"
+  },
+  {
+    "year": 1997,
+    "country": "Latvia",
+    "value": "0,36737"
+  },
+  {
+    "year": 1997,
+    "country": "Lithuania",
+    "value": "0,53658"
+  },
+  {
+    "year": 1997,
     "country": "Luxembourg",
+    "value": ""
+  },
+  {
+    "year": 1997,
+    "country": "Malta",
+    "value": ""
+  },
+  {
+    "year": 1997,
+    "country": "Moldova",
+    "value": "0,80679"
+  },
+  {
+    "year": 1997,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 1997,
+    "country": "Montenegro",
     "value": ""
   },
   {
     "year": 1997,
     "country": "Netherlands",
     "value": "1,84477"
+  },
+  {
+    "year": 1997,
+    "country": "North Macedonia",
+    "value": "0,35911"
   },
   {
     "year": 1997,
@@ -276,12 +391,17 @@
   },
   {
     "year": 1997,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,04374"
   },
   {
     "year": 1997,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,70915"
+  },
+  {
+    "year": 1997,
+    "country": "Slovak Republic",
     "value": "1,05108"
   },
   {
@@ -302,7 +422,7 @@
   {
     "year": 1997,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,4172875"
   },
   {
     "year": 1997,
@@ -321,8 +441,18 @@
   },
   {
     "year": 1998,
-    "country": "Austria",
-    "value": "1,73155"
+    "country": "Armenia",
+    "value": "0,22601"
+  },
+  {
+    "year": 1998,
+    "country": "Azerbaijan",
+    "value": "0,42125"
+  },
+  {
+    "year": 1998,
+    "country": "Belarus",
+    "value": "0,70578"
   },
   {
     "year": 1998,
@@ -376,13 +506,18 @@
   },
   {
     "year": 1998,
+    "country": "Georgia",
+    "value": "0,35384"
+  },
+  {
+    "year": 1998,
     "country": "Germany",
     "value": "2,21613"
   },
   {
     "year": 1998,
     "country": "Greece",
-    "value": ""
+    "value": "0,498665"
   },
   {
     "year": 1998,
@@ -406,7 +541,42 @@
   },
   {
     "year": 1998,
+    "country": "Kazakhstan",
+    "value": "0,22039"
+  },
+  {
+    "year": 1998,
+    "country": "Latvia",
+    "value": "0,38031"
+  },
+  {
+    "year": 1998,
+    "country": "Lithuania",
+    "value": "0,54377"
+  },
+  {
+    "year": 1998,
     "country": "Luxembourg",
+    "value": ""
+  },
+  {
+    "year": 1998,
+    "country": "Malta",
+    "value": ""
+  },
+  {
+    "year": 1998,
+    "country": "Moldova",
+    "value": "0,726333333"
+  },
+  {
+    "year": 1998,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 1998,
+    "country": "Montenegro",
     "value": ""
   },
   {
@@ -416,8 +586,13 @@
   },
   {
     "year": 1998,
+    "country": "North Macedonia",
+    "value": "0,40842"
+  },
+  {
+    "year": 1998,
     "country": "Norway",
-    "value": ""
+    "value": "1,599425"
   },
   {
     "year": 1998,
@@ -436,12 +611,17 @@
   },
   {
     "year": 1998,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "0,95383"
   },
   {
     "year": 1998,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,75301"
+  },
+  {
+    "year": 1998,
+    "country": "Slovak Republic",
     "value": "0,76541"
   },
   {
@@ -457,12 +637,12 @@
   {
     "year": 1998,
     "country": "Sweden",
-    "value": ""
+    "value": "3,32763"
   },
   {
     "year": 1998,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,386005"
   },
   {
     "year": 1998,
@@ -481,8 +661,18 @@
   },
   {
     "year": 1999,
-    "country": "Austria",
-    "value": "1,84537"
+    "country": "Armenia",
+    "value": "0,214"
+  },
+  {
+    "year": 1999,
+    "country": "Azerbaijan",
+    "value": "0,39289"
+  },
+  {
+    "year": 1999,
+    "country": "Belarus",
+    "value": "0,84523"
   },
   {
     "year": 1999,
@@ -536,6 +726,11 @@
   },
   {
     "year": 1999,
+    "country": "Georgia",
+    "value": "0,28769"
+  },
+  {
+    "year": 1999,
     "country": "Germany",
     "value": "2,34779"
   },
@@ -566,13 +761,53 @@
   },
   {
     "year": 1999,
+    "country": "Kazakhstan",
+    "value": "0,18383"
+  },
+  {
+    "year": 1999,
+    "country": "Latvia",
+    "value": "0,35257"
+  },
+  {
+    "year": 1999,
+    "country": "Lithuania",
+    "value": "0,502"
+  },
+  {
+    "year": 1999,
     "country": "Luxembourg",
+    "value": ""
+  },
+  {
+    "year": 1999,
+    "country": "Malta",
+    "value": ""
+  },
+  {
+    "year": 1999,
+    "country": "Moldova",
+    "value": "0,645876667"
+  },
+  {
+    "year": 1999,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 1999,
+    "country": "Montenegro",
     "value": ""
   },
   {
     "year": 1999,
     "country": "Netherlands",
     "value": "1,82282"
+  },
+  {
+    "year": 1999,
+    "country": "North Macedonia",
+    "value": "0,32809"
   },
   {
     "year": 1999,
@@ -596,12 +831,17 @@
   },
   {
     "year": 1999,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "0,99623"
   },
   {
     "year": 1999,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,94682"
+  },
+  {
+    "year": 1999,
+    "country": "Slovak Republic",
     "value": "0,64475"
   },
   {
@@ -622,7 +862,7 @@
   {
     "year": 1999,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,3547225"
   },
   {
     "year": 1999,
@@ -641,8 +881,18 @@
   },
   {
     "year": 2000,
-    "country": "Austria",
-    "value": "1,88602"
+    "country": "Armenia",
+    "value": "0,19106"
+  },
+  {
+    "year": 2000,
+    "country": "Azerbaijan",
+    "value": "0,336"
+  },
+  {
+    "year": 2000,
+    "country": "Belarus",
+    "value": "0,7221"
   },
   {
     "year": 2000,
@@ -677,7 +927,7 @@
   {
     "year": 2000,
     "country": "Denmark",
-    "value": ""
+    "value": "2,22615"
   },
   {
     "year": 2000,
@@ -696,13 +946,18 @@
   },
   {
     "year": 2000,
+    "country": "Georgia",
+    "value": "0,2153"
+  },
+  {
+    "year": 2000,
     "country": "Germany",
     "value": "2,40982"
   },
   {
     "year": 2000,
     "country": "Greece",
-    "value": ""
+    "value": "0,563855"
   },
   {
     "year": 2000,
@@ -726,8 +981,43 @@
   },
   {
     "year": 2000,
+    "country": "Kazakhstan",
+    "value": "0,18104"
+  },
+  {
+    "year": 2000,
+    "country": "Latvia",
+    "value": "0,43618"
+  },
+  {
+    "year": 2000,
+    "country": "Lithuania",
+    "value": "0,5848"
+  },
+  {
+    "year": 2000,
     "country": "Luxembourg",
     "value": "1,57673"
+  },
+  {
+    "year": 2000,
+    "country": "Malta",
+    "value": ""
+  },
+  {
+    "year": 2000,
+    "country": "Moldova",
+    "value": "0,56542"
+  },
+  {
+    "year": 2000,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2000,
+    "country": "Montenegro",
+    "value": ""
   },
   {
     "year": 2000,
@@ -736,8 +1026,13 @@
   },
   {
     "year": 2000,
+    "country": "North Macedonia",
+    "value": "0,41888"
+  },
+  {
+    "year": 2000,
     "country": "Norway",
-    "value": ""
+    "value": "1,58397"
   },
   {
     "year": 2000,
@@ -756,12 +1051,17 @@
   },
   {
     "year": 2000,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,04983"
   },
   {
     "year": 2000,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,85424"
+  },
+  {
+    "year": 2000,
+    "country": "Slovak Republic",
     "value": "0,63806"
   },
   {
@@ -777,7 +1077,7 @@
   {
     "year": 2000,
     "country": "Sweden",
-    "value": ""
+    "value": "3,62756"
   },
   {
     "year": 2000,
@@ -801,8 +1101,18 @@
   },
   {
     "year": 2001,
-    "country": "Austria",
-    "value": "1,9921"
+    "country": "Armenia",
+    "value": "0,27987"
+  },
+  {
+    "year": 2001,
+    "country": "Azerbaijan",
+    "value": "0,34001"
+  },
+  {
+    "year": 2001,
+    "country": "Belarus",
+    "value": "0,70876"
   },
   {
     "year": 2001,
@@ -856,6 +1166,11 @@
   },
   {
     "year": 2001,
+    "country": "Georgia",
+    "value": "0,23848"
+  },
+  {
+    "year": 2001,
     "country": "Germany",
     "value": "2,40437"
   },
@@ -886,13 +1201,53 @@
   },
   {
     "year": 2001,
+    "country": "Kazakhstan",
+    "value": "0,22009"
+  },
+  {
+    "year": 2001,
+    "country": "Latvia",
+    "value": "0,40396"
+  },
+  {
+    "year": 2001,
+    "country": "Lithuania",
+    "value": "0,66679"
+  },
+  {
+    "year": 2001,
     "country": "Luxembourg",
+    "value": "1,593136667"
+  },
+  {
+    "year": 2001,
+    "country": "Malta",
+    "value": ""
+  },
+  {
+    "year": 2001,
+    "country": "Moldova",
+    "value": "0,484963333"
+  },
+  {
+    "year": 2001,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2001,
+    "country": "Montenegro",
     "value": ""
   },
   {
     "year": 2001,
     "country": "Netherlands",
     "value": "1,79609"
+  },
+  {
+    "year": 2001,
+    "country": "North Macedonia",
+    "value": "0,2931"
   },
   {
     "year": 2001,
@@ -916,12 +1271,17 @@
   },
   {
     "year": 2001,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,17694"
   },
   {
     "year": 2001,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,30401"
+  },
+  {
+    "year": 2001,
+    "country": "Slovak Republic",
     "value": "0,62465"
   },
   {
@@ -942,7 +1302,7 @@
   {
     "year": 2001,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,4107525"
   },
   {
     "year": 2001,
@@ -961,8 +1321,18 @@
   },
   {
     "year": 2002,
-    "country": "Austria",
-    "value": "2,06598"
+    "country": "Armenia",
+    "value": "0,25255"
+  },
+  {
+    "year": 2002,
+    "country": "Azerbaijan",
+    "value": "0,30155"
+  },
+  {
+    "year": 2002,
+    "country": "Belarus",
+    "value": "0,6209"
   },
   {
     "year": 2002,
@@ -1016,13 +1386,18 @@
   },
   {
     "year": 2002,
+    "country": "Georgia",
+    "value": "0,18574"
+  },
+  {
+    "year": 2002,
     "country": "Germany",
     "value": "2,43622"
   },
   {
     "year": 2002,
     "country": "Greece",
-    "value": ""
+    "value": "0,55301"
   },
   {
     "year": 2002,
@@ -1046,13 +1421,53 @@
   },
   {
     "year": 2002,
+    "country": "Kazakhstan",
+    "value": "0,25509"
+  },
+  {
+    "year": 2002,
+    "country": "Latvia",
+    "value": "0,40959"
+  },
+  {
+    "year": 2002,
+    "country": "Lithuania",
+    "value": "0,6567"
+  },
+  {
+    "year": 2002,
     "country": "Luxembourg",
+    "value": "1,609543333"
+  },
+  {
+    "year": 2002,
+    "country": "Malta",
+    "value": "0,25039"
+  },
+  {
+    "year": 2002,
+    "country": "Moldova",
+    "value": "0,404506667"
+  },
+  {
+    "year": 2002,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2002,
+    "country": "Montenegro",
     "value": ""
   },
   {
     "year": 2002,
     "country": "Netherlands",
     "value": "1,74543"
+  },
+  {
+    "year": 2002,
+    "country": "North Macedonia",
+    "value": "0,24461"
   },
   {
     "year": 2002,
@@ -1076,12 +1491,17 @@
   },
   {
     "year": 2002,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,24652"
   },
   {
     "year": 2002,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,63968"
+  },
+  {
+    "year": 2002,
+    "country": "Slovak Republic",
     "value": "0,56314"
   },
   {
@@ -1097,12 +1517,12 @@
   {
     "year": 2002,
     "country": "Sweden",
-    "value": ""
+    "value": "3,72664"
   },
   {
     "year": 2002,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,498065"
   },
   {
     "year": 2002,
@@ -1121,8 +1541,18 @@
   },
   {
     "year": 2003,
-    "country": "Austria",
-    "value": "2,17456"
+    "country": "Armenia",
+    "value": "0,32109"
+  },
+  {
+    "year": 2003,
+    "country": "Azerbaijan",
+    "value": "0,32496"
+  },
+  {
+    "year": 2003,
+    "country": "Belarus",
+    "value": "0,61147"
   },
   {
     "year": 2003,
@@ -1176,6 +1606,11 @@
   },
   {
     "year": 2003,
+    "country": "Georgia",
+    "value": "0,2176"
+  },
+  {
+    "year": 2003,
     "country": "Germany",
     "value": "2,47461"
   },
@@ -1206,13 +1641,53 @@
   },
   {
     "year": 2003,
+    "country": "Kazakhstan",
+    "value": "0,25246"
+  },
+  {
+    "year": 2003,
+    "country": "Latvia",
+    "value": "0,36053"
+  },
+  {
+    "year": 2003,
+    "country": "Lithuania",
+    "value": "0,66339"
+  },
+  {
+    "year": 2003,
     "country": "Luxembourg",
     "value": "1,62595"
   },
   {
     "year": 2003,
+    "country": "Malta",
+    "value": "0,23886"
+  },
+  {
+    "year": 2003,
+    "country": "Moldova",
+    "value": "0,32405"
+  },
+  {
+    "year": 2003,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2003,
+    "country": "Montenegro",
+    "value": "0,79772"
+  },
+  {
+    "year": 2003,
     "country": "Netherlands",
     "value": "1,7839"
+  },
+  {
+    "year": 2003,
+    "country": "North Macedonia",
+    "value": "0,21064"
   },
   {
     "year": 2003,
@@ -1236,12 +1711,17 @@
   },
   {
     "year": 2003,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,28603"
   },
   {
     "year": 2003,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,49138"
+  },
+  {
+    "year": 2003,
+    "country": "Slovak Republic",
     "value": "0,56146"
   },
   {
@@ -1262,7 +1742,7 @@
   {
     "year": 2003,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,5853775"
   },
   {
     "year": 2003,
@@ -1281,8 +1761,18 @@
   },
   {
     "year": 2004,
-    "country": "Austria",
-    "value": "2,16612"
+    "country": "Armenia",
+    "value": "0,25659"
+  },
+  {
+    "year": 2004,
+    "country": "Azerbaijan",
+    "value": "0,29831"
+  },
+  {
+    "year": 2004,
+    "country": "Belarus",
+    "value": "0,62759"
   },
   {
     "year": 2004,
@@ -1336,6 +1826,11 @@
   },
   {
     "year": 2004,
+    "country": "Georgia",
+    "value": "0,2442"
+  },
+  {
+    "year": 2004,
     "country": "Germany",
     "value": "2,43519"
   },
@@ -1352,7 +1847,7 @@
   {
     "year": 2004,
     "country": "Iceland",
-    "value": ""
+    "value": "2,69763"
   },
   {
     "year": 2004,
@@ -1366,13 +1861,53 @@
   },
   {
     "year": 2004,
+    "country": "Kazakhstan",
+    "value": "0,24837"
+  },
+  {
+    "year": 2004,
+    "country": "Latvia",
+    "value": "0,40063"
+  },
+  {
+    "year": 2004,
+    "country": "Lithuania",
+    "value": "0,75066"
+  },
+  {
+    "year": 2004,
     "country": "Luxembourg",
     "value": "1,60262"
   },
   {
     "year": 2004,
+    "country": "Malta",
+    "value": "0,49406"
+  },
+  {
+    "year": 2004,
+    "country": "Moldova",
+    "value": "0,34903"
+  },
+  {
+    "year": 2004,
+    "country": "Monaco",
+    "value": "0,03719"
+  },
+  {
+    "year": 2004,
+    "country": "Montenegro",
+    "value": "1,01874"
+  },
+  {
+    "year": 2004,
     "country": "Netherlands",
     "value": "1,78901"
+  },
+  {
+    "year": 2004,
+    "country": "North Macedonia",
+    "value": "0,23237"
   },
   {
     "year": 2004,
@@ -1396,12 +1931,17 @@
   },
   {
     "year": 2004,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,15133"
   },
   {
     "year": 2004,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,28953"
+  },
+  {
+    "year": 2004,
+    "country": "Slovak Republic",
     "value": "0,50069"
   },
   {
@@ -1441,8 +1981,18 @@
   },
   {
     "year": 2005,
-    "country": "Austria",
-    "value": "2,37324"
+    "country": "Armenia",
+    "value": "0,25761"
+  },
+  {
+    "year": 2005,
+    "country": "Azerbaijan",
+    "value": "0,21994"
+  },
+  {
+    "year": 2005,
+    "country": "Belarus",
+    "value": "0,67852"
   },
   {
     "year": 2005,
@@ -1496,6 +2046,11 @@
   },
   {
     "year": 2005,
+    "country": "Georgia",
+    "value": "0,17658"
+  },
+  {
+    "year": 2005,
     "country": "Germany",
     "value": "2,44193"
   },
@@ -1526,13 +2081,53 @@
   },
   {
     "year": 2005,
+    "country": "Kazakhstan",
+    "value": "0,28361"
+  },
+  {
+    "year": 2005,
+    "country": "Latvia",
+    "value": "0,53"
+  },
+  {
+    "year": 2005,
+    "country": "Lithuania",
+    "value": "0,74741"
+  },
+  {
+    "year": 2005,
     "country": "Luxembourg",
     "value": "1,57171"
   },
   {
     "year": 2005,
+    "country": "Malta",
+    "value": "0,52921"
+  },
+  {
+    "year": 2005,
+    "country": "Moldova",
+    "value": "0,39865"
+  },
+  {
+    "year": 2005,
+    "country": "Monaco",
+    "value": "0,03821"
+  },
+  {
+    "year": 2005,
+    "country": "Montenegro",
+    "value": "0,92443"
+  },
+  {
+    "year": 2005,
     "country": "Netherlands",
     "value": "1,77388"
+  },
+  {
+    "year": 2005,
+    "country": "North Macedonia",
+    "value": "0,22825"
   },
   {
     "year": 2005,
@@ -1556,12 +2151,17 @@
   },
   {
     "year": 2005,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,06797"
   },
   {
     "year": 2005,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,3953"
+  },
+  {
+    "year": 2005,
+    "country": "Slovak Republic",
     "value": "0,49332"
   },
   {
@@ -1582,7 +2182,7 @@
   {
     "year": 2005,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,6831975"
   },
   {
     "year": 2005,
@@ -1601,8 +2201,18 @@
   },
   {
     "year": 2006,
-    "country": "Austria",
-    "value": "2,35923"
+    "country": "Armenia",
+    "value": "0,24057"
+  },
+  {
+    "year": 2006,
+    "country": "Azerbaijan",
+    "value": "0,17165"
+  },
+  {
+    "year": 2006,
+    "country": "Belarus",
+    "value": "0,66065"
   },
   {
     "year": 2006,
@@ -1656,6 +2266,11 @@
   },
   {
     "year": 2006,
+    "country": "Georgia",
+    "value": "0,1643275"
+  },
+  {
+    "year": 2006,
     "country": "Germany",
     "value": "2,47232"
   },
@@ -1686,13 +2301,53 @@
   },
   {
     "year": 2006,
+    "country": "Kazakhstan",
+    "value": "0,24281"
+  },
+  {
+    "year": 2006,
+    "country": "Latvia",
+    "value": "0,65094"
+  },
+  {
+    "year": 2006,
+    "country": "Lithuania",
+    "value": "0,79119"
+  },
+  {
+    "year": 2006,
     "country": "Luxembourg",
     "value": "1,66674"
   },
   {
     "year": 2006,
+    "country": "Malta",
+    "value": "0,58025"
+  },
+  {
+    "year": 2006,
+    "country": "Moldova",
+    "value": "0,40622"
+  },
+  {
+    "year": 2006,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2006,
+    "country": "Montenegro",
+    "value": "1,22991"
+  },
+  {
+    "year": 2006,
     "country": "Netherlands",
     "value": "1,74067"
+  },
+  {
+    "year": 2006,
+    "country": "North Macedonia",
+    "value": "0,19373"
   },
   {
     "year": 2006,
@@ -1716,12 +2371,17 @@
   },
   {
     "year": 2006,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,07294"
   },
   {
     "year": 2006,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,43985"
+  },
+  {
+    "year": 2006,
+    "country": "Slovak Republic",
     "value": "0,47488"
   },
   {
@@ -1742,7 +2402,7 @@
   {
     "year": 2006,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,693705"
   },
   {
     "year": 2006,
@@ -1761,8 +2421,18 @@
   },
   {
     "year": 2007,
-    "country": "Austria",
-    "value": "2,41843"
+    "country": "Armenia",
+    "value": "0,21107"
+  },
+  {
+    "year": 2007,
+    "country": "Azerbaijan",
+    "value": "0,17006"
+  },
+  {
+    "year": 2007,
+    "country": "Belarus",
+    "value": "0,96203"
   },
   {
     "year": 2007,
@@ -1816,6 +2486,11 @@
   },
   {
     "year": 2007,
+    "country": "Georgia",
+    "value": "0,152075"
+  },
+  {
+    "year": 2007,
     "country": "Germany",
     "value": "2,46048"
   },
@@ -1846,13 +2521,53 @@
   },
   {
     "year": 2007,
+    "country": "Kazakhstan",
+    "value": "0,20884"
+  },
+  {
+    "year": 2007,
+    "country": "Latvia",
+    "value": "0,55385"
+  },
+  {
+    "year": 2007,
+    "country": "Lithuania",
+    "value": "0,80093"
+  },
+  {
+    "year": 2007,
     "country": "Luxembourg",
     "value": "1,59123"
   },
   {
     "year": 2007,
+    "country": "Malta",
+    "value": "0,5485"
+  },
+  {
+    "year": 2007,
+    "country": "Moldova",
+    "value": "0,54557"
+  },
+  {
+    "year": 2007,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2007,
+    "country": "Montenegro",
+    "value": "1,14521"
+  },
+  {
+    "year": 2007,
     "country": "Netherlands",
     "value": "1,6703"
+  },
+  {
+    "year": 2007,
+    "country": "North Macedonia",
+    "value": "0,17093"
   },
   {
     "year": 2007,
@@ -1876,12 +2591,17 @@
   },
   {
     "year": 2007,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,11611"
   },
   {
     "year": 2007,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,57877"
+  },
+  {
+    "year": 2007,
+    "country": "Slovak Republic",
     "value": "0,44746"
   },
   {
@@ -1902,7 +2622,7 @@
   {
     "year": 2007,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,7042125"
   },
   {
     "year": 2007,
@@ -1921,8 +2641,18 @@
   },
   {
     "year": 2008,
-    "country": "Austria",
-    "value": "2,56945"
+    "country": "Armenia",
+    "value": "0,22438"
+  },
+  {
+    "year": 2008,
+    "country": "Azerbaijan",
+    "value": "0,16554"
+  },
+  {
+    "year": 2008,
+    "country": "Belarus",
+    "value": "0,74147"
   },
   {
     "year": 2008,
@@ -1976,6 +2706,11 @@
   },
   {
     "year": 2008,
+    "country": "Georgia",
+    "value": "0,1398225"
+  },
+  {
+    "year": 2008,
     "country": "Germany",
     "value": "2,61513"
   },
@@ -2006,13 +2741,53 @@
   },
   {
     "year": 2008,
+    "country": "Kazakhstan",
+    "value": "0,21654"
+  },
+  {
+    "year": 2008,
+    "country": "Latvia",
+    "value": "0,58038"
+  },
+  {
+    "year": 2008,
+    "country": "Lithuania",
+    "value": "0,78844"
+  },
+  {
+    "year": 2008,
     "country": "Luxembourg",
     "value": "1,62293"
   },
   {
     "year": 2008,
+    "country": "Malta",
+    "value": "0,53331"
+  },
+  {
+    "year": 2008,
+    "country": "Moldova",
+    "value": "0,53463"
+  },
+  {
+    "year": 2008,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2008,
+    "country": "Montenegro",
+    "value": "0,93762"
+  },
+  {
+    "year": 2008,
     "country": "Netherlands",
     "value": "1,62269"
+  },
+  {
+    "year": 2008,
+    "country": "North Macedonia",
+    "value": "0,22358"
   },
   {
     "year": 2008,
@@ -2036,12 +2811,17 @@
   },
   {
     "year": 2008,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,04435"
   },
   {
     "year": 2008,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,66966"
+  },
+  {
+    "year": 2008,
+    "country": "Slovak Republic",
     "value": "0,46137"
   },
   {
@@ -2081,8 +2861,18 @@
   },
   {
     "year": 2009,
-    "country": "Austria",
-    "value": "2,59674"
+    "country": "Armenia",
+    "value": "0,29093"
+  },
+  {
+    "year": 2009,
+    "country": "Azerbaijan",
+    "value": "0,24976"
+  },
+  {
+    "year": 2009,
+    "country": "Belarus",
+    "value": "0,62167"
   },
   {
     "year": 2009,
@@ -2136,6 +2926,11 @@
   },
   {
     "year": 2009,
+    "country": "Georgia",
+    "value": "0,12757"
+  },
+  {
+    "year": 2009,
     "country": "Germany",
     "value": "2,74266"
   },
@@ -2166,13 +2961,53 @@
   },
   {
     "year": 2009,
+    "country": "Kazakhstan",
+    "value": "0,22924"
+  },
+  {
+    "year": 2009,
+    "country": "Latvia",
+    "value": "0,45131"
+  },
+  {
+    "year": 2009,
+    "country": "Lithuania",
+    "value": "0,82967"
+  },
+  {
+    "year": 2009,
     "country": "Luxembourg",
     "value": "1,6775"
   },
   {
     "year": 2009,
+    "country": "Malta",
+    "value": "0,5174"
+  },
+  {
+    "year": 2009,
+    "country": "Moldova",
+    "value": "0,52557"
+  },
+  {
+    "year": 2009,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2009,
+    "country": "Montenegro",
+    "value": "0,73003"
+  },
+  {
+    "year": 2009,
     "country": "Netherlands",
     "value": "1,6657"
+  },
+  {
+    "year": 2009,
+    "country": "North Macedonia",
+    "value": "0,19679"
   },
   {
     "year": 2009,
@@ -2196,12 +3031,17 @@
   },
   {
     "year": 2009,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,25192"
   },
   {
     "year": 2009,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,8173"
+  },
+  {
+    "year": 2009,
+    "country": "Slovak Republic",
     "value": "0,47272"
   },
   {
@@ -2222,7 +3062,7 @@
   {
     "year": 2009,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,8325975"
   },
   {
     "year": 2009,
@@ -2241,8 +3081,18 @@
   },
   {
     "year": 2010,
-    "country": "Austria",
-    "value": "2,7261"
+    "country": "Armenia",
+    "value": "0,24139"
+  },
+  {
+    "year": 2010,
+    "country": "Azerbaijan",
+    "value": "0,21848"
+  },
+  {
+    "year": 2010,
+    "country": "Belarus",
+    "value": "0,66913"
   },
   {
     "year": 2010,
@@ -2252,7 +3102,7 @@
   {
     "year": 2010,
     "country": "Bosnia and Herzegovina",
-    "value": ""
+    "value": "0,102483333"
   },
   {
     "year": 2010,
@@ -2296,6 +3146,11 @@
   },
   {
     "year": 2010,
+    "country": "Georgia",
+    "value": "0,1153175"
+  },
+  {
+    "year": 2010,
     "country": "Germany",
     "value": "2,73024"
   },
@@ -2312,7 +3167,7 @@
   {
     "year": 2010,
     "country": "Iceland",
-    "value": ""
+    "value": "2,50439"
   },
   {
     "year": 2010,
@@ -2326,13 +3181,53 @@
   },
   {
     "year": 2010,
+    "country": "Kazakhstan",
+    "value": "0,15341"
+  },
+  {
+    "year": 2010,
+    "country": "Latvia",
+    "value": "0,60979"
+  },
+  {
+    "year": 2010,
+    "country": "Lithuania",
+    "value": "0,7855"
+  },
+  {
+    "year": 2010,
     "country": "Luxembourg",
     "value": "1,50257"
   },
   {
     "year": 2010,
+    "country": "Malta",
+    "value": "0,60667"
+  },
+  {
+    "year": 2010,
+    "country": "Moldova",
+    "value": "0,3665"
+  },
+  {
+    "year": 2010,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2010,
+    "country": "Montenegro",
+    "value": "0,52244"
+  },
+  {
+    "year": 2010,
     "country": "Netherlands",
     "value": "1,70404"
+  },
+  {
+    "year": 2010,
+    "country": "North Macedonia",
+    "value": "0,21634"
   },
   {
     "year": 2010,
@@ -2356,12 +3251,17 @@
   },
   {
     "year": 2010,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,1302"
   },
   {
     "year": 2010,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,70228"
+  },
+  {
+    "year": 2010,
+    "country": "Slovak Republic",
     "value": "0,61147"
   },
   {
@@ -2382,7 +3282,7 @@
   {
     "year": 2010,
     "country": "Switzerland",
-    "value": ""
+    "value": "2,950475"
   },
   {
     "year": 2010,
@@ -2401,8 +3301,18 @@
   },
   {
     "year": 2011,
-    "country": "Austria",
-    "value": "2,66868"
+    "country": "Armenia",
+    "value": "0,27014"
+  },
+  {
+    "year": 2011,
+    "country": "Azerbaijan",
+    "value": "0,21084"
+  },
+  {
+    "year": 2011,
+    "country": "Belarus",
+    "value": "0,6776"
   },
   {
     "year": 2011,
@@ -2412,7 +3322,7 @@
   {
     "year": 2011,
     "country": "Bosnia and Herzegovina",
-    "value": ""
+    "value": "0,183906667"
   },
   {
     "year": 2011,
@@ -2456,6 +3366,11 @@
   },
   {
     "year": 2011,
+    "country": "Georgia",
+    "value": "0,103065"
+  },
+  {
+    "year": 2011,
     "country": "Germany",
     "value": "2,80555"
   },
@@ -2486,13 +3401,53 @@
   },
   {
     "year": 2011,
+    "country": "Kazakhstan",
+    "value": "0,15349"
+  },
+  {
+    "year": 2011,
+    "country": "Latvia",
+    "value": "0,69606"
+  },
+  {
+    "year": 2011,
+    "country": "Lithuania",
+    "value": "0,9051"
+  },
+  {
+    "year": 2011,
     "country": "Luxembourg",
     "value": "1,46277"
   },
   {
     "year": 2011,
+    "country": "Malta",
+    "value": "0,6737"
+  },
+  {
+    "year": 2011,
+    "country": "Moldova",
+    "value": "0,33764"
+  },
+  {
+    "year": 2011,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2011,
+    "country": "Montenegro",
+    "value": "0,31485"
+  },
+  {
+    "year": 2011,
     "country": "Netherlands",
     "value": "1,88131"
+  },
+  {
+    "year": 2011,
+    "country": "North Macedonia",
+    "value": "0,22276"
   },
   {
     "year": 2011,
@@ -2516,12 +3471,17 @@
   },
   {
     "year": 2011,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,01545"
   },
   {
     "year": 2011,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,68334"
+  },
+  {
+    "year": 2011,
+    "country": "Slovak Republic",
     "value": "0,65779"
   },
   {
@@ -2542,7 +3502,7 @@
   {
     "year": 2011,
     "country": "Switzerland",
-    "value": ""
+    "value": "3,0683525"
   },
   {
     "year": 2011,
@@ -2561,8 +3521,18 @@
   },
   {
     "year": 2012,
-    "country": "Austria",
-    "value": "2,91472"
+    "country": "Armenia",
+    "value": "0,23853"
+  },
+  {
+    "year": 2012,
+    "country": "Azerbaijan",
+    "value": "0,21427"
+  },
+  {
+    "year": 2012,
+    "country": "Belarus",
+    "value": "0,64603"
   },
   {
     "year": 2012,
@@ -2616,6 +3586,11 @@
   },
   {
     "year": 2012,
+    "country": "Georgia",
+    "value": "0,0908125"
+  },
+  {
+    "year": 2012,
     "country": "Germany",
     "value": "2,88166"
   },
@@ -2632,7 +3607,7 @@
   {
     "year": 2012,
     "country": "Iceland",
-    "value": ""
+    "value": "2,057855"
   },
   {
     "year": 2012,
@@ -2646,13 +3621,53 @@
   },
   {
     "year": 2012,
+    "country": "Kazakhstan",
+    "value": "0,16525"
+  },
+  {
+    "year": 2012,
+    "country": "Latvia",
+    "value": "0,66305"
+  },
+  {
+    "year": 2012,
+    "country": "Lithuania",
+    "value": "0,89515"
+  },
+  {
+    "year": 2012,
     "country": "Luxembourg",
     "value": "1,27267"
   },
   {
     "year": 2012,
+    "country": "Malta",
+    "value": "0,82675"
+  },
+  {
+    "year": 2012,
+    "country": "Moldova",
+    "value": "0,34907"
+  },
+  {
+    "year": 2012,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2012,
+    "country": "Montenegro",
+    "value": "0,34458"
+  },
+  {
+    "year": 2012,
     "country": "Netherlands",
     "value": "1,91627"
+  },
+  {
+    "year": 2012,
+    "country": "North Macedonia",
+    "value": "0,32676"
   },
   {
     "year": 2012,
@@ -2676,12 +3691,17 @@
   },
   {
     "year": 2012,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,02766"
   },
   {
     "year": 2012,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,85316"
+  },
+  {
+    "year": 2012,
+    "country": "Slovak Republic",
     "value": "0,7964"
   },
   {
@@ -2721,8 +3741,18 @@
   },
   {
     "year": 2013,
-    "country": "Austria",
-    "value": "2,95492"
+    "country": "Armenia",
+    "value": "0,22216"
+  },
+  {
+    "year": 2013,
+    "country": "Azerbaijan",
+    "value": "0,20969"
+  },
+  {
+    "year": 2013,
+    "country": "Belarus",
+    "value": "0,65191"
   },
   {
     "year": 2013,
@@ -2776,6 +3806,11 @@
   },
   {
     "year": 2013,
+    "country": "Georgia",
+    "value": "0,07856"
+  },
+  {
+    "year": 2013,
     "country": "Germany",
     "value": "2,83599"
   },
@@ -2806,13 +3841,53 @@
   },
   {
     "year": 2013,
+    "country": "Kazakhstan",
+    "value": "0,17132"
+  },
+  {
+    "year": 2013,
+    "country": "Latvia",
+    "value": "0,61176"
+  },
+  {
+    "year": 2013,
+    "country": "Lithuania",
+    "value": "0,9502"
+  },
+  {
+    "year": 2013,
     "country": "Luxembourg",
     "value": "1,30266"
   },
   {
     "year": 2013,
+    "country": "Malta",
+    "value": "0,77248"
+  },
+  {
+    "year": 2013,
+    "country": "Moldova",
+    "value": "0,29783"
+  },
+  {
+    "year": 2013,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2013,
+    "country": "Montenegro",
+    "value": "0,37431"
+  },
+  {
+    "year": 2013,
     "country": "Netherlands",
     "value": "1,92987"
+  },
+  {
+    "year": 2013,
+    "country": "North Macedonia",
+    "value": "0,43894"
   },
   {
     "year": 2013,
@@ -2836,12 +3911,17 @@
   },
   {
     "year": 2013,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,02732"
   },
   {
     "year": 2013,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,68367"
+  },
+  {
+    "year": 2013,
+    "country": "Slovak Republic",
     "value": "0,82157"
   },
   {
@@ -2862,7 +3942,7 @@
   {
     "year": 2013,
     "country": "Switzerland",
-    "value": ""
+    "value": "3,24802"
   },
   {
     "year": 2013,
@@ -2881,8 +3961,18 @@
   },
   {
     "year": 2014,
-    "country": "Austria",
-    "value": "3,08429"
+    "country": "Armenia",
+    "value": "0,24151"
+  },
+  {
+    "year": 2014,
+    "country": "Azerbaijan",
+    "value": "0,20978"
+  },
+  {
+    "year": 2014,
+    "country": "Belarus",
+    "value": "0,50548"
   },
   {
     "year": 2014,
@@ -2936,6 +4026,11 @@
   },
   {
     "year": 2014,
+    "country": "Georgia",
+    "value": "0,17318"
+  },
+  {
+    "year": 2014,
     "country": "Germany",
     "value": "2,87784"
   },
@@ -2966,13 +4061,53 @@
   },
   {
     "year": 2014,
+    "country": "Kazakhstan",
+    "value": "0,16722"
+  },
+  {
+    "year": 2014,
+    "country": "Latvia",
+    "value": "0,68825"
+  },
+  {
+    "year": 2014,
+    "country": "Lithuania",
+    "value": "1,03114"
+  },
+  {
+    "year": 2014,
     "country": "Luxembourg",
     "value": "1,26404"
   },
   {
     "year": 2014,
+    "country": "Malta",
+    "value": "0,71161"
+  },
+  {
+    "year": 2014,
+    "country": "Moldova",
+    "value": "0,31105"
+  },
+  {
+    "year": 2014,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2014,
+    "country": "Montenegro",
+    "value": "0,3632"
+  },
+  {
+    "year": 2014,
     "country": "Netherlands",
     "value": "1,97568"
+  },
+  {
+    "year": 2014,
+    "country": "North Macedonia",
+    "value": "0,51646"
   },
   {
     "year": 2014,
@@ -2996,12 +4131,17 @@
   },
   {
     "year": 2014,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,07241"
   },
   {
     "year": 2014,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,72309"
+  },
+  {
+    "year": 2014,
+    "country": "Slovak Republic",
     "value": "0,87814"
   },
   {
@@ -3022,7 +4162,7 @@
   {
     "year": 2014,
     "country": "Switzerland",
-    "value": ""
+    "value": "3,30981"
   },
   {
     "year": 2014,
@@ -3041,8 +4181,18 @@
   },
   {
     "year": 2015,
-    "country": "Austria",
-    "value": "3,04969"
+    "country": "Armenia",
+    "value": "0,25002"
+  },
+  {
+    "year": 2015,
+    "country": "Azerbaijan",
+    "value": "0,22232"
+  },
+  {
+    "year": 2015,
+    "country": "Belarus",
+    "value": "0,49999"
   },
   {
     "year": 2015,
@@ -3096,6 +4246,11 @@
   },
   {
     "year": 2015,
+    "country": "Georgia",
+    "value": "0,29928"
+  },
+  {
+    "year": 2015,
     "country": "Germany",
     "value": "2,93003"
   },
@@ -3126,13 +4281,53 @@
   },
   {
     "year": 2015,
+    "country": "Kazakhstan",
+    "value": "0,16951"
+  },
+  {
+    "year": 2015,
+    "country": "Latvia",
+    "value": "0,62352"
+  },
+  {
+    "year": 2015,
+    "country": "Lithuania",
+    "value": "1,04408"
+  },
+  {
+    "year": 2015,
     "country": "Luxembourg",
     "value": "1,27204"
   },
   {
     "year": 2015,
+    "country": "Malta",
+    "value": "0,74253"
+  },
+  {
+    "year": 2015,
+    "country": "Moldova",
+    "value": "0,30943"
+  },
+  {
+    "year": 2015,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2015,
+    "country": "Montenegro",
+    "value": "0,374"
+  },
+  {
+    "year": 2015,
     "country": "Netherlands",
     "value": "1,98487"
+  },
+  {
+    "year": 2015,
+    "country": "North Macedonia",
+    "value": "0,44412"
   },
   {
     "year": 2015,
@@ -3156,12 +4351,17 @@
   },
   {
     "year": 2015,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,10085"
   },
   {
     "year": 2015,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,81146"
+  },
+  {
+    "year": 2015,
+    "country": "Slovak Republic",
     "value": "1,1626"
   },
   {
@@ -3201,8 +4401,18 @@
   },
   {
     "year": 2016,
-    "country": "Austria",
-    "value": "3,11659"
+    "country": "Armenia",
+    "value": "0,23305"
+  },
+  {
+    "year": 2016,
+    "country": "Azerbaijan",
+    "value": "0,20637"
+  },
+  {
+    "year": 2016,
+    "country": "Belarus",
+    "value": "0,50063"
   },
   {
     "year": 2016,
@@ -3256,6 +4466,11 @@
   },
   {
     "year": 2016,
+    "country": "Georgia",
+    "value": "0,28586"
+  },
+  {
+    "year": 2016,
     "country": "Germany",
     "value": "2,94099"
   },
@@ -3286,13 +4501,53 @@
   },
   {
     "year": 2016,
+    "country": "Kazakhstan",
+    "value": "0,14179"
+  },
+  {
+    "year": 2016,
+    "country": "Latvia",
+    "value": "0,44032"
+  },
+  {
+    "year": 2016,
+    "country": "Lithuania",
+    "value": "0,84233"
+  },
+  {
+    "year": 2016,
     "country": "Luxembourg",
     "value": "1,25831"
   },
   {
     "year": 2016,
+    "country": "Malta",
+    "value": "0,56778"
+  },
+  {
+    "year": 2016,
+    "country": "Moldova",
+    "value": "0,2769"
+  },
+  {
+    "year": 2016,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2016,
+    "country": "Montenegro",
+    "value": "0,32454"
+  },
+  {
+    "year": 2016,
     "country": "Netherlands",
     "value": "1,99685"
+  },
+  {
+    "year": 2016,
+    "country": "North Macedonia",
+    "value": "0,43585"
   },
   {
     "year": 2016,
@@ -3316,12 +4571,17 @@
   },
   {
     "year": 2016,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,10238"
   },
   {
     "year": 2016,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,83951"
+  },
+  {
+    "year": 2016,
+    "country": "Slovak Republic",
     "value": "0,79078"
   },
   {
@@ -3342,7 +4602,7 @@
   {
     "year": 2016,
     "country": "Switzerland",
-    "value": ""
+    "value": "3,36979"
   },
   {
     "year": 2016,
@@ -3361,8 +4621,18 @@
   },
   {
     "year": 2017,
-    "country": "Austria",
-    "value": "3,04885"
+    "country": "Armenia",
+    "value": "0,22788"
+  },
+  {
+    "year": 2017,
+    "country": "Azerbaijan",
+    "value": "0,18468"
+  },
+  {
+    "year": 2017,
+    "country": "Belarus",
+    "value": "0,58411"
   },
   {
     "year": 2017,
@@ -3416,6 +4686,11 @@
   },
   {
     "year": 2017,
+    "country": "Georgia",
+    "value": "0,27023"
+  },
+  {
+    "year": 2017,
     "country": "Germany",
     "value": "3,06792"
   },
@@ -3437,7 +4712,7 @@
   {
     "year": 2017,
     "country": "Ireland",
-    "value": ""
+    "value": "1,157695"
   },
   {
     "year": 2017,
@@ -3446,13 +4721,53 @@
   },
   {
     "year": 2017,
+    "country": "Kazakhstan",
+    "value": "0,12667"
+  },
+  {
+    "year": 2017,
+    "country": "Latvia",
+    "value": "0,51459"
+  },
+  {
+    "year": 2017,
+    "country": "Lithuania",
+    "value": "0,89641"
+  },
+  {
+    "year": 2017,
     "country": "Luxembourg",
     "value": "1,26852"
   },
   {
     "year": 2017,
+    "country": "Malta",
+    "value": "0,58424"
+  },
+  {
+    "year": 2017,
+    "country": "Moldova",
+    "value": "0,25374"
+  },
+  {
+    "year": 2017,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2017,
+    "country": "Montenegro",
+    "value": "0,34898"
+  },
+  {
+    "year": 2017,
     "country": "Netherlands",
     "value": "1,98308"
+  },
+  {
+    "year": 2017,
+    "country": "North Macedonia",
+    "value": "0,35439"
   },
   {
     "year": 2017,
@@ -3476,12 +4791,17 @@
   },
   {
     "year": 2017,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "1,10967"
   },
   {
     "year": 2017,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,87353"
+  },
+  {
+    "year": 2017,
+    "country": "Slovak Republic",
     "value": "0,88612"
   },
   {
@@ -3521,8 +4841,18 @@
   },
   {
     "year": 2018,
-    "country": "Austria",
-    "value": "3,17491"
+    "country": "Armenia",
+    "value": "0,18876"
+  },
+  {
+    "year": 2018,
+    "country": "Azerbaijan",
+    "value": "0,18416"
+  },
+  {
+    "year": 2018,
+    "country": "Belarus",
+    "value": "0,60443"
   },
   {
     "year": 2018,
@@ -3576,6 +4906,11 @@
   },
   {
     "year": 2018,
+    "country": "Georgia",
+    "value": "0,28052"
+  },
+  {
+    "year": 2018,
     "country": "Germany",
     "value": "3,13267"
   },
@@ -3606,13 +4941,53 @@
   },
   {
     "year": 2018,
+    "country": "Kazakhstan",
+    "value": "0,11683"
+  },
+  {
+    "year": 2018,
+    "country": "Latvia",
+    "value": "0,64083"
+  },
+  {
+    "year": 2018,
+    "country": "Lithuania",
+    "value": "0,94181"
+  },
+  {
+    "year": 2018,
     "country": "Luxembourg",
     "value": "1,21126"
   },
   {
     "year": 2018,
+    "country": "Malta",
+    "value": "0,57246"
+  },
+  {
+    "year": 2018,
+    "country": "Moldova",
+    "value": "0,25168"
+  },
+  {
+    "year": 2018,
+    "country": "Monaco",
+    "value": ""
+  },
+  {
+    "year": 2018,
+    "country": "Montenegro",
+    "value": "0,36415"
+  },
+  {
+    "year": 2018,
     "country": "Netherlands",
     "value": "2,16374"
+  },
+  {
+    "year": 2018,
+    "country": "North Macedonia",
+    "value": "0,36523"
   },
   {
     "year": 2018,
@@ -3636,12 +5011,17 @@
   },
   {
     "year": 2018,
-    "country": "Russia",
+    "country": "Russian Federation",
     "value": "0,98275"
   },
   {
     "year": 2018,
-    "country": "Slovakia",
+    "country": "Serbia",
+    "value": "0,9197"
+  },
+  {
+    "year": 2018,
+    "country": "Slovak Republic",
     "value": "0,83806"
   },
   {
