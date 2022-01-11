@@ -18,6 +18,11 @@ h1 {
   stroke-width: 0.5px;
 }
 
+.highlighted {
+  stroke: black;
+  stroke-width: 1px;
+}
+
 .center {
   text-align: center;
 }
