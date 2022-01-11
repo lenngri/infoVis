@@ -49,8 +49,8 @@ const Choropleth = ({ view, selectedYear }) => {
   } else {
     colorValue = (d) => d.patents / (d.population / 1000000);
     colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
-    legendTitle = 'Patents Registered per Year per Million Inhabitants';
-    mapTitle = `Number of patents registered in ${selectedYear}`;
+    legendTitle = 'Patents Registered per Million Inhabitants';
+    mapTitle = `Number of Patents Registered in ${selectedYear}`;
   }
 
   return (
