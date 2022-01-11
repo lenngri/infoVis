@@ -14,13 +14,13 @@ h1 {
 }
 
 .marks .land {
-  stroke: white;
+  stroke: gray;
   stroke-width: 0.5px;
 }
 
-.highlighted {
+.highlightCountry {
   stroke: black;
-  stroke-width: 1px;
+  stroke-width: 1.5px;
 }
 
 .center {
