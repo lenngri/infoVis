@@ -54,7 +54,7 @@ export default function TimeSlider({ setYear }) {
           marks={marks}
           min={2008}
           max={2014}
-          onChangeCommitted={handleSliderChange}
+          onChange={handleSliderChange}
         />
       </Box>
     </Container>
