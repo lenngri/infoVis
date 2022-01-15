@@ -37,9 +37,9 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
     <>
       <g className="marks">
         {mapData.features.map((feature) => {
-          const d = rowByCountry.get(feature.properties.geounit);
+          const d = rowByCountry.get(feature.properties.name);
           const value = d ? colorValue(d) : 'no data';
-          const title = `${feature.properties.geounit}: ${value}`;
+          const title = `${feature.properties.name}: ${value}`;
           // if (!d) {
           //   console.log("Name doesn't match: " + feature.properties.geounit);
           // }
