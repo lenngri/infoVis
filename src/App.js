@@ -31,7 +31,9 @@ function App() {
           <Choropleth view={view} selectedYear={year} />
           <TimeSlider setYear={setYear} />
           <Boxspacer />
-          <Bubblechart selectedYear={year} />
+          <Container>
+            <Bubblechart view={view} selectedYear={year} />
+          </Container>
         </Container>
       </main>
       <footer className="Footer">

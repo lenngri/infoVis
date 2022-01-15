@@ -14,10 +14,8 @@ export const useData = () => {
     return null;
   }
 
-  const filteredData = data.filter((o1) => countryData.some((o2) => o1.country === o2.name));
-
   // append population to general data object
-  filteredData.forEach((patentEntry) => {
+  data.forEach((patentEntry) => {
     populationData.forEach((populationEntry) => {
       if (
         patentEntry.country === populationEntry.country &&
@@ -29,7 +27,7 @@ export const useData = () => {
   });
 
   // append investmentData to general data object
-  filteredData.forEach((patentEntry) => {
+  data.forEach((patentEntry) => {
     investmentData.forEach((investmentEntry) => {
       if (
         patentEntry.country === investmentEntry.country &&
@@ -40,5 +38,7 @@ export const useData = () => {
     });
   });
 
+  const filteredData = data.filter((o1) => countryData.some((o2) => o1.country === o2.name));
+  console.log(filteredData);
   return filteredData;
 };
