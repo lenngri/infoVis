@@ -6,7 +6,6 @@ import { useData } from '../../datatools/useData';
 import Marks from './Marks';
 import { scaleThreshold } from 'd3'; // scaleSequential
 import { schemeBlues } from 'd3-scale-chromatic';
-import { Container, Box } from '@mui/material';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -54,31 +53,20 @@ const Choropleth = ({ view, selectedYear }) => {
   }
 
   return (
-    <Container>
-      <Box
-        sx={{
-          boxShadow: 3,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          overflow: 'hidden',
-        }}
-      >
-        <p className="center">{mapTitle}</p>
-        <svg width={width} height={height}>
-          <Marks
-            mapData={mapData}
-            width={width}
-            height={height}
-            rowByCountry={rowByCountry}
-            colorScale={colorScale}
-            colorValue={colorValue}
-            legendTitle={legendTitle}
-          />
-        </svg>
-      </Box>
-    </Container>
+    <>
+      <p className="center">{mapTitle}</p>
+      <svg width={width} height={height}>
+        <Marks
+          mapData={mapData}
+          width={width}
+          height={height}
+          rowByCountry={rowByCountry}
+          colorScale={colorScale}
+          colorValue={colorValue}
+          legendTitle={legendTitle}
+        />
+      </svg>
+    </>
   );
 };
 

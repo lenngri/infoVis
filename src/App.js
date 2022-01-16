@@ -1,10 +1,10 @@
 import './components/App.css';
 import { useState } from 'react';
-import { Divider, Container, Typography } from '@material-ui/core';
+import { Divider, Typography } from '@material-ui/core';
+import { Container, Box } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
-import Containera from './components/Containera';
 import Tabsa from './components/Tabsa';
 import TimeSlider from './components/TimeSlider';
 import Colormode from './components/Colormode';
@@ -28,11 +28,36 @@ function App() {
         <Boxspacer />
         <Container>
           <Tabsa view={view} setView={setView} />
-          <Choropleth view={view} selectedYear={year} />
+          <Container>
+            <Box
+              sx={{
+                // boxShadow: 3,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                overflow: 'hidden',
+              }}
+            >
+              <Choropleth view={view} selectedYear={year} />
+            </Box>
+          </Container>
           <TimeSlider setYear={setYear} />
           <Boxspacer />
           <Container>
-            <Bubblechart view={view} selectedYear={year} />
+            <Box
+              sx={{
+                // boxShadow: 3,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                overflow: 'hidden',
+                mb: 6,
+              }}
+            >
+              <Bubblechart view={view} selectedYear={year} />
+            </Box>
           </Container>
         </Container>
       </main>

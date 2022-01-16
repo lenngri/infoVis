@@ -13,13 +13,13 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
     setMouseHover(!mouseHover);
     const pathElement = e.target;
     pathElement.classList.remove('land');
-    pathElement.classList.add('highlightCountry');
+    pathElement.classList.add('highlight');
   };
 
   const handleMouseLeave = (e) => {
     setMouseHover(!mouseHover);
     const pathElement = e.target;
-    pathElement.classList.remove('highlightCountry');
+    pathElement.classList.remove('highlight');
     pathElement.classList.add('land');
   };
 

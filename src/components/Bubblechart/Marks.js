@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Legend from '../../charttools/useLegend';
 
 const missingDataColor = 'darkgray';
 
@@ -23,13 +22,13 @@ const Marks = ({
     setMouseHover(!mouseHover);
     const pathElement = e.target;
     pathElement.classList.remove('land');
-    pathElement.classList.add('highlightCountry');
+    pathElement.classList.add('highlight');
   };
 
   const handleMouseLeave = (e) => {
     setMouseHover(!mouseHover);
     const pathElement = e.target;
-    pathElement.classList.remove('highlightCountry');
+    pathElement.classList.remove('highlight');
     pathElement.classList.add('land');
   };
 

@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { csv, scaleLinear, extent, scaleBand, format, scaleThreshold } from 'd3';
+import React from 'react';
+import { scaleLinear, extent, format, scaleThreshold } from 'd3';
 import { AxisLeft } from './AxisLeft';
 import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
 import { useData } from '../../datatools/useData';
 import { schemeBlues } from 'd3-scale-chromatic';
 
-const width = 1800;
-const height = 1200;
-const margin = { top: 20, right: 30, bottom: 65, left: 220 };
+const width = 1000;
+const height = 600;
+const margin = { top: 20, right: 30, bottom: 65, left: 90 };
 const xAxisLabelOffset = 50;
 const yAxisLabelOffset = 45;
 
@@ -53,18 +53,12 @@ function Bubblechart({ view, selectedYear }) {
 
   let colorValue;
   let colorScale;
-  let legendTitle;
-  let mapTitle;
   if (view === 1) {
     colorValue = (d) => d.investment;
     colorScale = scaleThreshold().domain([0.5, 0.75, 1.0, 1.5, 2.0, 2.5]).range(schemeBlues[7]);
-    legendTitle = 'R&D Investments in %';
-    mapTitle = `R&D Investments in ${selectedYear}`;
   } else {
     colorValue = (d) => d.patents / (d.population / 1000000);
     colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
-    legendTitle = 'Patents Registered per Million Inhabitants';
-    mapTitle = `Number of Patents Registered in ${selectedYear}`;
   }
 
   return (
