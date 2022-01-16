@@ -10,6 +10,7 @@ import TimeSlider from './components/TimeSlider';
 import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
+import Bubblechart from './components/Bubblechart/Bubblechart';
 
 function App() {
   const [year, setYear] = useState(2011);
@@ -30,7 +31,9 @@ function App() {
           <Choropleth view={view} selectedYear={year} />
           <TimeSlider setYear={setYear} />
           <Boxspacer />
-          <Containera />
+          <Container>
+            <Bubblechart view={view} selectedYear={year} />
+          </Container>
         </Container>
       </main>
       <footer className="Footer">
