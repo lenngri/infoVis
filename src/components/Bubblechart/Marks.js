@@ -47,7 +47,7 @@ const Marks = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <title>{d.country}</title>
+      <title>{d.country + ': ' + d.investment}</title>
     </circle>
   ));
 };

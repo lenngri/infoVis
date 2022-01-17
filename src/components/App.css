@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.tick line {
+  stroke: #c0c0bb;
+}
+
+circle {
+  stroke: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -94,7 +94,7 @@ function Bubblechart({ view, selectedYear }) {
           yValue={yValue}
           toolTipFormat={xAxisTickFormat}
           averagePopulation={averagePopulation}
-          circleRadius={30}
+          circleRadius={40}
           colorScale={colorScale}
           colorValue={colorValue}
         />
