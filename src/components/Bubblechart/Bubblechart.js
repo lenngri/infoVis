@@ -30,7 +30,7 @@ function Bubblechart({ view, selectedYear }) {
   const xAxisLabel = 'Investment in Research & Development (as % of GDP)';
 
   const yValue = (d) => d.patents / (d.population / 1000000);
-  const yAxisLabel = 'Number of Patents per million inhabitants';
+  const yAxisLabel = 'Number of Patents per million inhabitants (ppm)';
 
   const siFormat = format('.2s');
   const xAxisTickFormat = (tickValue) => siFormat(tickValue);
@@ -86,7 +86,7 @@ function Bubblechart({ view, selectedYear }) {
           y={innerHeight + xAxisLabelOffset + 50}
           textAnchor="middle"
         >
-          {yAxisLabel}
+          {xAxisLabel}
         </text>
         <Marks
           data={filteredData}

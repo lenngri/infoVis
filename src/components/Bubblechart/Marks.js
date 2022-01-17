@@ -49,13 +49,14 @@ const Marks = ({
       <title>
         {d.country +
           '\n % of GDP: ' +
-          d.investment +
-          '\n Population: ' +
-          d.population +
+          Math.round((d.investment + Number.EPSILON) * 100) / 100 +
+          '\n Patents per million: ' +
+          Math.round(d.patents / (d.population / 1000000), 2) +
           '\n Patents: ' +
-          d.patents +
-          '\n ppm:' +
-          d.patents / (d.population / 1000000)}
+          Math.round(d.patents, 2) +
+          '\n Population: ' +
+          Math.round(d.population / 1000000, 2) +
+          ' million'}
       </title>
     </circle>
   ));
