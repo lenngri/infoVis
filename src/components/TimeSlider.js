@@ -17,7 +17,7 @@ export default function TimeSlider({ setYear }) {
       <Box sm={{ width: 600 }} mt={2}>
         <Slider
           aria-label="Year"
-          defaultValue={2011}
+          defaultValue={1996}
           getAriaValueText={valuetext}
           valueLabelDisplay="auto"
           step={1}

@@ -43,11 +43,20 @@ const Marks = ({
       cy={yScale(yValue(d))}
       r={((d.population / averagePopulation) * circleRadius) / Math.PI}
       fill={d ? colorScale(colorValue(d)) : missingDataColor}
-      style={{ zIndex: { zIndex } }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <title>{d.country + ': ' + d.investment}</title>
+      <title>
+        {d.country +
+          '\n % of GDP: ' +
+          d.investment +
+          '\n Population: ' +
+          d.population +
+          '\n Patents: ' +
+          d.patents +
+          '\n ppm:' +
+          d.patents / (d.population / 1000000)}
+      </title>
     </circle>
   ));
 };

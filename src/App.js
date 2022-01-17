@@ -13,7 +13,7 @@ import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
 
 function App() {
-  const [year, setYear] = useState(2011);
+  const [year, setYear] = useState(1996);
   const [view, setView] = useState(0);
 
   return (
