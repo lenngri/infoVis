@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
 
 const missingDataColor = 'darkgray';
 
@@ -14,22 +14,6 @@ const Marks = ({
   colorScale,
   colorValue,
 }) => {
-  const [mouseHover, setMouseHover] = useState(false);
-
-  // Append CSS class to HTMLelement based on mouse event
-  // Source: https://stackoverflow.com/questions/927312/how-to-append-a-css-class-to-an-element-by-javascript (11.01.2021)
-  const handleMouseEnter = (e) => {
-    setMouseHover(!mouseHover);
-    const pathElement = e.target;
-    pathElement.classList.add('highlight');
-  };
-
-  const handleMouseLeave = (e) => {
-    setMouseHover(!mouseHover);
-    const pathElement = e.target;
-    pathElement.classList.remove('highlight');
-  };
-
   return data.map((d) => (
     <circle
       id={'Bubblechart_' + d.country}
@@ -38,8 +22,8 @@ const Marks = ({
       cy={yScale(yValue(d))}
       r={((d.population / averagePopulation) * circleRadius) / Math.PI}
       fill={d ? colorScale(colorValue(d)) : missingDataColor}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={(e) => handleMouseEnter(e, 'Map_')}
+      onMouseLeave={(e) => handleMouseLeave(e, 'Map_')}
     >
       <title>
         {d.country +
