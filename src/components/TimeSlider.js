@@ -3,13 +3,15 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import marks from './marks';
+import { useStoreActions } from 'easy-peasy';
 
 const valuetext = (value) => `${value}year`;
 
-export default function TimeSlider({ setYear }) {
+export default function TimeSlider() {
+  const setSelectedYear = useStoreActions((actions) => actions.setSelectedYear);
+
   const handleSliderChange = (e, value) => {
-    console.log(`Slider value change to ${value}.`);
-    setYear(value);
+    setSelectedYear(value);
   };
 
   return (

@@ -2,22 +2,24 @@
 // Source: Curran Kelleher, 2018 https://www.youtube.com/watch?v=OoZ0LWD9KUs
 // Source: https://github.com/viswesh/Maps/tree/master/chapter1
 import { useMapData } from './useMapData';
-import { useData } from '../../datatools/useData';
+import { useStoreState } from 'easy-peasy';
 import Marks from './Marks';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
-const Choropleth = ({ view, selectedYear, colorValue, colorScale }) => {
+const Choropleth = () => {
   const mapData = useMapData();
-  const data = useData();
-  // console.log(colorValue, colorScale);
+  const data = useStoreState((state) => state.data);
+  const view = useStoreState((state) => state.view);
+  const scheme = useStoreState((state) => state.scheme);
+  const selectedYear = useStoreState((state) => state.selectedYear);
 
-  if (!mapData || !data) {
+  if (!mapData || !data || !scheme) {
     return <p>Loading...</p>;
   }
 
-  console.log('Data was successfully loaded:', data);
+  console.log('Succefully loaded Choropleth');
 
   // filter data for selected year
   const filteredData = data.filter((d) => d.year === selectedYear);
@@ -54,8 +56,8 @@ const Choropleth = ({ view, selectedYear, colorValue, colorScale }) => {
           width={width}
           height={height}
           rowByCountry={rowByCountry}
-          colorScale={colorScale}
-          colorValue={colorValue}
+          colorScale={scheme.colorScale}
+          colorValue={scheme.colorValue}
           legendTitle={legendTitle}
         />
       </svg>
