@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import Legend from '../../charttools/useLegend';
+import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
 
 const missingDataColor = 'darkgray';
 
@@ -15,40 +14,29 @@ const Marks = ({
   colorScale,
   colorValue,
 }) => {
-  const [mouseHover, setMouseHover] = useState(false);
-
-  // Append CSS class to HTMLelement based on mouse event
-  // Source: https://stackoverflow.com/questions/927312/how-to-append-a-css-class-to-an-element-by-javascript (11.01.2021)
-  const handleMouseEnter = (e) => {
-    setMouseHover(!mouseHover);
-    const pathElement = e.target;
-    pathElement.classList.remove('land');
-    pathElement.classList.add('highlightCountry');
-  };
-
-  const handleMouseLeave = (e) => {
-    setMouseHover(!mouseHover);
-    const pathElement = e.target;
-    pathElement.classList.remove('highlightCountry');
-    pathElement.classList.add('land');
-  };
-
-  // generate map legend and append to svg,
-  // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
-  const zIndex = 1;
-
   return data.map((d) => (
     <circle
+      id={'Bubblechart_' + d.country}
       className="mark"
       cx={xScale(xValue(d))}
       cy={yScale(yValue(d))}
       r={((d.population / averagePopulation) * circleRadius) / Math.PI}
       fill={d ? colorScale(colorValue(d)) : missingDataColor}
-      style={{ zIndex: { zIndex } }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={(e) => handleMouseEnter(e, 'Map_')}
+      onMouseLeave={(e) => handleMouseLeave(e, 'Map_')}
     >
-      <title>{d.country}</title>
+      <title>
+        {d.country +
+          '\n % of GDP: ' +
+          Math.round((d.investment + Number.EPSILON) * 100) / 100 +
+          '\n Patents per million: ' +
+          Math.round(d.patents / (d.population / 1000000), 2) +
+          '\n Patents: ' +
+          Math.round(d.patents, 2) +
+          '\n Population: ' +
+          Math.round(d.population / 1000000, 2) +
+          ' million'}
+      </title>
     </circle>
   ));
 };
