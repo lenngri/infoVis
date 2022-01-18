@@ -14,6 +14,9 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
     const pathElement = e.target;
     pathElement.classList.remove('land');
     pathElement.classList.add('highlight');
+
+    const bubble = document.getElementById('Bubblechart_' + e.target.id.split('_')[1]);
+    if (bubble) bubble.classList.add('highlight');
   };
 
   const handleMouseLeave = (e) => {
@@ -21,6 +24,9 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
     const pathElement = e.target;
     pathElement.classList.remove('highlight');
     pathElement.classList.add('land');
+
+    const bubble = document.getElementById('Bubblechart_' + e.target.id.split('_')[1]);
+    if (bubble) bubble.classList.remove('highlight');
   };
 
   // generate map progjection and paths
@@ -46,6 +52,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
 
           return (
             <path
+              id={'Map_' + feature.properties.name}
               className="land"
               fill={d ? colorScale(colorValue(d)) : missingDataColor}
               d={path(feature)}

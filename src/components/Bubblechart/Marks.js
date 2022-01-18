@@ -21,7 +21,6 @@ const Marks = ({
   const handleMouseEnter = (e) => {
     setMouseHover(!mouseHover);
     const pathElement = e.target;
-    pathElement.classList.remove('land');
     pathElement.classList.add('highlight');
   };
 
@@ -29,15 +28,11 @@ const Marks = ({
     setMouseHover(!mouseHover);
     const pathElement = e.target;
     pathElement.classList.remove('highlight');
-    pathElement.classList.add('land');
   };
-
-  // generate map legend and append to svg,
-  // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
-  const zIndex = 1;
 
   return data.map((d) => (
     <circle
+      id={'Bubblechart_' + d.country}
       className="mark"
       cx={xScale(xValue(d))}
       cy={yScale(yValue(d))}
