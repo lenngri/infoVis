@@ -5,7 +5,7 @@ import { Container, Box } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
-import Tabsa from './components/Tabsa';
+import ChoroplethToggle from './components/ChoroplethToggle';
 import TimeSlider from './components/TimeSlider';
 import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
@@ -36,7 +36,7 @@ function App() {
         </Container>
         <Boxspacer />
         <Container>
-          <Tabsa />
+          <ChoroplethToggle />
           <Container>
             <Box
               sx={{

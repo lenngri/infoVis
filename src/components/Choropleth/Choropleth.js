@@ -39,17 +39,18 @@ const Choropleth = () => {
   // set colorValue function, colorScale object and legendTitle
   let legendTitle;
   let mapTitle;
-  if (view === 1) {
-    legendTitle = 'R&D Investments in %';
-    mapTitle = `R&D Investments in ${selectedYear}`;
+  if (view === 'investments') {
+    legendTitle = 'R&D Expenditure in % of GPD';
+    mapTitle = `R&D Expenditure in `;
   } else {
     legendTitle = 'Patents Registered per Million Inhabitants';
-    mapTitle = `Number of Patents Registered in ${selectedYear}`;
+    mapTitle = `Number of Patents Registered in `;
   }
 
   return (
     <>
-      <p className="center">{mapTitle}</p>
+      {/* {mapTitle + selectedYear} */}
+      <p className="center"></p>
       <svg width={width} height={height}>
         <Marks
           mapData={mapData}
