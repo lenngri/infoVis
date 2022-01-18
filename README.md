@@ -22,14 +22,30 @@ a cholopleth map of Europe, a Bubble Chart and interactive features.
 The Web Application will be build with d3.js and React
 
 ## Features
-- a colorpleth of europe with visual encoding for both patent registrations as well as R&D expenditure
-    → overview of european situation
 
-### To Do
-- a bubble chart of patent registrations, R&D expenditure and GDP by country 
-    → comparison and pattern recognition
-- detail on demand: patent categories are shown as pie chart / stacked bar chart
-- time travel: slider which lets someone control the displayed year + possibility to autoplay
+- [x] General
+  - [x] Short description of the page
+  - [ ] Exhaustive description of data and methodology
+  - [ ] Usage hints for the visualisations
+- [x] Choropleth
+  - [x] Registered Patents View
+  - [x] R&D Expenditure View
+  - [x] Legend
+  - [x] Highlight on hover in Map and Bubble Chart
+  - [x] Detail on demand through tooltips
+- [x] Bubble Chart
+  - [x] Highlight on hover in Bubble Chart and Map
+  - [x] Detail on demand through tooltips
+- [x] Time slider
+  - [x] Manual sliding
+  - [ ] Auto Play
+- [ ] Detail on demand
+  - [ ] Detail window on Click of Charts giving details on patent registration categories
+  - [ ] Visualization of details on demand (pie-chart / bar chart)
+- [ ] Highlighting of countries through list on the left side for better orientation
+- [ ] Filtering of countries through hover over Choropleth legend
+- [ ] Visualization and / or data export
+
 
 ## Sources
 
