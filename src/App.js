@@ -1,5 +1,5 @@
 import './components/App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Divider, Typography } from '@material-ui/core';
 import { Container, Box } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
@@ -11,10 +11,24 @@ import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
+import { patentColorTheme, rDColorTheme } from './charttools/useColorTheme';
 
 function App() {
   const [year, setYear] = useState(1996);
   const [view, setView] = useState(0);
+  const [scheme, setScheme] = useState(null);
+
+  useEffect(() => {
+    if (view === 1) {
+      setScheme(rDColorTheme());
+    } else {
+      setScheme(patentColorTheme());
+    }
+  }, [view, setScheme]);
+
+  if (!scheme) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <div className="App">
@@ -39,7 +53,12 @@ function App() {
                 overflow: 'hidden',
               }}
             >
-              <Choropleth view={view} selectedYear={year} />
+              <Choropleth
+                view={view}
+                selectedYear={year}
+                colorValue={scheme.colorValue}
+                colorScale={scheme.colorScale}
+              />
             </Box>
           </Container>
           <TimeSlider setYear={setYear} />
@@ -56,7 +75,12 @@ function App() {
                 mb: 6,
               }}
             >
-              <Bubblechart view={view} selectedYear={year} />
+              <Bubblechart
+                view={view}
+                selectedYear={year}
+                colorValue={scheme.colorValue}
+                colorScale={scheme.colorScale}
+              />
             </Box>
           </Container>
         </Container>

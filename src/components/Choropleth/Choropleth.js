@@ -4,15 +4,14 @@
 import { useMapData } from './useMapData';
 import { useData } from '../../datatools/useData';
 import Marks from './Marks';
-import { scaleThreshold } from 'd3'; // scaleSequential
-import { schemeBlues } from 'd3-scale-chromatic';
 
 const width = 900; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
-const Choropleth = ({ view, selectedYear }) => {
+const Choropleth = ({ view, selectedYear, colorValue, colorScale }) => {
   const mapData = useMapData();
   const data = useData();
+  // console.log(colorValue, colorScale);
 
   if (!mapData || !data) {
     return <p>Loading...</p>;
@@ -36,18 +35,12 @@ const Choropleth = ({ view, selectedYear }) => {
   });
 
   // set colorValue function, colorScale object and legendTitle
-  let colorValue;
-  let colorScale;
   let legendTitle;
   let mapTitle;
   if (view === 1) {
-    colorValue = (d) => d.investment;
-    colorScale = scaleThreshold().domain([0.5, 0.75, 1.0, 1.5, 2.0, 2.5]).range(schemeBlues[7]);
     legendTitle = 'R&D Investments in %';
     mapTitle = `R&D Investments in ${selectedYear}`;
   } else {
-    colorValue = (d) => d.patents / (d.population / 1000000);
-    colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
     legendTitle = 'Patents Registered per Million Inhabitants';
     mapTitle = `Number of Patents Registered in ${selectedYear}`;
   }

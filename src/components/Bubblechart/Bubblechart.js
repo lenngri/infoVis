@@ -1,10 +1,9 @@
 import React from 'react';
-import { scaleLinear, extent, format, scaleThreshold } from 'd3';
+import { scaleLinear, extent, format } from 'd3';
 import { AxisLeft } from './AxisLeft';
 import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
 import { useData } from '../../datatools/useData';
-import { schemeBlues } from 'd3-scale-chromatic';
 
 const width = 1000;
 const height = 600;
@@ -12,7 +11,7 @@ const margin = { top: 20, right: 30, bottom: 150, left: 90 };
 const xAxisLabelOffset = 50;
 const yAxisLabelOffset = 45;
 
-function Bubblechart({ view, selectedYear }) {
+function Bubblechart({ view, selectedYear, colorValue, colorScale }) {
   const data = useData();
 
   if (!data) {
@@ -52,16 +51,6 @@ function Bubblechart({ view, selectedYear }) {
   };
 
   const averagePopulation = populationTotal(filteredData) / filteredData.length;
-
-  let colorValue;
-  let colorScale;
-  if (view === 1) {
-    colorValue = (d) => d.investment;
-    colorScale = scaleThreshold().domain([0.5, 0.75, 1.0, 1.5, 2.0, 2.5]).range(schemeBlues[7]);
-  } else {
-    colorValue = (d) => d.patents / (d.population / 1000000);
-    colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(schemeBlues[7]);
-  }
 
   return (
     <svg width={width} height={height}>
