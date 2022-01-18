@@ -3,7 +3,7 @@ import { scaleLinear, extent, format } from 'd3';
 import { AxisLeft } from './AxisLeft';
 import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
-import { useData } from '../../datatools/useData';
+import { useStoreState } from 'easy-peasy';
 
 const width = 1000;
 const height = 600;
@@ -11,12 +11,16 @@ const margin = { top: 20, right: 30, bottom: 150, left: 90 };
 const xAxisLabelOffset = 50;
 const yAxisLabelOffset = 45;
 
-function Bubblechart({ view, selectedYear, colorValue, colorScale }) {
-  const data = useData();
+function Bubblechart({ colorValue, colorScale }) {
+  const data = useStoreState((state) => state.data);
+  const selectedYear = useStoreState((state) => state.selectedYear);
+  const scheme = useStoreState((state) => state.scheme);
 
-  if (!data) {
+  if (!data || !scheme) {
     return <pre>Loading...</pre>;
   }
+
+  console.log('Succefully loaded Bubblechart');
 
   // filter data for selected year
   const filteredData = data.filter((d) => d.year === selectedYear && d.population);
@@ -35,10 +39,7 @@ function Bubblechart({ view, selectedYear, colorValue, colorScale }) {
   const xAxisTickFormat = (tickValue) => siFormat(tickValue);
 
   const xScale = scaleLinear().domain(extent(data, xValue)).range([0, innerWidth]).nice();
-
   const yScale = scaleLinear().domain([0, 2200]).range([innerHeight, 0]).nice();
-
-  console.log(filteredData);
 
   const populationTotal = (obj) => {
     let sum = 0;
@@ -86,8 +87,8 @@ function Bubblechart({ view, selectedYear, colorValue, colorScale }) {
           toolTipFormat={xAxisTickFormat}
           averagePopulation={averagePopulation}
           circleRadius={40}
-          colorScale={colorScale}
-          colorValue={colorValue}
+          colorScale={scheme.colorScale}
+          colorValue={scheme.colorValue}
         />
       </g>
     </svg>

@@ -16,10 +16,6 @@ const marks = [
     label: '1999',
   },
   {
-    value: 1999,
-    label: '1999',
-  },
-  {
     value: 2000,
     label: '2000',
   },

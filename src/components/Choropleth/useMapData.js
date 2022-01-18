@@ -11,7 +11,6 @@ export const useMapData = () => {
     json(dataUrl).then((topology) => {
       const featureCollection = feature(topology, topology.objects.collection); // europe
       setData(featureCollection);
-      console.log(featureCollection);
     });
   }, []);
 

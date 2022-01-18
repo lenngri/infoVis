@@ -1,5 +1,5 @@
 import './components/App.css';
-import { useState, useEffect } from 'react';
+import { useStoreActions } from 'easy-peasy';
 import { Divider, Typography } from '@material-ui/core';
 import { Container, Box } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
@@ -11,24 +11,20 @@ import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
-import { patentColorTheme, rDColorTheme } from './charttools/useColorTheme';
+// import { patentColorTheme, rDColorTheme } from './charttools/useColorTheme';
+import { useData } from './datatools/useData';
 
 function App() {
-  const [year, setYear] = useState(1996);
-  const [view, setView] = useState(0);
-  const [scheme, setScheme] = useState(null);
+  const setData = useStoreActions((actions) => actions.setData);
 
-  useEffect(() => {
-    if (view === 1) {
-      setScheme(rDColorTheme());
-    } else {
-      setScheme(patentColorTheme());
-    }
-  }, [view, setScheme]);
+  const data = useData();
+  console.log('Sucessfully loaded data.');
 
-  if (!scheme) {
+  if (!data) {
     return <p>Loading...</p>;
   }
+
+  setData(data);
 
   return (
     <div className="App">
@@ -41,7 +37,7 @@ function App() {
         </Container>
         <Boxspacer />
         <Container>
-          <Tabsa view={view} setView={setView} />
+          <Tabsa />
           <Container>
             <Box
               sx={{
@@ -53,15 +49,10 @@ function App() {
                 overflow: 'hidden',
               }}
             >
-              <Choropleth
-                view={view}
-                selectedYear={year}
-                colorValue={scheme.colorValue}
-                colorScale={scheme.colorScale}
-              />
+              <Choropleth />
             </Box>
           </Container>
-          <TimeSlider setYear={setYear} />
+          <TimeSlider />
           <Boxspacer />
           <Container>
             <Box
@@ -75,12 +66,7 @@ function App() {
                 mb: 6,
               }}
             >
-              <Bubblechart
-                view={view}
-                selectedYear={year}
-                colorValue={scheme.colorValue}
-                colorScale={scheme.colorScale}
-              />
+              <Bubblechart />
             </Box>
           </Container>
         </Container>

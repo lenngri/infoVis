@@ -39,6 +39,5 @@ export const useData = () => {
   });
 
   const filteredData = data.filter((o1) => countryData.some((o2) => o1.country === o2.name));
-  console.log(filteredData);
   return filteredData;
 };

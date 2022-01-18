@@ -17,6 +17,7 @@ const Marks = ({
   return data.map((d) => (
     <circle
       id={'Bubblechart_' + d.country}
+      key={d.country}
       className="mark"
       cx={xScale(xValue(d))}
       cy={yScale(yValue(d))}

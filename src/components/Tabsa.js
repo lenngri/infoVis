@@ -4,6 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { useStoreState, useStoreActions } from 'easy-peasy';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -38,9 +39,12 @@ function a11yProps(index) {
   };
 }
 
-export default function Tabsa({ view, setView }) {
+export default function Tabsa() {
+  const view = useStoreState((state) => state.view);
+  const changeView = useStoreActions((actions) => actions.changeView);
+
   const handleChange = (event, newValue) => {
-    setView(newValue);
+    changeView(newValue);
   };
 
   return (
