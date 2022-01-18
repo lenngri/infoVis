@@ -29,27 +29,17 @@ export default function Impressum() {
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Legal Notice
+      <Button variant="outlined" onClick={handleClickOpen} sx={{ my: 1 }}>
+        About
       </Button>
-      <Dialog
-        fullScreen
-        open={open}
-        onClose={handleClose}
-        TransitionComponent={Transition}
-      >
+      <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
         <AppBar sx={{ position: 'relative' }}>
           <Toolbar>
-            <IconButton
-              edge="start"
-              color="inherit"
-              onClick={handleClose}
-              aria-label="close"
-            >
+            <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
               <CloseIcon />
             </IconButton>
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-              Legal Notice
+              About
             </Typography>
             <Button autoFocus color="inherit" onClick={handleClose}>
               close
@@ -57,14 +47,19 @@ export default function Impressum() {
           </Toolbar>
         </AppBar>
         <List>
-          <ListItem button>
-            <ListItemText primary="General Info" secondary="LMU Munich Project Course, Information Visualization, Lecturer: Prof. Dr. Andreas Butz,
-            Team Members: Lennart Grigoleit, Hendrik Geiger, Manuel Riegel, Mirjam Feigl, Anna Hartmeyer" />
+          <ListItem>
+            <ListItemText
+              primary="General Info"
+              secondary="This page is brought to you by the LMU Munich project course Information Visualization by Prof. Dr. Andreas Butz and Team Toppo, consisting of  Mirjam Feigl, Hendrik Geiger, Lennart Grigoleit, Anna Hartmeyer, Manuel Riegel."
+            />
           </ListItem>
           <Divider />
-          <ListItem button>
-            <ListItemText primary="Project Description" secondary="The aim of the project is to visualize research & development expenditures in dependency with patent registrations in Europe. The Web Application will display this dependency per country and it's development over time by visualizing
-a cholopleth map of Europe, a Bubble Chart and interactive features." />
+          <ListItem>
+            <ListItemText
+              primary="Project Description"
+              secondary="The aim of the project is to visualize research & development expenditures in dependency with patent registrations in Europe. The Web Application will display this dependency per country and it's development over time by visualizing
+a cholopleth map of Europe, a Bubble Chart and interactive features."
+            />
           </ListItem>
           <Divider />
         </List>

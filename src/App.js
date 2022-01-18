@@ -1,17 +1,15 @@
 import './components/App.css';
 import { useStoreActions } from 'easy-peasy';
-import { Divider, Typography } from '@material-ui/core';
-import { Container, Box } from '@mui/material';
+import { Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
-import Tabsa from './components/Tabsa';
+import ChoroplethToggle from './components/ChoroplethToggle';
 import TimeSlider from './components/TimeSlider';
 import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
-// import { patentColorTheme, rDColorTheme } from './charttools/useColorTheme';
 import { useData } from './datatools/useData';
 
 function App() {
@@ -21,7 +19,13 @@ function App() {
   console.log('Sucessfully loaded data.');
 
   if (!data) {
-    return <p>Loading...</p>;
+    return (
+      <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Box sx={{ mt: 50 }}>
+          <CircularProgress />
+        </Box>
+      </Container>
+    );
   }
 
   setData(data);
@@ -37,7 +41,7 @@ function App() {
         </Container>
         <Boxspacer />
         <Container>
-          <Tabsa />
+          <ChoroplethToggle />
           <Container>
             <Box
               sx={{

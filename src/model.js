@@ -5,7 +5,7 @@ const model = {
   // state
   data: null,
   selectedYear: 2005,
-  view: 0,
+  view: 'patents',
   scheme: patentColorTheme(),
   // actions
   setData: action((state, data) => {
@@ -27,7 +27,7 @@ const model = {
   // thunks
   changeView: thunk((actions, view) => {
     actions.setView(view);
-    if (view === 1) {
+    if (view === 'investments') {
       actions.setScheme(rDColorTheme());
     } else {
       actions.setScheme(patentColorTheme());
