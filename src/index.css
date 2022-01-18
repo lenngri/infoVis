@@ -4,25 +4,9 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  background-color: #71808f;
 }
 
 h1 {
   color: black;
   font-weight: 100;
-}
-
-.marks .land {
-  stroke: gray;
-  stroke-width: 0.5px;
-}
-
-.highlight {
-  stroke: black;
-  stroke-width: 1.5px;
-}
-
-.center {
-  text-align: center;
 }

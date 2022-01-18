@@ -1,7 +1,6 @@
 import './components/App.css';
 import { useStoreActions } from 'easy-peasy';
-import { Divider, Typography } from '@material-ui/core';
-import { Container, Box } from '@mui/material';
+import { Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
@@ -20,7 +19,13 @@ function App() {
   console.log('Sucessfully loaded data.');
 
   if (!data) {
-    return <p>Loading...</p>;
+    return (
+      <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Box sx={{ mt: 50 }}>
+          <CircularProgress />
+        </Box>
+      </Container>
+    );
   }
 
   setData(data);
