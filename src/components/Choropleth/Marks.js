@@ -33,6 +33,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
             <path
               id={'Map_' + feature.properties.name}
               className="land"
+              key={feature.properties.name}
               fill={d ? colorScale(colorValue(d)) : missingDataColor}
               d={path(feature)}
               onMouseEnter={(e) => handleMouseEnter(e, 'Bubblechart_')}
