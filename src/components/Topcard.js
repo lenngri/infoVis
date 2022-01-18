@@ -14,7 +14,13 @@ const card = (
         Patent registrations and R&D investments
       </Typography>
       <Typography sx={{ mb: 1.5 }} color="text.secondary">
-      Research and experimental development (R&D) comprise work undertaken on a systematic basis in order to increase the stock of knowledge, including knowledge of man, culture and society, and the use of this stock of knowledge to devise new applications. R&D expenditures include all expenditures for R&D performed within the business enterprise sector (BERD) on the national territory during a given period, regardless of the source of funds. R&D expenditure in BERD are shown as a percentage of GDP (R&D intensity).
+        This page shows the development of patent registrations and research and development (R&D)
+        expenditures of European countries over time. Whereas the Choropleth serves for an overview
+        of patent registrations and R&D investments, the Bubble Chart allows for comparison of
+        countries of special interest and recognition of patterns in the data (e.g., investigating
+        correlations between the number of patent registrations and investment in R&D activities).
+        If desired, in-depth information can be retrieved to get deeper insights into the data of
+        individual countries.
       </Typography>
     </CardContent>
   </React.Fragment>

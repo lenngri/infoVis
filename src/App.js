@@ -11,7 +11,6 @@ import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
-// import { patentColorTheme, rDColorTheme } from './charttools/useColorTheme';
 import { useData } from './datatools/useData';
 
 function App() {
