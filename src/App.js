@@ -1,6 +1,7 @@
 import './components/App.css';
 import { useStoreActions } from 'easy-peasy';
-import { Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
+
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
@@ -45,43 +46,49 @@ function App() {
           <Topcard />
         </Container>
         <Boxspacer />
-        <Container>
-          <CountryList />
-        </Container>
-        <Container>
-          <ChoroplethToggle />
-          <Container>
-            <Box
-              sx={{
-                // boxShadow: 3,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                overflow: 'hidden',
-              }}
-            >
-              <Choropleth />
-            </Box>
-          </Container>
-          <TimeSlider />
-          <Boxspacer />
-          <Container>
-            <Box
-              sx={{
-                // boxShadow: 3,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                overflow: 'hidden',
-                mb: 6,
-              }}
-            >
-              <Bubblechart />
-            </Box>
-          </Container>
-        </Container>
+        <Grid container spacing={1} columnSpacing={4}>
+          <Grid itm xs="auto">
+            <Container>
+              <CountryList />
+            </Container>
+          </Grid>
+          <Grid itm xs="auto">
+            <Container>
+              <ChoroplethToggle />
+              <Container>
+                <Box
+                  sx={{
+                    // boxShadow: 3,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <Choropleth />
+                </Box>
+              </Container>
+              <TimeSlider />
+              <Boxspacer />
+              <Container>
+                <Box
+                  sx={{
+                    // boxShadow: 3,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    overflow: 'hidden',
+                    mb: 6,
+                  }}
+                >
+                  <Bubblechart />
+                </Box>
+              </Container>
+            </Container>
+          </Grid>
+        </Grid>
       </main>
       <footer className="Footer">
         <Divider />

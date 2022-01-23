@@ -40,8 +40,6 @@ const CountryList = () => {
   function renderRow(props) {
     const { index, style } = props;
 
-    const labelId = `checkbox-list-secondary-label-${filteredData[index].country}`;
-
     return (
       <Container>
         <div
@@ -80,10 +78,10 @@ const CountryList = () => {
         <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
           Countries: {checkedCountries.length} of {filteredData.length} selected
         </Typography>
-        <Box sx={{ width: '100%', height: 400, maxWidth: 360, bgcolor: 'background.paper' }}>
+        <Box sx={{ width: '60%', height: 800, maxWidth: 360, bgcolor: 'background.paper' }}>
           <FixedSizeList
-            height={400}
-            width={360}
+            height={800}
+            width={300}
             itemSize={50}
             itemCount={filteredData.length}
             overscanCount={5}
