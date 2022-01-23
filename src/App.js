@@ -11,11 +11,15 @@ import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
 import { useData } from './datatools/useData';
+import CountryList from './components/CountryList/CountryList';
 
 function App() {
   const setData = useStoreActions((actions) => actions.setData);
+  const setCheckedCountries = useStoreActions((actions) => actions.setCheckedCountries);
 
   const data = useData();
+  const checkedCountries = [];
+
   console.log('Sucessfully loaded data.');
 
   if (!data) {
@@ -29,6 +33,7 @@ function App() {
   }
 
   setData(data);
+  setCheckedCountries(checkedCountries);
 
   return (
     <div className="App">
@@ -40,6 +45,9 @@ function App() {
           <Topcard />
         </Container>
         <Boxspacer />
+        <Container>
+          <CountryList />
+        </Container>
         <Container>
           <ChoroplethToggle />
           <Container>

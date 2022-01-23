@@ -23,3 +23,7 @@ circle {
 .center {
   text-align: center;
 }
+
+.listEntry {
+  outline: 2px black;
+}
