@@ -15,9 +15,24 @@ circle {
   stroke-width: 0.5px;
 }
 
-.highlight {
-  stroke: black;
-  stroke-width: 1.5px;
+/* .marks .land:hover {
+  stroke: fuchsia;
+  stroke-width: 0.5px;
+} */
+
+.marks .land.highlight {
+  stroke: fuchsia;
+  stroke-width: 3;
+}
+
+.mark.highlight {
+  stroke: fuchsia;
+  stroke-width: 3px;
+}
+
+.countryListItem.highlight {
+  stroke: 2px dotted fuchsia;
+  background-color: gold;
 }
 
 .center {
@@ -26,4 +41,9 @@ circle {
 
 .listEntry {
   outline: 2px black;
+}
+
+.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-1p823my-MuiListItem-root.highlight {
+  outline: 2px solid fuchsia;
+  z-index: 10;
 }

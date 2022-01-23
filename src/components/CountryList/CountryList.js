@@ -1,6 +1,6 @@
 import { useStoreState, useStoreActions } from 'easy-peasy';
 import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+import { Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
@@ -12,7 +12,8 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
+import { FixedSizeList } from 'react-window';
+import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
 
 const CountryList = () => {
   const data = useStoreState((state) => state.data);
@@ -36,36 +37,60 @@ const CountryList = () => {
     setCheckedCountries(newCheckedCountries);
   };
 
-  const Demo = styled('div')(({ theme }) => ({
-    backgroundColor: theme.palette.background.paper,
-  }));
+  function renderRow(props) {
+    const { index, style } = props;
 
-  const list = filteredData.map((object) => {
-    const labelId = `checkbox-list-secondary-label-${object.country}`;
+    const labelId = `checkbox-list-secondary-label-${filteredData[index].country}`;
 
     return (
-      <ListItem>
-        <ListItemIcon>{object.flag}</ListItemIcon>
-        <ListItemText primary={object.country} secondary={`Patents: ${object.patents}`} />
-        <Checkbox
-          edge="end"
-          onChange={handleToggle(object)}
-          checked={checkedCountries.indexOf(object) !== -1}
-          inputProps={{ 'aria-labelledby': labelId }}
-        />
-      </ListItem>
+      <Container>
+        <div
+          className="countryListItem"
+          id={'List_' + filteredData[index].country}
+          onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'Map_'])}
+          onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'Map_'])}
+        >
+          <ListItem
+            style={style}
+            key={index}
+            component="div"
+            id={'List_' + filteredData[index].country}
+            onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'Map_'])}
+            onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'Map_'])}
+          >
+            <ListItemIcon>{filteredData[index].flag}</ListItemIcon>
+            <ListItemText
+              primary={filteredData[index].country}
+              secondary={`Patents: ${filteredData[index].patents}`}
+            />
+            <Checkbox
+              edge="end"
+              onChange={handleToggle(filteredData[index])}
+              checked={checkedCountries.indexOf(filteredData[index]) !== -1}
+            />
+          </ListItem>
+        </div>
+      </Container>
     );
-  });
+  }
 
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
         <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-          countries
+          Countries: {checkedCountries.length} of {filteredData.length} selected
         </Typography>
-        <Demo>
-          <List>{list}</List>
-        </Demo>
+        <Box sx={{ width: '100%', height: 400, maxWidth: 360, bgcolor: 'background.paper' }}>
+          <FixedSizeList
+            height={400}
+            width={360}
+            itemSize={50}
+            itemCount={filteredData.length}
+            overscanCount={5}
+          >
+            {renderRow}
+          </FixedSizeList>
+        </Box>
       </Grid>
     </Grid>
   );
