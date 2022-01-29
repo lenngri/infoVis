@@ -83,6 +83,7 @@ function App() {
             </Box>
           </Container>
         </Container>
+        <PieChart />
       </main>
       <footer className='Footer'>
         <Divider />
@@ -93,7 +94,6 @@ function App() {
         <Typography variant='subtitle1' align='center' color='textSecondard'>
           This page is brought to you by MMT.
         </Typography>
-        <PieChart />
       </footer>
     </div>
   );
