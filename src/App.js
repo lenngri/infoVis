@@ -11,7 +11,7 @@ import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
 import { useData } from './datatools/useData';
-import { useMapData } from './components/Choropleth/useMapData';
+import { useMapData } from './datatools/useMapData';
 import { usePatentCategoryData } from './datatools/usePatentCategoryData';
 
 function App() {
