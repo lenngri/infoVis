@@ -21,11 +21,11 @@ const model = {
   }),
   setCategoryData: action((state, categoryData) => {
     state.categoryData = categoryData;
-    console.log('New mapData object set.');
+    console.log('New categoryData object set.');
   }),
   setClickedCountry: action((state, clickedCountry) => {
     state.clickedCountry = clickedCountry;
-    console.log('New mapData object set.');
+    console.log('New clickedCountry object set.');
   }),
   setSelectedYear: action((state, year) => {
     state.selectedYear = year;
