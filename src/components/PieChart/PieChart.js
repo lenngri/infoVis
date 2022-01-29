@@ -8,6 +8,7 @@ const height = 500;
 const PieChart = () => {
   const categoryData = useStoreState((state) => state.categoryData);
   const selectedYear = useStoreState((state) => state.selectedYear);
+  const clickedCountry = useStoreState((state) => state.clickedCountry);
 
   if (!categoryData) {
     return <p>Loading...</p>;
@@ -15,9 +16,12 @@ const PieChart = () => {
 
   // filter data for selected year
   const filteredData = categoryData.filter((d) => d.year === selectedYear);
+  // filter data for clicked country
+  const filteredByCountry = filteredData.filter((d) => d.country === clickedCountry);
+  console.log(filteredByCountry);
 
-  const pieChart = PieChartGen(filteredData, {
-    name: (d) => d.country,
+  const pieChart = PieChartGen(filteredByCountry, {
+    name: (d) => d.category,
     value: (d) => d.patents,
     width,
     height: height,

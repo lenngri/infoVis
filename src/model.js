@@ -7,6 +7,7 @@ const model = {
   mapData: null,
   categoryData: null,
   selectedYear: 2005,
+  clickedCountry: 'Germany',
   view: 'patents',
   scheme: patentColorTheme(),
   // actions
@@ -20,6 +21,10 @@ const model = {
   }),
   setCategoryData: action((state, categoryData) => {
     state.categoryData = categoryData;
+    console.log('New mapData object set.');
+  }),
+  setClickedCountry: action((state, clickedCountry) => {
+    state.clickedCountry = clickedCountry;
     console.log('New mapData object set.');
   }),
   setSelectedYear: action((state, year) => {
