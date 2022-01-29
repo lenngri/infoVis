@@ -1,12 +1,12 @@
 import { geoPath, geoMercator } from 'd3';
 import Legend from '../../charttools/useLegend';
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
+import { useStoreActions } from 'easy-peasy';
 
 const missingDataColor = 'darkgray';
 
 const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, legendTitle }) => {
-  // Append CSS class to HTMLelement based on mouse event
-  // Source: https://stackoverflow.com/questions/927312/how-to-append-a-css-class-to-an-element-by-javascript (11.01.2021)
+  const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
 
   // generate map progjection and paths
   const projection = geoMercator()
@@ -20,7 +20,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
 
   return (
     <>
-      <g className="marks">
+      <g className='marks'>
         {mapData.features.map((feature) => {
           const d = rowByCountry.get(feature.properties.name);
           const value = d ? colorValue(d) : 'no data';
@@ -32,12 +32,13 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
           return (
             <path
               id={'Map_' + feature.properties.name}
-              className="land"
+              className='land'
               key={feature.properties.name}
               fill={d ? colorScale(colorValue(d)) : missingDataColor}
               d={path(feature)}
               onMouseEnter={(e) => handleMouseEnter(e, 'Bubblechart_')}
               onMouseLeave={(e) => handleMouseLeave(e, 'Bubblechart_')}
+              onClick={(e) => setClickedCountry(e.target.id.split('_')[1])}
             >
               <title>{title}</title>
             </path>
