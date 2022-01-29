@@ -12,6 +12,7 @@ import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
 import { useData } from './datatools/useData';
 import { useMapData } from './components/Choropleth/useMapData';
+import { usePatentCategoryData } from './datatools/usePatentCategoryData';
 
 function App() {
   const setData = useStoreActions((actions) => actions.setData);
@@ -19,9 +20,10 @@ function App() {
 
   const data = useData();
   const mapData = useMapData();
+  const categoryData = usePatentCategoryData();
   console.log('Sucessfully loaded data.');
 
-  if (!data || !mapData) {
+  if (!data || !mapData || !categoryData) {
     return (
       <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <Box sx={{ mt: 50 }}>
@@ -35,7 +37,7 @@ function App() {
   setMapData(mapData);
 
   return (
-    <div className="App">
+    <div className='App'>
       <Appbar />
       <Colormode />
       <main>
@@ -79,13 +81,13 @@ function App() {
           </Container>
         </Container>
       </main>
-      <footer className="Footer">
+      <footer className='Footer'>
         <Divider />
-        <Typography variant="h6" align="center" gutterBottom>
+        <Typography variant='h6' align='center' gutterBottom>
           Thanks for reading.
         </Typography>
         <Impressum />
-        <Typography variant="subtitle1" align="center" color="textSecondard">
+        <Typography variant='subtitle1' align='center' color='textSecondard'>
           This page is brought to you by MMT.
         </Typography>
       </footer>
