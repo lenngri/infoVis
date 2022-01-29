@@ -4,6 +4,7 @@ import { patentColorTheme, rDColorTheme } from './charttools/useColorTheme';
 const model = {
   // state
   data: null,
+  mapData: null,
   selectedYear: 2005,
   view: 'patents',
   scheme: patentColorTheme(),
@@ -11,6 +12,10 @@ const model = {
   setData: action((state, data) => {
     state.data = data;
     console.log('New data object set.');
+  }),
+  setMapData: action((state, mapData) => {
+    state.mapData = mapData;
+    console.log('New mapData object set.');
   }),
   setSelectedYear: action((state, year) => {
     state.selectedYear = year;
