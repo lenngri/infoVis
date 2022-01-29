@@ -3,7 +3,7 @@
 // https://observablehq.com/@d3/pie-chart
 import * as d3 from 'd3'; // can be optimized by importing just necessary modules
 
-const usePieChart = (
+const PieChartGen = (
   data,
   {
     name = ([x]) => x, // given d in data, returns the (ordinal) label
@@ -102,4 +102,4 @@ const usePieChart = (
   return Object.assign(svg.node(), { scales: { color } });
 };
 
-export default usePieChart;
+export default PieChartGen;
