@@ -40,7 +40,7 @@ const Choropleth = () => {
   return (
     <>
       {/* {mapTitle + selectedYear} */}
-      <p className="center"></p>
+      <p className='center'></p>
       <svg width={width} height={height}>
         <Marks
           mapData={mapData}

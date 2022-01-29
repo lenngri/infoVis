@@ -1,4 +1,5 @@
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
+import { useStoreActions } from 'easy-peasy';
 
 const missingDataColor = 'darkgray';
 
@@ -14,17 +15,19 @@ const Marks = ({
   colorScale,
   colorValue,
 }) => {
+  const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
   return data.map((d) => (
     <circle
       id={'Bubblechart_' + d.country}
       key={d.country}
-      className="mark"
+      className='mark'
       cx={xScale(xValue(d))}
       cy={yScale(yValue(d))}
       r={((d.population / averagePopulation) * circleRadius) / Math.PI}
       fill={d ? colorScale(colorValue(d)) : missingDataColor}
       onMouseEnter={(e) => handleMouseEnter(e, 'Map_')}
       onMouseLeave={(e) => handleMouseLeave(e, 'Map_')}
+      onClick={(e) => setClickedCountry(e.target.id.split('_')[1])}
     >
       <title>
         {d.country +
