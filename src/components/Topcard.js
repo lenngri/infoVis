@@ -7,6 +7,18 @@ import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Table from '@mui/material/Table';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import ListItemIcon from '@mui/material/ListItemIcon'
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import CircleIcon from '@mui/icons-material/Circle';
+
 
 
 const ExpandMore = styled((props) => {
@@ -63,11 +75,61 @@ export default function RecipeReviewCard() {
           <Typography variant="h5" gutterBottom>
             R&D investment data
           </Typography>
-          <Typography variant="body1" gutterBottom sx={{ textAlign: 'left' }}>
-            Source of data: UNESCO Institute for Statistics (Data as of September 2021)</Typography>
-            <Typography variant="body1" gutterBottom sx={{ textAlign: 'left' }}>Aggregation method: Weighted average</Typography>
-            <Typography variant="body1" gutterBottom sx={{ textAlign: 'left' }}> Data collection method: statistical surveys regularly conducted at national level covering R&D performing entities in the private and public sectors </Typography>
-            <Typography variant="body1" gutterBottom sx={{ textAlign: 'left' }}>Available Data:</Typography>
+
+          <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650, }} aria-label="simple table">
+        <TableHead>
+
+          <TableRow>
+            <TableCell sx={{ border:0 }}>Source of data:</TableCell>
+            <TableCell sx={{ border:0 }}align="left">UNESCO Institute for Statistics (Data as of September 2021)</TableCell>
+          </TableRow>
+
+          <TableRow>
+            <TableCell sx={{ border:0 }}>Aggregation method:</TableCell>
+            <TableCell sx={{ border:0 }}align="left">Weighted average</TableCell>
+              </TableRow>
+
+               <TableRow>
+            <TableCell sx={{ border:0 }}>Data collection method:</TableCell>
+            <TableCell sx={{ border:0 }}align="left">statistical surveys regularly conducted at national level covering R&D performing entities in the private and public sectors</TableCell>
+              </TableRow>
+
+               <TableRow>
+            <TableCell sx={{ border:0 }}>Available Data:</TableCell>
+            <TableCell sx={{ border:0 }}align="left">
+               <List>
+          <ListItem >
+            <ListItemIcon>
+             <CircleIcon sx={{ fontSize: 5, color:"black" }}/>
+            </ListItemIcon>
+            <ListItemText sx={{ typography: 'body1' }}> 266 countries </ListItemText>
+          </ListItem>
+
+          <ListItem>
+            <ListItemIcon>
+             <CircleIcon sx={{ fontSize: 5, color:"black" }}/>
+            </ListItemIcon>
+            <ListItemText sx={{ typography: 'body1' }}> Availability Range: Year [1960 - 2020]
+            </ListItemText>
+            </ListItem>
+
+             <ListItem>
+            <ListItemIcon>
+             <CircleIcon sx={{ fontSize: 5, color:"black" }}/>
+            </ListItemIcon>
+            <ListItemText sx={{ typography: 'body1' }}> Filtered by year [1990 - 2020] and European countries
+            </ListItemText>
+          </ListItem>
+
+            </List>
+            </TableCell>
+              </TableRow>
+
+        </TableHead>
+            </Table>
+    </TableContainer>
+
         </CardContent>
       </Collapse>
     </Card>
