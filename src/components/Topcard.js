@@ -77,40 +77,40 @@ export default function RecipeReviewCard() {
           </Typography>
 
           <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650, }} aria-label="simple table">
+      <Table sx={{ minWidth: 650 }} aria-label="Table R&D Investment Data">
         <TableHead>
 
           <TableRow>
-            <TableCell sx={{ border:0 }}>Source of data:</TableCell>
-            <TableCell sx={{ border:0 }}align="left">UNESCO Institute for Statistics (Data as of September 2021)</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}>Source of data:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}align="left">UNESCO Institute for Statistics (Data as of September 2021)</TableCell>
           </TableRow>
 
           <TableRow>
-            <TableCell sx={{ border:0 }}>Aggregation method:</TableCell>
-            <TableCell sx={{ border:0 }}align="left">Weighted average</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}>Aggregation method:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}align="left">Weighted average</TableCell>
               </TableRow>
 
                <TableRow>
-            <TableCell sx={{ border:0 }}>Data collection method:</TableCell>
-            <TableCell sx={{ border:0 }}align="left">statistical surveys regularly conducted at national level covering R&D performing entities in the private and public sectors</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}>Data collection method:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}align="left">statistical surveys regularly conducted at national level covering R&D performing entities in the private and public sectors</TableCell>
               </TableRow>
 
                <TableRow>
-            <TableCell sx={{ border:0 }}>Available Data:</TableCell>
-            <TableCell sx={{ border:0 }}align="left">
+            <TableCell sx={{ border:0, typography: 'body1' }}>Available Data:</TableCell>
+            <TableCell sx={{ border:0,typography: 'body1' }}align="left">
                <List>
           <ListItem >
             <ListItemIcon>
              <CircleIcon sx={{ fontSize: 5, color:"black" }}/>
             </ListItemIcon>
-            <ListItemText sx={{ typography: 'body1' }}> 266 countries </ListItemText>
+            <ListItemText sx={{ typography: 'body1', ml:-5 }}> 266 countries </ListItemText>
           </ListItem>
 
           <ListItem>
             <ListItemIcon>
-             <CircleIcon sx={{ fontSize: 5, color:"black" }}/>
+             <CircleIcon sx={{ fontSize: 5, color:"black", }}/>
             </ListItemIcon>
-            <ListItemText sx={{ typography: 'body1' }}> Availability Range: Year [1960 - 2020]
+            <ListItemText sx={{ typography: 'body1', ml:-5 }}> Availability Range: Year [1960 - 2020]
             </ListItemText>
             </ListItem>
 
@@ -118,7 +118,7 @@ export default function RecipeReviewCard() {
             <ListItemIcon>
              <CircleIcon sx={{ fontSize: 5, color:"black" }}/>
             </ListItemIcon>
-            <ListItemText sx={{ typography: 'body1' }}> Filtered by year [1990 - 2020] and European countries
+            <ListItemText sx={{ typography: 'body1', ml:-5 }}> Filtered by year [1990 - 2020] and European countries
             </ListItemText>
           </ListItem>
 
