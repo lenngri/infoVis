@@ -11,14 +11,17 @@ import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
 import { useData } from './datatools/useData';
+import { useMapData } from './components/Choropleth/useMapData';
 
 function App() {
   const setData = useStoreActions((actions) => actions.setData);
+  const setMapData = useStoreActions((actions) => actions.setMapData);
 
   const data = useData();
+  const mapData = useMapData();
   console.log('Sucessfully loaded data.');
 
-  if (!data) {
+  if (!data || !mapData) {
     return (
       <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <Box sx={{ mt: 50 }}>
@@ -29,6 +32,7 @@ function App() {
   }
 
   setData(data);
+  setMapData(mapData);
 
   return (
     <div className="App">
