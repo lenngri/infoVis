@@ -10,6 +10,7 @@ import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
+import PieChart from './components/PieChart/PieChart';
 import { useData } from './datatools/useData';
 import { useMapData } from './datatools/useMapData';
 import { usePatentCategoryData } from './datatools/usePatentCategoryData';
@@ -17,6 +18,7 @@ import { usePatentCategoryData } from './datatools/usePatentCategoryData';
 function App() {
   const setData = useStoreActions((actions) => actions.setData);
   const setMapData = useStoreActions((actions) => actions.setMapData);
+  const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
 
   const data = useData();
   const mapData = useMapData();
@@ -35,6 +37,7 @@ function App() {
 
   setData(data);
   setMapData(mapData);
+  setCategoryData(categoryData);
 
   return (
     <div className='App'>
@@ -90,6 +93,7 @@ function App() {
         <Typography variant='subtitle1' align='center' color='textSecondard'>
           This page is brought to you by MMT.
         </Typography>
+        <PieChart />
       </footer>
     </div>
   );
