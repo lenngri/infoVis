@@ -18,17 +18,14 @@ const PieChart = () => {
   const filteredData = categoryData.filter((d) => d.year === selectedYear);
   // filter data for clicked country
   const filteredByCountry = filteredData.filter((d) => d.country === clickedCountry);
-  console.log(filteredByCountry);
   // get total amount of category registrations
   let total = 0;
   filteredByCountry.forEach((d) => {
     total += Number(d.patents);
   });
-  console.log(total);
   filteredByCountry.forEach((d) => {
     d.total = total;
   });
-  console.log(filteredByCountry);
 
   const pieChart = PieChartGen(filteredByCountry, {
     name: (d) => d.category,
@@ -36,8 +33,6 @@ const PieChart = () => {
     width: 400,
     height: 400,
   });
-
-  console.log(pieChart);
 
   return (
     <>
