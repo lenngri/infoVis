@@ -53,7 +53,10 @@ const CountryList = () => {
                   onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
                   onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
                 >
-                  <li>{object.country}</li>
+                  <li>
+                    <div class="listItem country">{object.country}</div>
+                    <div class="listItem patents">Patents: {object.patents}</div>
+                  </li>
                 </div>
               ))}
             </ul>

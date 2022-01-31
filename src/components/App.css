@@ -67,3 +67,16 @@ ul {
   background-color: lightgrey;
   outline: 1px solid fuchsia;
 }
+
+.listItem {
+  text-align: left;
+}
+
+.listItem.country {
+  font-size: large;
+}
+
+.listItem.patents {
+  font-size: medium;
+  color: grey;
+}
