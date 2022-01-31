@@ -98,3 +98,12 @@ ul {
   width: 50px;
   display: inline-block;
 }
+
+.listWrapper {
+  box-shadow: 5px 0 5px -4px grey inset, -12px 0 8px -4px grey inset;
+  padding: 10px;
+  width: 320px;
+  height: 1200px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
