@@ -37,57 +37,27 @@ const CountryList = () => {
     setCheckedCountries(newCheckedCountries);
   };
 
-  function renderRow(props) {
-    const { index, style } = props;
-
-    return (
-      <Container>
-        <div
-          className="countryListItem"
-          id={'List_' + filteredData[index].country}
-          onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'Map_'])}
-          onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'Map_'])}
-        >
-          <ListItem
-            style={style}
-            key={index}
-            component="div"
-            id={'List_' + filteredData[index].country}
-            onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'Map_'])}
-            onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'Map_'])}
-          >
-            <ListItemIcon>{filteredData[index].flag}</ListItemIcon>
-            <ListItemText
-              primary={filteredData[index].country}
-              secondary={`Patents: ${filteredData[index].patents}`}
-            />
-            <Checkbox
-              edge="end"
-              onChange={handleToggle(filteredData[index])}
-              checked={checkedCountries.indexOf(filteredData[index]) !== -1}
-            />
-          </ListItem>
-        </div>
-      </Container>
-    );
-  }
-
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
         <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
           Countries: {checkedCountries.length} of {filteredData.length} selected
         </Typography>
-        <Box sx={{ width: '60%', height: 800, maxWidth: 360, bgcolor: 'background.paper' }}>
-          <FixedSizeList
-            height={800}
-            width={300}
-            itemSize={50}
-            itemCount={filteredData.length}
-            overscanCount={5}
-          >
-            {renderRow}
-          </FixedSizeList>
+        <Box sx={{ width: '60%', height: 1200, maxWidth: 360, bgcolor: 'background.paper' }}>
+          <div class="listWrapper">
+            <ul class="noBullets">
+              {filteredData.map((object) => (
+                <div
+                  class="listItemWrapper"
+                  id={'List_' + object.country}
+                  onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
+                  onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
+                >
+                  <li>{object.country}</li>
+                </div>
+              ))}
+            </ul>
+          </div>
         </Box>
       </Grid>
     </Grid>

@@ -47,6 +47,7 @@ function App() {
         </Container>
         <Boxspacer />
         <Grid container spacing={1} columnSpacing={4}>
+          <Grid itm xs={2}></Grid>
           <Grid itm xs="auto">
             <Container>
               <CountryList />
