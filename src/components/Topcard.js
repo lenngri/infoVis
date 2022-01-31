@@ -43,11 +43,9 @@ export default function RecipeReviewCard() {
     <Card sx={{ minWidth: 345 }}>
 
       <CardContent>
-        <Typography variant="body1" color="text.secondary" gutterBottom sx={{ textAlign: 'left' }}>
-          What is this page about?
-        </Typography>
+       
         <Typography variant="h5" color="text.secondary" gutterBottom>
-          Patent registrations and R&D investments
+          What is this page about?
         </Typography>
         <Typography variant="body1">
           This page shows the development of patent registrations and research and development (R&D)
@@ -73,7 +71,7 @@ export default function RecipeReviewCard() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography variant="h5" gutterBottom>
-            R&D investment data
+            R&D Investment Data
           </Typography>
 
           <TableContainer component={Paper}>
@@ -81,44 +79,44 @@ export default function RecipeReviewCard() {
         <TableHead>
 
           <TableRow>
-            <TableCell sx={{ border:0, typography: 'body1' }}>Source of data:</TableCell>
-            <TableCell sx={{ border:0, typography: 'body1' }}align="left">UNESCO Institute for Statistics (Data as of September 2021)</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1', }}size='small'>Source of data:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}size='small'align="left">UNESCO Institute for Statistics (Data as of September 2021)</TableCell>
           </TableRow>
 
-          <TableRow>
-            <TableCell sx={{ border:0, typography: 'body1' }}>Aggregation method:</TableCell>
-            <TableCell sx={{ border:0, typography: 'body1' }}align="left">Weighted average</TableCell>
+          <TableRow >
+            <TableCell sx={{ border:0, typography: 'body1' }}size='small'>Aggregation method:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}size='small'align="left">Weighted average</TableCell>
               </TableRow>
 
                <TableRow>
-            <TableCell sx={{ border:0, typography: 'body1' }}>Data collection method:</TableCell>
-            <TableCell sx={{ border:0, typography: 'body1' }}align="left">statistical surveys regularly conducted at national level covering R&D performing entities in the private and public sectors</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}size='small'>Data collection method:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1' }}size="small"align="left">statistical surveys regularly conducted at national level covering R&D performing entities in the private and public sectors</TableCell>
               </TableRow>
 
                <TableRow>
-            <TableCell sx={{ border:0, typography: 'body1' }}>Available Data:</TableCell>
-            <TableCell sx={{ border:0,typography: 'body1' }}align="left">
+            <TableCell sx={{ border:0, typography: 'body1' }}size='small'>Available Data:</TableCell>
+            <TableCell sx={{ border:0,typography: 'body1' }}size='small'align="left">
                <List>
           <ListItem >
             <ListItemIcon>
-             <CircleIcon sx={{ fontSize: 5, color:"black" }}/>
+             <CircleIcon sx={{ fontSize: 5, color:"black", ml:-1}}/>
             </ListItemIcon>
-            <ListItemText sx={{ typography: 'body1', ml:-5 }}> 266 countries </ListItemText>
+            <ListItemText sx={{ typography: 'body1', ml:-6 }}> 266 countries </ListItemText>
           </ListItem>
 
           <ListItem>
             <ListItemIcon>
-             <CircleIcon sx={{ fontSize: 5, color:"black", }}/>
+             <CircleIcon sx={{ fontSize: 5, color:"black", ml:-1  }}/>
             </ListItemIcon>
-            <ListItemText sx={{ typography: 'body1', ml:-5 }}> Availability Range: Year [1960 - 2020]
+            <ListItemText sx={{ typography: 'body1', ml:-6 }}> Availability Range: Year [1960 - 2020]
             </ListItemText>
             </ListItem>
 
              <ListItem>
             <ListItemIcon>
-             <CircleIcon sx={{ fontSize: 5, color:"black" }}/>
+             <CircleIcon sx={{ fontSize: 5, color:"black", ml:-1  }}/>
             </ListItemIcon>
-            <ListItemText sx={{ typography: 'body1', ml:-5 }}> Filtered by year [1990 - 2020] and European countries
+            <ListItemText sx={{ typography: 'body1', ml:-6 }}> Filtered by year [1990 - 2020] and European countries
             </ListItemText>
           </ListItem>
 
