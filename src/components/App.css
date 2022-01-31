@@ -58,6 +58,8 @@ ul {
   width: 300px;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: flex;
+  overflow: hidden; /* will contain if #first is longer than #second */
 }
 
 .listItemWrapper.highlight {
@@ -65,18 +67,34 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: lightgrey;
-  outline: 1px solid fuchsia;
+  display: flex;
+  overflow: hidden; /* will contain if #first is longer than #second */
 }
 
 .listItem {
   text-align: left;
+  width: 400px;
 }
 
-.listItem.country {
+.listItem .text {
+  width: 300px;
+  display: inline-block;
+}
+
+.listItem .text .country {
+  text-align: left;
   font-size: large;
 }
 
-.listItem.patents {
+.listItem .text .patents {
+  text-align: left;
   font-size: medium;
   color: grey;
+}
+
+.listItem .flag {
+  vertical-align: top;
+  font-size: x-large;
+  width: 50px;
+  display: inline-block;
 }
