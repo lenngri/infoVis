@@ -50,34 +50,36 @@ circle {
 
 ul {
   list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margins */
+  margin: 10px 10px 10px 10px; /* Remove margins */
+  width: 400px;
 }
 
 .listItemWrapper {
-  width: 300px;
+  width: 250px;
   padding-top: 10px;
   padding-bottom: 10px;
-  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
   overflow: hidden; /* will contain if #first is longer than #second */
 }
 
 .listItemWrapper.highlight {
-  width: 300px;
+  width: 250px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: lightgrey;
-  display: flex;
   overflow: hidden; /* will contain if #first is longer than #second */
 }
 
 .listItem {
   text-align: left;
-  width: 400px;
+  width: 200px;
 }
 
 .listItem .text {
-  width: 300px;
+  width: 150;
   display: inline-block;
 }
 
@@ -101,8 +103,11 @@ ul {
 
 .listWrapper {
   box-shadow: 5px 0 5px -4px grey inset, -12px 0 8px -4px grey inset;
-  padding: 10px;
-  width: 320px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 20px;
+  width: 400px;
   height: 1200px;
   overflow: hidden;
   overflow-y: scroll;
