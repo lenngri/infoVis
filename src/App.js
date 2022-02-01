@@ -24,9 +24,7 @@ function App() {
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
   const setCheckedCountries = useStoreActions((actions) => actions.setCheckedCountries);
 
-  const [darkMode, setDarkMode] = useState(false);
-
-  const Theme = createTheme({
+  const lightTheme = createTheme({
     palette: {
       mode: 'light',
     },
@@ -62,72 +60,72 @@ function App() {
   setCategoryData(categoryData);
 
   return (
-    <div className='App'>
-      <Appbar />
-      <Colormode />
-      <main>
-        <Boxspacer />
-        <Container>
-          <Topcard />
-        </Container>
-        <Boxspacer />
-        <Grid container spacing={1} columnSpacing={4}>
-          <Grid itm xs={2}></Grid>
-          <Grid itm xs='auto'>
-            <Container>
-              <CountryList />
-            </Container>
-          </Grid>
-          <Grid itm xs='auto'>
-            <Container>
-              <ChoroplethToggle />
+    <ThemeProvider theme={lightTheme}>
+      <div className='App'>
+        <Appbar />
+        <main>
+          <Container sx={{ mt: 10 }}>
+            <Topcard />
+          </Container>
+          <Boxspacer />
+          <Grid container spacing={1} columnSpacing={4}>
+            <Grid itm xs={2}></Grid>
+            <Grid itm xs='auto'>
               <Container>
-                <Box
-                  sx={{
-                    // boxShadow: 3,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    overflow: 'hidden',
-                  }}
-                >
-                  <Choropleth />
-                </Box>
+                <CountryList />
               </Container>
-              <TimeSlider />
-              <Boxspacer />
+            </Grid>
+            <Grid itm xs='auto'>
               <Container>
-                <Box
-                  sx={{
-                    // boxShadow: 3,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    overflow: 'hidden',
-                    mb: 6,
-                  }}
-                >
-                  <Bubblechart />
-                </Box>
-                <PieChart />
+                <ChoroplethToggle />
+                <Container>
+                  <Box
+                    sx={{
+                      // boxShadow: 3,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <Choropleth />
+                  </Box>
+                </Container>
+                <TimeSlider />
+                <Boxspacer />
+                <Container>
+                  <Box
+                    sx={{
+                      // boxShadow: 3,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      overflow: 'hidden',
+                      mb: 6,
+                    }}
+                  >
+                    <Bubblechart />
+                  </Box>
+                  <PieChart />
+                </Container>
               </Container>
-            </Container>
+            </Grid>
           </Grid>
-        </Grid>
-      </main>
-      <footer className='Footer'>
-        <Divider />
-        <Typography variant='h6' align='center' gutterBottom>
-          Thanks for reading.
-        </Typography>
-        <Impressum />
-        <Typography variant='subtitle1' align='center' color='textSecondard'>
-          This page is brought to you by MMT.
-        </Typography>
-      </footer>
-    </div>
+        </main>
+        <footer className='Footer'>
+          <Divider />
+          <Typography variant='h6' align='center' gutterBottom>
+            Thanks for reading.
+          </Typography>
+          <Impressum />
+          <Typography variant='subtitle1' align='center' color='textSecondard'>
+            This page is brought to you by MMT.
+          </Typography>
+        </footer>
+      </div>
+    </ThemeProvider>
   );
 }
 
