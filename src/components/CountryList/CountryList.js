@@ -40,8 +40,8 @@ const CountryList = () => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
-        <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
-          Countries: {checkedCountries.length} of {filteredData.length} selected
+        <Typography sx={{ mt: 4, mb: 2, width: 400 }} variant="h6" component="div">
+          <strong>Countries:</strong> {checkedCountries.length} of {filteredData.length} selected
         </Typography>
         <Box sx={{ width: '60%', height: 1200, maxWidth: 360, bgcolor: 'background.paper' }}>
           <div class="listWrapper">
