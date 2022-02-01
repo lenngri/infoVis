@@ -55,8 +55,7 @@ ul {
   width: 100%;
   margin: 25px;
   padding: 10px;
-  stroke: fuchsia 3px solid;
-  fill: greenyellow;
+  fill: #f3f3f3;
 }
 
 .listItem {
