@@ -5,7 +5,7 @@ const scheme = schemeBlues[7];
 
 export const patentColorTheme = () => {
   const colorValue = (d) => d.patents / (d.population / 1000000);
-  const colorScale = scaleThreshold().domain([10, 50, 100, 500, 1000, 1500]).range(scheme);
+  const colorScale = scaleThreshold().domain([10, 50, 100, 200, 300, 400]).range(scheme);
   return { colorValue, colorScale };
 };
 
