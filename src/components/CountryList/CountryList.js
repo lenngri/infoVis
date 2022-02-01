@@ -27,42 +27,36 @@ const CountryList = () => {
   };
 
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={12} md={6}>
-        <Typography sx={{ mt: 4, mb: 2, width: 400 }} variant="h5" component="div">
-          <strong>Countries:</strong> {checkedCountries.length} of {filteredData.length} selected
-        </Typography>
-        <Box sx={{ width: '60%', height: 1200, maxWidth: 360, bgcolor: 'background.paper' }}>
-          <div class="listWrapper">
-            <ul class="noBullets">
-              {filteredData.map((object) => (
-                <div class="listHighlightWrapper" id={'List_' + object.country}>
-                  <div
-                    id={'Item_' + object.country}
-                    class="listItemWrapper"
-                    onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_', 'List_'])}
-                    onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_', 'List_'])}
-                  >
-                    <li>
-                      <div class="listItem">
-                        <div class="flag">{object.flag}</div>
-                        <div class="text">
-                          <div class="country">{object.country}</div>
-                          <div class="patents">Patents: {object.patents}</div>
-                        </div>
-                        <div class="listCheckbox">
-                          <input type="checkbox" onClick={handleToggle(object.country)}></input>
-                        </div>
-                      </div>
-                    </li>
+    <>
+      <Typography sx={{ mt: 4, mb: 2, width: 400 }} variant="h5" component="div">
+        <strong>Countries:</strong> {checkedCountries.length} of {filteredData.length} selected
+      </Typography>
+      <div class="listWrapper">
+        <ul>
+          {filteredData.map((object) => (
+            <div
+              class="listItemWrapper"
+              id={'List_' + object.country}
+              onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
+              onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
+            >
+              <li>
+                <div class="listItem">
+                  <div class="flag">{object.flag}</div>
+                  <div class="text">
+                    <div class="country">{object.country}</div>
+                    <div class="patents">Patents: {object.patents}</div>
+                  </div>
+                  <div class="listCheckbox">
+                    <input type="checkbox" onClick={handleToggle(object.country)}></input>
                   </div>
                 </div>
-              ))}
-            </ul>
-          </div>
-        </Box>
-      </Grid>
-    </Grid>
+              </li>
+            </div>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 };
 

@@ -39,56 +39,26 @@ circle {
   text-align: center;
 }
 
-.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-1p823my-MuiListItem-root {
-  border: 2px solid white;
-}
-
-.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-1p823my-MuiListItem-root.highlight {
-  border: 3px solid fuchsia;
-  z-index: 10;
-}
-
 ul {
   list-style-type: none; /* Remove bullets */
   width: 500px;
 }
 
 .listItemWrapper {
-  width: 250px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  overflow: hidden; /* will contain if #first is longer than #second */
+  width: 300px;
+  margin: 25px;
+  padding: 10px;
 }
 
 .listItemWrapper.highlight {
-  width: 250px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
+  width: 300px;
+  margin: 25px;
+  padding: 10px;
   background-color: lightgrey;
-}
-
-.listHighlightWrapper {
-  width: 400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  overflow: hidden; /* will contain if #first is longer than #second */
-}
-
-.listHighlightWrapper.highlight {
-  width: 400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  background-color: lightgrey;
-  overflow: hidden; /* will contain if #first is longer than #second */
 }
 
 .listItem {
   text-align: left;
-  width: 250px;
 }
 
 .listItem .text {
