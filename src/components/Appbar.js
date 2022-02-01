@@ -19,8 +19,11 @@ import InfoIcon from '@mui/icons-material/Info';
 import MapIcon from '@mui/icons-material/Map';
 import BubbleChartIcon from '@mui/icons-material/BubbleChart';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Switch from '@mui/material/Switch';
 
 const drawerWidth = 240;
+
+const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 // const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
 //   ({ theme, open }) => ({
@@ -150,10 +153,8 @@ export default function PersistentDrawerLeft() {
         <Divider />
         <List>
           {['Lightswitch'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                <Brightness4Icon />
-              </ListItemIcon>
+            <ListItem>
+              <Switch {...label} defaultChecked />
               <ListItemText primary={text} />
             </ListItem>
           ))}

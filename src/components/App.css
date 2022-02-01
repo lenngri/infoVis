@@ -21,17 +21,17 @@ circle {
 } */
 
 .marks .land.highlight {
-  stroke: fuchsia;
+  stroke: rgb(230, 89, 8);
   stroke-width: 3;
 }
 
 .mark.highlight {
-  stroke: fuchsia;
+  stroke: rgb(230, 89, 8);
   stroke-width: 3px;
 }
 
 .countryListItem.highlight {
-  stroke: 2px dotted fuchsia;
+  stroke: 2px dotted rgb(230, 89, 8);
   background-color: gold;
 }
 

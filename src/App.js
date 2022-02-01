@@ -1,15 +1,17 @@
 import './components/App.css';
+import { useState } from 'react';
 import { useStoreActions } from 'easy-peasy';
-import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography, Switch } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
 import ChoroplethToggle from './components/ChoroplethToggle';
 import TimeSlider from './components/TimeSlider';
-import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
+import Tooltips from './components/Tooltips';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import PieChart from './components/PieChart/PieChart';
 import { useData } from './datatools/useData';
 import { useMapData } from './datatools/useMapData';
@@ -21,6 +23,20 @@ function App() {
   const setMapData = useStoreActions((actions) => actions.setMapData);
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
   const setCheckedCountries = useStoreActions((actions) => actions.setCheckedCountries);
+
+  const lightTheme = createTheme({
+    palette: {
+      mode: 'light',
+    },
+  });
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
+
+  const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
   const data = useData();
   const mapData = useMapData();
@@ -44,72 +60,72 @@ function App() {
   setCategoryData(categoryData);
 
   return (
-    <div className='App'>
-      <Appbar />
-      <Colormode />
-      <main>
-        <Boxspacer />
-        <Container>
-          <Topcard />
-        </Container>
-        <Boxspacer />
-        <Grid container spacing={1} columnSpacing={4}>
-          <Grid itm xs={2}></Grid>
-          <Grid itm xs='auto'>
-            <Container>
-              <CountryList />
-            </Container>
-          </Grid>
-          <Grid itm xs='auto'>
-            <Container>
-              <ChoroplethToggle />
+    <ThemeProvider theme={lightTheme}>
+      <div className='App'>
+        <Appbar />
+        <main>
+          <Container sx={{ mt: 10 }}>
+            <Topcard />
+          </Container>
+          <Boxspacer />
+          <Grid container spacing={1} columnSpacing={4}>
+            <Grid itm xs={2}></Grid>
+            <Grid itm xs='auto'>
               <Container>
-                <Box
-                  sx={{
-                    // boxShadow: 3,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    overflow: 'hidden',
-                  }}
-                >
-                  <Choropleth />
-                </Box>
+                <CountryList />
               </Container>
-              <TimeSlider />
-              <Boxspacer />
+            </Grid>
+            <Grid itm xs='auto'>
               <Container>
-                <Box
-                  sx={{
-                    // boxShadow: 3,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    overflow: 'hidden',
-                    mb: 6,
-                  }}
-                >
-                  <Bubblechart />
-                </Box>
-                <PieChart />
+                <ChoroplethToggle />
+                <Container>
+                  <Box
+                    sx={{
+                      // boxShadow: 3,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <Choropleth />
+                  </Box>
+                </Container>
+                <TimeSlider />
+                <Boxspacer />
+                <Container>
+                  <Box
+                    sx={{
+                      // boxShadow: 3,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      overflow: 'hidden',
+                      mb: 6,
+                    }}
+                  >
+                    <Bubblechart />
+                  </Box>
+                  <PieChart />
+                </Container>
               </Container>
-            </Container>
+            </Grid>
           </Grid>
-        </Grid>
-      </main>
-      <footer className='Footer'>
-        <Divider />
-        <Typography variant='h6' align='center' gutterBottom>
-          Thanks for reading.
-        </Typography>
-        <Impressum />
-        <Typography variant='subtitle1' align='center' color='textSecondard'>
-          This page is brought to you by MMT.
-        </Typography>
-      </footer>
-    </div>
+        </main>
+        <footer className='Footer'>
+          <Divider />
+          <Typography variant='h6' align='center' gutterBottom>
+            Thanks for reading.
+          </Typography>
+          <Impressum />
+          <Typography variant='subtitle1' align='center' color='textSecondard'>
+            This page is brought to you by MMT.
+          </Typography>
+        </footer>
+      </div>
+    </ThemeProvider>
   );
 }
 
