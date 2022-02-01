@@ -16,6 +16,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import CircleIcon from '@mui/icons-material/Circle';
+import Link from '@mui/material/Link';
 
 
 
@@ -62,7 +63,7 @@ export default function RecipeReviewCard() {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography variant="h5" gutterBottom sx={{textAlign:'left', fontWeight:'bold', ml: 2}}>Patent Data</Typography>
+          <Typography variant="h5" gutterBottom sx={{textAlign:'left', fontWeight:'bold', ml: 2}}>Patent Data<sup>1</sup></Typography>
           <Typography sx={{mb:2, textAlign:'left', ml: 2}}>The dataset provides geographic coordinates for inventor and applicant locations found in 18.8 million patent documents that were filed in years 1980 through 2014. It combines information from nine national, regional and international patent databases and covers 81 percent of all first filings applied for across the globe over the considered time period.</Typography>
 
 <Table sx={{ minWidth: 650 }} aria-label="Patent Data">
@@ -79,7 +80,7 @@ export default function RecipeReviewCard() {
           </TableRow>
 
           <TableRow>
-            <TableCell sx={{ border:0, typography: 'body1', fontWeight:'bold'}} style={{ verticalAlign: 'top'}}>Available Data:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1', fontWeight:'bold'}} style={{ verticalAlign: 'top'}}>Available data:</TableCell>
             <TableCell sx={{ border:0,typography: 'body1' }}align="left">
                <List>
                 <ListItem >
@@ -93,7 +94,7 @@ export default function RecipeReviewCard() {
                 <ListItemIcon>
                   <CircleIcon sx={{ fontSize: 5, color:"black", mt:-2}}/>
                 </ListItemIcon>
-                <ListItemText sx={{ typography: 'body1', ml:-5, mt:-2 }}> Availability Range: Year [1980 - 2014]</ListItemText>
+                <ListItemText sx={{ typography: 'body1', ml:-5, mt:-2 }}> Availability range: Year [1980 - 2014]</ListItemText>
                 </ListItem>
 
                <ListItem>
@@ -109,7 +110,7 @@ export default function RecipeReviewCard() {
         </TableHead>
     </Table>
 
-          <Typography variant="h5" gutterBottom sx={{textAlign:'left', fontWeight:'bold', mt: 10, ml: 2}}>R&D Investment Data</Typography>
+          <Typography variant="h5" gutterBottom sx={{textAlign:'left', fontWeight:'bold', mt: 10, ml: 2}}>R&D Investment Data<sup>2</sup></Typography>
           <Typography sx={{mb:2, ml: 2, textAlign:'left'}}>Research and development expenditures comprise the gross domestic expenditures on research and development, expressed as percent of GDP. This includes current and capital expenditures on research and development activities of all resident companies, research institutes, universities and government laboratories. R&D expenditures financed by domestic firms but performed abroad are not considered in the data set.</Typography>
 
           
@@ -132,7 +133,7 @@ export default function RecipeReviewCard() {
           </TableRow>
 
           <TableRow>
-            <TableCell sx={{ border:0, typography: 'body1', fontWeight:'bold'}} style={{ verticalAlign: 'top' }}>Available Data:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1', fontWeight:'bold'}} style={{ verticalAlign: 'top' }}>Available data:</TableCell>
             <TableCell sx={{ border:0,typography: 'body1' }}align="left">
                <List>
                 <ListItem >
@@ -146,7 +147,7 @@ export default function RecipeReviewCard() {
                 <ListItemIcon>
                   <CircleIcon sx={{ fontSize: 5, color:"black", mt:-2}}/>
                 </ListItemIcon>
-                <ListItemText sx={{ typography: 'body1', ml:-5, mt:-2}}> Availability Range: Year [1960 - 2020]</ListItemText>
+                <ListItemText sx={{ typography: 'body1', ml:-5, mt:-2}}> Availability range: Year [1960 - 2020]</ListItemText>
                 </ListItem>
 
                <ListItem>
@@ -167,7 +168,7 @@ export default function RecipeReviewCard() {
         </TableHead>
     </Table>
 
-          <Typography variant="h5" gutterBottom sx={{textAlign:'left', fontWeight:'bold', mt: 10, ml: 2}}>Population Data</Typography>
+          <Typography variant="h5" gutterBottom sx={{textAlign:'left', fontWeight:'bold', mt: 10, ml: 2}}>Population Data<sup>3</sup></Typography>
           <Typography sx={{mb:2, ml: 2, textAlign:'left'}}>Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates.</Typography>
         
     <Table sx={{ minWidth: 650}} aria-label="Table Population data">
@@ -189,7 +190,7 @@ export default function RecipeReviewCard() {
           </TableRow>
 
           <TableRow>
-            <TableCell sx={{ border:0, typography: 'body1', fontWeight:'bold'}} style={{ verticalAlign: 'top' }}>Available Data:</TableCell>
+            <TableCell sx={{ border:0, typography: 'body1', fontWeight:'bold'}} style={{ verticalAlign: 'top' }}>Available data:</TableCell>
             <TableCell sx={{ border:0,typography: 'body1' }}align="left">
                <List>
                 <ListItem >
@@ -203,7 +204,7 @@ export default function RecipeReviewCard() {
                 <ListItemIcon>
                   <CircleIcon sx={{ fontSize: 5, color:"black", mt:-2}}/>
                 </ListItemIcon>
-                <ListItemText sx={{ typography: 'body1', ml:-5, mt:-2}}> Availability Range: Year [1960 - 2020]</ListItemText>
+                <ListItemText sx={{ typography: 'body1', ml:-5, mt:-2}}> Availability range: Year [1960 - 2020]</ListItemText>
                 </ListItem>
 
                <ListItem>
@@ -218,6 +219,10 @@ export default function RecipeReviewCard() {
 
         </TableHead>
     </Table>
+    <Typography sx={{textAlign:'left', mt: 5, ml: 2}}>References:</Typography>
+    <Typography sx={{textAlign:'left', ml: 2}}><sup>1 </sup><Link href="https://www.worldwide-patents.com/the-dataset">https://www.worldwide-patents.com/the-dataset</Link></Typography>
+    <Typography sx={{textAlign:'left', ml: 2}}><sup>2 </sup><Link href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS</Link></Typography>
+    <Typography sx={{textAlign:'left', ml: 2}}><sup>3 </sup><Link href="https://data.worldbank.org/indicator/SP.POP.TOTL">https://data.worldbank.org/indicator/SP.POP.TOTL</Link></Typography>
         </CardContent>
       </Collapse>
     </Card>
