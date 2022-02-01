@@ -14,7 +14,6 @@ const CountryList = () => {
     data.forEach((entry) => {
       if (entry.country === country) {
         entry.selected = !entry.selected;
-        console.log(entry.country + ': ' + entry.selected);
       }
     });
 
@@ -34,30 +33,36 @@ const CountryList = () => {
 
   return (
     <>
-      <Typography sx={{ mt: 4, mb: 2, width: 400 }} variant="h5" component="div">
-        <strong>Countries:</strong> Pending of {data.filter((d) => d.year === selectedYear).length}{' '}
-        selected
+      <Typography sx={{ mt: 4, mb: 1, width: 300 }} variant='h6' component='div'>
+        <strong>Countries:</strong>
       </Typography>
-      <div class="listWrapper">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox={'0 0 ' + viewBox.x + ' ' + viewBox.y}>
+      <Typography>
+        {' '}
+        <strong>Pending of {data.filter((d) => d.year === selectedYear).length} selected </strong>
+      </Typography>
+      <div class='listWrapper'>
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox={'0 0 ' + viewBox.x + ' ' + viewBox.y}>
           {data
             .filter((d) => d.year === selectedYear)
             .map((object, i) => {
-              console.log(object.country + ': ' + object.selected);
               const y = listElement.height * i;
               return (
-                <>
+                <g
+                  key={object.country}
+                  onClick={handleToggle(data, object.country)}
+                  style={{ cursor: 'pointer' }}
+                >
                   <rect
+                    style={{ cursor: 'pointer' }}
                     height={listElement.height}
                     y={y}
-                    class="listItemWrapper"
+                    class='listItemWrapper'
                     id={'List_' + object.country}
                     onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
                     onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
-                    onClick={handleToggle(data, object.country)}
                   />
                   <text
-                    className="countryFlag"
+                    className='countryFlag'
                     fill={'black'}
                     x={listElement.xOffset}
                     y={y + listElement.height / 2}
@@ -65,7 +70,7 @@ const CountryList = () => {
                     {object.flag}
                   </text>
                   <text
-                    className="countryText"
+                    className='countryText'
                     fill={'black'}
                     x={listElement.xOffset + 30}
                     y={y + listElement.height / 2}
@@ -75,7 +80,7 @@ const CountryList = () => {
                   <text x={listElement.xOffset + 200} y={y + listElement.height / 2}>
                     {object.selected ? '🟢 ' : '⚪'}
                   </text>
-                </>
+                </g>
               );
             })}
         </svg>
