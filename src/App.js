@@ -1,15 +1,17 @@
 import './components/App.css';
+import { useState } from 'react';
 import { useStoreActions } from 'easy-peasy';
-import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography, Switch } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
 import ChoroplethToggle from './components/ChoroplethToggle';
 import TimeSlider from './components/TimeSlider';
-import Colormode from './components/Colormode';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
+import Tooltips from './components/Tooltips';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import PieChart from './components/PieChart/PieChart';
 import { useData } from './datatools/useData';
 import { useMapData } from './datatools/useMapData';
@@ -21,6 +23,22 @@ function App() {
   const setMapData = useStoreActions((actions) => actions.setMapData);
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
   const setCheckedCountries = useStoreActions((actions) => actions.setCheckedCountries);
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const Theme = createTheme({
+    palette: {
+      mode: 'light',
+    },
+  });
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+  });
+
+  const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
   const data = useData();
   const mapData = useMapData();
