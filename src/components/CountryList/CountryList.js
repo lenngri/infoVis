@@ -32,19 +32,32 @@ const CountryList = () => {
         <strong>Countries:</strong> {checkedCountries.length} of {filteredData.length} selected
       </Typography>
       <div class="listWrapper">
-        <ul>
-          {filteredData.map((object) => (
-            <li
-              class="listItemWrapper"
-              id={'List_' + object.country}
-              onMouseEnter={(e) => {
-                handleMouseEnter(e, ['Map_', 'Bubblechart_']);
-                $(e.currentTarget).one('mouseleave', (e) => {
-                  handleMouseLeave(e, ['Map_', 'Bubblechart_']);
-                });
-              }}
-            >
-              <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 3400">
+          {filteredData.map(
+            (object, i) => {
+              const y = (100 * i).toString();
+              console.log(y);
+              return (
+                <rect
+                  width="100"
+                  height="100"
+                  y={y}
+                  class="listItemWrapper"
+                  id={'List_' + object.country}
+                  onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
+                  onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
+                />
+              );
+            }
+
+            // <li
+            //   class="listItemWrapper"
+            //   id={'List_' + object.country}
+            //   onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
+            //   onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
+            // >
+
+            /* <div>
                 <div class="flag">{object.flag}</div>
                 <div class="text">
                   <div class="country">{object.country}</div>
@@ -54,9 +67,9 @@ const CountryList = () => {
                   <input type="checkbox" onClick={handleToggle(object.country)}></input>
                 </div>
               </div>
-            </li>
-          ))}
-        </ul>
+            </li> */
+          )}
+        </svg>
       </div>
     </>
   );

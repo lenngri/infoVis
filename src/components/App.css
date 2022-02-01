@@ -54,7 +54,8 @@ ul {
   width: 100%;
   margin: 25px;
   padding: 10px;
-  background-color: lightsteelblue;
+  stroke: fuchsia 3px solid;
+  fill: greenyellow;
 }
 
 .listItem {
@@ -87,6 +88,7 @@ ul {
 .listWrapper {
   width: 500px;
   height: 1200px;
+  overflow-y: scroll;
 }
 
 .listCheckbox {
