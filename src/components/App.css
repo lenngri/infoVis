@@ -50,7 +50,7 @@ circle {
 
 ul {
   list-style-type: none; /* Remove bullets */
-  width: 400px;
+  width: 500px;
 }
 
 .listItemWrapper {
@@ -67,7 +67,6 @@ ul {
   padding-bottom: 10px;
   padding-right: 10px;
   background-color: lightgrey;
-  overflow: hidden;
 }
 
 .listHighlightWrapper {
@@ -119,7 +118,7 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 50px;
-  width: 400px;
+  width: 500px;
   height: 1200px;
   overflow: hidden;
   overflow-y: scroll;

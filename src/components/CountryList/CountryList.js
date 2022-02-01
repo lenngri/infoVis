@@ -1,18 +1,6 @@
 import { useStoreState, useStoreActions } from 'easy-peasy';
-import { styled } from '@mui/material/styles';
-import { Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
-import { FixedSizeList } from 'react-window';
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
 
 const CountryList = () => {
