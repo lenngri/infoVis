@@ -29,8 +29,8 @@ export const useData = () => {
 
   // add years to data object
   const data = {};
-  for (let i = 1996; i <= 2014; i++) {
-    data[i] = [];
+  for (let year = 1996; year <= 2014; year++) {
+    data[year] = [];
   }
   console.log(data);
 

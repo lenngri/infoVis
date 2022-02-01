@@ -20,10 +20,10 @@ const Marks = ({
     <circle
       id={'Bubblechart_' + d.country}
       key={d.country}
-      className="mark"
+      className='mark'
       cx={xScale(xValue(d))}
       cy={yScale(yValue(d))}
-      r={((d.population / averagePopulation) * circleRadius) / Math.PI}
+      r={Math.sqrt(((d.population / averagePopulation) * circleRadius) / Math.PI)} // x = pi*r^2 -> r = sqrt(x / pi)
       fill={d ? colorScale(colorValue(d)) : missingDataColor}
       onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'List_'])}
       onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'List_'])}
