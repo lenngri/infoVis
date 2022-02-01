@@ -40,16 +40,14 @@ const CountryList = () => {
               onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
               onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
             >
-              <li>
-                <div class="listItem">
-                  <div class="flag">{object.flag}</div>
-                  <div class="text">
-                    <div class="country">{object.country}</div>
-                    <div class="patents">Patents: {object.patents}</div>
-                  </div>
-                  <div class="listCheckbox">
-                    <input type="checkbox" onClick={handleToggle(object.country)}></input>
-                  </div>
+              <li class="listItem">
+                <div class="flag">{object.flag}</div>
+                <div class="text">
+                  <div class="country">{object.country}</div>
+                  <div class="patents">Patents: {object.patents}</div>
+                </div>
+                <div class="listCheckbox">
+                  <input type="checkbox" onClick={handleToggle(object.country)}></input>
                 </div>
               </li>
             </div>
