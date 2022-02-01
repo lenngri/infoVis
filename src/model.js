@@ -4,13 +4,29 @@ import { patentColorTheme, rDColorTheme } from './charttools/useColorTheme';
 const model = {
   // state
   data: null,
+  mapData: null,
+  categoryData: null,
   selectedYear: 2005,
+  clickedCountry: 'Germany',
   view: 'patents',
   scheme: patentColorTheme(),
+  checkedCountries: [],
   // actions
   setData: action((state, data) => {
     state.data = data;
     console.log('New data object set.');
+  }),
+  setMapData: action((state, mapData) => {
+    state.mapData = mapData;
+    console.log('New mapData object set.');
+  }),
+  setCategoryData: action((state, categoryData) => {
+    state.categoryData = categoryData;
+    console.log('New categoryData object set.');
+  }),
+  setClickedCountry: action((state, clickedCountry) => {
+    state.clickedCountry = clickedCountry;
+    console.log('New clickedCountry object set.');
   }),
   setSelectedYear: action((state, year) => {
     state.selectedYear = year;
@@ -23,6 +39,10 @@ const model = {
   setScheme: action((state, scheme) => {
     state.scheme = scheme;
     console.log('New scheme set.');
+  }),
+  setCheckedCountries: action((state, checkedCountries) => {
+    state.checkedCountries = checkedCountries;
+    console.log('Updated checked countries.');
   }),
   // thunks
   changeView: thunk((actions, view) => {
