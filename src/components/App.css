@@ -89,7 +89,7 @@ ul {
 
 .listItem {
   text-align: left;
-  width: 200px;
+  width: 250px;
 }
 
 .listItem .text {
@@ -123,4 +123,9 @@ ul {
   height: 1200px;
   overflow: hidden;
   overflow-y: scroll;
+}
+
+.listCheckbox {
+  width: 50px;
+  float: right;
 }
