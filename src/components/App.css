@@ -39,60 +39,31 @@ circle {
   text-align: center;
 }
 
-.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-1p823my-MuiListItem-root {
-  border: 2px solid white;
-}
-
-.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-1p823my-MuiListItem-root.highlight {
-  border: 3px solid rgb(230, 89, 8);
-  z-index: 10;
-}
-
 ul {
   list-style-type: none; /* Remove bullets */
   width: 500px;
 }
 
 .listItemWrapper {
-  width: 250px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  overflow: hidden; /* will contain if #first is longer than #second */
+  width: 100%;
+  margin: 25px;
+  padding: 10px;
+  fill: white;
 }
 
 .listItemWrapper.highlight {
-  width: 250px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  background-color: lightgrey;
-}
-
-.listHighlightWrapper {
-  width: 400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  overflow: hidden; /* will contain if #first is longer than #second */
-}
-
-.listHighlightWrapper.highlight {
-  width: 400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  background-color: lightgrey;
-  overflow: hidden; /* will contain if #first is longer than #second */
+  width: 100%;
+  margin: 25px;
+  padding: 10px;
+  fill: #f3f3f3;
 }
 
 .listItem {
   text-align: left;
-  width: 250px;
 }
 
 .listItem .text {
-  width: 150;
+  width: 60%;
   display: inline-block;
 }
 
@@ -110,21 +81,17 @@ ul {
 .listItem .flag {
   vertical-align: top;
   font-size: x-large;
-  width: 50px;
-  display: inline-block;
+  width: 20%;
+  float: left;
 }
 
 .listWrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 50px;
-  width: 500px;
+  width: 300px;
   height: 1200px;
-  overflow: hidden;
   overflow-y: scroll;
 }
 
 .listCheckbox {
-  width: 50px;
+  width: 20%;
   float: right;
 }

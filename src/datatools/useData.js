@@ -49,6 +49,10 @@ export const useData = () => {
     });
   });
 
+  data.forEach((patentEntry) => {
+    patentEntry.selected = true;
+  });
+
   const filteredData = data.filter((o1) => countryData.some((o2) => o1.country === o2.name));
   return filteredData;
 };
