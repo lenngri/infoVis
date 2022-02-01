@@ -42,63 +42,42 @@ const CountryList = () => {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox={'0 0 ' + viewBox.x + ' ' + viewBox.y}>
           {data
             .filter((d) => d.year === selectedYear)
-            .map(
-              (object, i) => {
-                console.log(object.country + ': ' + object.selected);
-                const y = listElement.height * i;
-                return (
-                  <>
-                    <rect
-                      height={listElement.height}
-                      y={y}
-                      class="listItemWrapper"
-                      id={'List_' + object.country}
-                      onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
-                      onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
-                      onClick={handleToggle(data, object.country)}
-                    />
-                    <text
-                      className="countryFlag"
-                      fill={'black'}
-                      x={listElement.xOffset}
-                      y={y + listElement.height / 2}
-                    >
-                      {object.flag}
-                    </text>
-                    <text
-                      className="countryText"
-                      fill={'black'}
-                      x={listElement.xOffset + 30}
-                      y={y + listElement.height / 2}
-                    >
-                      {object.country}
-                    </text>
-                    <text x={listElement.xOffset + 200} y={y + listElement.height / 2}>
-                      {object.selected ? '🟢 ' : '⚪'}
-                    </text>
-                  </>
-                );
-              }
-
-              // <li
-              //   class="listItemWrapper"
-              //   id={'List_' + object.country}
-              //   onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
-              //   onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
-              // >
-
-              /* <div>
-                <div class="flag">{object.flag}</div>
-                <div class="text">
-                  <div class="country">{object.country}</div>
-                  <div class="patents">Patents: {object.patents}</div>
-                </div>
-                <div class="listCheckbox">
-                  <input type="checkbox" ></input>
-                </div>
-              </div>
-            </li> */
-            )}
+            .map((object, i) => {
+              console.log(object.country + ': ' + object.selected);
+              const y = listElement.height * i;
+              return (
+                <>
+                  <rect
+                    height={listElement.height}
+                    y={y}
+                    class="listItemWrapper"
+                    id={'List_' + object.country}
+                    onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
+                    onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
+                    onClick={handleToggle(data, object.country)}
+                  />
+                  <text
+                    className="countryFlag"
+                    fill={'black'}
+                    x={listElement.xOffset}
+                    y={y + listElement.height / 2}
+                  >
+                    {object.flag}
+                  </text>
+                  <text
+                    className="countryText"
+                    fill={'black'}
+                    x={listElement.xOffset + 30}
+                    y={y + listElement.height / 2}
+                  >
+                    {object.country}
+                  </text>
+                  <text x={listElement.xOffset + 200} y={y + listElement.height / 2}>
+                    {object.selected ? '🟢 ' : '⚪'}
+                  </text>
+                </>
+              );
+            })}
         </svg>
       </div>
     </>
