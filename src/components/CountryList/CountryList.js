@@ -47,21 +47,23 @@ const CountryList = () => {
           <div class="listWrapper">
             <ul class="noBullets">
               {filteredData.map((object) => (
-                <div
-                  class="listItemWrapper"
-                  id={'List_' + object.country}
-                  onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
-                  onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
-                >
-                  <li>
-                    <div class="listItem">
-                      <div class="flag">{object.flag}</div>
-                      <div class="text">
-                        <div class="country">{object.country}</div>
-                        <div class="patents">Patents: {object.patents}</div>
+                <div class="listHighlightWrapper" id={'List_' + object.country}>
+                  <div
+                    id={'Item_' + object.country}
+                    class="listItemWrapper"
+                    onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_', 'List_'])}
+                    onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_', 'List_'])}
+                  >
+                    <li>
+                      <div class="listItem">
+                        <div class="flag">{object.flag}</div>
+                        <div class="text">
+                          <div class="country">{object.country}</div>
+                          <div class="patents">Patents: {object.patents}</div>
+                        </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
+                  </div>
                 </div>
               ))}
             </ul>

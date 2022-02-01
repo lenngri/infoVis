@@ -50,7 +50,6 @@ circle {
 
 ul {
   list-style-type: none; /* Remove bullets */
-  margin: 10px 10px 10px 10px; /* Remove margins */
   width: 400px;
 }
 
@@ -58,7 +57,6 @@ ul {
   width: 250px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
   padding-right: 10px;
   overflow: hidden; /* will contain if #first is longer than #second */
 }
@@ -67,7 +65,23 @@ ul {
   width: 250px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
+  padding-right: 10px;
+  background-color: lightgrey;
+  overflow: hidden;
+}
+
+.listHighlightWrapper {
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  overflow: hidden; /* will contain if #first is longer than #second */
+}
+
+.listHighlightWrapper.highlight {
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 10px;
   background-color: lightgrey;
   overflow: hidden; /* will contain if #first is longer than #second */
@@ -102,11 +116,9 @@ ul {
 }
 
 .listWrapper {
-  box-shadow: 5px 0 5px -4px grey inset, -12px 0 8px -4px grey inset;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 50px;
-  padding-left: 20px;
   width: 400px;
   height: 1200px;
   overflow: hidden;
