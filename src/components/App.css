@@ -21,17 +21,17 @@ circle {
 } */
 
 .marks .land.highlight {
-  stroke: fuchsia;
+  stroke: rgb(230, 89, 8);
   stroke-width: 3;
 }
 
 .mark.highlight {
-  stroke: fuchsia;
+  stroke: rgb(230, 89, 8);
   stroke-width: 3px;
 }
 
 .countryListItem.highlight {
-  stroke: 2px dotted fuchsia;
+  stroke: 2px dotted rgb(230, 89, 8);
   background-color: gold;
 }
 
@@ -44,7 +44,7 @@ circle {
 }
 
 .MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-1p823my-MuiListItem-root.highlight {
-  border: 3px solid fuchsia;
+  border: 3px solid rgb(230, 89, 8);
   z-index: 10;
 }
 
