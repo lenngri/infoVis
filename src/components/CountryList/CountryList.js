@@ -1,7 +1,7 @@
 import { useStoreState, useStoreActions } from 'easy-peasy';
 import { Box, Typography } from '@mui/material';
-import Grid from '@mui/material/Grid';
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
+import $ from 'jquery';
 
 const CountryList = () => {
   const data = useStoreState((state) => state.data);
@@ -34,13 +34,17 @@ const CountryList = () => {
       <div class="listWrapper">
         <ul>
           {filteredData.map((object) => (
-            <div
+            <li
               class="listItemWrapper"
               id={'List_' + object.country}
-              onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
-              onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
+              onMouseEnter={(e) => {
+                handleMouseEnter(e, ['Map_', 'Bubblechart_']);
+                $(e.currentTarget).one('mouseleave', (e) => {
+                  handleMouseLeave(e, ['Map_', 'Bubblechart_']);
+                });
+              }}
             >
-              <li class="listItem">
+              <div>
                 <div class="flag">{object.flag}</div>
                 <div class="text">
                   <div class="country">{object.country}</div>
@@ -49,8 +53,8 @@ const CountryList = () => {
                 <div class="listCheckbox">
                   <input type="checkbox" onClick={handleToggle(object.country)}></input>
                 </div>
-              </li>
-            </div>
+              </div>
+            </li>
           ))}
         </ul>
       </div>

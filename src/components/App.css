@@ -45,16 +45,16 @@ ul {
 }
 
 .listItemWrapper {
-  width: 300px;
+  width: 100%;
   margin: 25px;
   padding: 10px;
 }
 
 .listItemWrapper.highlight {
-  width: 300px;
+  width: 100%;
   margin: 25px;
   padding: 10px;
-  background-color: lightgrey;
+  background-color: lightsteelblue;
 }
 
 .listItem {
@@ -62,7 +62,7 @@ ul {
 }
 
 .listItem .text {
-  width: 150;
+  width: 60%;
   display: inline-block;
 }
 
@@ -80,20 +80,16 @@ ul {
 .listItem .flag {
   vertical-align: top;
   font-size: x-large;
-  width: 50px;
-  display: inline-block;
+  width: 20%;
+  float: left;
 }
 
 .listWrapper {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
   width: 500px;
   height: 1200px;
-  overflow-y: scroll;
 }
 
 .listCheckbox {
-  width: 50px;
+  width: 20%;
   float: right;
 }

@@ -20,7 +20,7 @@ const Marks = ({
     <circle
       id={'Bubblechart_' + d.country}
       key={d.country}
-      className='mark'
+      className="mark"
       cx={xScale(xValue(d))}
       cy={yScale(yValue(d))}
       r={((d.population / averagePopulation) * circleRadius) / Math.PI}
