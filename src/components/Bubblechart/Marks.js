@@ -25,8 +25,8 @@ const Marks = ({
       cy={yScale(yValue(d))}
       r={((d.population / averagePopulation) * circleRadius) / Math.PI}
       fill={d ? colorScale(colorValue(d)) : missingDataColor}
-      onMouseEnter={(e) => handleMouseEnter(e, 'Map_')}
-      onMouseLeave={(e) => handleMouseLeave(e, 'Map_')}
+      onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'List_'])}
+      onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'List_'])}
       onClick={(e) => setClickedCountry(e.target.id.split('_')[1])}
     >
       <title>

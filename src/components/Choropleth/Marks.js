@@ -36,8 +36,8 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
               key={feature.properties.name}
               fill={d ? colorScale(colorValue(d)) : missingDataColor}
               d={path(feature)}
-              onMouseEnter={(e) => handleMouseEnter(e, 'Bubblechart_')}
-              onMouseLeave={(e) => handleMouseLeave(e, 'Bubblechart_')}
+              onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'List_'])}
+              onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'List_'])}
               onClick={(e) => setClickedCountry(e.target.id.split('_')[1])}
             >
               <title>{title}</title>

@@ -1,6 +1,6 @@
 import './components/App.css';
 import { useStoreActions } from 'easy-peasy';
-import { Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
@@ -14,15 +14,18 @@ import PieChart from './components/PieChart/PieChart';
 import { useData } from './datatools/useData';
 import { useMapData } from './datatools/useMapData';
 import { usePatentCategoryData } from './datatools/usePatentCategoryData';
+import CountryList from './components/CountryList/CountryList';
 
 function App() {
   const setData = useStoreActions((actions) => actions.setData);
   const setMapData = useStoreActions((actions) => actions.setMapData);
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
+  const setCheckedCountries = useStoreActions((actions) => actions.setCheckedCountries);
 
   const data = useData();
   const mapData = useMapData();
   const categoryData = usePatentCategoryData();
+  const checkedCountries = [];
   console.log('Sucessfully loaded data.');
 
   if (!data || !mapData || !categoryData) {
@@ -36,6 +39,7 @@ function App() {
   }
 
   setData(data);
+  setCheckedCountries(checkedCountries);
   setMapData(mapData);
   setCategoryData(categoryData);
 
@@ -49,41 +53,51 @@ function App() {
           <Topcard />
         </Container>
         <Boxspacer />
-        <Container>
-          <ChoroplethToggle />
-          <Container>
-            <Box
-              sx={{
-                // boxShadow: 3,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                overflow: 'hidden',
-              }}
-            >
-              <Choropleth />
-            </Box>
-          </Container>
-          <TimeSlider />
-          <Boxspacer />
-          <Container>
-            <Box
-              sx={{
-                // boxShadow: 3,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                overflow: 'hidden',
-                mb: 6,
-              }}
-            >
-              <Bubblechart />
-            </Box>
-          </Container>
-        </Container>
-        <PieChart />
+        <Grid container spacing={1} columnSpacing={4}>
+          <Grid itm xs={2}></Grid>
+          <Grid itm xs='auto'>
+            <Container>
+              <CountryList />
+            </Container>
+          </Grid>
+          <Grid itm xs='auto'>
+            <Container>
+              <ChoroplethToggle />
+              <Container>
+                <Box
+                  sx={{
+                    // boxShadow: 3,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <Choropleth />
+                </Box>
+              </Container>
+              <TimeSlider />
+              <Boxspacer />
+              <Container>
+                <Box
+                  sx={{
+                    // boxShadow: 3,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    overflow: 'hidden',
+                    mb: 6,
+                  }}
+                >
+                  <Bubblechart />
+                </Box>
+                <PieChart />
+              </Container>
+            </Container>
+          </Grid>
+        </Grid>
       </main>
       <footer className='Footer'>
         <Divider />

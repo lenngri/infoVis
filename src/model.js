@@ -10,6 +10,7 @@ const model = {
   clickedCountry: 'Germany',
   view: 'patents',
   scheme: patentColorTheme(),
+  checkedCountries: [],
   // actions
   setData: action((state, data) => {
     state.data = data;
@@ -38,6 +39,10 @@ const model = {
   setScheme: action((state, scheme) => {
     state.scheme = scheme;
     console.log('New scheme set.');
+  }),
+  setCheckedCountries: action((state, checkedCountries) => {
+    state.checkedCountries = checkedCountries;
+    console.log('Updated checked countries.');
   }),
   // thunks
   changeView: thunk((actions, view) => {
