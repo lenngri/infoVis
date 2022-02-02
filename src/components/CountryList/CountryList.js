@@ -5,11 +5,13 @@ import { useState } from 'react';
 
 const CountryList = () => {
   const setData = useStoreActions((actions) => actions.setData);
-  const selectedYear = useStoreState((state) => state.selectedYear);
   const data = useStoreState((state) => state.data);
+  const selectedYear = useStoreState((state) => state.selectedYear);
   const currentData = data[selectedYear];
+  const renderFlag = useStoreState((state) => state.renderFlag);
+  const setRenderFlag = useStoreActions((actions) => actions.setRenderFlag);
 
-  const [renderFlag, setRenderFlag] = useState(false);
+  // const [renderFlag, setRenderFlag] = useState(false);
 
   const handleToggle = (data, country) => () => {
     for (let year in data) {

@@ -4,6 +4,7 @@ import { AxisLeft } from './AxisLeft';
 import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
 import { useStoreState } from 'easy-peasy';
+import { useState } from 'react';
 
 const width = 1000;
 const height = 600;
@@ -15,7 +16,8 @@ function Bubblechart() {
   const data = useStoreState((state) => state.data);
   const selectedYear = useStoreState((state) => state.selectedYear);
   const scheme = useStoreState((state) => state.scheme);
-  const currentData = data[selectedYear];
+  const currentData = useStoreState((state) => state.data[selectedYear]);
+  const renderFlag = useStoreState((state) => state.renderFlag);
 
   if (!currentData || !scheme) {
     return <pre>Loading...</pre>;
