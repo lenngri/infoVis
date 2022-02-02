@@ -8,11 +8,11 @@ const width = 900; // Math.max(document.documentElement.clientWidth, window.inne
 const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 const Choropleth = () => {
-  const data = useStoreState((state) => state.data);
   const mapData = useStoreState((state) => state.mapData);
   const view = useStoreState((state) => state.view);
   const scheme = useStoreState((state) => state.scheme);
   const selectedYear = useStoreState((state) => state.selectedYear);
+  const data = useStoreState((state) => state.data[selectedYear]);
 
   if (!mapData || !data || !scheme) {
     return <p>Loading...</p>;
@@ -20,12 +20,9 @@ const Choropleth = () => {
 
   console.log('Succefully loaded Choropleth');
 
-  // filter data for selected year
-  const filteredData = data.filter((d) => d.year === selectedYear);
-
   // create mapping table for map data joining
   const rowByCountry = new Map();
-  filteredData.forEach((d) => {
+  data.forEach((d) => {
     rowByCountry.set(d.country, d);
   });
 

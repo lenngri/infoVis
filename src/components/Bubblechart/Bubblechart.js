@@ -11,10 +11,10 @@ const margin = { top: 20, right: 30, bottom: 150, left: 90 };
 const xAxisLabelOffset = 50;
 const yAxisLabelOffset = 45;
 
-function Bubblechart({ colorValue, colorScale }) {
-  const data = useStoreState((state) => state.data);
+function Bubblechart() {
   const selectedYear = useStoreState((state) => state.selectedYear);
   const scheme = useStoreState((state) => state.scheme);
+  const data = useStoreState((state) => state.data[selectedYear]);
 
   if (!data || !scheme) {
     return <pre>Loading...</pre>;
@@ -23,8 +23,7 @@ function Bubblechart({ colorValue, colorScale }) {
   console.log('Succefully loaded Bubblechart');
 
   // filter data for selected year
-  const filteredData = data.filter((d) => d.year === selectedYear && d.population);
-  filteredData.sort((a, b) => Number(b.population) - Number(a.population));
+  data.sort((a, b) => Number(b.population) - Number(a.population));
 
   const innerHeight = height - margin.top - margin.bottom;
   const innerWidth = width - margin.left - margin.right;
@@ -43,7 +42,7 @@ function Bubblechart({ colorValue, colorScale }) {
 
   const populationTotal = (obj) => {
     let sum = 0;
-    for (var country in obj) {
+    for (let country in obj) {
       if (obj[country].population) {
         sum += parseFloat(obj[country].population);
       }
@@ -51,7 +50,7 @@ function Bubblechart({ colorValue, colorScale }) {
     return sum;
   };
 
-  const averagePopulation = populationTotal(filteredData) / filteredData.length;
+  const averagePopulation = populationTotal(data) / data.length;
 
   return (
     <svg width={width} height={height}>
@@ -63,30 +62,30 @@ function Bubblechart({ colorValue, colorScale }) {
           tickOffset={5}
         />
         <text
-          className="axis-label"
-          textAnchor="middle"
+          className='axis-label'
+          textAnchor='middle'
           transform={`translate(${-yAxisLabelOffset},${innerHeight / 2}) rotate(-90)`}
         >
           {yAxisLabel}
         </text>
         <AxisLeft yScale={yScale} innerWidth={innerWidth} tickOffset={5} />
         <text
-          className="axis-label"
+          className='axis-label'
           x={innerWidth / 2}
           y={innerHeight + xAxisLabelOffset + 50}
-          textAnchor="middle"
+          textAnchor='middle'
         >
           {xAxisLabel}
         </text>
         <Marks
-          data={filteredData}
+          data={data}
           xScale={xScale}
           yScale={yScale}
           xValue={xValue}
           yValue={yValue}
           toolTipFormat={xAxisTickFormat}
           averagePopulation={averagePopulation}
-          circleRadius={40}
+          circleRadius={1000}
           colorScale={scheme.colorScale}
           colorValue={scheme.colorValue}
         />
