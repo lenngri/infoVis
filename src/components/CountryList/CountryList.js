@@ -6,16 +6,21 @@ import { useState } from 'react';
 const CountryList = () => {
   const setData = useStoreActions((actions) => actions.setData);
   const selectedYear = useStoreState((state) => state.selectedYear);
-  const data = useStoreState((state) => state.data[selectedYear]);
+  const data = useStoreState((state) => state.data);
+  const currentData = data[selectedYear];
 
   const [renderFlag, setRenderFlag] = useState(false);
 
+  console.log(currentData);
+
   const handleToggle = (data, country) => () => {
-    data.forEach((entry) => {
-      if (entry.country === country) {
-        entry.selected = !entry.selected;
-      }
-    });
+    for (let year in data) {
+      data[year].forEach((object) => {
+        if (object.country === country) {
+          object.selected = !object.selected;
+        }
+      });
+    }
 
     setData(data);
     setRenderFlag(!renderFlag);
@@ -27,22 +32,22 @@ const CountryList = () => {
   };
 
   const viewBox = {
-    y: data.length * listElement.height,
+    y: currentData.length * listElement.height,
     x: 300,
   };
 
   return (
     <>
-      <Typography sx={{ mt: 4, mb: 1, width: 300 }} variant='h6' component='div'>
+      <Typography sx={{ mt: 4, mb: 1, width: 300 }} variant="h6" component="div">
         <strong>Countries:</strong>
       </Typography>
       <Typography>
         {' '}
         <strong>Pending of {data.length} selected </strong>
       </Typography>
-      <div class='listWrapper'>
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox={'0 0 ' + viewBox.x + ' ' + viewBox.y}>
-          {data.map((object, i) => {
+      <div class="listWrapper">
+        <svg viewBox={'0 0 ' + viewBox.x + ' ' + viewBox.y}>
+          {currentData.map((object, i) => {
             const y = listElement.height * i;
             return (
               <g
@@ -54,13 +59,13 @@ const CountryList = () => {
                   style={{ cursor: 'pointer' }}
                   height={listElement.height}
                   y={y}
-                  class='listItemWrapper'
+                  class="listItemWrapper"
                   id={'List_' + object.country}
                   onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
                   onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
                 />
                 <text
-                  className='countryFlag'
+                  className="countryFlag"
                   fill={'black'}
                   x={listElement.xOffset}
                   y={y + listElement.height / 2}
@@ -68,7 +73,7 @@ const CountryList = () => {
                   {object.flag}
                 </text>
                 <text
-                  className='countryText'
+                  className="countryText"
                   fill={'black'}
                   x={listElement.xOffset + 30}
                   y={y + listElement.height / 2}
