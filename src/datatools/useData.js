@@ -32,13 +32,19 @@ export const useData = () => {
   for (let year = 1996; year <= 2014; year++) {
     data[year] = [];
   }
-  console.log(data);
 
   // loop through every year in data object
   for (let year in data) {
     console.log();
     countryData.forEach((d) => {
-      data[year].push({ country: d.name, selected: true });
+      data[year].push({
+        country: d.name,
+        flag: null,
+        patents: null,
+        population: null,
+        investment: null,
+        selected: true,
+      });
     });
     // loop through every array for each year
     data[year].forEach((object) => {

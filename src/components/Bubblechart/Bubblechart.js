@@ -12,33 +12,34 @@ const xAxisLabelOffset = 50;
 const yAxisLabelOffset = 45;
 
 function Bubblechart() {
+  const data = useStoreState((state) => state.data);
   const selectedYear = useStoreState((state) => state.selectedYear);
   const scheme = useStoreState((state) => state.scheme);
-  const data = useStoreState((state) => state.data[selectedYear]);
+  const currentData = data[selectedYear];
 
-  if (!data || !scheme) {
+  if (!currentData || !scheme) {
     return <pre>Loading...</pre>;
   }
 
   console.log('Succefully loaded Bubblechart');
 
-  // filter data for selected year
-  data.sort((a, b) => Number(b.population) - Number(a.population));
+  // sort data by population size to adjust z-index of bubbles
+  currentData.sort((a, b) => Number(b.population) - Number(a.population));
 
   const innerHeight = height - margin.top - margin.bottom;
   const innerWidth = width - margin.left - margin.right;
 
-  const xValue = (d) => d.investment;
+  const xValue = (data) => data.investment;
   const xAxisLabel = 'Investment in Research & Development (as % of GDP)';
 
-  const yValue = (d) => d.patents / (d.population / 1000000);
+  const yValue = (data) => data.patents / (data.population / 1000000);
   const yAxisLabel = 'Number of Patents per million inhabitants (ppm)';
 
   const siFormat = format('.2s');
   const xAxisTickFormat = (tickValue) => siFormat(tickValue);
 
-  const xScale = scaleLinear().domain(extent(data, xValue)).range([0, innerWidth]).nice();
-  const yScale = scaleLinear().domain([0, 2200]).range([innerHeight, 0]).nice();
+  const xScale = scaleLinear().domain([0, 4.0]).range([0, innerWidth]).nice();
+  const yScale = scaleLinear().domain([0, 800]).range([innerHeight, 0]).nice();
 
   const populationTotal = (obj) => {
     let sum = 0;
@@ -50,7 +51,7 @@ function Bubblechart() {
     return sum;
   };
 
-  const averagePopulation = populationTotal(data) / data.length;
+  const averagePopulation = populationTotal(currentData) / currentData.length;
 
   return (
     <svg width={width} height={height}>
@@ -62,23 +63,23 @@ function Bubblechart() {
           tickOffset={5}
         />
         <text
-          className='axis-label'
-          textAnchor='middle'
+          className="axis-label"
+          textAnchor="middle"
           transform={`translate(${-yAxisLabelOffset},${innerHeight / 2}) rotate(-90)`}
         >
           {yAxisLabel}
         </text>
         <AxisLeft yScale={yScale} innerWidth={innerWidth} tickOffset={5} />
         <text
-          className='axis-label'
+          className="axis-label"
           x={innerWidth / 2}
           y={innerHeight + xAxisLabelOffset + 50}
-          textAnchor='middle'
+          textAnchor="middle"
         >
           {xAxisLabel}
         </text>
         <Marks
-          data={data}
+          data={currentData}
           xScale={xScale}
           yScale={yScale}
           xValue={xValue}

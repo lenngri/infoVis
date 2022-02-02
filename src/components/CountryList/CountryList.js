@@ -11,8 +11,6 @@ const CountryList = () => {
 
   const [renderFlag, setRenderFlag] = useState(false);
 
-  console.log(currentData);
-
   const handleToggle = (data, country) => () => {
     for (let year in data) {
       data[year].forEach((object) => {
