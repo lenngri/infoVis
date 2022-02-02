@@ -11,7 +11,7 @@ const CountryList = () => {
   const renderFlag = useStoreState((state) => state.renderFlag);
   const setRenderFlag = useStoreActions((actions) => actions.setRenderFlag);
 
-  // const [renderFlag, setRenderFlag] = useState(false);
+  currentData.sort((a, b) => (a.country > b.country ? 1 : b.country > a.country ? -1 : 0));
 
   const handleToggle = (data, country) => () => {
     for (let year in data) {
