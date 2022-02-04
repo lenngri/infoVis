@@ -1,12 +1,14 @@
 import { geoPath, geoMercator } from 'd3';
 import Legend from '../../charttools/useLegend';
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
-import { useStoreActions } from 'easy-peasy';
+import { useStoreState, useStoreActions } from 'easy-peasy';
 
 const missingDataColor = 'darkgray';
 
 const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, legendTitle }) => {
   const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
+  // eslint-disable-next-line
+  const renderFlag = useStoreState((state) => state.renderFlag);
 
   // generate map progjection and paths
   const projection = geoMercator()
@@ -20,21 +22,26 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
 
   return (
     <>
-      <g className='marks'>
+      <g className="marks">
         {mapData.features.map((feature) => {
           const d = rowByCountry.get(feature.properties.name);
           const value = d ? colorValue(d) : 'no data';
           const title = `${feature.properties.name}: ${value}`;
+          let selected = null;
+          if (d) {
+            selected = d.selected;
+          }
           // if (!d) {
-          //   console.log("Name doesn't match: " + feature.properties.geounit);
+          //   console.log("Name doesn't match: " + feature.properties.name);
           // }
 
           return (
             <path
               id={'Map_' + feature.properties.name}
-              className='land'
+              className="land"
               key={feature.properties.name}
               fill={d ? colorScale(colorValue(d)) : missingDataColor}
+              opacity={selected ? 1.0 : 0.3}
               d={path(feature)}
               onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'List_'])}
               onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'List_'])}
