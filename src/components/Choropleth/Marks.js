@@ -26,10 +26,26 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
         {mapData.features.map((feature) => {
           const d = rowByCountry.get(feature.properties.name);
           const value = d ? colorValue(d) : 'no data';
-          const title = `${feature.properties.name}: ${value}`;
+          // const title = `${feature.properties.name}: ${value}`;
           let selected = null;
+          let title = null;
           if (d) {
             selected = d.selected;
+            title =
+              d.flag +
+              ' ' +
+              d.country +
+              '\n % of GDP: ' +
+              Math.round((d.investment + Number.EPSILON) * 100) / 100 +
+              '\n Patents per million: ' +
+              Math.round(d.patents / (d.population / 1000000), 2) +
+              '\n Patents: ' +
+              Math.round(d.patents, 2) +
+              '\n Population: ' +
+              Math.round(d.population / 1000000, 2) +
+              ' million';
+          } else {
+            title = `${feature.properties.name}: ${value}`;
           }
           // if (!d) {
           //   console.log("Name doesn't match: " + feature.properties.name);
