@@ -67,6 +67,7 @@ function Bubblechart() {
           className="axis-label"
           textAnchor="middle"
           transform={`translate(${-yAxisLabelOffset},${innerHeight / 2}) rotate(-90)`}
+          style={{ fill: 'white' }}
         >
           {yAxisLabel}
         </text>
@@ -76,6 +77,7 @@ function Bubblechart() {
           x={innerWidth / 2}
           y={innerHeight + xAxisLabelOffset + 50}
           textAnchor="middle"
+          style={{ fill: 'white' }}
         >
           {xAxisLabel}
         </text>
