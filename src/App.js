@@ -31,7 +31,8 @@ function App() {
     palette: {
       mode: 'dark',
       background: {
-        default: '#151515',
+        default: '#0d1825',
+        paper: '#0d1825',
       },
     },
   });
