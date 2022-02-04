@@ -53,7 +53,7 @@ function App() {
   setCategoryData(categoryData);
 
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <div className="App">
         <Appbar />
         <main>
