@@ -30,6 +30,9 @@ function App() {
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
+      background: {
+        default: '#151515',
+      },
     },
   });
 
