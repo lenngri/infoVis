@@ -96,7 +96,7 @@ const CountryList = () => {
                 />
                 <text
                   className="countryFlag"
-                  fill={'black'}
+                  fill={'white'}
                   x={listElement.xOffset}
                   y={y + listElement.height / 2}
                 >
@@ -104,7 +104,7 @@ const CountryList = () => {
                 </text>
                 <text
                   className="countryText"
-                  fill={'black'}
+                  fill={'white'}
                   x={listElement.xOffset + 30}
                   y={y + listElement.height / 2}
                 >

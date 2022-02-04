@@ -48,14 +48,14 @@ ul {
   width: 100%;
   margin: 25px;
   padding: 10px;
-  fill: white;
+  fill: #0f1c2c;
 }
 
 .listItemWrapper.highlight {
   width: 100%;
   margin: 25px;
   padding: 10px;
-  fill: #f3f3f3;
+  fill: rgba(255, 255, 255, 0.16);
 }
 
 .listItem {
@@ -94,4 +94,9 @@ ul {
 .listCheckbox {
   width: 20%;
   float: right;
+}
+
+.chartText {
+  fill: #fff;
+  text-anchor: 'middle';
 }

@@ -26,10 +26,26 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
         {mapData.features.map((feature) => {
           const d = rowByCountry.get(feature.properties.name);
           const value = d ? colorValue(d) : 'no data';
-          const title = `${feature.properties.name}: ${value}`;
+          // const title = `${feature.properties.name}: ${value}`;
           let selected = null;
+          let title = null;
           if (d) {
             selected = d.selected;
+            title =
+              d.flag +
+              ' ' +
+              d.country +
+              '\n % of GDP: ' +
+              Math.round((d.investment + Number.EPSILON) * 100) / 100 +
+              '\n Patents per million: ' +
+              Math.round(d.patents / (d.population / 1000000), 2) +
+              '\n Patents: ' +
+              Math.round(d.patents, 2) +
+              '\n Population: ' +
+              Math.round(d.population / 1000000, 2) +
+              ' million';
+          } else {
+            title = `${feature.properties.name}: ${value}`;
           }
           // if (!d) {
           //   console.log("Name doesn't match: " + feature.properties.name);
@@ -41,7 +57,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
               className="land"
               key={feature.properties.name}
               fill={d ? colorScale(colorValue(d)) : missingDataColor}
-              opacity={selected ? 1.0 : 0.2}
+              opacity={selected ? 1.0 : 0.3}
               d={path(feature)}
               onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'List_'])}
               onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'List_'])}

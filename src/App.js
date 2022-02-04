@@ -30,6 +30,10 @@ function App() {
   const darkTheme = createTheme({
     palette: {
       mode: 'dark',
+      background: {
+        default: '#0d1825',
+        paper: '#0d1825',
+      },
     },
   });
 
@@ -53,7 +57,7 @@ function App() {
   setCategoryData(categoryData);
 
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={darkTheme}>
       <div className="App">
         <Appbar />
         <main>
