@@ -4,5 +4,6 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "prettier.jsxSingleQuote": false
 }

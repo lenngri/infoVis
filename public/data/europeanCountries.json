@@ -12,10 +12,6 @@
     "code": "AT"
   },
   {
-    "name": "Åland Islands",
-    "code": "AX"
-  },
-  {
     "name": "Bosnia and Herzegovina",
     "code": "BA"
   },
@@ -132,7 +128,7 @@
     "code": "MC"
   },
   {
-    "name": "Moldova, Republic of",
+    "name": "Moldova",
     "code": "MD"
   },
   {
@@ -172,10 +168,6 @@
     "code": "SI"
   },
   {
-    "name": "Svalbard and Jan Mayen",
-    "code": "SJ"
-  },
-  {
     "name": "Slovakia",
     "code": "SK"
   },
@@ -186,9 +178,5 @@
   {
     "name": "Ukraine",
     "code": "UA"
-  },
-  {
-    "name": "Holy See (Vatican City State)",
-    "code": "VA"
   }
 ]

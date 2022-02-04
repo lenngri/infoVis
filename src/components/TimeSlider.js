@@ -16,7 +16,7 @@ export default function TimeSlider() {
 
   return (
     <Container maxWidth="md">
-      <Box sm={{ width: 600 }} mt={2}>
+      <Box sm={{ width: 600, justifyContent: 'center' }} mt={2}>
         <Slider
           aria-label="Year"
           defaultValue={2005}

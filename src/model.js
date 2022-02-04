@@ -7,7 +7,7 @@ const model = {
   mapData: null,
   categoryData: null,
   selectedYear: 2005,
-  clickedCountry: 'Germany',
+  clickedCountry: null,
   view: 'patents',
   scheme: patentColorTheme(),
   renderFlag: false,
@@ -42,7 +42,7 @@ const model = {
   }),
   setRenderFlag: action((state, renderFlag) => {
     state.renderFlag = renderFlag;
-    console.log('Updated renderFlag');
+    console.log('Updated renderFlag.');
   }),
   // thunks
   changeView: thunk((actions, view) => {

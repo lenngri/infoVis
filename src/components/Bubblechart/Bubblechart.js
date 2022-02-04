@@ -1,22 +1,21 @@
 import React from 'react';
-import { scaleLinear, extent, format } from 'd3';
+import { scaleLinear, format } from 'd3';
 import { AxisLeft } from './AxisLeft';
 import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
 import { useStoreState } from 'easy-peasy';
-import { useState } from 'react';
 
-const width = 1000;
+const width = 900;
 const height = 600;
 const margin = { top: 20, right: 30, bottom: 150, left: 90 };
 const xAxisLabelOffset = 50;
 const yAxisLabelOffset = 45;
 
 function Bubblechart() {
-  const data = useStoreState((state) => state.data);
   const selectedYear = useStoreState((state) => state.selectedYear);
   const scheme = useStoreState((state) => state.scheme);
   const currentData = useStoreState((state) => state.data[selectedYear]);
+  // eslint-disable-next-line
   const renderFlag = useStoreState((state) => state.renderFlag);
 
   if (!currentData || !scheme) {

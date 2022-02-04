@@ -1,7 +1,6 @@
 import './components/App.css';
-import { useState } from 'react';
 import { useStoreActions } from 'easy-peasy';
-import { Grid, Container, Box, CircularProgress, Divider, Typography, Switch } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
@@ -10,7 +9,6 @@ import TimeSlider from './components/TimeSlider';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
-import Tooltips from './components/Tooltips';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import PieChart from './components/PieChart/PieChart';
 import { useData } from './datatools/useData';
@@ -22,7 +20,6 @@ function App() {
   const setData = useStoreActions((actions) => actions.setData);
   const setMapData = useStoreActions((actions) => actions.setMapData);
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
-  const setCheckedCountries = useStoreActions((actions) => actions.setCheckedCountries);
 
   const lightTheme = createTheme({
     palette: {
@@ -35,8 +32,6 @@ function App() {
       mode: 'dark',
     },
   });
-
-  const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
   const data = useData();
   const mapData = useMapData();
@@ -66,49 +61,53 @@ function App() {
             <Topcard />
           </Container>
           <Boxspacer />
-          <Grid container spacing={1} columnSpacing={4}>
-            <Grid itm xs={2}></Grid>
-            <Grid itm xs="auto">
-              <Container>
+          <Grid container sx={{ align: 'center', justifyContent: 'center' }}>
+            <Grid item xs="auto">
+              <Box
+                sx={{
+                  // boxShadow: 3,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'flex-end',
+                }}
+              >
                 <CountryList />
+              </Box>
+            </Grid>
+            <Grid item xs="auto">
+              <Container>
+                <Box
+                  sx={{
+                    // boxShadow: 3,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <ChoroplethToggle />
+                  <Container>
+                    <Choropleth />
+                  </Container>
+                  <TimeSlider />
+                  <Boxspacer />
+                  <Container>
+                    <Bubblechart />
+                  </Container>
+                </Box>
               </Container>
             </Grid>
-            <Grid itm xs="auto">
-              <Container>
-                <ChoroplethToggle />
-                <Container>
-                  <Box
-                    sx={{
-                      // boxShadow: 3,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      overflow: 'hidden',
-                    }}
-                  >
-                    <Choropleth />
-                  </Box>
-                </Container>
-                <TimeSlider />
-                <Boxspacer />
-                <Container>
-                  <Box
-                    sx={{
-                      // boxShadow: 3,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      overflow: 'hidden',
-                      mb: 6,
-                    }}
-                  >
-                    <Bubblechart />
-                  </Box>
-                  <PieChart />
-                </Container>
-              </Container>
+            <Grid item xs="auto">
+              <Box
+                sx={{
+                  // boxShadow: 3,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                }}
+              >
+                <PieChart />
+              </Box>
             </Grid>
           </Grid>
         </main>

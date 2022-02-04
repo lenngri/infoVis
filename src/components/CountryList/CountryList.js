@@ -1,5 +1,5 @@
 import { useStoreState, useStoreActions } from 'easy-peasy';
-import { Typography, Button } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
 
 const CountryList = () => {
@@ -21,7 +21,7 @@ const CountryList = () => {
   // sets value of "selected" in country object of each year in data object to true
   // invoked onCLick() in countryList. Used to select and deselect countries.
   const toggleOne = function (data, country) {
-    console.log('toggle one');
+    console.log('Country toggled.');
     for (let year in data) {
       data[year].forEach((object) => {
         if (object.country === country) {
@@ -60,22 +60,22 @@ const CountryList = () => {
 
   return (
     <>
-      <Typography sx={{ mt: 4, mb: 1, width: 300 }} variant="h6" component="div">
-        <strong>Countries:</strong>
-      </Typography>
-      <Typography>
-        {' '}
-        <strong>
+      <Box sx={{ width: 300, textAlign: 'center' }}>
+        <Typography sx={{ mt: 4, mb: 1 }} variant="h6" component="div">
+          Countries:
+        </Typography>
+        <Typography>
+          {' '}
           {currentData.filter((obj) => obj.selected === true).length} of {currentData.length}{' '}
           selected{' '}
-        </strong>
-      </Typography>
-      <Button onClick={() => toggleAll(data, currentData)}>
+        </Typography>
+      </Box>
+      <Button onClick={() => toggleAll(data, currentData)} sx={{ width: 300, textAlign: 'center' }}>
         {currentData.length === currentData.filter((obj) => obj.selected === true).length
           ? 'Deselect All'
           : 'Select All'}
       </Button>
-      <div class="listWrapper">
+      <div className="listWrapper">
         <svg viewBox={'0 0 ' + viewBox.x + ' ' + viewBox.y}>
           {sortData(currentData, 'country').map((object, i) => {
             const y = listElement.height * i;
@@ -89,7 +89,7 @@ const CountryList = () => {
                   style={{ cursor: 'pointer' }}
                   height={listElement.height}
                   y={y}
-                  class="listItemWrapper"
+                  className="listItemWrapper"
                   id={'List_' + object.country}
                   onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
                   onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}
@@ -110,7 +110,7 @@ const CountryList = () => {
                 >
                   {object.country}
                 </text>
-                <text x={listElement.xOffset + 200} y={y + listElement.height / 2}>
+                <text x={listElement.xOffset + 220} y={y + listElement.height / 2}>
                   {object.selected ? '🟢 ' : '⚪'}
                 </text>
               </g>

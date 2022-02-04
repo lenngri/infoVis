@@ -1,14 +1,17 @@
 import React from 'react';
-import { useStoreState } from 'easy-peasy';
+import { useStoreState, useStoreActions } from 'easy-peasy';
 import PieChartGen from '../../charttools/usePieChart';
+import { Button, Typography } from '@mui/material';
+import { schemeOranges } from 'd3-scale-chromatic';
 
-const width = 500;
-const height = 400;
+const width = 350;
+const height = 300;
 
 const PieChart = () => {
   const categoryData = useStoreState((state) => state.categoryData);
   const selectedYear = useStoreState((state) => state.selectedYear);
   const clickedCountry = useStoreState((state) => state.clickedCountry);
+  const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
 
   if (!categoryData) {
     return <p>Loading...</p>;
@@ -30,19 +33,32 @@ const PieChart = () => {
   const pieChart = PieChartGen(filteredByCountry, {
     name: (d) => d.category,
     value: (d) => ((d.patents / d.total) * 100).toFixed(2),
-    width: 400,
-    height: 400,
+    width: width - 50,
+    height: height,
+    colors: schemeOranges[8],
   });
 
   return (
     <>
-      <p>{clickedCountry} (Patent Categories in %)</p>
-      <svg width={width} height={height}>
-        <g
-          transform={`translate(${width * 0.5},${height * 0.5})`}
-          dangerouslySetInnerHTML={{ __html: pieChart.innerHTML }}
-        ></g>
-      </svg>
+      <Typography sx={{ mt: 10, width: width }} variant="h6" component="div">
+        Patent Categories {clickedCountry}
+      </Typography>
+      <Typography sx={{ mb: 2 }}>(in %)</Typography>
+      {clickedCountry ? (
+        <>
+          <svg width={width} height={height}>
+            <g
+              transform={`translate(${width * 0.5},${height * 0.5})`}
+              dangerouslySetInnerHTML={{ __html: pieChart.innerHTML }}
+            ></g>
+          </svg>
+          <Button onClick={() => setClickedCountry(null)} sx={{ textAlign: 'center' }}>
+            Deselect
+          </Button>
+        </>
+      ) : (
+        <Typography sx={{ my: 20 }}>Please click on a country or bubble...</Typography>
+      )}
     </>
   );
 };
