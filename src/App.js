@@ -61,8 +61,8 @@ function App() {
             <Topcard />
           </Container>
           <Boxspacer />
-          <Grid container>
-            <Grid item md="auto" lg={3}>
+          <Grid container sx={{ align: 'center', justifyContent: 'center' }}>
+            <Grid item xs="auto">
               <Box
                 sx={{
                   // boxShadow: 3,
@@ -74,7 +74,7 @@ function App() {
                 <CountryList />
               </Box>
             </Grid>
-            <Grid item md="auto" lg={6}>
+            <Grid item xs="auto">
               <Container>
                 <Box
                   sx={{
@@ -97,7 +97,7 @@ function App() {
                 </Box>
               </Container>
             </Grid>
-            <Grid item md="auto" lg={3}>
+            <Grid item xs="auto">
               <Box
                 sx={{
                   // boxShadow: 3,

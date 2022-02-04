@@ -4,8 +4,8 @@ import PieChartGen from '../../charttools/usePieChart';
 import { Button, Typography } from '@mui/material';
 import { schemeOranges } from 'd3-scale-chromatic';
 
-const width = 450;
-const height = 400;
+const width = 350;
+const height = 300;
 
 const PieChart = () => {
   const categoryData = useStoreState((state) => state.categoryData);
@@ -33,15 +33,15 @@ const PieChart = () => {
   const pieChart = PieChartGen(filteredByCountry, {
     name: (d) => d.category,
     value: (d) => ((d.patents / d.total) * 100).toFixed(2),
-    width: 400,
-    height: 400,
+    width: width - 50,
+    height: height,
     colors: schemeOranges[8],
   });
 
   return (
     <>
-      <Typography sx={{ mt: 10 }} variant="h6" component="div">
-        <strong>Patent Categories {clickedCountry}</strong>
+      <Typography sx={{ mt: 10, width: width }} variant="h6" component="div">
+        Patent Categories {clickedCountry}
       </Typography>
       <Typography sx={{ mb: 2 }}>(in %)</Typography>
       {clickedCountry ? (

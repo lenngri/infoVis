@@ -5,7 +5,7 @@ import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
 import { useStoreState } from 'easy-peasy';
 
-const width = 1000;
+const width = 900;
 const height = 600;
 const margin = { top: 20, right: 30, bottom: 150, left: 90 };
 const xAxisLabelOffset = 50;

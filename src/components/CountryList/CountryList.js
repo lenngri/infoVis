@@ -62,14 +62,12 @@ const CountryList = () => {
     <>
       <Box sx={{ width: 300, textAlign: 'center' }}>
         <Typography sx={{ mt: 4, mb: 1 }} variant="h6" component="div">
-          <strong>Countries:</strong>
+          Countries:
         </Typography>
         <Typography>
           {' '}
-          <strong>
-            {currentData.filter((obj) => obj.selected === true).length} of {currentData.length}{' '}
-            selected{' '}
-          </strong>
+          {currentData.filter((obj) => obj.selected === true).length} of {currentData.length}{' '}
+          selected{' '}
         </Typography>
       </Box>
       <Button onClick={() => toggleAll(data, currentData)} sx={{ width: 300, textAlign: 'center' }}>
