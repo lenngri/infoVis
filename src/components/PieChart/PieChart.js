@@ -52,7 +52,7 @@ const PieChart = () => {
               dangerouslySetInnerHTML={{ __html: pieChart.innerHTML }}
             ></g>
           </svg>
-          <Button onClick={() => setClickedCountry(null)} sx={{ textAlign: 'center' }}>
+          <Button onClick={() => setClickedCountry(null)} sx={{ mt: 2, textAlign: 'center' }}>
             Deselect
           </Button>
         </>
