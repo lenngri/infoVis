@@ -40,10 +40,10 @@ const PieChart = () => {
 
   return (
     <>
-      <Typography sx={{ mt: 10, width: width }} variant="h6" component="div">
+      <Typography sx={{ mb: 2 }} variant="h6" component="div">
         Patent Categories {clickedCountry}
       </Typography>
-      <Typography sx={{ mb: 2 }}>(in %)</Typography>
+
       {clickedCountry ? (
         <>
           <svg width={width} height={height}>
@@ -52,6 +52,7 @@ const PieChart = () => {
               dangerouslySetInnerHTML={{ __html: pieChart.innerHTML }}
             ></g>
           </svg>
+          <Typography sx={{ mt: 2 }}>(Share of each category in %)</Typography>
           <Button onClick={() => setClickedCountry(null)} sx={{ mt: 2, textAlign: 'center' }}>
             Deselect
           </Button>

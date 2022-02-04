@@ -15,7 +15,7 @@ const Marks = ({
   colorScale,
   colorValue,
 }) => {
-  const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
+  const changeClickedCountry = useStoreActions((actions) => actions.changeClickedCountry);
   return data
     .filter((d) => {
       return d.selected;
@@ -31,7 +31,7 @@ const Marks = ({
         fill={d ? colorScale(colorValue(d)) : missingDataColor}
         onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'List_'])}
         onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'List_'])}
-        onClick={(e) => setClickedCountry(e.target.id.split('_')[1])}
+        onClick={(e) => changeClickedCountry(e.target.id.split('_')[1])}
       >
         <title>
           {d.flag +

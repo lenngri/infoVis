@@ -6,7 +6,7 @@ import { useStoreState, useStoreActions } from 'easy-peasy';
 const missingDataColor = 'darkgray';
 
 const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, legendTitle }) => {
-  const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
+  const changeClickedCountry = useStoreActions((actions) => actions.changeClickedCountry);
   // eslint-disable-next-line
   const renderFlag = useStoreState((state) => state.renderFlag);
 
@@ -61,7 +61,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
               d={path(feature)}
               onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'List_'])}
               onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'List_'])}
-              onClick={(e) => setClickedCountry(e.target.id.split('_')[1])}
+              onClick={(e) => changeClickedCountry(e.target.id.split('_')[1])}
             >
               <title>{title}</title>
             </path>

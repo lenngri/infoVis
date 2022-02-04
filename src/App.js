@@ -10,7 +10,7 @@ import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import PieChart from './components/PieChart/PieChart';
+import PieChartDialog from './components/PieChart/PieChartDialog';
 import { useData } from './datatools/useData';
 import { useMapData } from './datatools/useMapData';
 import { usePatentCategoryData } from './datatools/usePatentCategoryData';
@@ -111,13 +111,12 @@ function App() {
                   flexDirection: 'column',
                   alignItems: 'center',
                 }}
-              >
-                {/* <PieChart /> */}
-              </Box>
+              ></Box>
             </Grid>
           </Grid>
           <Container sx={{ mb: 5 }}>
             <TimeSlider />
+            <PieChartDialog />
           </Container>
         </main>
         <footer className="Footer">
