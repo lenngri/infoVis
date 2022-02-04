@@ -75,7 +75,7 @@ const CountryList = () => {
           ? 'Deselect All'
           : 'Select All'}
       </Button>
-      <div class="listWrapper">
+      <div className="listWrapper">
         <svg viewBox={'0 0 ' + viewBox.x + ' ' + viewBox.y}>
           {sortData(currentData, 'country').map((object, i) => {
             const y = listElement.height * i;
@@ -89,7 +89,7 @@ const CountryList = () => {
                   style={{ cursor: 'pointer' }}
                   height={listElement.height}
                   y={y}
-                  class="listItemWrapper"
+                  className="listItemWrapper"
                   id={'List_' + object.country}
                   onMouseEnter={(e) => handleMouseEnter(e, ['Map_', 'Bubblechart_'])}
                   onMouseLeave={(e) => handleMouseLeave(e, ['Map_', 'Bubblechart_'])}

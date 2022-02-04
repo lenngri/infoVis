@@ -1,7 +1,6 @@
 import './components/App.css';
-import { useState } from 'react';
 import { useStoreActions } from 'easy-peasy';
-import { Grid, Container, Box, CircularProgress, Divider, Typography, Switch } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
@@ -10,7 +9,6 @@ import TimeSlider from './components/TimeSlider';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
-import Tooltips from './components/Tooltips';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import PieChart from './components/PieChart/PieChart';
 import { useData } from './datatools/useData';
@@ -22,7 +20,6 @@ function App() {
   const setData = useStoreActions((actions) => actions.setData);
   const setMapData = useStoreActions((actions) => actions.setMapData);
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
-  const setCheckedCountries = useStoreActions((actions) => actions.setCheckedCountries);
 
   const lightTheme = createTheme({
     palette: {
@@ -35,8 +32,6 @@ function App() {
       mode: 'dark',
     },
   });
-
-  const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
   const data = useData();
   const mapData = useMapData();
