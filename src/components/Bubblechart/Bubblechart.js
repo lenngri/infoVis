@@ -15,6 +15,7 @@ function Bubblechart() {
   const selectedYear = useStoreState((state) => state.selectedYear);
   const scheme = useStoreState((state) => state.scheme);
   const currentData = useStoreState((state) => state.data[selectedYear]);
+  // eslint-disable-next-line
   const renderFlag = useStoreState((state) => state.renderFlag);
 
   if (!currentData || !scheme) {
