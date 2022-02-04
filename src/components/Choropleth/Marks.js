@@ -69,7 +69,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
         })}
       </g>
       <g
-        transform={`translate(${width * 0.5},${height * 0.93})`}
+        transform={`translate(${width * 0.55},${height * 0.93})`}
         // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
         // and https://stackoverflow.com/questions/26815738/svg-use-tag-and-reactjs
         dangerouslySetInnerHTML={{ __html: legend.innerHTML }}

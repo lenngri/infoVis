@@ -72,7 +72,7 @@ export default function CustomizedDialogs() {
         open={openPieChart}
       >
         <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Modal title
+          Patent Categories - Detail
         </BootstrapDialogTitle>
         <DialogContent dividers>
           <Box
