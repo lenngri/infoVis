@@ -10,7 +10,7 @@ const model = {
   clickedCountry: 'Germany',
   view: 'patents',
   scheme: patentColorTheme(),
-  checkedCountries: [],
+  renderFlag: false,
   // actions
   setData: action((state, data) => {
     state.data = data;
@@ -40,9 +40,9 @@ const model = {
     state.scheme = scheme;
     console.log('New scheme set.');
   }),
-  setCheckedCountries: action((state, checkedCountries) => {
-    state.checkedCountries = checkedCountries;
-    console.log('Updated checked countries.');
+  setRenderFlag: action((state, renderFlag) => {
+    state.renderFlag = renderFlag;
+    console.log('Updated renderFlag');
   }),
   // thunks
   changeView: thunk((actions, view) => {

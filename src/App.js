@@ -41,7 +41,6 @@ function App() {
   const data = useData();
   const mapData = useMapData();
   const categoryData = usePatentCategoryData();
-  const checkedCountries = [];
   console.log('Sucessfully loaded data.');
 
   if (!data || !mapData || !categoryData) {
@@ -55,13 +54,12 @@ function App() {
   }
 
   setData(data);
-  setCheckedCountries(checkedCountries);
   setMapData(mapData);
   setCategoryData(categoryData);
 
   return (
     <ThemeProvider theme={lightTheme}>
-      <div className='App'>
+      <div className="App">
         <Appbar />
         <main>
           <Container sx={{ mt: 10 }}>
@@ -70,12 +68,12 @@ function App() {
           <Boxspacer />
           <Grid container spacing={1} columnSpacing={4}>
             <Grid itm xs={2}></Grid>
-            <Grid itm xs='auto'>
+            <Grid itm xs="auto">
               <Container>
                 <CountryList />
               </Container>
             </Grid>
-            <Grid itm xs='auto'>
+            <Grid itm xs="auto">
               <Container>
                 <ChoroplethToggle />
                 <Container>
@@ -114,13 +112,13 @@ function App() {
             </Grid>
           </Grid>
         </main>
-        <footer className='Footer'>
+        <footer className="Footer">
           <Divider />
-          <Typography variant='h6' align='center' gutterBottom>
+          <Typography variant="h6" align="center" gutterBottom>
             Thanks for reading.
           </Typography>
           <Impressum />
-          <Typography variant='subtitle1' align='center' color='textSecondard'>
+          <Typography variant="subtitle1" align="center" color="textSecondard">
             This page is brought to you by MMT.
           </Typography>
         </footer>

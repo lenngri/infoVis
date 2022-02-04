@@ -1,19 +1,27 @@
 import { useStoreState, useStoreActions } from 'easy-peasy';
-import { Typography } from '@mui/material';
+import { Typography, Button } from '@mui/material';
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
-import { useState } from 'react';
 
 const CountryList = () => {
   const setData = useStoreActions((actions) => actions.setData);
-  const selectedYear = useStoreState((state) => state.selectedYear);
   const data = useStoreState((state) => state.data);
+  const selectedYear = useStoreState((state) => state.selectedYear);
   const currentData = data[selectedYear];
+  const renderFlag = useStoreState((state) => state.renderFlag);
+  const setRenderFlag = useStoreActions((actions) => actions.setRenderFlag);
 
-  const [renderFlag, setRenderFlag] = useState(false);
+  // allows to sort array of data objects by any attribute of said objects
+  // source: https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
+  const sortData = (data, attribute) => {
+    return data.sort((a, b) =>
+      a[attribute] > b[attribute] ? 1 : b[attribute] > a[attribute] ? -1 : 0
+    );
+  };
 
-  console.log(currentData);
-
-  const handleToggle = (data, country) => () => {
+  // sets value of "selected" in country object of each year in data object to true
+  // invoked onCLick() in countryList. Used to select and deselect countries.
+  const toggleOne = function (data, country) {
+    console.log('toggle one');
     for (let year in data) {
       data[year].forEach((object) => {
         if (object.country === country) {
@@ -21,9 +29,23 @@ const CountryList = () => {
         }
       });
     }
+    setData(data); //sets global data object in store
+    setRenderFlag(!renderFlag); //forces rerender of components
+  };
 
-    setData(data);
-    setRenderFlag(!renderFlag);
+  const toggleAll = (data, currentData) => {
+    console.log(currentData.length === currentData.filter((obj) => obj.selected === true).length);
+    if (currentData.length === currentData.filter((obj) => obj.selected === true).length) {
+      for (let year in data) {
+        data[year].map((object) => (object.selected = false));
+      }
+    } else {
+      for (let year in data) {
+        data[year].map((object) => (object.selected = true));
+      }
+    }
+    setData(data); //sets global data object in store
+    setRenderFlag(!renderFlag); //forces rerender of components
   };
 
   const listElement = {
@@ -43,16 +65,24 @@ const CountryList = () => {
       </Typography>
       <Typography>
         {' '}
-        <strong>Pending of {data.length} selected </strong>
+        <strong>
+          {currentData.filter((obj) => obj.selected === true).length} of {currentData.length}{' '}
+          selected{' '}
+        </strong>
       </Typography>
+      <Button onClick={() => toggleAll(data, currentData)}>
+        {currentData.length === currentData.filter((obj) => obj.selected === true).length
+          ? 'Deselect All'
+          : 'Select All'}
+      </Button>
       <div class="listWrapper">
         <svg viewBox={'0 0 ' + viewBox.x + ' ' + viewBox.y}>
-          {currentData.map((object, i) => {
+          {sortData(currentData, 'country').map((object, i) => {
             const y = listElement.height * i;
             return (
               <g
                 key={object.country}
-                onClick={handleToggle(data, object.country)}
+                onClick={() => toggleOne(data, object.country)}
                 style={{ cursor: 'pointer' }}
               >
                 <rect
