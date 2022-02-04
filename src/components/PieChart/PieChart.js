@@ -3,6 +3,8 @@ import { useStoreState, useStoreActions } from 'easy-peasy';
 import PieChartGen from '../../charttools/usePieChart';
 import { Button, Typography } from '@mui/material';
 import { schemeRdYlBu } from 'd3-scale-chromatic';
+import Swatches from '../../charttools/useSwatches';
+import * as d3 from 'd3'; // can be optimized by importing just necessary modules
 
 const width = 400;
 const height = 300;
@@ -38,6 +40,10 @@ const PieChart = () => {
     colors: schemeRdYlBu[9],
   });
 
+ const legend = Swatches(d3.scaleOrdinal(["Other"], d3.schemeRdYlBu[8]), {
+  columns: "180px"
+})
+
   return (
     <>
       <Typography sx={{ mb: 2 }} variant="h6" component="div">
@@ -52,6 +58,14 @@ const PieChart = () => {
               dangerouslySetInnerHTML={{ __html: pieChart.innerHTML }}
             ></g>
           </svg>
+
+           <svg width={width} height={height}>
+            <g
+              transform={`translate(${width * 0.5},${height * 0.5})`}
+              dangerouslySetInnerHTML={{ __html: legend.innerHTML }}
+            ></g>
+          </svg>
+
           <Typography sx={{ mt: 2 }}>(Share of each category in %)</Typography>
           <Button onClick={() => setClickedCountry(null)} sx={{ mt: 2, textAlign: 'center' }}>
             Deselect
