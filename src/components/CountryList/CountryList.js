@@ -21,7 +21,7 @@ const CountryList = () => {
   // sets value of "selected" in country object of each year in data object to true
   // invoked onCLick() in countryList. Used to select and deselect countries.
   const toggleOne = function (data, country) {
-    console.log('toggle one');
+    console.log('Country toggled.');
     for (let year in data) {
       data[year].forEach((object) => {
         if (object.country === country) {

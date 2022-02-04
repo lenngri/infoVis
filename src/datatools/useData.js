@@ -35,7 +35,6 @@ export const useData = () => {
 
   // loop through every year in data object
   for (let year in data) {
-    console.log();
     countryData.forEach((d) => {
       data[year].push({
         country: d.name,
