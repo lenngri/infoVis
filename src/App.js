@@ -61,49 +61,34 @@ function App() {
             <Topcard />
           </Container>
           <Boxspacer />
-          <Grid container spacing={1} columnSpacing={4}>
-            <Grid itm xs={2}></Grid>
-            <Grid itm xs="auto">
-              <Container>
+          <Grid container>
+            <Grid item xs>
+              <Box
+                sx={{
+                  // boxShadow: 3,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'flex-end',
+                }}
+              >
                 <CountryList />
-              </Container>
+              </Box>
             </Grid>
-            <Grid itm xs="auto">
+            <Grid item xs={6}>
               <Container>
                 <ChoroplethToggle />
                 <Container>
-                  <Box
-                    sx={{
-                      // boxShadow: 3,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      overflow: 'hidden',
-                    }}
-                  >
-                    <Choropleth />
-                  </Box>
+                  <Choropleth />
                 </Container>
                 <TimeSlider />
                 <Boxspacer />
                 <Container>
-                  <Box
-                    sx={{
-                      // boxShadow: 3,
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      overflow: 'hidden',
-                      mb: 6,
-                    }}
-                  >
-                    <Bubblechart />
-                  </Box>
-                  <PieChart />
+                  <Bubblechart />
                 </Container>
               </Container>
+            </Grid>
+            <Grid item xs>
+              <PieChart />
             </Grid>
           </Grid>
         </main>
