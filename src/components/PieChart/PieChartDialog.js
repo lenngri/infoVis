@@ -81,7 +81,6 @@ export default function CustomizedDialogs() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              overflow: 'hidden',
               justifyContent: 'center',
               my: 5,
               mx: 15,
@@ -92,7 +91,7 @@ export default function CustomizedDialogs() {
         </DialogContent>
         <DialogActions>
           <Button autoFocus onClick={handleClose}>
-            Save changes
+            Close
           </Button>
         </DialogActions>
       </BootstrapDialog>
