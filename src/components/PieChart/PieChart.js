@@ -1,14 +1,16 @@
 import React from 'react';
-import { useStoreState } from 'easy-peasy';
+import { useStoreState, useStoreActions } from 'easy-peasy';
 import PieChartGen from '../../charttools/usePieChart';
+import { Button, Typography } from '@mui/material';
 
-const width = 500;
+const width = 450;
 const height = 400;
 
 const PieChart = () => {
   const categoryData = useStoreState((state) => state.categoryData);
   const selectedYear = useStoreState((state) => state.selectedYear);
   const clickedCountry = useStoreState((state) => state.clickedCountry);
+  const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
 
   if (!categoryData) {
     return <p>Loading...</p>;
@@ -36,13 +38,25 @@ const PieChart = () => {
 
   return (
     <>
-      <p>{clickedCountry} (Patent Categories in %)</p>
-      <svg width={width} height={height}>
-        <g
-          transform={`translate(${width * 0.5},${height * 0.5})`}
-          dangerouslySetInnerHTML={{ __html: pieChart.innerHTML }}
-        ></g>
-      </svg>
+      <Typography sx={{ mt: 10 }} variant="h6" component="div">
+        <strong>Patent Categories {clickedCountry}</strong>
+      </Typography>
+      <Typography sx={{ mb: 2 }}>(in %)</Typography>
+      {clickedCountry ? (
+        <>
+          <svg width={width} height={height}>
+            <g
+              transform={`translate(${width * 0.5},${height * 0.5})`}
+              dangerouslySetInnerHTML={{ __html: pieChart.innerHTML }}
+            ></g>
+          </svg>
+          <Button onClick={() => setClickedCountry(null)} sx={{ textAlign: 'center' }}>
+            Deselect
+          </Button>
+        </>
+      ) : (
+        <Typography sx={{ my: 20 }}>Please click on a country or bubble...</Typography>
+      )}
     </>
   );
 };
