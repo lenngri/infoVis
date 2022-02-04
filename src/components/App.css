@@ -11,7 +11,7 @@ circle {
 }
 
 .marks .land {
-  stroke: white;
+  stroke: gray;
   stroke-width: 0.5px;
 }
 

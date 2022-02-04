@@ -13,7 +13,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
   // generate map progjection and paths
   const projection = geoMercator()
     .scale(500)
-    .translate([width / 3, height * 1.5]);
+    .translate([width / 3.3, height * 1.4]);
   const path = geoPath(projection);
 
   // generate map legend and append to svg,
@@ -69,7 +69,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
         })}
       </g>
       <g
-        transform={`translate(${width * 0.65},${height * 0.9})`}
+        transform={`translate(${width * 0.5},${height * 0.93})`}
         // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
         // and https://stackoverflow.com/questions/26815738/svg-use-tag-and-reactjs
         dangerouslySetInnerHTML={{ __html: legend.innerHTML }}

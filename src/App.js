@@ -1,6 +1,6 @@
 import './components/App.css';
 import { useStoreActions } from 'easy-peasy';
-import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography, Stack } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
@@ -65,7 +65,7 @@ function App() {
             <Topcard />
           </Container>
           <Boxspacer />
-          <Grid container sx={{ align: 'center', justifyContent: 'center' }}>
+          <Grid container sx={{ align: 'center', justify: 'center' }}>
             <Grid item xs="auto">
               <Box
                 sx={{
@@ -73,6 +73,8 @@ function App() {
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'flex-end',
+                  height: 700,
+                  ml: 8,
                 }}
               >
                 <CountryList />
@@ -93,12 +95,12 @@ function App() {
                   <Container>
                     <Choropleth />
                   </Container>
-                  <TimeSlider />
-                  <Boxspacer />
-                  <Container>
-                    <Bubblechart />
-                  </Container>
                 </Box>
+              </Container>
+            </Grid>
+            <Grid item xs="auto">
+              <Container>
+                <Bubblechart />
               </Container>
             </Grid>
             <Grid item xs="auto">
@@ -110,10 +112,13 @@ function App() {
                   alignItems: 'center',
                 }}
               >
-                <PieChart />
+                {/* <PieChart /> */}
               </Box>
             </Grid>
           </Grid>
+          <Container sx={{ mb: 5 }}>
+            <TimeSlider />
+          </Container>
         </main>
         <footer className="Footer">
           <Divider />
