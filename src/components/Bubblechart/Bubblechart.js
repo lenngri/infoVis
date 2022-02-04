@@ -64,20 +64,18 @@ function Bubblechart() {
           tickOffset={5}
         />
         <text
-          className="axis-label"
+          className="chartText"
           textAnchor="middle"
           transform={`translate(${-yAxisLabelOffset},${innerHeight / 2}) rotate(-90)`}
-          style={{ fill: 'white' }}
         >
           {yAxisLabel}
         </text>
         <AxisLeft yScale={yScale} innerWidth={innerWidth} tickOffset={5} />
         <text
-          className="axis-label"
+          className="chartText"
           x={innerWidth / 2}
           y={innerHeight + xAxisLabelOffset + 50}
           textAnchor="middle"
-          style={{ fill: 'white' }}
         >
           {xAxisLabel}
         </text>

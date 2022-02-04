@@ -57,7 +57,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
               className="land"
               key={feature.properties.name}
               fill={d ? colorScale(colorValue(d)) : missingDataColor}
-              opacity={selected ? 1.0 : 0.2}
+              opacity={selected ? 1.0 : 0.3}
               d={path(feature)}
               onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'List_'])}
               onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'List_'])}
