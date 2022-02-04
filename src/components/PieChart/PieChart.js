@@ -2,6 +2,7 @@ import React from 'react';
 import { useStoreState, useStoreActions } from 'easy-peasy';
 import PieChartGen from '../../charttools/usePieChart';
 import { Button, Typography } from '@mui/material';
+import { schemeOranges } from 'd3-scale-chromatic';
 
 const width = 450;
 const height = 400;
@@ -34,6 +35,7 @@ const PieChart = () => {
     value: (d) => ((d.patents / d.total) * 100).toFixed(2),
     width: 400,
     height: 400,
+    colors: schemeOranges[8],
   });
 
   return (

@@ -62,7 +62,7 @@ function App() {
           </Container>
           <Boxspacer />
           <Grid container>
-            <Grid item xs>
+            <Grid item md="auto" lg={3}>
               <Box
                 sx={{
                   // boxShadow: 3,
@@ -74,21 +74,40 @@ function App() {
                 <CountryList />
               </Box>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item md="auto" lg={6}>
               <Container>
-                <ChoroplethToggle />
-                <Container>
-                  <Choropleth />
-                </Container>
-                <TimeSlider />
-                <Boxspacer />
-                <Container>
-                  <Bubblechart />
-                </Container>
+                <Box
+                  sx={{
+                    // boxShadow: 3,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <ChoroplethToggle />
+                  <Container>
+                    <Choropleth />
+                  </Container>
+                  <TimeSlider />
+                  <Boxspacer />
+                  <Container>
+                    <Bubblechart />
+                  </Container>
+                </Box>
               </Container>
             </Grid>
-            <Grid item xs>
-              <PieChart />
+            <Grid item md="auto" lg={3}>
+              <Box
+                sx={{
+                  // boxShadow: 3,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                }}
+              >
+                <PieChart />
+              </Box>
             </Grid>
           </Grid>
         </main>
