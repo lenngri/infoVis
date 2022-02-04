@@ -1,5 +1,5 @@
 import { useStoreState, useStoreActions } from 'easy-peasy';
-import { Typography, Button } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
 
 const CountryList = () => {
@@ -60,17 +60,19 @@ const CountryList = () => {
 
   return (
     <>
-      <Typography sx={{ mt: 4, mb: 1, width: 300 }} variant="h6" component="div">
-        <strong>Countries:</strong>
-      </Typography>
-      <Typography>
-        {' '}
-        <strong>
-          {currentData.filter((obj) => obj.selected === true).length} of {currentData.length}{' '}
-          selected{' '}
-        </strong>
-      </Typography>
-      <Button onClick={() => toggleAll(data, currentData)}>
+      <Box sx={{ width: 300, textAlign: 'center' }}>
+        <Typography sx={{ mt: 4, mb: 1 }} variant="h6" component="div">
+          <strong>Countries:</strong>
+        </Typography>
+        <Typography>
+          {' '}
+          <strong>
+            {currentData.filter((obj) => obj.selected === true).length} of {currentData.length}{' '}
+            selected{' '}
+          </strong>
+        </Typography>
+      </Box>
+      <Button onClick={() => toggleAll(data, currentData)} sx={{ width: 300, textAlign: 'center' }}>
         {currentData.length === currentData.filter((obj) => obj.selected === true).length
           ? 'Deselect All'
           : 'Select All'}
@@ -110,7 +112,7 @@ const CountryList = () => {
                 >
                   {object.country}
                 </text>
-                <text x={listElement.xOffset + 200} y={y + listElement.height / 2}>
+                <text x={listElement.xOffset + 220} y={y + listElement.height / 2}>
                   {object.selected ? '🟢 ' : '⚪'}
                 </text>
               </g>
