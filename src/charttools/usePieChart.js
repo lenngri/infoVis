@@ -3,10 +3,7 @@
 // https://observablehq.com/@d3/pie-chart
 import * as d3 from 'd3'; // can be optimized by importing just necessary modules
 
-
 const PieChartGen = (
-
-
   data,
   {
     name = ([x]) => x, // given d in data, returns the (ordinal) label
@@ -24,12 +21,8 @@ const PieChartGen = (
     strokeWidth = 1, // width of stroke separating wedges
     strokeLinejoin = 'round', // line join of stroke separating wedges
     padAngle = stroke === 'none' ? 1 / outerRadius : 0, // angular separation between wedges
-    
-
   } = {}
 ) => {
-
-  
   // Compute values.
   const N = d3.map(data, name);
   const V = d3.map(data, value);
@@ -66,7 +59,6 @@ const PieChartGen = (
   const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
   const arcLabel = d3.arc().innerRadius(labelRadius).outerRadius(labelRadius);
 
- 
   const svg = d3
     .create('svg')
     .attr('width', width)
@@ -107,11 +99,7 @@ const PieChartGen = (
     .attr('font-weight', (_, i) => (i ? null : 'bold'))
     .text((d) => d);
 
- 
-
   return Object.assign(svg.node(), { scales: { color } });
-
-
 };
 
 export default PieChartGen;

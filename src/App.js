@@ -1,6 +1,6 @@
 import './components/App.css';
 import { useStoreActions } from 'easy-peasy';
-import { Grid, Container, Box, CircularProgress, Divider, Typography, Stack } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
@@ -21,11 +21,11 @@ function App() {
   const setMapData = useStoreActions((actions) => actions.setMapData);
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
 
-  const lightTheme = createTheme({
-    palette: {
-      mode: 'light',
-    },
-  });
+  // const lightTheme = createTheme({
+  //   palette: {
+  //     mode: 'light',
+  //   },
+  // });
 
   const darkTheme = createTheme({
     palette: {
