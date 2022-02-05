@@ -43,15 +43,15 @@ const PieChart = () => {
   const legend = Swatches(
     d3.scaleOrdinal(
       [
-        'Wholesale and Retail Trade',
-        'Manufacturing',
-        'Leisure and hospitality',
-        'Business services',
-        'Construction',
-        'Education and Health',
-        'Government',
-        'Finance',
-        'Self-employed',
+        'Human Necessities',
+        'Transporting',
+        'Chemistry / Metallurgy',
+        'Textiles / Paper',
+        'Fixed Constructions',
+        'Mechanical Engineering',
+        'Physics',
+        'Electricity',
+        'No Category',
       ],
       d3.schemeRdYlBu[9]
     ),
