@@ -11,6 +11,9 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import CloseIcon from '@mui/icons-material/Close';
 import Slide from '@mui/material/Slide';
+import Link from '@mui/material/Link';
+import CircleIcon from '@mui/icons-material/Circle';
+import ListItemIcon from '@mui/material/ListItemIcon';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -46,7 +49,7 @@ export default function Impressum() {
             </Button>
           </Toolbar>
         </AppBar>
-        <List>
+        <List sx={{width:"100%"}}>
           <ListItem>
             <ListItemText
               primary="General Info"
@@ -62,6 +65,36 @@ a cholopleth map of Europe, a Bubble Chart and interactive features."
             />
           </ListItem>
           <Divider />
+        <ListItem>
+          <ListItemText
+              primary="Data Resources"
+              secondary="The data was sourced from:"/>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CircleIcon sx={{ fontSize: 5, color: 'white', ml:3 }} />
+            </ListItemIcon>
+          <Link href="https://www.worldwide-patents.com/the-dataset">
+              https://www.worldwide-patents.com/the-dataset
+            </Link>
+        </ListItem>
+        <ListItem>
+           <ListItemIcon>
+            <CircleIcon sx={{ fontSize: 5, color: 'white', ml:3 }} />
+            </ListItemIcon>
+          <Link href="https://data.worldbank.org/indicator/SP.POP.TOTL">
+              https://data.worldbank.org/indicator/SP.POP.TOTL
+               </Link>
+        </ListItem>
+        
+        <ListItem>
+           <ListItemIcon>
+            <CircleIcon sx={{ fontSize: 5, color: 'white', ml:3 }} />
+            </ListItemIcon>
+           <Link href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">
+              https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS
+            </Link>
+        </ListItem>
         </List>
       </Dialog>
     </div>
