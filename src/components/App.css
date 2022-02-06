@@ -100,3 +100,8 @@ ul {
   fill: #fff;
   text-anchor: 'middle';
 }
+
+.chartYear {
+  fill: lightgray;
+  font: bold 30px sans-serif;
+}

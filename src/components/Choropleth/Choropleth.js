@@ -48,6 +48,9 @@ const Choropleth = () => {
           colorValue={scheme.colorValue}
           legendTitle={legendTitle}
         />
+        <text x={50} y={80} className="chartYear">
+          {selectedYear}
+        </text>
       </svg>
     </>
   );
