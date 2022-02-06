@@ -70,7 +70,6 @@ function App() {
             <Grid item xs="auto">
               <Box
                 sx={{
-                  // boxShadow: 3,
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'flex-end',
