@@ -1,6 +1,6 @@
 # Information Visualization Project
 
-**Running Version: **https://jovial-austin-7bcf9b.netlify.app
+**Running Version: ** https://jovial-austin-7bcf9b.netlify.app
 
 The visualization is optimized for **90% Browser zoom on a 1080p widescreen monitor**.
 It runs best in Chrome (MacOS) and Firefox (Windows).
