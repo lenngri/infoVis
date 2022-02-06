@@ -20,9 +20,9 @@ const PieChart = () => {
   }
 
   // filter data for selected year
-  const filteredData = categoryData.filter((d) => d.year === selectedYear);
+  const filteredByYear = categoryData.filter((d) => d.year === selectedYear);
   // filter data for clicked country
-  const filteredByCountry = filteredData.filter((d) => d.country === clickedCountry);
+  const filteredByCountry = filteredByYear.filter((d) => d.country === clickedCountry);
   // get total amount of category registrations
   let total = 0;
   filteredByCountry.forEach((d) => {
@@ -32,6 +32,8 @@ const PieChart = () => {
     d.total = total;
   });
 
+  console.log(filteredByCountry);
+
   const pieChart = PieChartGen(filteredByCountry, {
     name: (d) => d.category,
     value: (d) => ((d.patents / d.total) * 100).toFixed(2),
@@ -39,6 +41,8 @@ const PieChart = () => {
     height: height - 20,
     colors: schemeRdYlBu[9],
   });
+
+  console.log(pieChart);
 
   const legend = Swatches(
     d3.scaleOrdinal(
@@ -60,13 +64,15 @@ const PieChart = () => {
     }
   );
 
+  // Returns content of PieChart Wrapper component, e.g. PieChartDialog
+  // if used outside of a dialog, please uncomment the Button and lower Typography
   return (
     <>
       <Typography variant="h6" component="div">
         Patent Categories {clickedCountry}
       </Typography>
 
-      {clickedCountry ? (
+      {clickedCountry && filteredByCountry.length > 0 ? (
         <>
           <Typography sx={{ mb: 2 }}>(Share of each category in %)</Typography>
           <svg width={width} height={height}>
@@ -76,12 +82,13 @@ const PieChart = () => {
             ></g>
           </svg>
           <div dangerouslySetInnerHTML={{ __html: legend.innerHTML }}></div>
-          <Button onClick={() => setClickedCountry(null)} sx={{ mt: 2, textAlign: 'center' }}>
+          {/* <Button onClick={() => setClickedCountry(null)} sx={{ mt: 2, textAlign: 'center' }}>
             Deselect
-          </Button>
+          </Button> */}
         </>
       ) : (
-        <Typography sx={{ my: 20 }}>Please click on a country or bubble...</Typography>
+        <Typography sx={{ my: 20 }}>This country doesn't have any patent data.</Typography>
+        // <Typography sx={{ my: 20 }}>Please click on a country or bubble...</Typography>
       )}
     </>
   );
