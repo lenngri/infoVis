@@ -25,7 +25,7 @@ The Web Application will be build with d3.js and React
 
 - [x] General
   - [x] Short description of the page
-  - [ ] Exhaustive description of data and methodology
+  - [x] Exhaustive description of data and methodology
   - [ ] Usage hints for the visualisations
 - [x] Choropleth
   - [x] Registered Patents View
@@ -39,12 +39,12 @@ The Web Application will be build with d3.js and React
 - [x] Time slider
   - [x] Manual sliding
   - [ ] Auto Play
-- [ ] Detail on demand
-  - [ ] Detail window on Click of Charts giving details on patent registration categories
-  - [ ] Visualization of details on demand (pie-chart / bar chart)
-- [ ] Highlighting of countries through list on the left side for better orientation
-- [ ] Filtering of countries through hover over Choropleth legend
-- [ ] Visualization and / or data export
+- [x] Detail on demand
+  - [x] Detail window on Click of Charts giving details on patent registration categories
+  - [x] Visualization of details on demand (pie-chart)
+- [x] Highlighting of countries through list on the left side for better orientation
+- [x] Filtering of countries through hover over Choropleth legend
+- [x] Data export
 
 
 ## Sources
