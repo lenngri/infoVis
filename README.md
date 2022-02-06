@@ -1,5 +1,10 @@
 # Information Visualization Project
 
+Running Version: https://jovial-austin-7bcf9b.netlify.app
+
+The visualization is optimized for 90% Browser zoom on a 1080p widescreen monitor.
+It runs best in Chrome (MacOS) and Firefox (Windows).
+
 ## Table of contents
 * [General Info](#general-info)
 * [Project Description](#project-description)
@@ -19,7 +24,11 @@ The aim of the project is to visualize research & development expenditures in de
 a cholopleth map of Europe, a Bubble Chart and interactive features. 
 
 ## Technologies
-The Web Application will be build with d3.js and React
+The Web Application was built with
+- React: Main Framework (DOM Management)
+- D3: Visualization tools 
+- MUI: UI Framework
+- Redux: State Management
 
 ## Features
 
@@ -60,7 +69,7 @@ https://ec.europa.eu/eurostat/databrowser/view/tsc00001/default/table?lang=en
 
 
 ## Project Status
-in development
+Release Candidate ready.
 
 
 ## Setup
