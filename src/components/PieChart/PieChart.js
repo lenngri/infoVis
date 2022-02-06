@@ -56,7 +56,7 @@ const PieChart = () => {
       d3.schemeRdYlBu[9]
     ),
     {
-      columns: '180px',
+      columns: '195px',
     }
   );
 
