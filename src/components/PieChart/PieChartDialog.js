@@ -12,7 +12,6 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import Typography from '@mui/material/Typography';
 import PieChart from './PieChart';
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -56,7 +55,7 @@ BootstrapDialogTitle.propTypes = {
 export default function CustomizedDialogs() {
   const setOpenPieChart = useStoreActions((actions) => actions.setOpenPieChart);
   const openPieChart = useStoreState((state) => state.openPieChart);
-
+  //eslint-disable-next-line
   const handleClickOpen = () => {
     setOpenPieChart(true);
   };
@@ -82,7 +81,7 @@ export default function CustomizedDialogs() {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              my: 5,
+              my: 1,
               mx: 15,
             }}
           >

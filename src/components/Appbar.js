@@ -18,8 +18,8 @@ import ListItemText from '@mui/material/ListItemText';
 import InfoIcon from '@mui/icons-material/Info';
 import MapIcon from '@mui/icons-material/Map';
 import BubbleChartIcon from '@mui/icons-material/BubbleChart';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Switch from '@mui/material/Switch';
+// import Brightness4Icon from '@mui/icons-material/Brightness4';
 
 const drawerWidth = 240;
 

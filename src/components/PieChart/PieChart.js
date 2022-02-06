@@ -3,9 +3,11 @@ import { useStoreState, useStoreActions } from 'easy-peasy';
 import PieChartGen from '../../charttools/usePieChart';
 import { Button, Typography } from '@mui/material';
 import { schemeRdYlBu } from 'd3-scale-chromatic';
+import Swatches from '../../charttools/useSwatches';
+import * as d3 from 'd3'; // can be optimized by importing just necessary modules
 
 const width = 400;
-const height = 300;
+const height = 320;
 
 const PieChart = () => {
   const categoryData = useStoreState((state) => state.categoryData);
@@ -34,25 +36,46 @@ const PieChart = () => {
     name: (d) => d.category,
     value: (d) => ((d.patents / d.total) * 100).toFixed(2),
     width: width - 50,
-    height: height,
+    height: height - 20,
     colors: schemeRdYlBu[9],
   });
 
+  const legend = Swatches(
+    d3.scaleOrdinal(
+      [
+        'Human Necessities',
+        'Transporting',
+        'Chemistry / Metallurgy',
+        'Textiles / Paper',
+        'Fixed Constructions',
+        'Mechanical Engineering',
+        'Physics',
+        'Electricity',
+        'No Category',
+      ],
+      d3.schemeRdYlBu[9]
+    ),
+    {
+      columns: '195px',
+    }
+  );
+
   return (
     <>
-      <Typography sx={{ mb: 2 }} variant="h6" component="div">
+      <Typography variant="h6" component="div">
         Patent Categories {clickedCountry}
       </Typography>
 
       {clickedCountry ? (
         <>
+          <Typography sx={{ mb: 2 }}>(Share of each category in %)</Typography>
           <svg width={width} height={height}>
             <g
               transform={`translate(${width * 0.5},${height * 0.5})`}
               dangerouslySetInnerHTML={{ __html: pieChart.innerHTML }}
             ></g>
           </svg>
-          <Typography sx={{ mt: 2 }}>(Share of each category in %)</Typography>
+          <div dangerouslySetInnerHTML={{ __html: legend.innerHTML }}></div>
           <Button onClick={() => setClickedCountry(null)} sx={{ mt: 2, textAlign: 'center' }}>
             Deselect
           </Button>

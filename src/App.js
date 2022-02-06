@@ -22,11 +22,11 @@ function App() {
   const setMapData = useStoreActions((actions) => actions.setMapData);
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
 
-  const lightTheme = createTheme({
-    palette: {
-      mode: 'light',
-    },
-  });
+  // const lightTheme = createTheme({
+  //   palette: {
+  //     mode: 'light',
+  //   },
+  // });
 
   const darkTheme = createTheme({
     palette: {
