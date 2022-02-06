@@ -11,6 +11,7 @@ const model = {
   view: 'patents',
   scheme: patentColorTheme(),
   renderFlag: false,
+  openPieChart: false,
   // actions
   setData: action((state, data) => {
     state.data = data;
@@ -26,7 +27,7 @@ const model = {
   }),
   setClickedCountry: action((state, clickedCountry) => {
     state.clickedCountry = clickedCountry;
-    console.log('New clickedCountry object set.');
+    console.log('New clickedCountry object set.', clickedCountry);
   }),
   setSelectedYear: action((state, year) => {
     state.selectedYear = year;
@@ -44,6 +45,10 @@ const model = {
     state.renderFlag = renderFlag;
     console.log('Updated renderFlag.');
   }),
+  setOpenPieChart: action((state, openPieChart) => {
+    state.openPieChart = openPieChart;
+    console.log('PieChart value changed.', openPieChart);
+  }),
   // thunks
   changeView: thunk((actions, view) => {
     actions.setView(view);
@@ -52,6 +57,10 @@ const model = {
     } else {
       actions.setScheme(patentColorTheme());
     }
+  }),
+  changeClickedCountry: thunk((actions, clickedCountry) => {
+    actions.setClickedCountry(clickedCountry);
+    actions.setOpenPieChart(true);
   }),
 };
 

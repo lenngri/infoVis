@@ -4,8 +4,9 @@ import { AxisLeft } from './AxisLeft';
 import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
 import { useStoreState } from 'easy-peasy';
+import { Typography } from '@mui/material';
 
-const width = 900;
+const width = 880;
 const height = 600;
 const margin = { top: 20, right: 30, bottom: 150, left: 90 };
 const xAxisLabelOffset = 50;
@@ -55,44 +56,49 @@ function Bubblechart() {
   const averagePopulation = populationTotal(currentData) / currentData.length;
 
   return (
-    <svg width={width} height={height}>
-      <g transform={`translate(${margin.left},${margin.top})`}>
-        <AxisBottom
-          xScale={xScale}
-          innerHeight={innerHeight + 50}
-          tickFormat={xAxisTickFormat}
-          tickOffset={5}
-        />
-        <text
-          className="chartText"
-          textAnchor="middle"
-          transform={`translate(${-yAxisLabelOffset},${innerHeight / 2}) rotate(-90)`}
-        >
-          {yAxisLabel}
-        </text>
-        <AxisLeft yScale={yScale} innerWidth={innerWidth} tickOffset={5} />
-        <text
-          className="chartText"
-          x={innerWidth / 2}
-          y={innerHeight + xAxisLabelOffset + 50}
-          textAnchor="middle"
-        >
-          {xAxisLabel}
-        </text>
-        <Marks
-          data={currentData}
-          xScale={xScale}
-          yScale={yScale}
-          xValue={xValue}
-          yValue={yValue}
-          toolTipFormat={xAxisTickFormat}
-          averagePopulation={averagePopulation}
-          circleRadius={1000}
-          colorScale={scheme.colorScale}
-          colorValue={scheme.colorValue}
-        />
-      </g>
-    </svg>
+    <>
+      <Typography sx={{ mt: 4, mb: 1 }} variant="h6" component="div">
+        Patent Inventions - R&D Investment Correlation
+      </Typography>
+      <svg width={width} height={height}>
+        <g transform={`translate(${margin.left},${margin.top})`}>
+          <AxisBottom
+            xScale={xScale}
+            innerHeight={innerHeight + 50}
+            tickFormat={xAxisTickFormat}
+            tickOffset={5}
+          />
+          <text
+            className="chartText"
+            textAnchor="middle"
+            transform={`translate(${-yAxisLabelOffset},${innerHeight / 2}) rotate(-90)`}
+          >
+            {yAxisLabel}
+          </text>
+          <AxisLeft yScale={yScale} innerWidth={innerWidth} tickOffset={5} />
+          <text
+            className="chartText"
+            x={innerWidth / 2}
+            y={innerHeight + xAxisLabelOffset + 50}
+            textAnchor="middle"
+          >
+            {xAxisLabel}
+          </text>
+          <Marks
+            data={currentData}
+            xScale={xScale}
+            yScale={yScale}
+            xValue={xValue}
+            yValue={yValue}
+            toolTipFormat={xAxisTickFormat}
+            averagePopulation={averagePopulation}
+            circleRadius={1000}
+            colorScale={scheme.colorScale}
+            colorValue={scheme.colorValue}
+          />
+        </g>
+      </svg>
+    </>
   );
 }
 

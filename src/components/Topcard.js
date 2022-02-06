@@ -124,7 +124,7 @@ export default function RecipeReviewCard() {
                   <List>
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
@@ -134,7 +134,7 @@ export default function RecipeReviewCard() {
 
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
@@ -144,7 +144,7 @@ export default function RecipeReviewCard() {
 
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
@@ -223,7 +223,7 @@ export default function RecipeReviewCard() {
                   <List>
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
@@ -233,7 +233,7 @@ export default function RecipeReviewCard() {
 
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
@@ -243,7 +243,7 @@ export default function RecipeReviewCard() {
 
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
@@ -340,7 +340,7 @@ export default function RecipeReviewCard() {
                   <List>
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
@@ -350,7 +350,7 @@ export default function RecipeReviewCard() {
 
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
@@ -360,7 +360,7 @@ export default function RecipeReviewCard() {
 
                     <ListItem>
                       <ListItemIcon>
-                        <CircleIcon sx={{ fontSize: 5, color: 'black', mt: -2 }} />
+                        <CircleIcon sx={{ fontSize: 5, color: 'white', mt: -2 }} />
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}

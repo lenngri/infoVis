@@ -6,14 +6,14 @@ import { useStoreState, useStoreActions } from 'easy-peasy';
 const missingDataColor = 'darkgray';
 
 const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, legendTitle }) => {
-  const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
+  const changeClickedCountry = useStoreActions((actions) => actions.changeClickedCountry);
   // eslint-disable-next-line
   const renderFlag = useStoreState((state) => state.renderFlag);
 
   // generate map progjection and paths
   const projection = geoMercator()
     .scale(500)
-    .translate([width / 3, height * 1.5]);
+    .translate([width / 3.3, height * 1.4]);
   const path = geoPath(projection);
 
   // generate map legend and append to svg,
@@ -61,7 +61,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
               d={path(feature)}
               onMouseEnter={(e) => handleMouseEnter(e, ['Bubblechart_', 'List_'])}
               onMouseLeave={(e) => handleMouseLeave(e, ['Bubblechart_', 'List_'])}
-              onClick={(e) => setClickedCountry(e.target.id.split('_')[1])}
+              onClick={(e) => changeClickedCountry(e.target.id.split('_')[1])}
             >
               <title>{title}</title>
             </path>
@@ -69,7 +69,7 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
         })}
       </g>
       <g
-        transform={`translate(${width * 0.65},${height * 0.9})`}
+        transform={`translate(${width * 0.55},${height * 0.93})`}
         // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
         // and https://stackoverflow.com/questions/26815738/svg-use-tag-and-reactjs
         dangerouslySetInnerHTML={{ __html: legend.innerHTML }}

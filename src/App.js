@@ -1,6 +1,7 @@
 import './components/App.css';
 import { useStoreActions } from 'easy-peasy';
 import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
 import Topcard from './components/Topcard';
@@ -9,23 +10,23 @@ import TimeSlider from './components/TimeSlider';
 import Impressum from './components/Impressum';
 import Choropleth from './components/Choropleth/Choropleth';
 import Bubblechart from './components/Bubblechart/Bubblechart';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import PieChart from './components/PieChart/PieChart';
+import PieChartDialog from './components/PieChart/PieChartDialog';
+import CountryList from './components/CountryList/CountryList';
+import DataExport from './components/DataExport';
 import { useData } from './datatools/useData';
 import { useMapData } from './datatools/useMapData';
 import { usePatentCategoryData } from './datatools/usePatentCategoryData';
-import CountryList from './components/CountryList/CountryList';
 
 function App() {
   const setData = useStoreActions((actions) => actions.setData);
   const setMapData = useStoreActions((actions) => actions.setMapData);
   const setCategoryData = useStoreActions((actions) => actions.setCategoryData);
 
-  const lightTheme = createTheme({
-    palette: {
-      mode: 'light',
-    },
-  });
+  // const lightTheme = createTheme({
+  //   palette: {
+  //     mode: 'light',
+  //   },
+  // });
 
   const darkTheme = createTheme({
     palette: {
@@ -65,7 +66,7 @@ function App() {
             <Topcard />
           </Container>
           <Boxspacer />
-          <Grid container sx={{ align: 'center', justifyContent: 'center' }}>
+          <Grid container sx={{ align: 'center', justify: 'center' }}>
             <Grid item xs="auto">
               <Box
                 sx={{
@@ -73,6 +74,8 @@ function App() {
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'flex-end',
+                  height: 700,
+                  ml: 8,
                 }}
               >
                 <CountryList />
@@ -93,12 +96,12 @@ function App() {
                   <Container>
                     <Choropleth />
                   </Container>
-                  <TimeSlider />
-                  <Boxspacer />
-                  <Container>
-                    <Bubblechart />
-                  </Container>
                 </Box>
+              </Container>
+            </Grid>
+            <Grid item xs="auto">
+              <Container>
+                <Bubblechart />
               </Container>
             </Grid>
             <Grid item xs="auto">
@@ -109,17 +112,20 @@ function App() {
                   flexDirection: 'column',
                   alignItems: 'center',
                 }}
-              >
-                <PieChart />
-              </Box>
+              ></Box>
             </Grid>
           </Grid>
+          <Container sx={{ mb: 5 }}>
+            <TimeSlider />
+          </Container>
+          <PieChartDialog />
         </main>
         <footer className="Footer">
           <Divider />
           <Typography variant="h6" align="center" gutterBottom>
             Thanks for reading.
           </Typography>
+          <DataExport />
           <Impressum />
           <Typography variant="subtitle1" align="center" color="textSecondard">
             This page is brought to you by MMT.
