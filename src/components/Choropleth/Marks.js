@@ -26,7 +26,6 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
         {mapData.features.map((feature) => {
           const d = rowByCountry.get(feature.properties.name);
           const value = d ? colorValue(d) : 'no data';
-          // const title = `${feature.properties.name}: ${value}`;
           let selected = null;
           let title = null;
           if (d) {
