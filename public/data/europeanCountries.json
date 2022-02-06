@@ -4,10 +4,6 @@
     "code": "AD"
   },
   {
-    "name": "Albania",
-    "code": "AL"
-  },
-  {
     "name": "Austria",
     "code": "AT"
   },
@@ -22,10 +18,6 @@
   {
     "name": "Bulgaria",
     "code": "BG"
-  },
-  {
-    "name": "Belarus",
-    "code": "BY"
   },
   {
     "name": "Switzerland",
@@ -60,20 +52,12 @@
     "code": "FI"
   },
   {
-    "name": "Faroe Islands",
-    "code": "FO"
-  },
-  {
     "name": "France",
     "code": "FR"
   },
   {
     "name": "United Kingdom",
     "code": "GB"
-  },
-  {
-    "name": "Guernsey",
-    "code": "GG"
   },
   {
     "name": "Greece",
@@ -92,24 +76,12 @@
     "code": "IE"
   },
   {
-    "name": "Isle of Man",
-    "code": "IM"
-  },
-  {
     "name": "Iceland",
     "code": "IC"
   },
   {
     "name": "Italy",
     "code": "IT"
-  },
-  {
-    "name": "Jersey",
-    "code": "JE"
-  },
-  {
-    "name": "Liechtenstein",
-    "code": "LI"
   },
   {
     "name": "Lithuania",
@@ -122,22 +94,6 @@
   {
     "name": "Latvia",
     "code": "LV"
-  },
-  {
-    "name": "Monaco",
-    "code": "MC"
-  },
-  {
-    "name": "Moldova",
-    "code": "MD"
-  },
-  {
-    "name": "Macedonia, The Former Yugoslav Republic of",
-    "code": "MK"
-  },
-  {
-    "name": "Malta",
-    "code": "MT"
   },
   {
     "name": "Netherlands",
@@ -170,10 +126,6 @@
   {
     "name": "Slovakia",
     "code": "SK"
-  },
-  {
-    "name": "San Marino",
-    "code": "SM"
   },
   {
     "name": "Ukraine",
