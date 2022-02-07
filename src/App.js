@@ -1,6 +1,6 @@
 import './components/App.css';
 import { useStoreActions } from 'easy-peasy';
-import { Grid, Container, Box, CircularProgress, Divider, Typography } from '@mui/material';
+import { Grid, Container, Box, CircularProgress, Divider, Typography, Stack } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Boxspacer from './components/Boxspacer';
 import Appbar from './components/Appbar';
@@ -13,6 +13,7 @@ import Bubblechart from './components/Bubblechart/Bubblechart';
 import PieChartDialog from './components/PieChart/PieChartDialog';
 import CountryList from './components/CountryList/CountryList';
 import DataExport from './components/DataExport';
+import Tooltips from './components/Tooltips';
 import { useData } from './datatools/useData';
 import { useMapData } from './datatools/useMapData';
 import { usePatentCategoryData } from './datatools/usePatentCategoryData';
@@ -45,11 +46,13 @@ function App() {
 
   if (!data || !mapData || !categoryData) {
     return (
-      <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <Box sx={{ mt: 50 }}>
-          <CircularProgress />
-        </Box>
-      </Container>
+      <ThemeProvider theme={darkTheme}>
+        <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Box sx={{ mt: 50 }}>
+            <CircularProgress />
+          </Box>
+        </Container>
+      </ThemeProvider>
     );
   }
 
@@ -84,14 +87,20 @@ function App() {
               <Container>
                 <Box
                   sx={{
-                    // boxShadow: 3,
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
                     overflow: 'hidden',
                   }}
                 >
-                  <ChoroplethToggle />
+                  <Stack direction="row" spacing={1}>
+                    <ChoroplethToggle />
+                    <Tooltips
+                      content={
+                        'Toggle between the two dimensions to change the visualized data. Click on a country to see details on patent categories.'
+                      }
+                    ></Tooltips>
+                  </Stack>
                   <Container>
                     <Choropleth />
                   </Container>
