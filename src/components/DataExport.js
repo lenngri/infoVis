@@ -12,7 +12,6 @@ const DataExport = () => {
     let selectedCountries = {};
     for (let year in data) {
       selectedCountries[year] = data[year].filter((object) => object.selected === true);
-      console.log(selectedCountries);
     }
     downloadObjectAsJson(selectedCountries, 'patent-investment-data');
   };
