@@ -1,15 +1,7 @@
 [
   {
-    "name": "Andorra",
-    "code": "AD"
-  },
-  {
     "name": "Austria",
     "code": "AT"
-  },
-  {
-    "name": "Bosnia and Herzegovina",
-    "code": "BA"
   },
   {
     "name": "Belgium",
@@ -22,10 +14,6 @@
   {
     "name": "Switzerland",
     "code": "CH"
-  },
-  {
-    "name": "Cyprus",
-    "code": "CY"
   },
   {
     "name": "Czech Republic",
@@ -126,9 +114,5 @@
   {
     "name": "Slovakia",
     "code": "SK"
-  },
-  {
-    "name": "Ukraine",
-    "code": "UA"
   }
 ]
