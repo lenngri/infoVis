@@ -71,7 +71,7 @@ const PieChart = () => {
 
       {clickedCountry && filteredByCountry.length > 0 ? (
         <>
-          <Typography sx={{ mb: 2 }}>(Share of each category in %)</Typography>
+          <Typography sx={{ mb: 2 }}>(Share of each patent category in %)</Typography>
           <svg width={width} height={height}>
             <g
               transform={`translate(${width * 0.5},${height * 0.5})`}

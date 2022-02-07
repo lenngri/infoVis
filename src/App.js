@@ -98,7 +98,7 @@ function App() {
                     <ChoroplethToggle />
                     <Tooltips
                       content={
-                        'Toggle between the two dimensions to change the visualized data. Click on a country to see details on patent categories.'
+                        'Toggle between the two dimensions to change the visualized data. Hover or click on a country to get more details.'
                       }
                     ></Tooltips>
                   </Stack>
