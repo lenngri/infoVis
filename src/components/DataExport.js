@@ -9,11 +9,10 @@ const DataExport = () => {
   const selectedYear = useStoreState((state) => state.selectedYear);
 
   const handleExportSelected = () => {
-    let selectedCountries = data;
+    let selectedCountries = {};
     for (let year in data) {
-      selectedCountries[year] = selectedCountries[year].filter(
-        (object) => object.selected === true
-      );
+      selectedCountries[year] = data[year].filter((object) => object.selected === true);
+      console.log(selectedCountries);
     }
     downloadObjectAsJson(selectedCountries, 'patent-investment-data');
   };
