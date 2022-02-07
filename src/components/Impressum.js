@@ -49,7 +49,7 @@ export default function Impressum() {
             </Button>
           </Toolbar>
         </AppBar>
-        <List sx={{width:"100%"}}>
+        <List sx={{ width: '100%' }}>
           <ListItem>
             <ListItemText
               primary="General Info"
@@ -65,36 +65,34 @@ a cholopleth map of Europe, a Bubble Chart and interactive features."
             />
           </ListItem>
           <Divider />
-        <ListItem>
-          <ListItemText
-              primary="Data Resources"
-              secondary="The data was sourced from:"/>
-        </ListItem>
-        <ListItem>
-          <ListItemIcon>
-            <CircleIcon sx={{ fontSize: 5, color: 'white', ml:3 }} />
+          <ListItem>
+            <ListItemText primary="Data Resources" secondary="The data was sourced from:" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CircleIcon sx={{ fontSize: 5, color: 'white', ml: 3 }} />
             </ListItemIcon>
-          <Link href="https://www.worldwide-patents.com/the-dataset">
-              https://www.worldwide-patents.com/the-dataset
+            <Link href="https://www.worldwide-patents.com/the-dataset">
+              Patent Data (worldwide-patents.com)
             </Link>
-        </ListItem>
-        <ListItem>
-           <ListItemIcon>
-            <CircleIcon sx={{ fontSize: 5, color: 'white', ml:3 }} />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CircleIcon sx={{ fontSize: 5, color: 'white', ml: 3 }} />
             </ListItemIcon>
-          <Link href="https://data.worldbank.org/indicator/SP.POP.TOTL">
-              https://data.worldbank.org/indicator/SP.POP.TOTL
-               </Link>
-        </ListItem>
-        
-        <ListItem>
-           <ListItemIcon>
-            <CircleIcon sx={{ fontSize: 5, color: 'white', ml:3 }} />
-            </ListItemIcon>
-           <Link href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">
-              https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS
+            <Link href="https://data.worldbank.org/indicator/SP.POP.TOTL">
+              Population Data (Worldbank)
             </Link>
-        </ListItem>
+          </ListItem>
+
+          <ListItem>
+            <ListItemIcon>
+              <CircleIcon sx={{ fontSize: 5, color: 'white', ml: 3 }} />
+            </ListItemIcon>
+            <Link href="https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS">
+              R&D Expenditure Data (Worldbank)
+            </Link>
+          </ListItem>
         </List>
       </Dialog>
     </div>

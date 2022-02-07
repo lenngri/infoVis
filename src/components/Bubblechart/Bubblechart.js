@@ -60,8 +60,8 @@ function Bubblechart() {
     <>
       <Box sx={{ alignItems: 'center' }}>
         <Stack direction="row" spacing={1}>
-          <Typography sx={{ mt: 0.7, ml: 27 }} variant="h6" component="div">
-            Patent Inventions - R&D Investment Correlation
+          <Typography sx={{ mt: 0.6, ml: 27 }} variant="h6" component="div">
+            Patent Registrations - R&D Investment Correlation
           </Typography>
           <Tooltips
             sx={{ mt: 10 }}
@@ -70,7 +70,7 @@ function Bubblechart() {
             }
           ></Tooltips>
         </Stack>
-        <Typography>The bubble size is corresponding to the population of the country</Typography>
+        <Typography>The bubble size corresponds to the population of the country</Typography>
       </Box>
 
       <svg width={width} height={height}>

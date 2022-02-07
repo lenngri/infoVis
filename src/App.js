@@ -98,7 +98,7 @@ function App() {
                     <ChoroplethToggle />
                     <Tooltips
                       content={
-                        'Toggle between the two dimensions to change the visualized data. Click on a country to see details on patent categories.'
+                        'Toggle between the two dimensions to change the visualized data. Hover or click on a country to get more details.'
                       }
                     ></Tooltips>
                   </Stack>
@@ -134,13 +134,13 @@ function App() {
         </main>
         <footer className="Footer">
           <Divider />
-          <Typography variant="h6" align="center" gutterBottom>
+          <Typography variant="body" align="center" gutterBottom>
             Thanks for reading.
           </Typography>
           <DataExport />
           <Impressum />
           <Typography variant="subtitle1" align="center" color="textSecondard">
-            This page is brought to you by MMT.
+            © 2022 Team Toppo (43)
           </Typography>
         </footer>
       </div>

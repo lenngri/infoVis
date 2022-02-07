@@ -1,7 +1,7 @@
 import React from 'react';
-import { useStoreState, useStoreActions } from 'easy-peasy';
+import { useStoreState } from 'easy-peasy';
 import PieChartGen from '../../charttools/usePieChart';
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { schemeRdYlBu } from 'd3-scale-chromatic';
 import Swatches from '../../charttools/useSwatches';
 import * as d3 from 'd3'; // can be optimized by importing just necessary modules
@@ -32,17 +32,14 @@ const PieChart = () => {
     d.total = total;
   });
 
-  console.log(filteredByCountry);
-
   const pieChart = PieChartGen(filteredByCountry, {
     name: (d) => d.category,
     value: (d) => ((d.patents / d.total) * 100).toFixed(2),
     width: width - 50,
     height: height - 20,
     colors: schemeRdYlBu[9],
+    labelRadius: 100,
   });
-
-  console.log(pieChart);
 
   const legend = Swatches(
     d3.scaleOrdinal(
@@ -74,7 +71,7 @@ const PieChart = () => {
 
       {clickedCountry && filteredByCountry.length > 0 ? (
         <>
-          <Typography sx={{ mb: 2 }}>(Share of each category in %)</Typography>
+          <Typography sx={{ mb: 2 }}>(Share of each patent category in %)</Typography>
           <svg width={width} height={height}>
             <g
               transform={`translate(${width * 0.5},${height * 0.5})`}

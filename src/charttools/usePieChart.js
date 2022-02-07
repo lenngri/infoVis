@@ -82,21 +82,24 @@ const PieChartGen = (
   svg
     .append('g')
     .attr('font-family', 'sans-serif')
-    .attr('font-size', 11)
-    .attr('text-anchor', 'middle')
+    .attr('font-size', 12)
+    .attr('text-anchor', 'left')
     .selectAll('text')
     .data(arcs)
     .join('text')
-    .attr('transform', (d) => `translate(${arcLabel.centroid(d)})`)
+    .attr('transform', (d, i) => {
+      return `translate(${arcLabel.centroid(d)[0] - 4 * i}, ${arcLabel.centroid(d)[1]})`;
+    })
     .selectAll('tspan')
     .data((d) => {
-      const lines = `${title(d.data)}`.split(/\n/);
-      return d.endAngle - d.startAngle > 0.25 ? lines : lines.slice(0, 1);
+      return `${d.value}%`;
+      // const lines = `${title(d.data)}`.split(/\n/);
+      // return lines[1] + '%';
     })
     .join('tspan')
-    .attr('x', 0)
-    .attr('y', (_, i) => `${i * 1.1}em`)
-    .attr('font-weight', (_, i) => (i ? null : 'bold'))
+    .attr('x', (_, i) => `${i * 0.6}em`)
+    .attr('y', 0)
+    .attr('font-weight', 'bold')
     .text((d) => d);
 
   return Object.assign(svg.node(), { scales: { color } });
