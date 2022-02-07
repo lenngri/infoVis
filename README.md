@@ -35,7 +35,7 @@ The Web Application was built with
 - [x] General
   - [x] Short description of the page
   - [x] Exhaustive description of data and methodology
-  - [ ] Usage hints for the visualisations
+  - [x] Usage hints for the visualisations
 - [x] Choropleth
   - [x] Registered Patents View
   - [x] R&D Expenditure View
@@ -47,7 +47,7 @@ The Web Application was built with
   - [x] Detail on demand through tooltips
 - [x] Time slider
   - [x] Manual sliding
-  - [ ] Auto Play
+  - [x] Auto Play
 - [x] Detail on demand
   - [x] Detail window on Click of Charts giving details on patent registration categories
   - [x] Visualization of details on demand (pie-chart)
