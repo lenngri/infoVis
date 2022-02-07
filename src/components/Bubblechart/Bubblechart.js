@@ -38,7 +38,7 @@ function Bubblechart() {
   const yValue = (data) => data.patents / (data.population / 1000000);
   const yAxisLabel = 'Number of Patents per million inhabitants (ppm)';
 
-  const siFormat = format('.2s');
+  const siFormat = format('');
   const xAxisTickFormat = (tickValue) => siFormat(tickValue);
 
   const xScale = scaleLinear().domain([0, 4.0]).range([0, innerWidth]).nice();
@@ -60,7 +60,7 @@ function Bubblechart() {
     <>
       <Box sx={{ alignItems: 'center' }}>
         <Stack direction="row" spacing={1}>
-          <Typography sx={{ mt: 0.7, mb: 2, ml: 27 }} variant="h6" component="div">
+          <Typography sx={{ mt: 0.7, ml: 27 }} variant="h6" component="div">
             Patent Inventions - R&D Investment Correlation
           </Typography>
           <Tooltips
@@ -70,6 +70,7 @@ function Bubblechart() {
             }
           ></Tooltips>
         </Stack>
+        <Typography>The bubble size is corresponding to the population of the country</Typography>
       </Box>
 
       <svg width={width} height={height}>
