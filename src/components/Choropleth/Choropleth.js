@@ -5,7 +5,7 @@ import { useStoreState } from 'easy-peasy';
 import Marks from './Marks';
 
 const width = 700; // Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-const height = 650; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+const height = 600; // Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 const Choropleth = () => {
   const mapData = useStoreState((state) => state.mapData);
@@ -48,6 +48,9 @@ const Choropleth = () => {
           colorValue={scheme.colorValue}
           legendTitle={legendTitle}
         />
+        <text x={50} y={80} className="chartYear">
+          {selectedYear}
+        </text>
       </svg>
     </>
   );

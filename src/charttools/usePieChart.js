@@ -82,7 +82,7 @@ const PieChartGen = (
   svg
     .append('g')
     .attr('font-family', 'sans-serif')
-    .attr('font-size', 10)
+    .attr('font-size', 11)
     .attr('text-anchor', 'middle')
     .selectAll('text')
     .data(arcs)

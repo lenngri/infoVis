@@ -40,7 +40,7 @@ export default function RecipeReviewCard() {
     <Card sx={{ minWidth: 345 }}>
       <CardContent>
         <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
-          About this page
+          Patent Registrations & Research Investments
         </Typography>
         <Typography variant="body1">
           This page shows the development of patent registrations and research and development (R&D)
@@ -48,8 +48,8 @@ export default function RecipeReviewCard() {
           overview of patent registrations and R&D investments, the Bubble Chart allows for
           comparison of countries of special interest and recognition of patterns in the data (e.g.,
           investigating correlations between the number of patent registrations and investment in
-          R&D activities). If desired, in-depth information can be retrieved to get deeper insights
-          into the data of individual countries.
+          R&D activities). If desired, in-depth information can be retrieved by hovering or clicking
+          on individual countries.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

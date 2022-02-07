@@ -170,6 +170,7 @@ export default function Legend(
         .attr('fill', 'currentColor')
         .attr('text-anchor', 'start')
         .attr('font-weight', 'bold')
+        .attr('font-size', '12')
         .attr('class', 'title')
         .text(title)
     );

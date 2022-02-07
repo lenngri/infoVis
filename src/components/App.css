@@ -7,11 +7,11 @@
 }
 
 circle {
-  stroke: white;
+  stroke: rgb(61, 61, 61);
 }
 
 .marks .land {
-  stroke: gray;
+  stroke: rgb(61, 61, 61);
   stroke-width: 0.5px;
 }
 
@@ -99,4 +99,9 @@ ul {
 .chartText {
   fill: #fff;
   text-anchor: 'middle';
+}
+
+.chartYear {
+  fill: lightgray;
+  font: bold 30px sans-serif;
 }

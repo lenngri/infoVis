@@ -44,7 +44,7 @@ const CountryList = () => {
         data[year].map((object) => (object.selected = true));
       }
     }
-    setData(data); //sets global data object in store
+    setData(data); // sets global data object in store
     setRenderFlag(!renderFlag); //forces rerender of components
   };
 

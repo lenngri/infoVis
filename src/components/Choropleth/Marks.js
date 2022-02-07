@@ -1,5 +1,5 @@
 import { geoPath, geoMercator } from 'd3';
-import Legend from '../../charttools/useLegend';
+// import Legend from '../../charttools/useLegend';
 import { handleMouseEnter, handleMouseLeave } from '../../charttools/useMouseHover';
 import { useStoreState, useStoreActions } from 'easy-peasy';
 
@@ -13,12 +13,12 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
   // generate map progjection and paths
   const projection = geoMercator()
     .scale(500)
-    .translate([width / 3.3, height * 1.4]);
+    .translate([width / 3.3, height * 1.5]);
   const path = geoPath(projection);
 
   // generate map legend and append to svg,
   // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
-  const legend = Legend(colorScale, { title: legendTitle });
+  // const legend = Legend(colorScale, { title: legendTitle });
 
   return (
     <>
@@ -26,7 +26,6 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
         {mapData.features.map((feature) => {
           const d = rowByCountry.get(feature.properties.name);
           const value = d ? colorValue(d) : 'no data';
-          // const title = `${feature.properties.name}: ${value}`;
           let selected = null;
           let title = null;
           if (d) {
@@ -68,12 +67,12 @@ const Marks = ({ mapData, width, height, rowByCountry, colorScale, colorValue, l
           );
         })}
       </g>
-      <g
+      {/* <g
         transform={`translate(${width * 0.55},${height * 0.93})`}
         // follows https://stackoverflow.com/questions/45877087/render-svgsvgelement-in-react-js-without-dangerouslysetinnerhtml
         // and https://stackoverflow.com/questions/26815738/svg-use-tag-and-reactjs
         dangerouslySetInnerHTML={{ __html: legend.innerHTML }}
-      ></g>
+      ></g> */}
     </>
   );
 };

@@ -4,7 +4,8 @@ import { AxisLeft } from './AxisLeft';
 import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
 import { useStoreState } from 'easy-peasy';
-import { Typography } from '@mui/material';
+import { Typography, Stack, Box } from '@mui/material';
+import Tooltips from '../Tooltips';
 
 const width = 880;
 const height = 600;
@@ -37,7 +38,7 @@ function Bubblechart() {
   const yValue = (data) => data.patents / (data.population / 1000000);
   const yAxisLabel = 'Number of Patents per million inhabitants (ppm)';
 
-  const siFormat = format('.2s');
+  const siFormat = format('');
   const xAxisTickFormat = (tickValue) => siFormat(tickValue);
 
   const xScale = scaleLinear().domain([0, 4.0]).range([0, innerWidth]).nice();
@@ -57,9 +58,21 @@ function Bubblechart() {
 
   return (
     <>
-      <Typography sx={{ mt: 4, mb: 1 }} variant="h6" component="div">
-        Patent Inventions - R&D Investment Correlation
-      </Typography>
+      <Box sx={{ alignItems: 'center' }}>
+        <Stack direction="row" spacing={1}>
+          <Typography sx={{ mt: 0.7, ml: 27 }} variant="h6" component="div">
+            Patent Inventions - R&D Investment Correlation
+          </Typography>
+          <Tooltips
+            sx={{ mt: 10 }}
+            content={
+              'Hover over the bubbles to get more details. Click on a bubble to view the share of patent categories among all inventions.'
+            }
+          ></Tooltips>
+        </Stack>
+        <Typography>The bubble size is corresponding to the population of the country</Typography>
+      </Box>
+
       <svg width={width} height={height}>
         <g transform={`translate(${margin.left},${margin.top})`}>
           <AxisBottom
