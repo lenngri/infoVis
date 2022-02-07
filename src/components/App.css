@@ -7,11 +7,11 @@
 }
 
 circle {
-  stroke: darkgrey;
+  stroke: rgb(61, 61, 61);
 }
 
 .marks .land {
-  stroke: darkgrey;
+  stroke: rgb(61, 61, 61);
   stroke-width: 0.5px;
 }
 

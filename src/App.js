@@ -14,6 +14,7 @@ import PieChartDialog from './components/PieChart/PieChartDialog';
 import CountryList from './components/CountryList/CountryList';
 import DataExport from './components/DataExport';
 import Tooltips from './components/Tooltips';
+import ColorLegend from './components/ColorLegend';
 import { useData } from './datatools/useData';
 import { useMapData } from './datatools/useMapData';
 import { usePatentCategoryData } from './datatools/usePatentCategoryData';
@@ -123,7 +124,10 @@ function App() {
               ></Box>
             </Grid>
           </Grid>
-          <Container sx={{ mb: 5 }}>
+          <Container sx={{ mt: -5, mb: 5 }}>
+            <Box sx={{ ml: 15 }}>
+              <ColorLegend />
+            </Box>
             <TimeSlider />
           </Container>
           <PieChartDialog />
