@@ -31,13 +31,16 @@ const ExpandMore = styled((props) => {
 
 export default function RecipeReviewCard() {
   const [expanded, setExpanded] = React.useState(false);
+  const [overflow, setOverflow] = React.useState(false);
 
   const handleExpandClick = () => {
+    console.log(expanded);
+    setOverflow(!expanded ? 'scroll' : undefined);
     setExpanded(!expanded);
   };
 
   return (
-    <Card sx={{ minWidth: 345 }}>
+    <Card sx={{ minWidth: 345, maxHeight: 620, overflowY: overflow }}>
       <CardContent>
         <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
           Patent Registrations & Research Investments
@@ -392,6 +395,16 @@ export default function RecipeReviewCard() {
             </Link>
           </Typography>
         </CardContent>
+        <CardActions disableSpacing>
+          <ExpandMore
+            expand={expanded}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+          >
+            <ExpandMoreIcon />
+          </ExpandMore>
+        </CardActions>
       </Collapse>
     </Card>
   );

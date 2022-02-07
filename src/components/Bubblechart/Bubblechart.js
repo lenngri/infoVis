@@ -70,7 +70,7 @@ function Bubblechart() {
             }
           ></Tooltips>
         </Stack>
-        <Typography>The bubble size is corresponding to the population of the country</Typography>
+        <Typography>The bubble size corresponds to the population of the country</Typography>
       </Box>
 
       <svg width={width} height={height}>
