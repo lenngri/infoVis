@@ -7,11 +7,11 @@
 }
 
 circle {
-  stroke: gray;
+  stroke: darkgrey;
 }
 
 .marks .land {
-  stroke: gray;
+  stroke: darkgrey;
   stroke-width: 0.5px;
 }
 
