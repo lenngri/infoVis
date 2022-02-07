@@ -6,6 +6,7 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import { Stack } from '@mui/material';
+import Tooltips from './Tooltips';
 
 import marks from './marks';
 import { useStoreActions } from 'easy-peasy';
@@ -58,7 +59,7 @@ export default function TimeSlider() {
   return (
     <Container maxWidth="lg">
       <Box sm={{ width: 600, justifyContent: 'center' }} mt={2}>
-        <Stack direction="row" spacing={4}>
+        <Stack direction="row">
           <Slider
             aria-label="Year"
             defaultValue={2005}
@@ -70,6 +71,7 @@ export default function TimeSlider() {
             max={2014}
             onChange={handleSliderChange}
             disabled={autoplayFlag ? true : false}
+            sx={{ mr: 5 }}
           />
           <FormGroup>
             <FormControlLabel
@@ -83,6 +85,11 @@ export default function TimeSlider() {
               label="Autoplay"
             />
           </FormGroup>
+          <Tooltips
+            content={
+              'Click on Autoplay to show the development over time automatically. You can also click on a country in the meantime.'
+            }
+          ></Tooltips>
         </Stack>
       </Box>
     </Container>

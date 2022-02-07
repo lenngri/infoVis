@@ -4,7 +4,8 @@ import { AxisLeft } from './AxisLeft';
 import { AxisBottom } from './AxisBottom';
 import Marks from './Marks';
 import { useStoreState } from 'easy-peasy';
-import { Typography } from '@mui/material';
+import { Typography, Stack, Box } from '@mui/material';
+import Tooltips from '../Tooltips';
 
 const width = 880;
 const height = 600;
@@ -57,9 +58,20 @@ function Bubblechart() {
 
   return (
     <>
-      <Typography sx={{ mt: 4, mb: 1 }} variant="h6" component="div">
-        Patent Inventions - R&D Investment Correlation
-      </Typography>
+      <Box sx={{ alignItems: 'center' }}>
+        <Stack direction="row" spacing={1}>
+          <Typography sx={{ mt: 0.7, mb: 2, ml: 27 }} variant="h6" component="div">
+            Patent Inventions - R&D Investment Correlation
+          </Typography>
+          <Tooltips
+            sx={{ mt: 10 }}
+            content={
+              'Hover over the bubbles to get more details. Click on a bubble to view the share of patent categories among all inventions.'
+            }
+          ></Tooltips>
+        </Stack>
+      </Box>
+
       <svg width={width} height={height}>
         <g transform={`translate(${margin.left},${margin.top})`}>
           <AxisBottom

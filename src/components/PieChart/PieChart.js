@@ -13,7 +13,7 @@ const PieChart = () => {
   const categoryData = useStoreState((state) => state.categoryData);
   const selectedYear = useStoreState((state) => state.selectedYear);
   const clickedCountry = useStoreState((state) => state.clickedCountry);
-  const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
+  // const setClickedCountry = useStoreActions((actions) => actions.setClickedCountry);
 
   if (!categoryData) {
     return <p>Loading...</p>;
@@ -69,7 +69,7 @@ const PieChart = () => {
   return (
     <>
       <Typography variant="h6" component="div">
-        Patent Categories {clickedCountry}
+        {clickedCountry} {selectedYear}
       </Typography>
 
       {clickedCountry && filteredByCountry.length > 0 ? (
