@@ -230,7 +230,7 @@ export default function RecipeReviewCard() {
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
-                        266 countries{' '}
+                        191 countries{' '}
                       </ListItemText>
                     </ListItem>
 
@@ -240,7 +240,7 @@ export default function RecipeReviewCard() {
                       </ListItemIcon>
                       <ListItemText sx={{ typography: 'body1', ml: -5, mt: -2 }}>
                         {' '}
-                        Availability range: Year [1960 - 2020]
+                        Availability range: Year [1996 - 2018]
                       </ListItemText>
                     </ListItem>
 
