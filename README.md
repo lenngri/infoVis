@@ -2,7 +2,7 @@
 
 **Running Version:** https://jovial-austin-7bcf9b.netlify.app
 
-The visualization is optimized for **90% Browser zoom on a 1080p widescreen monitor**.
+The visualization is optimized for **90% Browser zoom on a FullHD widescreen monitor**.
 It runs best in Chrome (MacOS) and Firefox (Windows).
 
 ## Table of contents
